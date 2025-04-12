@@ -12,25 +12,14 @@ import java.util.concurrent.Semaphore;
  * @author crestas
  */
 public class Refugio {
-    //Comedor (usar monitor para dar la comida de forma ordenada si no hay)
+
     private int cantidadComida;
-    private Semaphore semaforoComida;
-    private ArrayList<String> ocupacionComedor;
-    
-    //Zona de descanso
-    private ArrayList<String> ocupacionDescanso;
-    
-    //Zona común
-    private ArrayList<String> ocupacionComun;
+    private final Semaphore semaforoComida;
+    private Zona[] zonasRefugio = {Zona.DESCANSO, Zona.COMEDOR, Zona.ZONA_COMUN};
     
     public Refugio(){
-        cantidadComida = 0;
-        semaforoComida = new Semaphore(1);
-        ocupacionComedor = new ArrayList<>();
-        
-        ocupacionDescanso = new ArrayList<>();
-        
-        ocupacionComun = new ArrayList<>();
+        this.cantidadComida = 0;
+        this.semaforoComida = new Semaphore(1);
     }
     
     public void dejarComida(int comida, String id) throws InterruptedException{
@@ -50,28 +39,16 @@ public class Refugio {
     }
     
     public void llegarComedor(String idHumano){
-        ocupacionComedor.add(idHumano);
-        System.out.println("Humanos dentro del comedor: "+ocupacionComedor);
     }
     public void llegarZonaComun(String idHumano){
-        ocupacionComun.add(idHumano);
-        System.out.println("Humanos dentro de la zona comun: "+ocupacionComun);
     }
     public void llegarDescanso(String idHumano){
-        ocupacionDescanso.add(idHumano);
-        System.out.println("Humanos dentro de la zona de descanso: "+ocupacionDescanso);
     }
     public void salirComedor (String idHumano){
-        ocupacionComedor.remove(idHumano);
-        System.out.println("Humanos dentro del comedor: "+ocupacionComedor);
     }
     public void salirZonaComun(String idHumano){
-        ocupacionComun.remove(idHumano);
-        System.out.println("Humanos dentro de la zona comun: "+ocupacionComun);
     }
     public void salirDescanso(String idHumano){
-        ocupacionDescanso.remove(idHumano);
-        System.out.println("Humanos dentro de la zona de descanso: "+ocupacionDescanso);
     }
     
     private void logID(String id, String msg){

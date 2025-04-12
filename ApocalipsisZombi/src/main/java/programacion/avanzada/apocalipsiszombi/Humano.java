@@ -71,7 +71,7 @@ public class Humano extends Thread{
                 } 
                 else {
                     log("recolectó 2 piezas de comida.");
-                    ref.dejarComida(2);
+                    ref.dejarComida(2, id);
                 }
 
                 // REGRESO

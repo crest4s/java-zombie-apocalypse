@@ -24,6 +24,24 @@ public class Tunel {
         this.id=id;
         
         esperaExpedicion = new CyclicBarrier(3);
+        
+        switch(id) {
+            case 1:
+                this.zona = Zona.TUNEL_1;
+                break;
+            case 2:
+                this.zona = Zona.TUNEL_2;
+                break;
+            case 3:
+                this.zona = Zona.TUNEL_3;
+                break;
+            case 4:
+                this.zona = Zona.TUNEL_4;
+                break;
+            default:
+                throw new IllegalArgumentException("ID de túnel no válido");
+        }
+        
     }
     
         public void esperarTunel(int numTunel) throws InterruptedException, BrokenBarrierException{
