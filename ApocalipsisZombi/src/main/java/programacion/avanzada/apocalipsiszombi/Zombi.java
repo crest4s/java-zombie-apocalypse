@@ -23,8 +23,31 @@ public class Zombi extends Thread{
     
     @Override
     public void run(){
-        while(true){
-            
+        while (true) {
+            try {
+                // Moverse a otra zona
+                int zona = random.nextInt(4) + 1;
+                zonaActual = Zona.valueOf("RIESGO_" + zona);
+                log("entra a " + zonaActual);
+
+                // Buscar humanos (esto luego irá conectado a mapa real)
+                boolean hayHumanos = random.nextBoolean();
+
+                if (hayHumanos) {
+                    log("atacando a un humano...");
+                    sleepRandom(500, 1500);
+                    muertes++;
+                    log("mató a un humano. Total muertes: " + muertes);
+                } 
+                else {
+                    log("no hay nadie. Espera...");
+                    sleepRandom(2000, 3000);
+                }
+
+            } catch (InterruptedException e) {
+                log("interrumpido.");
+                break;
+            }
         }
     }
     

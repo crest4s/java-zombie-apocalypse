@@ -9,5 +9,5 @@ package programacion.avanzada.apocalipsiszombi;
  * @author adria
  */
 public class MapaZonas {
-    
+    private 
 }

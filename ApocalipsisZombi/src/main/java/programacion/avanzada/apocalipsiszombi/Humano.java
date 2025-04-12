@@ -17,7 +17,7 @@ public class Humano extends Thread{
     private Tunel tuneles[];
     private Zona zonaActual;
     private final String id;
-    private boolean atacado;
+    private boolean marcado;
     private final Random random = new Random();
     
     public Humano(IdGenerator idgen, Refugio ref, Tunel tun[]){
@@ -25,7 +25,7 @@ public class Humano extends Thread{
         this.tuneles = tun;     
         this.zonaActual = Zona.ZONA_COMUN;
         this.id = idgen.nuevoIdHumano();
-        this.atacado = false;
+        this.marcado = false;
     }
     
     @Override
@@ -42,17 +42,67 @@ public class Humano extends Thread{
                 Tunel tunel = tuneles[indiceTunel];
 
                 log("esperando grupo en túnel " + (indiceTunel + 1));
-                tunel.esperarGrupoParaSalir(this); // esperar grupo de 3
+                tunel.esperarGrupoParaSalir(this); // esperar grupo de 3 para salir del refugio
 
-                zonaActual = tunel.getZona(); // algo como TUNEL_1
+                zonaActual = tunel.getZona(); // se obtiene la zona del tunel
                 tunel.entrarAlTunelDesdeRefugio(this);
                 sleep(1000); // cruzar túnel
                 
-                
-            } catch (InterruptedException ex) {
-                ex.printStackTrace();
+                // EXPLORACIÓN EXTERIOR
+                zonaActual = tunel.getAreaInsegura(); 
+                log("recolectando comida en " + zonaActual);
+                sleepRandom(3000, 5000);
+
+                // SIMULAR ATAQUE
+                boolean atacado = random.nextBoolean();
+                if (atacado) {
+                    log("está siendo atacado por un zombi...");
+                    sleepRandom(500, 1500);
+                    boolean seDefiende = random.nextInt(3) < 2;
+                    if (seDefiende) {
+                        marcado = true;
+                        log("logró defenderse.");
+                    } 
+                    else {
+                        log("ha muerto y se convierte en zombi.");
+                        // zombificación se haría aquí
+                        break;
+                    }
+                } 
+                else {
+                    log("recolectó 2 piezas de comida.");
+                    ref.dejarComida(2);
+                }
+
+                // REGRESO
+                tunel.entrarAlTunelDesdeExterior(this);
+                sleep(1000); // cruzar túnel
+                zonaActual = Zona.DESCANSO;
+
+                // DESCANSO
+                log("descansa.");
+                sleepRandom(2000, 4000);
+
+                // COMER
+                zonaActual = Zona.COMEDOR;
+                log("intentando comer.");
+                ref.cogerComida(id); // bloqueará si no hay comida
+                sleepRandom(3000, 5000);
+
+                // RECUPERACIÓN SI FUE MARCADO
+                if (marcado) {
+                    zonaActual = Zona.DESCANSO;
+                    log("se recupera de las heridas.");
+                    sleepRandom(3000, 5000);
+                    marcado = false;
+                }
+
+                // VUELTA A ZONA COMÚN
+                zonaActual = Zona.ZONA_COMUN;
+
+            } catch (InterruptedException e) {
+                log("interrumpido.");
             }
-            
         }
     }
     
