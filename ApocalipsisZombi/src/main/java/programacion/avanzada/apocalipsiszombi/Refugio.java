@@ -5,8 +5,6 @@
 package programacion.avanzada.apocalipsiszombi;
 
 import java.util.ArrayList;
-import java.util.concurrent.BrokenBarrierException;
-import java.util.concurrent.CyclicBarrier;
 import java.util.concurrent.Semaphore;
 
 /**
@@ -24,15 +22,8 @@ public class Refugio {
     
     //Zona común
     private ArrayList<String> ocupacionComun;
-    private CyclicBarrier esperaExpedicionT1;
-    private CyclicBarrier esperaExpedicionT2;
-    private CyclicBarrier esperaExpedicionT3;
-    private CyclicBarrier esperaExpedicionT4;
     
-    //Túneles
-    private Tunel[] tuneles;
-    
-    public Refugio(Tunel[] tuneles){
+    public Refugio(){
         cantidadComida = 0;
         semaforoComida = new Semaphore(1);
         ocupacionComedor = new ArrayList<>();
@@ -40,44 +31,22 @@ public class Refugio {
         ocupacionDescanso = new ArrayList<>();
         
         ocupacionComun = new ArrayList<>();
-        esperaExpedicionT1 = new CyclicBarrier(3); //Esperar a 3 humanos para acceder a Tunel 1
-        esperaExpedicionT2 = new CyclicBarrier(3); //Esperar a 3 humanos para acceder a Tunel 2
-        esperaExpedicionT3 = new CyclicBarrier(3); //Esperar a 3 humanos para acceder a Tunel 3
-        esperaExpedicionT4 = new CyclicBarrier(3); //Esperar a 3 humanos para acceder a Tunel 4
-        
-        this.tuneles = tuneles;
     }
     
-    public void dejarComida(int comida) throws InterruptedException{
+    public void dejarComida(int comida, String id) throws InterruptedException{
         semaforoComida.acquire();
         cantidadComida += comida;
-        System.out.println("Se han dejado "+comida+" alimentos");
+        logID(id,"Ha dejado comida en el refugio");
         semaforoComida.release();
     }
     
-    public synchronized void cogerComida() throws InterruptedException{
+    public synchronized void cogerComida(String id) throws InterruptedException{
         while (cantidadComida<=0){
             wait();
         }
         cantidadComida--;
+        logID(id, "Ha cogido un alimento del refugio");
         notify();
-    }
-    
-    public void esperarTunel(int numTunel) throws InterruptedException, BrokenBarrierException{
-        switch (numTunel){
-            case 1 ->{
-                esperaExpedicionT1.await();
-            }
-            case 2 -> {
-                esperaExpedicionT2.await();
-            }
-            case 3 -> {
-                esperaExpedicionT3.await();
-            }
-            case 4 -> {
-                esperaExpedicionT4.await();
-            }
-        }
     }
     
     public void llegarComedor(String idHumano){
@@ -103,5 +72,9 @@ public class Refugio {
     public void salirDescanso(String idHumano){
         ocupacionDescanso.remove(idHumano);
         System.out.println("Humanos dentro de la zona de descanso: "+ocupacionDescanso);
+    }
+    
+    private void logID(String id, String msg){
+        System.out.println("["+id+"] "+msg);
     }
 }
