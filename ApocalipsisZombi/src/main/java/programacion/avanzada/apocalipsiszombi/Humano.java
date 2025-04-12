@@ -14,7 +14,7 @@ import java.util.logging.Logger;
  */
 public class Humano extends Thread{
     private Refugio ref;
-    private Tunel tun[];
+    private Tunel tuneles[];
     private Zona zonaActual;
     private final String id;
     private boolean atacado;
@@ -22,7 +22,7 @@ public class Humano extends Thread{
     
     public Humano(IdGenerator idgen, Refugio ref, Tunel tun[]){
         this.ref = ref;
-        this.tun = tun;     
+        this.tuneles = tun;     
         this.zonaActual = Zona.ZONA_COMUN;
         this.id = idgen.nuevoIdHumano();
         this.atacado = false;
@@ -37,9 +37,18 @@ public class Humano extends Thread{
                 log("Preparandose para entrar al mundo exterior...");
                 sleepRandom(1000, 2000);
                 
-                //Random para ir a un tunel
-                int tunel = random.nextInt(4)+1;
-                ref.esperarTunel(tunel);
+                 // Selecciona tunel y espera a grupo (a implementar)
+                int indiceTunel = random.nextInt(tuneles.length);
+                Tunel tunel = tuneles[indiceTunel];
+
+                log("esperando grupo en túnel " + (indiceTunel + 1));
+                tunel.esperarGrupoParaSalir(this); // esperar grupo de 3
+
+                zonaActual = tunel.getZona(); // algo como TUNEL_1
+                tunel.entrarAlTunelDesdeRefugio(this);
+                sleep(1000); // cruzar túnel
+                
+                
             } catch (InterruptedException ex) {
                 ex.printStackTrace();
             }
