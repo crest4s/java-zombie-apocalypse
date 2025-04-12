@@ -4,6 +4,8 @@
 
 package programacion.avanzada.apocalipsiszombi;
 
+import java.util.concurrent.CyclicBarrier;
+
 /**
  *
  * @author crestas
@@ -11,6 +13,14 @@ package programacion.avanzada.apocalipsiszombi;
 public class Simulador {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        IdGenerator idgen = new IdGenerator();
+        Refugio ref = new Refugio();
+        Tunel[] tun = { new Tunel(1), new Tunel(2), new Tunel(3), new Tunel(4) }; 
+        
+        for(int i = 1; i<=10000; i++){
+            new Humano(idgen, ref, tun).start();
+        } 
+        Zombi z = new Zombi(idgen);
+        z.start();
     }
 }
