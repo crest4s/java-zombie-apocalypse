@@ -6,6 +6,7 @@ package programacion.avanzada.apocalipsiszombi;
 
 import java.util.concurrent.BrokenBarrierException;
 import java.util.concurrent.CyclicBarrier;
+import java.util.concurrent.Semaphore;
 
 /**
  *
@@ -18,12 +19,16 @@ public class Tunel {
     private Zona zona;
     
     private CyclicBarrier esperaExpedicion;
+    
+    private Semaphore accesoTunel;
 
     
     public Tunel(int id){
         this.id=id;
         
         esperaExpedicion = new CyclicBarrier(3);
+        
+        accesoTunel = new Semaphore(1);
         
         switch(id) {
             case 1:
@@ -44,14 +49,29 @@ public class Tunel {
         
     }
     
-        public void esperarTunel(int numTunel) throws InterruptedException, BrokenBarrierException{
-            esperaExpedicion.await();
-        }
-        
-        public Zona getZona(){
-            return zona;
-        }
-        public void setZona(Zona zona){
-            this.zona=zona;
-        }
+    public void esperarTunel(int numTunel) throws InterruptedException, BrokenBarrierException{
+        esperaExpedicion.await();
+    }
+
+    public Zona getZona(){
+        return zona;
+    }
+    public void setZona(Zona zona){
+        this.zona=zona;
+    }
+
+    public void esperarGrupoParaSalir(Humano hum) throws InterruptedException, BrokenBarrierException {
+        esperaExpedicion.await();
+        logID(hum.getIdHumano(), "Se prepara para salir por "+zona);
+    }
+    
+    private void logID (String id, String msg){
+        System.out.println("["+id+"] "+msg);
+    }
+
+    void entrarAlTunelDesdeRefugio(Humano hum) throws InterruptedException {
+        accesoTunel.acquire();
+        logID(hum.getIdHumano(), "Entra al "+zona);
+        hum.setZonaActual(zona);
+    }
 }

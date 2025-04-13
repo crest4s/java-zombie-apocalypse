@@ -5,6 +5,7 @@
 package programacion.avanzada.apocalipsiszombi;
 
 import java.util.Random;
+import java.util.concurrent.BrokenBarrierException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -19,13 +20,15 @@ public class Humano extends Thread{
     private final String id;
     private boolean marcado;
     private final Random random = new Random();
+    private MapaZonas mapaZonas;
     
-    public Humano(IdGenerator idgen, Refugio ref, Tunel tun[]){
+    public Humano(IdGenerator idgen, Refugio ref, Tunel tun[], MapaZonas mz){
         this.ref = ref;
         this.tuneles = tun;     
         this.zonaActual = Zona.ZONA_COMUN;
         this.id = idgen.nuevoIdHumano();
         this.marcado = false;
+        this.mapaZonas = mz;
     }
     
     @Override
@@ -49,7 +52,7 @@ public class Humano extends Thread{
                 sleep(1000); // cruzar túnel
                 
                 // EXPLORACIÓN EXTERIOR
-                zonaActual = tunel.getAreaInsegura(); 
+                zonaActual = tunel.getAreaInsegura(this); 
                 log("recolectando comida en " + zonaActual);
                 sleepRandom(3000, 5000);
 
@@ -100,7 +103,7 @@ public class Humano extends Thread{
                 // VUELTA A ZONA COMÚN
                 zonaActual = Zona.ZONA_COMUN;
 
-            } catch (InterruptedException e) {
+            } catch (InterruptedException | BrokenBarrierException e) {
                 log("interrumpido.");
             }
         }
@@ -115,7 +118,9 @@ public class Humano extends Thread{
     }
     
     public void setZonaActual(Zona zona){
+        mapaZonas.quitarHumanoZona(this, zona);
         this.zonaActual = zona;
+        mapaZonas.guardarHumano(this, zonaActual);
     }
     private void sleepRandom(int min, int max) throws InterruptedException {
         sleep(min + random.nextInt(max - min + 1));

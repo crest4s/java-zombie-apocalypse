@@ -38,19 +38,6 @@ public class Refugio {
         notify();
     }
     
-    public void llegarComedor(String idHumano){
-    }
-    public void llegarZonaComun(String idHumano){
-    }
-    public void llegarDescanso(String idHumano){
-    }
-    public void salirComedor (String idHumano){
-    }
-    public void salirZonaComun(String idHumano){
-    }
-    public void salirDescanso(String idHumano){
-    }
-    
     private void logID(String id, String msg){
         System.out.println("["+id+"] "+msg);
     }
