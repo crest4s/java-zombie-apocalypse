@@ -52,7 +52,7 @@ public class Zombi extends Thread{
 
                         //Convertir al humano en zombi
                         muertes++;
-                        convertirEnZombi(humanoObjetivo);
+                        Zombi zombi = convertirEnZombi(humanoObjetivo);
                         log("mató a un humano. Total muertes: " + muertes);
                     } 
                     else {
