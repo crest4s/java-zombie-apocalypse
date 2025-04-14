@@ -4,7 +4,6 @@
  */
 package programacion.avanzada.apocalipsiszombi;
 
-import java.util.ArrayList;
 import java.util.concurrent.Semaphore;
 
 /**
@@ -25,7 +24,7 @@ public class Refugio {
     public void dejarComida(int comida, String id) throws InterruptedException{
         semaforoComida.acquire();
         cantidadComida += comida;
-        logID(id,"Ha dejado comida en el refugio");
+        log(id,"Ha dejado comida en el refugio");
         semaforoComida.release();
     }
     
@@ -34,11 +33,11 @@ public class Refugio {
             wait();
         }
         cantidadComida--;
-        logID(id, "Ha cogido un alimento del refugio");
+        log(id, "Ha cogido un alimento del refugio");
         notify();
     }
     
-    private void logID(String id, String msg){
+    public void log(String id, String msg){
         System.out.println("["+id+"] "+msg);
     }
 }

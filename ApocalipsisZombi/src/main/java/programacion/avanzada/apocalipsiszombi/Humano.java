@@ -6,29 +6,27 @@ package programacion.avanzada.apocalipsiszombi;
 
 import java.util.Random;
 import java.util.concurrent.BrokenBarrierException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 /**
  *
  * @author crestas
  */
 public class Humano extends Thread{
-    private Refugio ref;
-    private Tunel tuneles[];
+    private final Refugio ref;
+    private final Tunel tuneles[];
     private Zona zonaActual;
     private final String id;
     private boolean marcado;
     private final Random random = new Random();
-    private MapaZonas mapaZonas;
+    private final MapaZonas mapa;
     
-    public Humano(IdGenerator idgen, Refugio ref, Tunel tun[], MapaZonas mz){
+    public Humano(IdGenerator idgen, Refugio ref, Tunel tun[], MapaZonas mapa){
         this.ref = ref;
         this.tuneles = tun;     
         this.zonaActual = Zona.ZONA_COMUN;
         this.id = idgen.nuevoIdHumano();
         this.marcado = false;
-        this.mapaZonas = mz;
+        this.mapa = mapa;
     }
     
     @Override
@@ -118,9 +116,9 @@ public class Humano extends Thread{
     }
     
     public void setZonaActual(Zona zona){
-        mapaZonas.quitarHumanoZona(this, zona);
+        mapa.quitarHumanoZona(this, zona);
         this.zonaActual = zona;
-        mapaZonas.guardarHumano(this, zonaActual);
+        mapa.guardarHumano(this, zonaActual);
     }
     private void sleepRandom(int min, int max) throws InterruptedException {
         sleep(min + random.nextInt(max - min + 1));
@@ -129,4 +127,22 @@ public class Humano extends Thread{
     private void log(String msg) {
         System.out.println("[" + id + "] " + msg);
     }
+    
+    public boolean serAtacadoPor(Zombi atacante) throws InterruptedException {
+        log("está siendo atacado por " + atacante.getIdZombi());
+
+        sleepRandom(500, 1500);
+
+        boolean seDefiende = random.nextInt(3) < 2;
+
+        if (seDefiende) {
+            marcado = true;
+            log("logró defenderse del zombi " + atacante.getIdZombi());
+            return false; // NO murió
+        } else {
+            log("no logró defenderse... ha muerto.");
+            return true; // Murió
+        }
+    }
+
 }

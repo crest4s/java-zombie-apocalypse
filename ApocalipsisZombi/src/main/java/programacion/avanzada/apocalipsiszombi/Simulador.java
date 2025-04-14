@@ -14,14 +14,14 @@ public class Simulador {
         IdGenerator idgen = new IdGenerator();
         Tunel[] tun = {new Tunel(1), new Tunel(2), new Tunel(3), new Tunel(4)}; 
         Refugio ref = new Refugio();
-        MapaZonas mz = new MapaZonas();
+        MapaZonas mapa = new MapaZonas();
         
+        
+        Zombi z = new Zombi(mapa);
+        z.start();
         
         for(int i = 1; i<=10000; i++){
-            new Humano(idgen, ref, tun, mz).start();
-        } 
-        
-        Zombi z = new Zombi(idgen);
-        z.start();
+            new Humano(idgen, ref, tun, mapa).start();
+        }         
     }
 }

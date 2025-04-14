@@ -56,22 +56,60 @@ public class Tunel {
     public Zona getZona(){
         return zona;
     }
+    
     public void setZona(Zona zona){
         this.zona=zona;
     }
 
     public void esperarGrupoParaSalir(Humano hum) throws InterruptedException, BrokenBarrierException {
         esperaExpedicion.await();
-        logID(hum.getIdHumano(), "Se prepara para salir por "+zona);
+        log(hum.getIdHumano(), "Se prepara para salir por "+zona);
     }
     
-    private void logID (String id, String msg){
+    public void log (String id, String msg){
         System.out.println("["+id+"] "+msg);
     }
 
-    void entrarAlTunelDesdeRefugio(Humano hum) throws InterruptedException {
-        accesoTunel.acquire();
-        logID(hum.getIdHumano(), "Entra al "+zona);
+    //gestionar zonas a las que entra
+    public void entrarAlTunelDesdeRefugio(Humano hum) throws InterruptedException {
+        accesoTunel.acquire(); //entra al tunel, lo ocupa
+        log(hum.getIdHumano(), "entra a "+zona);
         hum.setZonaActual(zona);
+        // Aquí no dormimos, porque el cruce real lo maneja Humano con sleep(1000)
+        accesoTunel.release(); //ya ha salido del tunel, se queda libre
     }
+    
+    //gestionar zonas a las que entra
+    public void entrarAlTunelDesdeExterior(Humano hum) throws InterruptedException {
+        accesoTunel.acquire();
+        log(hum.getIdHumano(), "Regresa al refugio por " + zona);
+        hum.setZonaActual(zona); // zona del túnel
+        // Aquí no dormimos, porque el cruce real lo maneja Humano con sleep(1000)
+        accesoTunel.release();
+    }
+
+    
+    public Zona getAreaInsegura(Humano hum){
+        Zona zonaInsegura;
+        switch (id) {
+            case 1:
+                zonaInsegura = Zona.RIESGO_1;
+                break;
+            case 2:
+                zonaInsegura = Zona.RIESGO_2;
+                break;
+            case 3:
+                zonaInsegura = Zona.RIESGO_3;
+                break;
+            case 4:
+                zonaInsegura = Zona.RIESGO_4;
+                break;
+            default:
+                throw new IllegalArgumentException("ID de túnel no válido");
+        }
+
+        hum.setZonaActual(zonaInsegura); // actualizar ubicación en el mapa
+        return zonaInsegura;
+    }
+
 }
