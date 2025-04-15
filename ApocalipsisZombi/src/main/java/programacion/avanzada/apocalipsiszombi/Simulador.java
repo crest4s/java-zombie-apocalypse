@@ -22,6 +22,9 @@ public class Simulador {
         
         for(int i = 1; i<=10000; i++){
             new Humano(idgen, ref, tun, mapa).start();
-        }         
+        }
+        
+        MonitorSistema monitor = new MonitorSistema(mapa);
+        monitor.setVisible(true);
     }
 }
