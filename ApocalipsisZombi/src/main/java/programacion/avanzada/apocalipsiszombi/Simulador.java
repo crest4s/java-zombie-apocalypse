@@ -26,10 +26,10 @@ public class Simulador {
             new Humano(idgen, ref, tun, mapa).start();
         }
         
-        //MonitorSistema monitor = new MonitorSistema(mapa);
-        //monitor.setVisible(true);
+        MonitorSistema monitor = new MonitorSistema(mapa);
+        monitor.setVisible(true);
         
-        //Timer timer = new Timer(500,e -> monitor.actualizarTodas());
-        //timer.start();
+        Timer timer = new Timer(500,e -> monitor.actualizarTodas());
+        timer.start();
     }
 }

@@ -33,8 +33,8 @@ public class Humano extends Thread{
     public void run(){
         while(true){
             try {
-                //Zona Comun
-                zonaActual = Zona.ZONA_COMUN;
+                // Zona Comun
+                setZonaActual(Zona.ZONA_COMUN); //Actualizar posicion a zona comun
                 log("Preparandose para entrar al mundo exterior...");
                 sleepRandom(1000, 2000);
                 
@@ -43,14 +43,16 @@ public class Humano extends Thread{
                 Tunel tunel = tuneles[indiceTunel];
 
                 log("esperando grupo en túnel " + (indiceTunel + 1));
-                tunel.esperarGrupoParaSalir(this); // esperar grupo de 3 para salir del refugio
+                tunel.esperarGrupoParaSalir(this); // Esperar grupo de 3 para salir del refugio
 
-                zonaActual = tunel.getZona(); // se obtiene la zona del tunel
+                Zona zonaTunel = tunel.getZona();// Se obtiene la zona del tunel
+                setZonaActual(zonaTunel);// Actualizar posicion al tunel correspondiente
                 tunel.entrarAlTunelDesdeRefugio(this);
-                sleep(1000); // cruzar túnel
+                sleep(1000); // Cruzar túnel
                 
                 // EXPLORACIÓN EXTERIOR
-                zonaActual = tunel.getAreaInsegura(this); 
+                Zona InseguraActual = tunel.getAreaInsegura(); 
+                setZonaActual(InseguraActual);
                 log("recolectando comida en " + zonaActual);
                 sleepRandom(3000, 5000);
 
@@ -77,32 +79,33 @@ public class Humano extends Thread{
 
                 // REGRESO
                 tunel.entrarAlTunelDesdeExterior(this);
+                setZonaActual(zonaTunel);
                 sleep(1000); // cruzar túnel
-                zonaActual = Zona.DESCANSO;
+                setZonaActual(Zona.DESCANSO);
 
                 // DESCANSO
                 log("descansa.");
                 sleepRandom(2000, 4000);
 
                 // COMER
-                zonaActual = Zona.COMEDOR;
+                setZonaActual(Zona.COMEDOR);
                 log("intentando comer.");
                 ref.cogerComida(id); // bloqueará si no hay comida
                 sleepRandom(3000, 5000);
 
                 // RECUPERACIÓN SI FUE MARCADO
                 if (marcado) {
-                    zonaActual = Zona.DESCANSO;
+                    setZonaActual(Zona.DESCANSO);
                     log("se recupera de las heridas.");
                     sleepRandom(3000, 5000);
                     marcado = false;
                 }
 
                 // VUELTA A ZONA COMÚN
-                zonaActual = Zona.ZONA_COMUN;
+                setZonaActual(Zona.ZONA_COMUN);
 
             } catch (InterruptedException | BrokenBarrierException e) {
-                log("interrumpido.");
+                log("interrumpido."); // Si el humano muere se interrumpe por "interrupt()"
             }
         }
     }

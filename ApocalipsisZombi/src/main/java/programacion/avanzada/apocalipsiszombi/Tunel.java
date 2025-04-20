@@ -83,13 +83,12 @@ public class Tunel {
     public void entrarAlTunelDesdeExterior(Humano hum) throws InterruptedException {
         accesoTunel.acquire();
         log(hum.getIdHumano(), "Regresa al refugio por " + zona);
-        hum.setZonaActual(zona); // zona del túnel
         // Aquí no dormimos, porque el cruce real lo maneja Humano con sleep(1000)
         accesoTunel.release();
     }
 
     
-    public Zona getAreaInsegura(Humano hum){
+    public Zona getAreaInsegura(){
         Zona zonaInsegura;
         switch (id) {
             case 1:
@@ -107,8 +106,6 @@ public class Tunel {
             default:
                 throw new IllegalArgumentException("ID de túnel no válido");
         }
-
-        hum.setZonaActual(zonaInsegura); // actualizar ubicación en el mapa
         return zonaInsegura;
     }
 
