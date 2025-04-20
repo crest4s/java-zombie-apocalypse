@@ -4,6 +4,8 @@
 
 package programacion.avanzada.apocalipsiszombi;
 
+import javax.swing.Timer;
+
 /**
  *
  * @author crestas
@@ -20,11 +22,14 @@ public class Simulador {
         Zombi z = new Zombi(mapa);
         z.start();
         
-        for(int i = 1; i<=10000; i++){
+        for(int i = 1; i<=1000; i++){
             new Humano(idgen, ref, tun, mapa).start();
         }
         
-        MonitorSistema monitor = new MonitorSistema(mapa);
-        monitor.setVisible(true);
+        //MonitorSistema monitor = new MonitorSistema(mapa);
+        //monitor.setVisible(true);
+        
+        //Timer timer = new Timer(500,e -> monitor.actualizarTodas());
+        //timer.start();
     }
 }

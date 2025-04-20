@@ -77,7 +77,11 @@ public class Zombi extends Thread{
     }
     
     public void setZonaActual(Zona zona){
+        if(this.zonaActual != null) {
+            mapa.quitarZombiZona(this, this.zonaActual); // Quitar de la zona anterior
+        }
         this.zonaActual = zona;
+        mapa.guardarZombi(this, zonaActual); // Agregar a la nueva zona
     }
     
     public String getIdZombi() {
@@ -93,6 +97,8 @@ public class Zombi extends Thread{
     }
     
     public Zombi convertirEnZombi(Humano h) {
+        
+        /*
         String idZombi = "Z" + h.getIdHumano().substring(1);
         IdGenerator idgen = new IdGenerator();
         Zona zona = h.getZonaActual();
@@ -106,6 +112,28 @@ public class Zombi extends Thread{
         System.out.println(h.getIdHumano() + " ha sido convertido en " + idZombi);
         
         h.interrupt(); //El humano convertido en zombi deja de ejecutar su run()
+
+        return zombi;
+        */
+        
+        // Verificar que el humano no sea ya un zombi
+        if (h.getIdHumano().startsWith("Z")) {
+            log("Error: Intento de convertir un zombi en zombi: " + h.getIdHumano());
+            return null;
+        }
+
+        // Crear nuevo zombi usando el ID del humano
+        Zombi zombi = new Zombi(new IdGenerator(), h.getIdHumano(), mapa);
+        Zona zona = h.getZonaActual();
+
+        // Quitar humano y agregar zombi al mapa
+        mapa.quitarHumanoZona(h, zona);
+        mapa.guardarZombi(zombi, zona);
+
+        System.out.println(h.getIdHumano() + " ha sido convertido en " + zombi.getIdZombi());
+
+        h.interrupt(); // El humano deja de ejecutar su run()
+        zombi.start(); // El nuevo zombi comienza a actuar
 
         return zombi;
     }

@@ -116,7 +116,7 @@ public class Humano extends Thread{
     }
     
     public void setZonaActual(Zona zona){
-        mapa.quitarHumanoZona(this, zona);
+        mapa.quitarHumanoZona(this, this.zonaActual);
         this.zonaActual = zona;
         mapa.guardarHumano(this, zonaActual);
     }

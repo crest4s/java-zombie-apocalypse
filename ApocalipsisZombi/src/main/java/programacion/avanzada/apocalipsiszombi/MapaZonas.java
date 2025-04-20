@@ -45,11 +45,5 @@ public class MapaZonas {
     
     public List<Zombi> zombisEnZona(Zona z){
         return zombisPorZona.get(z);
-    }
-    
-    
-    
-    
-    
-            
+    }           
 }

@@ -5,6 +5,7 @@
 package programacion.avanzada.apocalipsiszombi;
 
 import java.awt.Color;
+import java.awt.Component;
 import java.awt.Dimension;
 import java.awt.FlowLayout;
 import java.util.List;
@@ -25,7 +26,7 @@ public class MonitorSistema extends javax.swing.JFrame {
      * Creates new form MonitorSistema
      */
     private MapaZonas mapa;
-    
+        
     public MonitorSistema(){
         initComponents();
         actualizarTodas();
@@ -58,48 +59,52 @@ public class MonitorSistema extends javax.swing.JFrame {
         mainPanel.setLayout(new BoxLayout(mainPanel, BoxLayout.Y_AXIS));
         mainPanel.setBackground(Color.WHITE);
 
-        if (mapa == null) {
-            JPanel itemPanel = new JPanel(new FlowLayout(FlowLayout.LEFT));
-            itemPanel.setBackground(Color.WHITE);
-            itemPanel.setBorder(BorderFactory.createEmptyBorder(5, 10, 5, 10));
+        // Título de la zona
+        JPanel titlePanel = new JPanel(new FlowLayout(FlowLayout.LEFT));
+        titlePanel.setBackground(Color.LIGHT_GRAY);
+        JLabel titleLabel = new JLabel(zona.toString());
+        titlePanel.add(titleLabel);
+        mainPanel.add(titlePanel);
 
-            JLabel label = new JLabel(zona.name());
-            itemPanel.add(label);
+        // Humanos en la zona
+        List<Humano> humanos = mapa.humanosEnZona(zona);
+        if (!humanos.isEmpty()) {
+            JPanel humanTitlePanel = new JPanel(new FlowLayout(FlowLayout.LEFT));
+            humanTitlePanel.add(new JLabel("Humanos:"));
+            mainPanel.add(humanTitlePanel);
 
-            mainPanel.add(itemPanel);
-        } else {
-            // Mostrar humanos
-            List<Humano> humanos = mapa.humanosEnZona(zona);
             for (Humano h : humanos) {
                 JPanel itemPanel = new JPanel(new FlowLayout(FlowLayout.LEFT));
                 itemPanel.setBackground(Color.WHITE);
-                itemPanel.setBorder(BorderFactory.createEmptyBorder(5, 10, 5, 10));
-
-                JLabel humanoLabel = new JLabel("[" + h.getIdHumano() + "]");
-                itemPanel.add(humanoLabel);
-
+                itemPanel.add(new JLabel(h.getIdHumano()));
                 mainPanel.add(itemPanel);
-                mainPanel.add(Box.createRigidArea(new Dimension(0, 5)));
             }
+        }
 
-            // Mostrar zombis solo si la zona es de riesgo
-            if (zona.name().startsWith("RIESGO")) {
-                List<Zombi> zombis = mapa.zombisEnZona(zona);
+        // Zombis en la zona (solo para zonas de riesgo)
+        if (zona.name().startsWith("RIESGO")) {
+            List<Zombi> zombis = mapa.zombisEnZona(zona);
+            if (!zombis.isEmpty()) {
+                JPanel zombieTitlePanel = new JPanel(new FlowLayout(FlowLayout.LEFT));
+                zombieTitlePanel.add(new JLabel("Zombis:"));
+                mainPanel.add(zombieTitlePanel);
+
                 for (Zombi z : zombis) {
                     JPanel itemPanel = new JPanel(new FlowLayout(FlowLayout.LEFT));
-                    itemPanel.setBackground(new Color(255, 240, 240)); // fondo suave rojo para zombis
-                    itemPanel.setBorder(BorderFactory.createEmptyBorder(5, 10, 5, 10));
-
-                    JLabel zombiLabel = new JLabel("[" + z.getIdZombi() + "]");
-                    itemPanel.add(zombiLabel);
-
+                    itemPanel.setBackground(new Color(255, 200, 200)); // Rojo claro
+                    itemPanel.add(new JLabel(z.getIdZombi()));
                     mainPanel.add(itemPanel);
-                    mainPanel.add(Box.createRigidArea(new Dimension(0, 5)));
                 }
             }
         }
 
-        // Actualizar el scrollPane con el nuevo contenido
+        // Si no hay nadie
+        if (humanos.isEmpty() && (!zona.name().startsWith("RIESGO") || mapa.zombisEnZona(zona).isEmpty())) {
+            JPanel emptyPanel = new JPanel(new FlowLayout(FlowLayout.LEFT));
+            emptyPanel.add(new JLabel("Vacía"));
+            mainPanel.add(emptyPanel);
+        }
+
         scrollPane.setViewportView(mainPanel);
         scrollPane.revalidate();
         scrollPane.repaint();
@@ -120,35 +125,24 @@ public class MonitorSistema extends javax.swing.JFrame {
         PanelRefugio = new javax.swing.JPanel();
         jLabel4 = new javax.swing.JLabel();
         SigTunel = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
         scrollPaneComedor = new javax.swing.JScrollPane();
-        jLabel5 = new javax.swing.JLabel();
         scrollPaneDescanso = new javax.swing.JScrollPane();
-        jLabel6 = new javax.swing.JLabel();
         scrollPaneComun = new javax.swing.JScrollPane();
         PanelTunel = new javax.swing.JPanel();
         SigInsegura = new javax.swing.JButton();
         AtrasRefugio = new javax.swing.JButton();
-        jLabel2 = new javax.swing.JLabel();
         jScrollPaneTunel2 = new javax.swing.JScrollPane();
         jScrollPaneTunel1 = new javax.swing.JScrollPane();
         jScrollPaneTunel3 = new javax.swing.JScrollPane();
         jScrollPaneTunel4 = new javax.swing.JScrollPane();
         jLabel7 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
         PanelZonaInsegura = new javax.swing.JPanel();
         AtrasTunel = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
         jScrollPaneInsegura1 = new javax.swing.JScrollPane();
-        jLabel11 = new javax.swing.JLabel();
         jScrollPaneInsegura2 = new javax.swing.JScrollPane();
-        jLabel12 = new javax.swing.JLabel();
         jScrollPaneInsegura3 = new javax.swing.JScrollPane();
-        jLabel13 = new javax.swing.JLabel();
         jScrollPaneInsegura4 = new javax.swing.JScrollPane();
-        jLabel14 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -162,12 +156,6 @@ public class MonitorSistema extends javax.swing.JFrame {
             }
         });
 
-        jLabel1.setText("Comedor");
-
-        jLabel5.setText("Zona de descanso");
-
-        jLabel6.setText("Zona común");
-
         javax.swing.GroupLayout PanelRefugioLayout = new javax.swing.GroupLayout(PanelRefugio);
         PanelRefugio.setLayout(PanelRefugioLayout);
         PanelRefugioLayout.setHorizontalGroup(
@@ -177,26 +165,13 @@ public class MonitorSistema extends javax.swing.JFrame {
                 .addComponent(SigTunel)
                 .addContainerGap())
             .addGroup(PanelRefugioLayout.createSequentialGroup()
-                .addGap(47, 47, 47)
-                .addGroup(PanelRefugioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(scrollPaneComedor, javax.swing.GroupLayout.PREFERRED_SIZE, 244, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(PanelRefugioLayout.createSequentialGroup()
-                        .addGap(95, 95, 95)
-                        .addComponent(jLabel1)))
-                .addGap(18, 18, 18)
-                .addGroup(PanelRefugioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(PanelRefugioLayout.createSequentialGroup()
-                        .addComponent(scrollPaneDescanso, javax.swing.GroupLayout.PREFERRED_SIZE, 244, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PanelRefugioLayout.createSequentialGroup()
-                        .addComponent(jLabel5)
-                        .addGap(93, 93, 93)))
-                .addGroup(PanelRefugioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(scrollPaneComun, javax.swing.GroupLayout.PREFERRED_SIZE, 244, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(PanelRefugioLayout.createSequentialGroup()
-                        .addGap(82, 82, 82)
-                        .addComponent(jLabel6)))
-                .addContainerGap(193, Short.MAX_VALUE))
+                .addGap(49, 49, 49)
+                .addComponent(scrollPaneComedor, javax.swing.GroupLayout.PREFERRED_SIZE, 244, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(74, 74, 74)
+                .addComponent(scrollPaneDescanso, javax.swing.GroupLayout.PREFERRED_SIZE, 244, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 98, Short.MAX_VALUE)
+                .addComponent(scrollPaneComun, javax.swing.GroupLayout.PREFERRED_SIZE, 244, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(55, 55, 55))
             .addGroup(PanelRefugioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(PanelRefugioLayout.createSequentialGroup()
                     .addGap(408, 408, 408)
@@ -206,20 +181,11 @@ public class MonitorSistema extends javax.swing.JFrame {
         PanelRefugioLayout.setVerticalGroup(
             PanelRefugioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PanelRefugioLayout.createSequentialGroup()
-                .addContainerGap(62, Short.MAX_VALUE)
+                .addContainerGap(84, Short.MAX_VALUE)
                 .addGroup(PanelRefugioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(PanelRefugioLayout.createSequentialGroup()
-                        .addComponent(jLabel1)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(scrollPaneComedor, javax.swing.GroupLayout.PREFERRED_SIZE, 374, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(PanelRefugioLayout.createSequentialGroup()
-                        .addComponent(jLabel5)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(scrollPaneDescanso, javax.swing.GroupLayout.PREFERRED_SIZE, 374, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(PanelRefugioLayout.createSequentialGroup()
-                        .addComponent(jLabel6)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(scrollPaneComun, javax.swing.GroupLayout.PREFERRED_SIZE, 374, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(scrollPaneComedor, javax.swing.GroupLayout.PREFERRED_SIZE, 374, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(scrollPaneDescanso, javax.swing.GroupLayout.PREFERRED_SIZE, 374, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(scrollPaneComun, javax.swing.GroupLayout.PREFERRED_SIZE, 374, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(SigTunel)
                 .addContainerGap())
@@ -246,51 +212,30 @@ public class MonitorSistema extends javax.swing.JFrame {
             }
         });
 
-        jLabel2.setText("Tunel 1");
-
         jLabel7.setText("Túneles");
-
-        jLabel8.setText("Tunel 3");
-
-        jLabel9.setText("Tunel 4");
-
-        jLabel10.setText("Tunel 2");
 
         javax.swing.GroupLayout PanelTunelLayout = new javax.swing.GroupLayout(PanelTunel);
         PanelTunel.setLayout(PanelTunelLayout);
         PanelTunelLayout.setHorizontalGroup(
             PanelTunelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(PanelTunelLayout.createSequentialGroup()
-                .addGroup(PanelTunelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(PanelTunelLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(AtrasRefugio)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(SigInsegura))
-                    .addGroup(PanelTunelLayout.createSequentialGroup()
-                        .addGroup(PanelTunelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(PanelTunelLayout.createSequentialGroup()
-                                .addGap(61, 61, 61)
-                                .addComponent(jScrollPaneTunel1, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(jScrollPaneTunel2, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(jScrollPaneTunel4, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(jScrollPaneTunel3, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(PanelTunelLayout.createSequentialGroup()
-                                .addGap(128, 128, 128)
-                                .addComponent(jLabel2)
-                                .addGap(168, 168, 168)
-                                .addComponent(jLabel10)
-                                .addGap(166, 166, 166)
-                                .addComponent(jLabel8)
-                                .addGap(154, 154, 154)
-                                .addComponent(jLabel9)))
-                        .addGap(0, 167, Short.MAX_VALUE)))
+                .addContainerGap()
+                .addComponent(AtrasRefugio)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(SigInsegura)
                 .addContainerGap())
             .addGroup(PanelTunelLayout.createSequentialGroup()
-                .addGap(428, 428, 428)
+                .addGap(61, 61, 61)
+                .addComponent(jScrollPaneTunel1, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(47, 47, 47)
+                .addComponent(jScrollPaneTunel2, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 59, Short.MAX_VALUE)
+                .addComponent(jScrollPaneTunel4, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(75, 75, 75)
+                .addComponent(jScrollPaneTunel3, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(46, 46, 46))
+            .addGroup(PanelTunelLayout.createSequentialGroup()
+                .addGap(478, 478, 478)
                 .addComponent(jLabel7)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -298,20 +243,18 @@ public class MonitorSistema extends javax.swing.JFrame {
             PanelTunelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(PanelTunelLayout.createSequentialGroup()
                 .addGap(26, 26, 26)
-                .addComponent(jLabel7)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 28, Short.MAX_VALUE)
                 .addGroup(PanelTunelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel2, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel8, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel9, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel10, javax.swing.GroupLayout.Alignment.TRAILING))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(PanelTunelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPaneTunel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 354, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(PanelTunelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jScrollPaneTunel2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 354, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jScrollPaneTunel3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 354, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jScrollPaneTunel4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 354, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(PanelTunelLayout.createSequentialGroup()
+                        .addGap(0, 72, Short.MAX_VALUE)
+                        .addGroup(PanelTunelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jScrollPaneTunel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 354, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(PanelTunelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(jScrollPaneTunel3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 354, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jScrollPaneTunel4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 354, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addGroup(PanelTunelLayout.createSequentialGroup()
+                        .addComponent(jLabel7)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jScrollPaneTunel2, javax.swing.GroupLayout.PREFERRED_SIZE, 354, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(30, 30, 30)
                 .addGroup(PanelTunelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(SigInsegura)
@@ -329,14 +272,6 @@ public class MonitorSistema extends javax.swing.JFrame {
 
         jLabel3.setText("Zona Insegura");
 
-        jLabel11.setText("Zona 1");
-
-        jLabel12.setText("Zona 2");
-
-        jLabel13.setText("Zona 3");
-
-        jLabel14.setText("Zona 4");
-
         javax.swing.GroupLayout PanelZonaInseguraLayout = new javax.swing.GroupLayout(PanelZonaInsegura);
         PanelZonaInsegura.setLayout(PanelZonaInseguraLayout);
         PanelZonaInseguraLayout.setHorizontalGroup(
@@ -347,48 +282,36 @@ public class MonitorSistema extends javax.swing.JFrame {
                         .addContainerGap()
                         .addComponent(AtrasTunel))
                     .addGroup(PanelZonaInseguraLayout.createSequentialGroup()
-                        .addGap(406, 406, 406)
-                        .addComponent(jLabel3))
-                    .addGroup(PanelZonaInseguraLayout.createSequentialGroup()
                         .addGap(61, 61, 61)
-                        .addGroup(PanelZonaInseguraLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(PanelZonaInseguraLayout.createSequentialGroup()
-                                .addComponent(jScrollPaneInsegura1, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(jScrollPaneInsegura2, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(jScrollPaneInsegura3, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(jScrollPaneInsegura4, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(PanelZonaInseguraLayout.createSequentialGroup()
-                                .addGap(67, 67, 67)
-                                .addComponent(jLabel11)
-                                .addGap(168, 168, 168)
-                                .addComponent(jLabel12)
-                                .addGap(166, 166, 166)
-                                .addComponent(jLabel13)
-                                .addGap(154, 154, 154)
-                                .addComponent(jLabel14)))))
-                .addContainerGap(173, Short.MAX_VALUE))
+                        .addComponent(jScrollPaneInsegura1, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(43, 43, 43)
+                        .addComponent(jScrollPaneInsegura2, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(70, 70, 70)
+                        .addComponent(jScrollPaneInsegura3, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 74, Short.MAX_VALUE)
+                        .addComponent(jScrollPaneInsegura4, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(40, 40, 40))
+            .addGroup(PanelZonaInseguraLayout.createSequentialGroup()
+                .addGap(457, 457, 457)
+                .addComponent(jLabel3)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         PanelZonaInseguraLayout.setVerticalGroup(
             PanelZonaInseguraLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PanelZonaInseguraLayout.createSequentialGroup()
-                .addGap(24, 24, 24)
-                .addComponent(jLabel3)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 36, Short.MAX_VALUE)
                 .addGroup(PanelZonaInseguraLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel11, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel13, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel14, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel12, javax.swing.GroupLayout.Alignment.TRAILING))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(PanelZonaInseguraLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPaneInsegura1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 354, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(PanelZonaInseguraLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jScrollPaneInsegura2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 354, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jScrollPaneInsegura4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 354, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jScrollPaneInsegura3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 354, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(PanelZonaInseguraLayout.createSequentialGroup()
+                        .addGap(24, 104, Short.MAX_VALUE)
+                        .addGroup(PanelZonaInseguraLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jScrollPaneInsegura1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 354, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(PanelZonaInseguraLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(jScrollPaneInsegura4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 354, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jScrollPaneInsegura3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 354, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addGroup(PanelZonaInseguraLayout.createSequentialGroup()
+                        .addGap(43, 43, 43)
+                        .addComponent(jLabel3)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jScrollPaneInsegura2, javax.swing.GroupLayout.PREFERRED_SIZE, 354, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(18, 18, 18)
                 .addComponent(AtrasTunel)
                 .addContainerGap())
@@ -464,20 +387,9 @@ public class MonitorSistema extends javax.swing.JFrame {
     private javax.swing.JPanel PanelZonaInsegura;
     private javax.swing.JButton SigInsegura;
     private javax.swing.JButton SigTunel;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel14;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JScrollPane jScrollPaneInsegura1;
     private javax.swing.JScrollPane jScrollPaneInsegura2;
     private javax.swing.JScrollPane jScrollPaneInsegura3;
