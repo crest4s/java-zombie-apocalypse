@@ -4,8 +4,11 @@
  */
 package programacion.avanzada.apocalipsiszombi;
 
+import java.io.IOException;
 import java.util.List;
 import java.util.Random;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
@@ -31,44 +34,50 @@ public class Zombi extends Thread{
     }
     @Override
     public void run(){
-        while (true) {
-            try {
-                // Moverse a otra zona
-                int zona = random.nextInt(4) + 1;
-                zonaActual = Zona.valueOf("RIESGO_" + zona);
-                log("entra a " + zonaActual);
-
-                // Buscar humanos en la zona actual
-                List<Humano> humanosDisponibles = mapa.humanosEnZona(zonaActual);
-                
-                if (!humanosDisponibles.isEmpty()) {
-                    //Seleccionar humano al que atacar
-                    Humano humanoObjetivo = humanosDisponibles.get(random.nextInt(humanosDisponibles.size()));
+        try {
+            ApocalipsisLogger logger = ApocalipsisLogger.getInstance();
+            while (true) {
+                try {
+                    // Moverse a otra zona
+                    int zona = random.nextInt(4) + 1;
+                    zonaActual = Zona.valueOf("RIESGO_" + zona);
+                    logger.log("[" + id + "]" + "entra a " + zonaActual);
                     
-                    //Atacando al humano
-                    log("atacando a humano " + humanoObjetivo.getIdHumano());
-                    if(humanoObjetivo.serAtacadoPor(this)){
-                        sleepRandom(500, 1500);
-
-                        //Convertir al humano en zombi
-                        muertes++;
-                        Zombi zombi = convertirEnZombi(humanoObjetivo);
-                        log("mató a un humano. Total muertes: " + muertes);
-                    } 
-                    else {
-                        log("el humano se defendió. Sigue con vida.");
+                    // Buscar humanos en la zona actual
+                    List<Humano> humanosDisponibles = mapa.humanosEnZona(zonaActual);
+                    
+                    if (!humanosDisponibles.isEmpty()) {
+                        //Seleccionar humano al que atacar
+                        Humano humanoObjetivo = humanosDisponibles.get(random.nextInt(humanosDisponibles.size()));
+                        
+                        //Atacando al humano
+                        logger.log("[" + id + "]" + "atacando a humano " + humanoObjetivo.getIdHumano());
+                        if(humanoObjetivo.serAtacadoPor(this)){ 
+                            sleepRandom(500, 1500);
+                            
+                            //Convertir al humano en zombi
+                            muertes++;
+                            Zombi zombi = convertirEnZombi(humanoObjetivo);
+                            logger.log("[" + id + "]" + "mató a un humano. Total muertes: " + muertes);
+                        }
+                        else {
+                            logger.log("[" + id + "]" + "el humano se defendió. Sigue con vida.");
+                        }
+                        
                     }
-
-                } 
-                else {
-                    log("no hay nadie. Espera...");
-                    sleepRandom(2000, 3000);
+                    else {
+                        logger.log("[" + id + "]" + "no hay nadie. Espera...");
+                        sleepRandom(2000, 3000);
+                    }
+                    
+                } catch (InterruptedException e) {
+                    logger.log("[" + id + "]" + "interrumpido.");
+                    break;
+                } catch (IOException ex) {
                 }
-
-            } catch (InterruptedException e) {
-                log("interrumpido.");
-                break;
             }
+        } catch (IOException ex) {
+            Logger.getLogger(Zombi.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
     
@@ -90,10 +99,6 @@ public class Zombi extends Thread{
      
     private void sleepRandom(int min, int max) throws InterruptedException {
         sleep(min + random.nextInt(max - min + 1));
-    }
-
-    private void log(String msg) {
-        System.out.println("[" + id + "] " + msg);
     }
     
     public Zombi convertirEnZombi(Humano h) {
@@ -118,7 +123,7 @@ public class Zombi extends Thread{
         
         // Verificar que el humano no sea ya un zombi
         if (h.getIdHumano().startsWith("Z")) {
-            log("Error: Intento de convertir un zombi en zombi: " + h.getIdHumano());
+            logger.log("[" + id + "]" + "Error: Intento de convertir un zombi en zombi: " + h.getIdHumano());
             return null;
         }
 

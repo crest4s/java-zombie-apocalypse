@@ -4,6 +4,7 @@
 
 package programacion.avanzada.apocalipsiszombi;
 
+import static java.lang.Thread.sleep;
 import javax.swing.Timer;
 
 /**
@@ -12,7 +13,7 @@ import javax.swing.Timer;
  */
 public class Simulador {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         IdGenerator idgen = new IdGenerator();
         Tunel[] tun = {new Tunel(1), new Tunel(2), new Tunel(3), new Tunel(4)}; 
         Refugio ref = new Refugio();
@@ -24,6 +25,7 @@ public class Simulador {
         
         for(int i = 1; i<=1000; i++){
             new Humano(idgen, ref, tun, mapa).start();
+            sleep((int)(Math.random()*1500 + 500));
         }
         
         MonitorSistema monitor = new MonitorSistema(mapa);
