@@ -45,7 +45,7 @@ public class Humano extends Thread{
                     tunel.esperarGrupoParaSalir(this); 
                     
                     //Proceso interior del tunel
-                    tunel.entrarTunel(this);
+                    tunel.entrarTunel(this, false);
                     sleep(1000);
                     tunel.salirTunel(this);
                     
@@ -75,7 +75,7 @@ public class Humano extends Thread{
                     
                     // Vuelta a la zona segura
                     setInseguraEspera(indiceTunel);
-                    tunel.entrarTunel(this);
+                    tunel.entrarTunel(this, true);
                     sleep(1000); 
                     tunel.salirTunel(this);
 
