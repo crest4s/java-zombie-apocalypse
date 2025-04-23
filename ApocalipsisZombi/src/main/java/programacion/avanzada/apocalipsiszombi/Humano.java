@@ -54,6 +54,7 @@ public class Humano extends Thread{
                     Zona zonaTunel = tunel.getZona();// Se obtiene la zona del tunel
                     tunel.entrarAlTunelDesdeRefugio(this);
                     sleep(1000); // Cruzar túnel
+                    tunel.salirTunel(this);
                     
                     // EXPLORACIÓN EXTERIOR
                     Zona InseguraActual = tunel.getAreaInsegura();
@@ -86,6 +87,7 @@ public class Humano extends Thread{
                     setInseguraEspera(indiceTunel);
                     tunel.entrarAlTunelDesdeExterior(this);
                     sleep(1000); // cruzar túnel
+                    tunel.salirTunel(this);
 
                     // DESCANSO
                     setZonaActual(Zona.DESCANSO);

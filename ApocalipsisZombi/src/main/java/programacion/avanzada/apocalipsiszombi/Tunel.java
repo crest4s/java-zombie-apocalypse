@@ -76,7 +76,12 @@ public class Tunel {
         log(hum.getIdHumano(), "entra a "+zona);
         hum.setZonaActual(zona);
         // Aquí no dormimos, porque el cruce real lo maneja Humano con sleep(1000)
+        
+    }
+    
+    public void salirTunel(Humano hum){
         accesoTunel.release(); //ya ha salido del tunel, se queda libre
+        log(hum.getIdHumano(), "Sale del tunel");
     }
     
     //gestionar zonas a las que entra
@@ -85,7 +90,6 @@ public class Tunel {
         log(hum.getIdHumano(), "Regresa al refugio por " + zona);
         hum.setZonaActual(zona);
         // Aquí no dormimos, porque el cruce real lo maneja Humano con sleep(1000)
-        accesoTunel.release();
     }
 
     

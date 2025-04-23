@@ -59,18 +59,23 @@ public class MonitorSistema2 extends javax.swing.JFrame {
         actualizarComidaRefugio();
         
         //Actualizar los tuneles
-        actualizarTunel(tunel1);
-        actualizarTunel(tunel2);
-        actualizarTunel(tunel3);
-        actualizarTunel(tunel4);
+        actualizarTunel(tunel1, Zona.TUNEL_1);
+        actualizarTunel(tunel2, Zona.TUNEL_2);
+        actualizarTunel(tunel3, Zona.TUNEL_3);
+        actualizarTunel(tunel4, Zona.TUNEL_4);
     }
     
     private void actualizarComidaRefugio(){
         contadorComida.setText(String.valueOf(ref.getCantidadComida()));
     }
     
-    private void actualizarTunel(javax.swing.JTextField tunel){
-        
+    private void actualizarTunel(javax.swing.JTextField tunelField, Zona tunel){
+        List<Humano> humanos = mapa.humanosEnZona(tunel);
+        if (humanos.isEmpty()){
+            tunelField.setText("");
+        }else if (humanos.size()== 1){
+            tunelField.setText(humanos.get(0).getIdHumano());
+        }
     }
 
     private void actualizarZonaRefugio(Zona zona, javax.swing.JScrollPane scrollPane) {
@@ -232,7 +237,7 @@ public class MonitorSistema2 extends javax.swing.JFrame {
                 jButton2ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1210, 740, -1, -1));
+        jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1230, 730, -1, -1));
 
         contadorComida.setText("jTextField1");
         contadorComida.addActionListener(new java.awt.event.ActionListener() {
