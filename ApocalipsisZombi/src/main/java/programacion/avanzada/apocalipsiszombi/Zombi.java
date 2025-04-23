@@ -48,25 +48,21 @@ public class Zombi extends Thread{
                     List<Humano> humanosDisponibles = mapa.humanosEnZona(zonaActual);
                     
                     if (!humanosDisponibles.isEmpty()) {
-                        //Seleccionar humano al que atacar
+                        //Selección de humano a atacar
                         Humano humanoObjetivo = humanosDisponibles.get(random.nextInt(humanosDisponibles.size()));
-                        
-                        //Atacando al humano
-                        logger.log("[" + id + "]" + "atacando a humano " + humanoObjetivo.getIdHumano());
-                        if(humanoObjetivo.serAtacadoPor(this)){ 
-                            sleepRandom(500, 1500);
-                            
-                            //Convertir al humano en zombi
+                        logger.log("[" + id + "] atacando al humano " + humanoObjetivo.getIdHumano());
+                        sleepRandom(500, 1500);
+
+                        boolean humanoMuerto = humanoObjetivo.serAtacado();
+
+                        if (humanoMuerto) {
                             muertes++;
-                            Zombi zombi = convertirEnZombi(humanoObjetivo);
-                            logger.log("[" + id + "]" + "mató a un humano. Total muertes: " + muertes);
-                        }
-                        else {
-                            logger.log("[" + id + "]" + "el humano se defendió. Sigue con vida.");
-                        }
-                        
-                    }
-                    else {
+                            Zombi nuevoZombi = convertirEnZombi(humanoObjetivo);
+                            logger.log("[" + id + "] mató al humano. Total muertes: " + muertes);
+                        } else {
+                            logger.log("[" + id + "] el humano se defendió. Sigue con vida.");
+                        }  
+                    } else {
                         logger.log("[" + id + "]" + "no hay nadie. Espera...");
                         sleepRandom(2000, 3000);
                     }
@@ -74,12 +70,9 @@ public class Zombi extends Thread{
                 } catch (InterruptedException e) {
                     logger.log("[" + id + "]" + "interrumpido.");
                     break;
-                } catch (IOException ex) {
-                }
+                } 
             }
-        } catch (IOException ex) {
-            Logger.getLogger(Zombi.class.getName()).log(Level.SEVERE, null, ex);
-        }
+        } catch (IOException ex) {}
     }
     
     public Zona getZonaActual(){
@@ -102,26 +95,7 @@ public class Zombi extends Thread{
         sleep(min + random.nextInt(max - min + 1));
     }
     
-    public Zombi convertirEnZombi(Humano h) {
-        
-        /*
-        String idZombi = "Z" + h.getIdHumano().substring(1);
-        IdGenerator idgen = new IdGenerator();
-        Zona zona = h.getZonaActual();
-
-        // Quitar humano y agregar zombi al mapa
-        mapa.quitarHumanoZona(h, zona);
-
-        Zombi zombi = new Zombi(idgen, idZombi, mapa); // ejemplo de constructor
-        mapa.guardarZombi(zombi, zona);
-
-        System.out.println(h.getIdHumano() + " ha sido convertido en " + idZombi);
-        
-        h.interrupt(); //El humano convertido en zombi deja de ejecutar su run()
-
-        return zombi;
-        */
-        
+    public Zombi convertirEnZombi(Humano h) {        
         // Verificar que el humano no sea ya un zombi
         if (h.getIdHumano().startsWith("Z")) {
             //logger.log("[" + id + "]" + "Error: Intento de convertir un zombi en zombi: " + h.getIdHumano());
@@ -143,8 +117,4 @@ public class Zombi extends Thread{
 
         return zombi;
     }
-
-    
-
-    
 }
