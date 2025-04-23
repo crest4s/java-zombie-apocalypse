@@ -40,4 +40,8 @@ public class Refugio {
     public void log(String id, String msg){
         System.out.println("["+id+"] "+msg);
     }
+    
+    public int getCantidadComida(){
+        return cantidadComida; 
+    }
 }

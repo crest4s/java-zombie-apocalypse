@@ -32,6 +32,7 @@ public class Zombi extends Thread{
         this.mapa = mapa;
         this.id = "Z00000";
     }
+    
     @Override
     public void run(){
         try {
@@ -123,7 +124,7 @@ public class Zombi extends Thread{
         
         // Verificar que el humano no sea ya un zombi
         if (h.getIdHumano().startsWith("Z")) {
-            logger.log("[" + id + "]" + "Error: Intento de convertir un zombi en zombi: " + h.getIdHumano());
+            //logger.log("[" + id + "]" + "Error: Intento de convertir un zombi en zombi: " + h.getIdHumano());
             return null;
         }
 

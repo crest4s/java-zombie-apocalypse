@@ -48,10 +48,10 @@ public class Humano extends Thread{
                     Tunel tunel = tuneles[indiceTunel];
                     
                     logger.log("[" + id + "]" + "esperando grupo en túnel" + (indiceTunel + 1));
+                    setSeguraEspera(indiceTunel);
                     tunel.esperarGrupoParaSalir(this); // Esperar grupo de 3 para salir del refugio
                     
                     Zona zonaTunel = tunel.getZona();// Se obtiene la zona del tunel
-                    setZonaActual(zonaTunel);// Actualizar posicion al tunel correspondiente
                     tunel.entrarAlTunelDesdeRefugio(this);
                     sleep(1000); // Cruzar túnel
                     
@@ -83,12 +83,12 @@ public class Humano extends Thread{
                     }
                     
                     // REGRESO
+                    setInseguraEspera(indiceTunel);
                     tunel.entrarAlTunelDesdeExterior(this);
-                    setZonaActual(zonaTunel);
                     sleep(1000); // cruzar túnel
-                    setZonaActual(Zona.DESCANSO);
 
                     // DESCANSO
+                    setZonaActual(Zona.DESCANSO);
                     logger.log("[" + id + "]" + "descansa.");
                     sleepRandom(2000, 4000);
                     
@@ -152,6 +152,23 @@ public class Humano extends Thread{
             logger.log("[" + id + "]" + "no logró defenderse... ha muerto.");
             return true; // Murió
             
+        }
+    }
+    
+    public void setSeguraEspera(int i){
+        switch (i){
+            case 1 -> setZonaActual(Zona.ESPERA_REFUGIO_1);
+            case 2 -> setZonaActual(Zona.ESPERA_REFUGIO_2);
+            case 3 -> setZonaActual(Zona.ESPERA_REFUGIO_3);
+            case 4 -> setZonaActual(Zona.ESPERA_REFUGIO_4);
+        }
+    }
+    public void setInseguraEspera(int i){
+        switch (i){
+            case 1 -> setZonaActual(Zona.ESPERA_RIESGO_1);
+            case 2 -> setZonaActual(Zona.ESPERA_RIESGO_2);
+            case 3 -> setZonaActual(Zona.ESPERA_RIESGO_3);
+            case 4 -> setZonaActual(Zona.ESPERA_RIESGO_4);
         }
     }
 

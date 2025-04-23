@@ -19,6 +19,11 @@ public class Simulador {
         Refugio ref = new Refugio();
         MapaZonas mapa = new MapaZonas();
         
+        MonitorSistema2 monitor = new MonitorSistema2(mapa, ref);
+        monitor.setVisible(true);
+        
+        Timer timer = new Timer(500,e -> monitor.actualizarTodas());
+        timer.start();
         
         Zombi z = new Zombi(mapa);
         z.start();
@@ -27,11 +32,5 @@ public class Simulador {
             new Humano(idgen, ref, tun, mapa).start();
             sleep((int)(Math.random()*1500 + 500));
         }
-        
-        MonitorSistema monitor = new MonitorSistema(mapa);
-        monitor.setVisible(true);
-        
-        Timer timer = new Timer(500,e -> monitor.actualizarTodas());
-        timer.start();
     }
 }

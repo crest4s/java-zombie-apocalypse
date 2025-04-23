@@ -83,6 +83,7 @@ public class Tunel {
     public void entrarAlTunelDesdeExterior(Humano hum) throws InterruptedException {
         accesoTunel.acquire();
         log(hum.getIdHumano(), "Regresa al refugio por " + zona);
+        hum.setZonaActual(zona);
         // Aquí no dormimos, porque el cruce real lo maneja Humano con sleep(1000)
         accesoTunel.release();
     }
