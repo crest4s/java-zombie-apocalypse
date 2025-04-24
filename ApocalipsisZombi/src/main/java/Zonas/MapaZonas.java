@@ -1,17 +1,11 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-package programacion.avanzada.apocalipsiszombi;
+package Zonas;
 
+import Entidades.Zombi;
+import Entidades.Humano;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.*;
 
-/**
- *
- * @author adria
- */
 public class MapaZonas {
     private Map<Zona, List<Humano>> humanosPorZona = new ConcurrentHashMap<>();
     private Map<Zona, List<Zombi>> zombisPorZona = new ConcurrentHashMap<>();

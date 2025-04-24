@@ -1,16 +1,13 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- */
-
 package programacion.avanzada.apocalipsiszombi;
 
+import Helpers.IdGenerator;
+import Zonas.MapaZonas;
+import Zonas.Tunel;
+import Zonas.Refugio;
+import Entidades.Zombi;
+import Entidades.Humano;
 import static java.lang.Thread.sleep;
-import javax.swing.Timer;
 
-/**
- *
- * @author crestas
- */
 public class Simulador {
 
     public static void main(String[] args) throws InterruptedException {
@@ -19,11 +16,8 @@ public class Simulador {
         Refugio ref = new Refugio();
         MapaZonas mapa = new MapaZonas();
         
-        MonitorSistema2 monitor = new MonitorSistema2(mapa, ref);
-        monitor.setVisible(true);
-        
-        Timer timer = new Timer(500,e -> monitor.actualizarTodas());
-        timer.start();
+        //MonitorSistema2 monitor = new MonitorSistema2(mapa, ref);
+        //monitor.setVisible(true);
         
         Zombi z = new Zombi(mapa);
         z.start();

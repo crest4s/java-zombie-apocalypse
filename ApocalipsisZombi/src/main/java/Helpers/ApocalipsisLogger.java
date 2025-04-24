@@ -1,4 +1,4 @@
-package programacion.avanzada.apocalipsiszombi;
+package Helpers;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;

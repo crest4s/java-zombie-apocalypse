@@ -1,19 +1,13 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-package programacion.avanzada.apocalipsiszombi;
+package Entidades;
 
 import java.io.IOException;
 import java.util.List;
 import java.util.Random;
-import java.util.logging.Level;
-import java.util.logging.Logger;
+import Helpers.ApocalipsisLogger;
+import Helpers.IdGenerator;
+import Zonas.MapaZonas;
+import Zonas.Zona;
 
-/**
- *
- * @author crestas
- */
 public class Zombi extends Thread{
     private String id;
     private int muertes;
@@ -41,8 +35,8 @@ public class Zombi extends Thread{
                 try {
                     // Moverse a otra zona
                     int zona = random.nextInt(4) + 1;
-                    zonaActual = Zona.valueOf("RIESGO_" + zona);
-                    logger.log("[" + id + "]" + "entra a " + zonaActual);
+                    setZonaActual(Zona.valueOf("RIESGO_" + zona));
+                    logger.log("[" + id + "] entra a " + zonaActual);
                     
                     // Buscar humanos en la zona actual
                     List<Humano> humanosDisponibles = mapa.humanosEnZona(zonaActual);
@@ -63,12 +57,12 @@ public class Zombi extends Thread{
                             logger.log("[" + id + "] el humano se defendió. Sigue con vida.");
                         }  
                     } else {
-                        logger.log("[" + id + "]" + "no hay nadie. Espera...");
+                        logger.log("[" + id + "] no hay nadie. Espera...");
                         sleepRandom(2000, 3000);
                     }
                     
                 } catch (InterruptedException e) {
-                    logger.log("[" + id + "]" + "interrumpido.");
+                    logger.log("[" + id + "] interrumpido.");
                     break;
                 } 
             }
@@ -95,7 +89,7 @@ public class Zombi extends Thread{
         sleep(min + random.nextInt(max - min + 1));
     }
     
-    public Zombi convertirEnZombi(Humano h) {        
+    public Zombi convertirEnZombi(Humano h) throws IOException {        
         // Verificar que el humano no sea ya un zombi
         if (h.getIdHumano().startsWith("Z")) {
             //logger.log("[" + id + "]" + "Error: Intento de convertir un zombi en zombi: " + h.getIdHumano());
@@ -110,7 +104,8 @@ public class Zombi extends Thread{
         mapa.quitarHumanoZona(h, zona);
         mapa.guardarZombi(zombi, zona);
 
-        System.out.println(h.getIdHumano() + " ha sido convertido en " + zombi.getIdZombi());
+        ApocalipsisLogger logger = ApocalipsisLogger.getInstance();
+        logger.log("[" + id + "] " + h.getIdHumano() + " ha sido convertido en " + zombi.getIdZombi());
 
         h.interrupt(); // El humano deja de ejecutar su run()
         zombi.start(); // El nuevo zombi comienza a actuar

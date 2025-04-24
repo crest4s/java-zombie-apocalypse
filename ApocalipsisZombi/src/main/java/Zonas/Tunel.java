@@ -1,18 +1,14 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-package programacion.avanzada.apocalipsiszombi;
+package Zonas;
 
+import Entidades.Humano;
 import java.io.IOException;
 import java.util.concurrent.BrokenBarrierException;
 import java.util.concurrent.CyclicBarrier;
 import java.util.concurrent.Semaphore;
+import Helpers.ApocalipsisLogger;
+import java.util.List;
+import java.util.concurrent.CopyOnWriteArrayList;
 
-/**
- *
- * @author crestas
- */
 public class Tunel {
     
     private int id;
@@ -24,6 +20,9 @@ public class Tunel {
     private final Object monitor = new Object();
     private int esperandoExterior = 0;
     private int esperandoRefugio = 0;
+    
+    private final List<Humano> ladoRefugio = new CopyOnWriteArrayList<>();
+    private final List<Humano> ladoRiesgo = new CopyOnWriteArrayList<>();
 
     
     public Tunel(int id){
@@ -44,11 +43,17 @@ public class Tunel {
     public void setZona(Zona zona){
         this.zona=zona;
     }
-    
-    //= 0
+    public List<Humano> getLadoRefugio() {
+        return ladoRefugio;
+    }
+
+    public List<Humano> getLadoRiesgo() {
+        return ladoRiesgo;
+    }
+
     public void esperarGrupoParaSalir(Humano hum) throws InterruptedException, BrokenBarrierException, IOException {
         ApocalipsisLogger logger = ApocalipsisLogger.getInstance();
-        logger.log("[" + hum.getIdHumano() + "]" + "Se prepara para salir por "+zona);
+        logger.log("[" + hum.getIdHumano() + "] se prepara para salir por "+zona);
         esperaExpedicion.await();
     }
    
@@ -63,6 +68,7 @@ public class Tunel {
                     monitor.wait(); // espera a que el túnel esté libre
                 }
                 esperandoExterior--;
+                ladoRiesgo.add(hum);
             } else {
                 esperandoRefugio++;
                 esperarGrupoParaSalir(hum); // espera al grupo
@@ -71,6 +77,7 @@ public class Tunel {
                     monitor.wait(); // espera si hay alguien del exterior o el túnel ocupado
                 }
                 esperandoRefugio--;
+                ladoRefugio.add(hum);
             }
         }
         
@@ -80,11 +87,13 @@ public class Tunel {
     
     public void salirTunel(Humano hum) throws IOException{
         ApocalipsisLogger logger = ApocalipsisLogger.getInstance();
+        ladoRiesgo.remove(hum);
+        ladoRefugio.remove(hum); 
         accesoTunel.release(); //ya ha salido del tunel, se queda libre
         synchronized (monitor) {
             monitor.notifyAll(); //despierta a todos para ver quien puede entrar
-        }
-        logger.log("[" + hum.getIdHumano() + "]" +  "Sale del tunel");
+        }        
+        logger.log("[" + hum.getIdHumano() + "] sale del tunel");
     }
     
     public Zona getAreaInsegura(){
@@ -98,5 +107,4 @@ public class Tunel {
         }
         return zonaInsegura;
     }
-
 }
