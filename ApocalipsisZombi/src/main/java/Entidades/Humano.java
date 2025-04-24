@@ -60,7 +60,12 @@ public class Humano extends Thread{
                     Zona inseguraActual = tunel.getAreaInsegura();
                     setZonaActual(inseguraActual);
                     logger.log("[" + id + "] recolectando comida en " + zonaActual);
-                    sleepRandom(3000, 5000);
+                    try {
+                        sleepRandom(3000, 5000);
+                    } catch (InterruptedException ie) {
+                        logger.log("[" + id + "] interrumpido mientras recolectaba comida.");
+                        continue;
+                    }
                     
                     // Solo recolecta comida si no fue atacado por un zombi
                     if (!haSidoAtacado) {
@@ -72,7 +77,7 @@ public class Humano extends Thread{
                     
                     // Vuelta a la zona segura
                     tunel.entrarTunel(this, true);
-                    sleep(1000); 
+                    sleep(1000);
                     tunel.salirTunel(this);
                     haSidoAtacado = false; //resetear estado de atacado una vez sale del túnel
 
@@ -118,10 +123,12 @@ public class Humano extends Thread{
         return id;
     }
     
-    public void setZonaActual(Zona zona){
-        mapa.quitarHumanoZona(this, this.zonaActual);
-        this.zonaActual = zona;
-        mapa.guardarHumano(this, zonaActual);
+    public synchronized void setZonaActual(Zona nuevaZona){
+        if (this.zonaActual != null && !this.zonaActual.equals(nuevaZona)) {
+            mapa.quitarHumanoZona(this, this.zonaActual);
+        }
+        this.zonaActual = nuevaZona;
+        mapa.guardarHumano(this, nuevaZona);
     }
     private void sleepRandom(int min, int max) throws InterruptedException {
         sleep(min + random.nextInt(max - min + 1));
@@ -136,7 +143,9 @@ public class Humano extends Thread{
         }
 
         haSidoAtacado = true;
-
+ 
+        this.interrupt();
+        
         boolean seDefiende = random.nextInt(3) < 2; // 2/3 posibilidad de sobrevivir
 
         if (seDefiende) {

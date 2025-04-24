@@ -6,6 +6,7 @@ import java.util.concurrent.BrokenBarrierException;
 import java.util.concurrent.CyclicBarrier;
 import java.util.concurrent.Semaphore;
 import Helpers.ApocalipsisLogger;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 
@@ -20,6 +21,10 @@ public class Tunel {
     private final Object monitor = new Object();
     private int esperandoExterior = 0;
     private int esperandoRefugio = 0;
+    
+    private final List<Humano> grupoExpedicion = new ArrayList<>();
+    private final int TAM_GRUPO = 3;
+
     
     private final List<Humano> ladoRefugio = new CopyOnWriteArrayList<>();
     private final List<Humano> ladoRiesgo = new CopyOnWriteArrayList<>();
@@ -54,35 +59,54 @@ public class Tunel {
     public void esperarGrupoParaSalir(Humano hum) throws InterruptedException, BrokenBarrierException, IOException {
         ApocalipsisLogger logger = ApocalipsisLogger.getInstance();
         logger.log("[" + hum.getIdHumano() + "] se prepara para salir por "+zona);
-        esperaExpedicion.await();
+        synchronized (monitor) {
+            grupoExpedicion.add(hum);
+            if (grupoExpedicion.size() < TAM_GRUPO) {
+                monitor.wait();
+            } else {
+                monitor.notifyAll(); // Despierta al grupo
+                grupoExpedicion.clear(); // reinicia para siguiente grupo
+            }
+        }
     }
    
     //gestionar zonas a las que entra
     public void entrarTunel(Humano hum, boolean desdeExterior) throws InterruptedException, IOException, BrokenBarrierException {
         ApocalipsisLogger logger = ApocalipsisLogger.getInstance();
-        
-        synchronized (monitor) {
-            if (desdeExterior) {
+
+        if (desdeExterior) {
+            synchronized (monitor) {
                 esperandoExterior++;
-                while (!accesoTunel.tryAcquire()) {
-                    monitor.wait(); // espera a que el túnel esté libre
-                }
+            }
+            // Bloquea hasta que el túnel esté libre
+            accesoTunel.acquire();
+            hum.setZonaActual(zona);
+            
+            synchronized (monitor) {
                 esperandoExterior--;
                 ladoRiesgo.add(hum);
-            } else {
+            }
+        } else {
+            synchronized (monitor) {
                 esperandoRefugio++;
-                esperarGrupoParaSalir(hum); // espera al grupo
-                
-                while (esperandoExterior > 0 || !accesoTunel.tryAcquire()) {
-                    monitor.wait(); // espera si hay alguien del exterior o el túnel ocupado
+            }
+            esperarGrupoParaSalir(hum); // espera al grupo
+
+            // Bloquea hasta que el túnel esté libre (y nadie del exterior esté esperando)
+            synchronized (monitor) {
+                while (esperandoExterior > 0) {
+                    monitor.wait(); // Espera si hay gente del exterior esperando
                 }
+            }
+            accesoTunel.acquire();
+            hum.setZonaActual(zona);
+            
+            synchronized (monitor) {
                 esperandoRefugio--;
                 ladoRefugio.add(hum);
             }
         }
-        
         logger.log("[" + hum.getIdHumano() + "] entra a " + zona + " desde " + hum.getZonaActual());
-        hum.setZonaActual(zona);
     }
     
     public void salirTunel(Humano hum) throws IOException{

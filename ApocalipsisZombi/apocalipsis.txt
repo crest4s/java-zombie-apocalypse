@@ -1,0 +1,3037 @@
+2025-04-24 16:45:58 - [H00001] preparandose para entrar al mundo exterior...
+2025-04-24 16:45:58 - [Z00000] entra a RIESGO_4
+2025-04-24 16:45:58 - [Z00000] no hay nadie. Espera...
+2025-04-24 16:45:59 - [H00002] preparandose para entrar al mundo exterior...
+2025-04-24 16:45:59 - [H00001] esperando grupo en túnel2
+2025-04-24 16:45:59 - [H00001] se prepara para salir por TUNEL_2
+2025-04-24 16:46:00 - [Z00000] entra a RIESGO_3
+2025-04-24 16:46:00 - [Z00000] no hay nadie. Espera...
+2025-04-24 16:46:00 - [H00003] preparandose para entrar al mundo exterior...
+2025-04-24 16:46:00 - [H00002] esperando grupo en túnel2
+2025-04-24 16:46:00 - [H00002] se prepara para salir por TUNEL_2
+2025-04-24 16:46:00 - [H00004] preparandose para entrar al mundo exterior...
+2025-04-24 16:46:01 - [H00003] esperando grupo en túnel1
+2025-04-24 16:46:01 - [H00003] se prepara para salir por TUNEL_1
+2025-04-24 16:46:01 - [H00005] preparandose para entrar al mundo exterior...
+2025-04-24 16:46:01 - [H00004] esperando grupo en túnel2
+2025-04-24 16:46:01 - [H00004] se prepara para salir por TUNEL_2
+2025-04-24 16:46:01 - [H00004] se prepara para salir por TUNEL_2
+2025-04-24 16:46:02 - [Z00000] entra a RIESGO_4
+2025-04-24 16:46:02 - [Z00000] no hay nadie. Espera...
+2025-04-24 16:46:03 - [H00005] esperando grupo en túnel2
+2025-04-24 16:46:03 - [H00005] se prepara para salir por TUNEL_2
+2025-04-24 16:46:03 - [H00006] preparandose para entrar al mundo exterior...
+2025-04-24 16:53:45 - [H00001] preparandose para entrar al mundo exterior...
+2025-04-24 16:53:45 - [Z00000] entra a RIESGO_4
+2025-04-24 16:53:45 - [Z00000] no hay nadie. Espera...
+2025-04-24 16:53:46 - [H00002] preparandose para entrar al mundo exterior...
+2025-04-24 16:53:47 - [H00001] esperando grupo en túnel4
+2025-04-24 16:53:47 - [H00001] se prepara para salir por TUNEL_4
+2025-04-24 16:53:47 - [H00003] preparandose para entrar al mundo exterior...
+2025-04-24 16:53:48 - [H00004] preparandose para entrar al mundo exterior...
+2025-04-24 16:53:48 - [H00002] esperando grupo en túnel2
+2025-04-24 16:53:48 - [H00002] se prepara para salir por TUNEL_2
+2025-04-24 16:53:48 - [Z00000] entra a RIESGO_2
+2025-04-24 16:53:48 - [Z00000] no hay nadie. Espera...
+2025-04-24 16:53:49 - [H00003] esperando grupo en túnel4
+2025-04-24 16:53:49 - [H00003] se prepara para salir por TUNEL_4
+2025-04-24 16:53:49 - [H00005] preparandose para entrar al mundo exterior...
+2025-04-24 16:53:50 - [H00004] esperando grupo en túnel2
+2025-04-24 16:53:50 - [H00004] se prepara para salir por TUNEL_2
+2025-04-24 16:53:50 - [Z00000] entra a RIESGO_4
+2025-04-24 16:53:50 - [Z00000] no hay nadie. Espera...
+2025-04-24 16:53:51 - [H00005] esperando grupo en túnel1
+2025-04-24 16:53:51 - [H00005] se prepara para salir por TUNEL_1
+2025-04-24 16:53:51 - [H00006] preparandose para entrar al mundo exterior...
+2025-04-24 16:53:52 - [H00007] preparandose para entrar al mundo exterior...
+2025-04-24 16:53:52 - [H00006] esperando grupo en túnel1
+2025-04-24 16:53:52 - [H00006] se prepara para salir por TUNEL_1
+2025-04-24 16:53:53 - [H00008] preparandose para entrar al mundo exterior...
+2025-04-24 16:53:53 - [Z00000] entra a RIESGO_1
+2025-04-24 16:53:53 - [Z00000] no hay nadie. Espera...
+2025-04-24 16:53:54 - [H00007] esperando grupo en túnel3
+2025-04-24 16:53:54 - [H00007] se prepara para salir por TUNEL_3
+2025-04-24 16:53:54 - [H00009] preparandose para entrar al mundo exterior...
+2025-04-24 16:53:55 - [H00008] esperando grupo en túnel3
+2025-04-24 16:53:55 - [H00008] se prepara para salir por TUNEL_3
+2025-04-24 16:53:55 - [H00010] preparandose para entrar al mundo exterior...
+2025-04-24 16:53:55 - [Z00000] entra a RIESGO_2
+2025-04-24 16:53:55 - [Z00000] no hay nadie. Espera...
+2025-04-24 16:53:56 - [H00009] esperando grupo en túnel3
+2025-04-24 16:53:56 - [H00009] se prepara para salir por TUNEL_3
+2025-04-24 16:53:56 - [H00009] se prepara para salir por TUNEL_3
+2025-04-24 16:53:56 - [H00010] esperando grupo en túnel4
+2025-04-24 16:53:56 - [H00010] se prepara para salir por TUNEL_4
+2025-04-24 16:53:56 - [H00010] se prepara para salir por TUNEL_4
+2025-04-24 16:53:56 - [H00011] preparandose para entrar al mundo exterior...
+2025-04-24 16:53:57 - [H00011] esperando grupo en túnel3
+2025-04-24 16:53:57 - [H00011] se prepara para salir por TUNEL_3
+2025-04-24 16:53:58 - [H00012] preparandose para entrar al mundo exterior...
+2025-04-24 16:53:58 - [Z00000] entra a RIESGO_1
+2025-04-24 16:53:58 - [Z00000] no hay nadie. Espera...
+2025-04-24 16:53:59 - [H00013] preparandose para entrar al mundo exterior...
+2025-04-24 16:53:59 - [H00012] esperando grupo en túnel4
+2025-04-24 16:53:59 - [H00012] se prepara para salir por TUNEL_4
+2025-04-24 16:54:00 - [H00014] preparandose para entrar al mundo exterior...
+2025-04-24 16:54:01 - [H00013] esperando grupo en túnel4
+2025-04-24 16:54:01 - [H00013] se prepara para salir por TUNEL_4
+2025-04-24 16:54:01 - [H00012] se prepara para salir por TUNEL_4
+2025-04-24 16:54:01 - [H00010] entra a TUNEL_4 desde ZONA_COMUN
+2025-04-24 16:54:01 - [Z00000] entra a RIESGO_4
+2025-04-24 16:54:01 - [Z00000] no hay nadie. Espera...
+2025-04-24 16:54:01 - [H00015] preparandose para entrar al mundo exterior...
+2025-04-24 16:54:02 - [H00014] esperando grupo en túnel4
+2025-04-24 16:54:02 - [H00014] se prepara para salir por TUNEL_4
+2025-04-24 16:54:02 - [H00015] esperando grupo en túnel3
+2025-04-24 16:54:02 - [H00015] se prepara para salir por TUNEL_3
+2025-04-24 16:54:02 - [H00015] se prepara para salir por TUNEL_3
+2025-04-24 16:54:02 - [H00009] entra a TUNEL_3 desde ZONA_COMUN
+2025-04-24 16:54:03 - [H00016] preparandose para entrar al mundo exterior...
+2025-04-24 16:54:03 - [Z00000] entra a RIESGO_3
+2025-04-24 16:54:03 - [Z00000] no hay nadie. Espera...
+2025-04-24 16:54:04 - [H00017] preparandose para entrar al mundo exterior...
+2025-04-24 16:54:05 - [H00016] esperando grupo en túnel1
+2025-04-24 16:54:05 - [H00016] se prepara para salir por TUNEL_1
+2025-04-24 16:54:05 - [H00016] se prepara para salir por TUNEL_1
+2025-04-24 16:54:05 - [H00018] preparandose para entrar al mundo exterior...
+2025-04-24 16:54:05 - [Z00000] entra a RIESGO_3
+2025-04-24 16:54:05 - [Z00000] no hay nadie. Espera...
+2025-04-24 16:54:06 - [H00017] esperando grupo en túnel2
+2025-04-24 16:54:06 - [H00017] se prepara para salir por TUNEL_2
+2025-04-24 16:54:06 - [H00017] se prepara para salir por TUNEL_2
+2025-04-24 16:54:06 - [H00019] preparandose para entrar al mundo exterior...
+2025-04-24 16:54:06 - [H00018] esperando grupo en túnel2
+2025-04-24 16:54:06 - [H00018] se prepara para salir por TUNEL_2
+2025-04-24 16:54:07 - [H00020] preparandose para entrar al mundo exterior...
+2025-04-24 16:54:07 - [H00019] esperando grupo en túnel3
+2025-04-24 16:54:07 - [H00019] se prepara para salir por TUNEL_3
+2025-04-24 16:54:08 - [H00021] preparandose para entrar al mundo exterior...
+2025-04-24 16:54:08 - [Z00000] entra a RIESGO_3
+2025-04-24 16:54:08 - [Z00000] no hay nadie. Espera...
+2025-04-24 16:54:09 - [H00020] esperando grupo en túnel1
+2025-04-24 16:54:09 - [H00020] se prepara para salir por TUNEL_1
+2025-04-24 16:54:09 - [H00022] preparandose para entrar al mundo exterior...
+2025-04-24 16:54:09 - [H00021] esperando grupo en túnel4
+2025-04-24 16:54:09 - [H00021] se prepara para salir por TUNEL_4
+2025-04-24 16:54:09 - [H00014] se prepara para salir por TUNEL_4
+2025-04-24 16:54:09 - [H00012] entra a TUNEL_4 desde ZONA_COMUN
+2025-04-24 16:54:10 - [H00023] preparandose para entrar al mundo exterior...
+2025-04-24 16:54:10 - [H00022] esperando grupo en túnel4
+2025-04-24 16:54:10 - [H00022] se prepara para salir por TUNEL_4
+2025-04-24 16:54:11 - [H00024] preparandose para entrar al mundo exterior...
+2025-04-24 16:54:11 - [Z00000] entra a RIESGO_1
+2025-04-24 16:54:11 - [Z00000] no hay nadie. Espera...
+2025-04-24 16:54:12 - [H00023] esperando grupo en túnel3
+2025-04-24 16:54:12 - [H00023] se prepara para salir por TUNEL_3
+2025-04-24 16:54:12 - [H00019] se prepara para salir por TUNEL_3
+2025-04-24 16:54:12 - [H00015] entra a TUNEL_3 desde ZONA_COMUN
+2025-04-24 16:54:12 - [H00025] preparandose para entrar al mundo exterior...
+2025-04-24 16:54:13 - [H00024] esperando grupo en túnel1
+2025-04-24 16:54:13 - [H00024] se prepara para salir por TUNEL_1
+2025-04-24 16:54:13 - [H00024] se prepara para salir por TUNEL_1
+2025-04-24 16:54:13 - [H00016] entra a TUNEL_1 desde ZONA_COMUN
+2025-04-24 16:54:13 - [H00025] esperando grupo en túnel2
+2025-04-24 16:54:13 - [H00025] se prepara para salir por TUNEL_2
+2025-04-24 16:54:13 - [H00025] se prepara para salir por TUNEL_2
+2025-04-24 16:54:13 - [H00017] entra a TUNEL_2 desde ZONA_COMUN
+2025-04-24 16:54:13 - [H00026] preparandose para entrar al mundo exterior...
+2025-04-24 16:54:13 - [Z00000] entra a RIESGO_3
+2025-04-24 16:54:13 - [Z00000] no hay nadie. Espera...
+2025-04-24 16:54:14 - [H00027] preparandose para entrar al mundo exterior...
+2025-04-24 16:54:15 - [H00026] esperando grupo en túnel1
+2025-04-24 16:54:15 - [H00026] se prepara para salir por TUNEL_1
+2025-04-24 16:54:15 - [Z00000] entra a RIESGO_4
+2025-04-24 16:54:15 - [Z00000] no hay nadie. Espera...
+2025-04-24 16:54:15 - [H00027] esperando grupo en túnel1
+2025-04-24 16:54:15 - [H00027] se prepara para salir por TUNEL_1
+2025-04-24 16:54:15 - [H00026] se prepara para salir por TUNEL_1
+2025-04-24 16:54:15 - [H00024] entra a TUNEL_1 desde ZONA_COMUN
+2025-04-24 16:54:16 - [H00028] preparandose para entrar al mundo exterior...
+2025-04-24 16:54:17 - [H00028] esperando grupo en túnel4
+2025-04-24 16:54:17 - [H00028] se prepara para salir por TUNEL_4
+2025-04-24 16:54:17 - [H00022] se prepara para salir por TUNEL_4
+2025-04-24 16:54:17 - [H00014] entra a TUNEL_4 desde ZONA_COMUN
+2025-04-24 16:54:18 - [H00029] preparandose para entrar al mundo exterior...
+2025-04-24 16:54:18 - [Z00000] entra a RIESGO_3
+2025-04-24 16:54:18 - [Z00000] no hay nadie. Espera...
+2025-04-24 16:54:19 - [H00030] preparandose para entrar al mundo exterior...
+2025-04-24 16:54:19 - [H00029] esperando grupo en túnel2
+2025-04-24 16:54:19 - [H00029] se prepara para salir por TUNEL_2
+2025-04-24 16:54:19 - [H00031] preparandose para entrar al mundo exterior...
+2025-04-24 16:54:20 - [H00032] preparandose para entrar al mundo exterior...
+2025-04-24 16:54:20 - [Z00000] entra a RIESGO_3
+2025-04-24 16:54:20 - [Z00000] no hay nadie. Espera...
+2025-04-24 16:54:20 - [H00030] esperando grupo en túnel4
+2025-04-24 16:54:20 - [H00030] se prepara para salir por TUNEL_4
+2025-04-24 16:54:20 - [H00031] esperando grupo en túnel1
+2025-04-24 16:54:20 - [H00031] se prepara para salir por TUNEL_1
+2025-04-24 16:54:20 - [H00033] preparandose para entrar al mundo exterior...
+2025-04-24 16:54:21 - [H00032] esperando grupo en túnel3
+2025-04-24 16:54:21 - [H00032] se prepara para salir por TUNEL_3
+2025-04-24 16:54:21 - [H00033] esperando grupo en túnel1
+2025-04-24 16:54:21 - [H00033] se prepara para salir por TUNEL_1
+2025-04-24 16:54:21 - [H00031] se prepara para salir por TUNEL_1
+2025-04-24 16:54:21 - [H00026] entra a TUNEL_1 desde ZONA_COMUN
+2025-04-24 16:54:22 - [H00034] preparandose para entrar al mundo exterior...
+2025-04-24 16:54:22 - [Z00000] entra a RIESGO_4
+2025-04-24 16:54:22 - [Z00000] no hay nadie. Espera...
+2025-04-24 16:54:23 - [H00035] preparandose para entrar al mundo exterior...
+2025-04-24 16:54:23 - [H00034] esperando grupo en túnel4
+2025-04-24 16:54:23 - [H00034] se prepara para salir por TUNEL_4
+2025-04-24 16:54:23 - [H00030] se prepara para salir por TUNEL_4
+2025-04-24 16:54:23 - [H00022] entra a TUNEL_4 desde ZONA_COMUN
+2025-04-24 16:59:41 - [Z00000] entra a RIESGO_4
+2025-04-24 16:59:41 - [H00001] preparandose para entrar al mundo exterior...
+2025-04-24 16:59:41 - [Z00000] no hay nadie. Espera...
+2025-04-24 16:59:42 - [H00002] preparandose para entrar al mundo exterior...
+2025-04-24 16:59:42 - [H00001] esperando grupo en túnel4
+2025-04-24 16:59:42 - [H00001] se prepara para salir por TUNEL_4
+2025-04-24 16:59:43 - [Z00000] entra a RIESGO_2
+2025-04-24 16:59:43 - [Z00000] no hay nadie. Espera...
+2025-04-24 16:59:43 - [H00003] preparandose para entrar al mundo exterior...
+2025-04-24 16:59:43 - [H00002] esperando grupo en túnel2
+2025-04-24 16:59:43 - [H00002] se prepara para salir por TUNEL_2
+2025-04-24 16:59:44 - [H00004] preparandose para entrar al mundo exterior...
+2025-04-24 16:59:45 - [H00003] esperando grupo en túnel3
+2025-04-24 16:59:45 - [H00003] se prepara para salir por TUNEL_3
+2025-04-24 16:59:45 - [H00005] preparandose para entrar al mundo exterior...
+2025-04-24 16:59:45 - [H00004] esperando grupo en túnel1
+2025-04-24 16:59:45 - [H00004] se prepara para salir por TUNEL_1
+2025-04-24 16:59:45 - [Z00000] entra a RIESGO_3
+2025-04-24 16:59:45 - [Z00000] no hay nadie. Espera...
+2025-04-24 16:59:46 - [H00006] preparandose para entrar al mundo exterior...
+2025-04-24 16:59:46 - [H00005] esperando grupo en túnel2
+2025-04-24 16:59:46 - [H00005] se prepara para salir por TUNEL_2
+2025-04-24 16:59:47 - [H00007] preparandose para entrar al mundo exterior...
+2025-04-24 16:59:47 - [H00006] esperando grupo en túnel3
+2025-04-24 16:59:47 - [H00006] se prepara para salir por TUNEL_3
+2025-04-24 16:59:48 - [H00008] preparandose para entrar al mundo exterior...
+2025-04-24 16:59:48 - [H00007] esperando grupo en túnel4
+2025-04-24 16:59:48 - [H00007] se prepara para salir por TUNEL_4
+2025-04-24 16:59:48 - [Z00000] entra a RIESGO_4
+2025-04-24 16:59:48 - [Z00000] no hay nadie. Espera...
+2025-04-24 16:59:48 - [H00009] preparandose para entrar al mundo exterior...
+2025-04-24 16:59:49 - [H00008] esperando grupo en túnel2
+2025-04-24 16:59:49 - [H00008] se prepara para salir por TUNEL_2
+2025-04-24 16:59:49 - [H00008] se prepara para salir por TUNEL_2
+2025-04-24 16:59:50 - [H00009] esperando grupo en túnel2
+2025-04-24 16:59:50 - [H00009] se prepara para salir por TUNEL_2
+2025-04-24 16:59:50 - [H00010] preparandose para entrar al mundo exterior...
+2025-04-24 16:59:50 - [Z00000] entra a RIESGO_4
+2025-04-24 16:59:50 - [Z00000] no hay nadie. Espera...
+2025-04-24 16:59:50 - [H00011] preparandose para entrar al mundo exterior...
+2025-04-24 16:59:52 - [H00010] esperando grupo en túnel4
+2025-04-24 16:59:52 - [H00010] se prepara para salir por TUNEL_4
+2025-04-24 16:59:52 - [H00010] se prepara para salir por TUNEL_4
+2025-04-24 16:59:52 - [H00012] preparandose para entrar al mundo exterior...
+2025-04-24 16:59:52 - [H00011] esperando grupo en túnel1
+2025-04-24 16:59:52 - [H00011] se prepara para salir por TUNEL_1
+2025-04-24 16:59:53 - [Z00000] entra a RIESGO_4
+2025-04-24 16:59:53 - [Z00000] no hay nadie. Espera...
+2025-04-24 16:59:54 - [H00013] preparandose para entrar al mundo exterior...
+2025-04-24 16:59:54 - [H00012] esperando grupo en túnel4
+2025-04-24 16:59:54 - [H00012] se prepara para salir por TUNEL_4
+2025-04-24 16:59:55 - [Z00000] entra a RIESGO_4
+2025-04-24 16:59:55 - [Z00000] no hay nadie. Espera...
+2025-04-24 16:59:55 - [H00013] esperando grupo en túnel2
+2025-04-24 16:59:55 - [H00013] se prepara para salir por TUNEL_2
+2025-04-24 16:59:55 - [H00009] se prepara para salir por TUNEL_2
+2025-04-24 16:59:55 - [H00008] entra a TUNEL_2 desde ZONA_COMUN
+2025-04-24 16:59:56 - [H00014] preparandose para entrar al mundo exterior...
+2025-04-24 16:59:57 - [Z00000] entra a RIESGO_2
+2025-04-24 16:59:57 - [Z00000] no hay nadie. Espera...
+2025-04-24 16:59:57 - [H00014] esperando grupo en túnel4
+2025-04-24 16:59:57 - [H00014] se prepara para salir por TUNEL_4
+2025-04-24 16:59:57 - [H00014] se prepara para salir por TUNEL_4
+2025-04-24 16:59:57 - [H00010] entra a TUNEL_4 desde ZONA_COMUN
+2025-04-24 16:59:57 - [H00015] preparandose para entrar al mundo exterior...
+2025-04-24 16:59:58 - [H00016] preparandose para entrar al mundo exterior...
+2025-04-24 16:59:59 - [H00015] esperando grupo en túnel2
+2025-04-24 16:59:59 - [H00015] se prepara para salir por TUNEL_2
+2025-04-24 17:00:00 - [H00016] esperando grupo en túnel1
+2025-04-24 17:00:00 - [H00016] se prepara para salir por TUNEL_1
+2025-04-24 17:00:00 - [H00016] se prepara para salir por TUNEL_1
+2025-04-24 17:00:00 - [Z00000] entra a RIESGO_3
+2025-04-24 17:00:00 - [Z00000] no hay nadie. Espera...
+2025-04-24 17:00:00 - [H00017] preparandose para entrar al mundo exterior...
+2025-04-24 17:00:01 - [H00018] preparandose para entrar al mundo exterior...
+2025-04-24 17:00:01 - [H00017] esperando grupo en túnel4
+2025-04-24 17:00:01 - [H00017] se prepara para salir por TUNEL_4
+2025-04-24 17:00:02 - [Z00000] entra a RIESGO_3
+2025-04-24 17:00:02 - [Z00000] no hay nadie. Espera...
+2025-04-24 17:00:02 - [H00019] preparandose para entrar al mundo exterior...
+2025-04-24 17:00:02 - [H00018] esperando grupo en túnel1
+2025-04-24 17:00:02 - [H00018] se prepara para salir por TUNEL_1
+2025-04-24 17:00:03 - [H00020] preparandose para entrar al mundo exterior...
+2025-04-24 17:00:04 - [H00019] esperando grupo en túnel2
+2025-04-24 17:00:04 - [H00019] se prepara para salir por TUNEL_2
+2025-04-24 17:00:04 - [H00015] se prepara para salir por TUNEL_2
+2025-04-24 17:00:04 - [H00009] entra a TUNEL_2 desde ZONA_COMUN
+2025-04-24 17:00:04 - [Z00000] entra a RIESGO_2
+2025-04-24 17:00:04 - [Z00000] no hay nadie. Espera...
+2025-04-24 17:00:05 - [H00020] esperando grupo en túnel4
+2025-04-24 17:00:05 - [H00020] se prepara para salir por TUNEL_4
+2025-04-24 17:00:05 - [H00017] se prepara para salir por TUNEL_4
+2025-04-24 17:00:05 - [H00014] entra a TUNEL_4 desde ZONA_COMUN
+2025-04-24 17:00:05 - [H00021] preparandose para entrar al mundo exterior...
+2025-04-24 17:00:06 - [H00022] preparandose para entrar al mundo exterior...
+2025-04-24 17:00:06 - [H00021] esperando grupo en túnel3
+2025-04-24 17:00:06 - [H00021] se prepara para salir por TUNEL_3
+2025-04-24 17:00:06 - [H00021] se prepara para salir por TUNEL_3
+2025-04-24 17:00:07 - [Z00000] entra a RIESGO_3
+2025-04-24 17:00:07 - [Z00000] no hay nadie. Espera...
+2025-04-24 17:00:07 - [H00022] esperando grupo en túnel3
+2025-04-24 17:00:07 - [H00022] se prepara para salir por TUNEL_3
+2025-04-24 17:00:07 - [H00023] preparandose para entrar al mundo exterior...
+2025-04-24 17:00:09 - [H00023] esperando grupo en túnel1
+2025-04-24 17:00:09 - [H00023] se prepara para salir por TUNEL_1
+2025-04-24 17:00:09 - [H00023] se prepara para salir por TUNEL_1
+2025-04-24 17:00:09 - [H00016] entra a TUNEL_1 desde ZONA_COMUN
+2025-04-24 17:00:09 - [H00024] preparandose para entrar al mundo exterior...
+2025-04-24 17:00:10 - [Z00000] entra a RIESGO_4
+2025-04-24 17:00:10 - [Z00000] no hay nadie. Espera...
+2025-04-24 17:00:11 - [H00024] esperando grupo en túnel4
+2025-04-24 17:00:11 - [H00024] se prepara para salir por TUNEL_4
+2025-04-24 17:00:11 - [H00025] preparandose para entrar al mundo exterior...
+2025-04-24 17:00:12 - [H00025] esperando grupo en túnel1
+2025-04-24 17:00:12 - [H00025] se prepara para salir por TUNEL_1
+2025-04-24 17:00:12 - [H00026] preparandose para entrar al mundo exterior...
+2025-04-24 17:00:13 - [Z00000] entra a RIESGO_2
+2025-04-24 17:00:13 - [Z00000] no hay nadie. Espera...
+2025-04-24 17:00:13 - [H00027] preparandose para entrar al mundo exterior...
+
+
+
+asdas
+asdsada
+asdads
+fdhgds2025-04-24 17:11:20 - [H00001] preparandose para entrar al mundo exterior...
+2025-04-24 17:11:20 - [Z00000] entra a RIESGO_4
+2025-04-24 17:11:20 - [Z00000] no hay nadie. Espera...
+2025-04-24 17:11:21 - [H00001] esperando grupo en túnel4
+2025-04-24 17:11:21 - [H00001] se prepara para salir por TUNEL_4
+2025-04-24 17:11:23 - [Z00000] entra a RIESGO_2
+2025-04-24 17:11:23 - [Z00000] no hay nadie. Espera...
+2025-04-24 17:11:25 - [H00002] preparandose para entrar al mundo exterior...
+2025-04-24 17:11:25 - [Z00000] entra a RIESGO_1
+2025-04-24 17:11:25 - [Z00000] no hay nadie. Espera...
+2025-04-24 17:11:27 - [H00002] esperando grupo en túnel3
+2025-04-24 17:11:27 - [H00002] se prepara para salir por TUNEL_3
+2025-04-24 17:11:28 - [Z00000] entra a RIESGO_3
+2025-04-24 17:11:28 - [Z00000] no hay nadie. Espera...
+2025-04-24 17:11:31 - [H00003] preparandose para entrar al mundo exterior...
+2025-04-24 17:11:31 - [Z00000] entra a RIESGO_1
+2025-04-24 17:11:31 - [Z00000] no hay nadie. Espera...
+2025-04-24 17:11:32 - [H00003] esperando grupo en túnel3
+2025-04-24 17:11:32 - [H00003] se prepara para salir por TUNEL_3
+2025-04-24 17:11:33 - [Z00000] entra a RIESGO_2
+2025-04-24 17:11:33 - [Z00000] no hay nadie. Espera...
+2025-04-24 17:11:35 - [Z00000] entra a RIESGO_1
+2025-04-24 17:11:35 - [Z00000] no hay nadie. Espera...
+2025-04-24 17:11:37 - [H00004] preparandose para entrar al mundo exterior...
+2025-04-24 17:11:38 - [Z00000] entra a RIESGO_1
+2025-04-24 17:11:38 - [Z00000] no hay nadie. Espera...
+2025-04-24 17:11:39 - [H00004] esperando grupo en túnel4
+2025-04-24 17:11:39 - [H00004] se prepara para salir por TUNEL_4
+2025-04-24 17:11:41 - [Z00000] entra a RIESGO_1
+2025-04-24 17:11:41 - [Z00000] no hay nadie. Espera...
+2025-04-24 17:11:43 - [H00005] preparandose para entrar al mundo exterior...
+2025-04-24 17:11:44 - [Z00000] entra a RIESGO_4
+2025-04-24 17:11:44 - [Z00000] no hay nadie. Espera...
+2025-04-24 17:11:45 - [H00005] esperando grupo en túnel4
+2025-04-24 17:11:45 - [H00005] se prepara para salir por TUNEL_4
+2025-04-24 17:11:45 - [H00005] se prepara para salir por TUNEL_4
+2025-04-24 17:11:46 - [Z00000] entra a RIESGO_3
+2025-04-24 17:11:46 - [Z00000] no hay nadie. Espera...
+2025-04-24 17:11:49 - [Z00000] entra a RIESGO_4
+2025-04-24 17:11:49 - [Z00000] no hay nadie. Espera...
+2025-04-24 17:11:49 - [H00006] preparandose para entrar al mundo exterior...
+2025-04-24 17:11:50 - [H00006] esperando grupo en túnel2
+2025-04-24 17:11:50 - [H00006] se prepara para salir por TUNEL_2
+2025-04-24 17:11:51 - [Z00000] entra a RIESGO_1
+2025-04-24 17:11:51 - [Z00000] no hay nadie. Espera...
+2025-04-24 17:11:54 - [Z00000] entra a RIESGO_1
+2025-04-24 17:11:54 - [Z00000] no hay nadie. Espera...
+2025-04-24 17:11:55 - [H00007] preparandose para entrar al mundo exterior...
+2025-04-24 17:11:57 - [Z00000] entra a RIESGO_2
+2025-04-24 17:11:57 - [Z00000] no hay nadie. Espera...
+2025-04-24 17:11:57 - [H00007] esperando grupo en túnel4
+2025-04-24 17:11:57 - [H00007] se prepara para salir por TUNEL_4
+2025-04-24 17:11:59 - [Z00000] entra a RIESGO_1
+2025-04-24 17:11:59 - [Z00000] no hay nadie. Espera...
+2025-04-24 17:12:00 - [H00008] preparandose para entrar al mundo exterior...
+2025-04-24 17:12:02 - [H00008] esperando grupo en túnel2
+2025-04-24 17:12:02 - [H00008] se prepara para salir por TUNEL_2
+2025-04-24 17:12:02 - [Z00000] entra a RIESGO_2
+2025-04-24 17:12:02 - [Z00000] no hay nadie. Espera...
+2025-04-24 17:12:04 - [Z00000] entra a RIESGO_2
+2025-04-24 17:12:04 - [Z00000] no hay nadie. Espera...
+2025-04-24 17:12:07 - [H00009] preparandose para entrar al mundo exterior...
+2025-04-24 17:12:07 - [Z00000] entra a RIESGO_3
+2025-04-24 17:12:07 - [Z00000] no hay nadie. Espera...
+2025-04-24 17:12:08 - [H00009] esperando grupo en túnel2
+2025-04-24 17:12:08 - [H00009] se prepara para salir por TUNEL_2
+2025-04-24 17:12:08 - [H00009] se prepara para salir por TUNEL_2
+2025-04-24 17:12:09 - [Z00000] entra a RIESGO_3
+2025-04-24 17:12:09 - [Z00000] no hay nadie. Espera...
+2025-04-24 17:12:12 - [Z00000] entra a RIESGO_2
+2025-04-24 17:12:12 - [Z00000] no hay nadie. Espera...
+2025-04-24 17:12:13 - [H00010] preparandose para entrar al mundo exterior...
+2025-04-24 17:12:14 - [H00010] esperando grupo en túnel4
+2025-04-24 17:12:14 - [H00010] se prepara para salir por TUNEL_4
+2025-04-24 17:12:14 - [H00007] se prepara para salir por TUNEL_4
+2025-04-24 17:12:14 - [H00005] entra a TUNEL_4 desde ZONA_COMUN
+2025-04-24 17:12:15 - [Z00000] entra a RIESGO_2
+2025-04-24 17:12:15 - [Z00000] no hay nadie. Espera...
+2025-04-24 17:12:18 - [Z00000] entra a RIESGO_1
+2025-04-24 17:12:18 - [Z00000] no hay nadie. Espera...
+2025-04-24 17:12:19 - [H00011] preparandose para entrar al mundo exterior...
+2025-04-24 17:12:20 - [H00011] esperando grupo en túnel2
+2025-04-24 17:12:20 - [H00011] se prepara para salir por TUNEL_2
+2025-04-24 17:12:20 - [Z00000] entra a RIESGO_3
+2025-04-24 17:12:20 - [Z00000] no hay nadie. Espera...
+2025-04-24 17:12:23 - [Z00000] entra a RIESGO_1
+2025-04-24 17:12:23 - [Z00000] no hay nadie. Espera...
+2025-04-24 17:12:24 - [H00012] preparandose para entrar al mundo exterior...
+2025-04-24 17:12:25 - [Z00000] entra a RIESGO_4
+2025-04-24 17:12:25 - [Z00000] no hay nadie. Espera...
+2025-04-24 17:12:26 - [H00012] esperando grupo en túnel4
+2025-04-24 17:12:26 - [H00012] se prepara para salir por TUNEL_4
+2025-04-24 17:12:28 - [Z00000] entra a RIESGO_4
+2025-04-24 17:12:28 - [Z00000] no hay nadie. Espera...
+2025-04-24 17:12:30 - [H00013] preparandose para entrar al mundo exterior...
+2025-04-24 17:12:30 - [Z00000] entra a RIESGO_1
+2025-04-24 17:12:30 - [Z00000] no hay nadie. Espera...
+2025-04-24 17:12:32 - [H00013] esperando grupo en túnel1
+2025-04-24 17:12:32 - [H00013] se prepara para salir por TUNEL_1
+2025-04-24 17:12:33 - [Z00000] entra a RIESGO_3
+2025-04-24 17:12:33 - [Z00000] no hay nadie. Espera...
+2025-04-24 17:12:36 - [Z00000] entra a RIESGO_4
+2025-04-24 17:12:36 - [Z00000] no hay nadie. Espera...
+2025-04-24 17:12:36 - [H00014] preparandose para entrar al mundo exterior...
+2025-04-24 17:12:37 - [H00014] esperando grupo en túnel4
+2025-04-24 17:12:37 - [H00014] se prepara para salir por TUNEL_4
+2025-04-24 17:12:37 - [H00012] se prepara para salir por TUNEL_4
+2025-04-24 17:12:37 - [H00007] entra a TUNEL_4 desde ZONA_COMUN
+2025-04-24 17:12:38 - [Z00000] entra a RIESGO_3
+2025-04-24 17:12:38 - [Z00000] no hay nadie. Espera...
+2025-04-24 17:12:40 - [Z00000] entra a RIESGO_2
+2025-04-24 17:12:40 - [Z00000] no hay nadie. Espera...
+2025-04-24 17:12:42 - [H00015] preparandose para entrar al mundo exterior...
+2025-04-24 17:12:43 - [Z00000] entra a RIESGO_4
+2025-04-24 17:12:43 - [Z00000] no hay nadie. Espera...
+2025-04-24 17:12:43 - [H00015] esperando grupo en túnel4
+2025-04-24 17:12:43 - [H00015] se prepara para salir por TUNEL_4
+2025-04-24 17:12:46 - [Z00000] entra a RIESGO_1
+2025-04-24 17:12:46 - [Z00000] no hay nadie. Espera...
+2025-04-24 17:12:47 - [H00016] preparandose para entrar al mundo exterior...
+2025-04-24 17:14:56 - [Z00000] entra a RIESGO_3
+2025-04-24 17:14:56 - [H00001] preparandose para entrar al mundo exterior...
+2025-04-24 17:14:56 - [Z00000] no hay nadie. Espera...
+2025-04-24 17:14:58 - [H00001] esperando grupo en túnel1
+2025-04-24 17:14:58 - [H00001] se prepara para salir por TUNEL_1
+2025-04-24 17:14:59 - [Z00000] entra a RIESGO_2
+2025-04-24 17:14:59 - [Z00000] no hay nadie. Espera...
+2025-04-24 17:15:01 - [Z00000] entra a RIESGO_3
+2025-04-24 17:15:01 - [Z00000] no hay nadie. Espera...
+2025-04-24 17:15:18 - [Z00000] entra a RIESGO_4
+2025-04-24 17:15:18 - [H00001] preparandose para entrar al mundo exterior...
+2025-04-24 17:15:18 - [Z00000] no hay nadie. Espera...
+2025-04-24 17:15:19 - [H00002] preparandose para entrar al mundo exterior...
+2025-04-24 17:15:20 - [H00001] esperando grupo en túnel1
+2025-04-24 17:15:20 - [H00001] se prepara para salir por TUNEL_1
+2025-04-24 17:15:21 - [H00002] esperando grupo en túnel4
+2025-04-24 17:15:21 - [H00002] se prepara para salir por TUNEL_4
+2025-04-24 17:15:21 - [Z00000] entra a RIESGO_4
+2025-04-24 17:15:21 - [Z00000] no hay nadie. Espera...
+2025-04-24 17:15:21 - [H00003] preparandose para entrar al mundo exterior...
+2025-04-24 17:15:22 - [H00003] esperando grupo en túnel3
+2025-04-24 17:15:22 - [H00003] se prepara para salir por TUNEL_3
+2025-04-24 17:15:23 - [H00004] preparandose para entrar al mundo exterior...
+2025-04-24 17:15:24 - [H00005] preparandose para entrar al mundo exterior...
+2025-04-24 17:15:24 - [Z00000] entra a RIESGO_2
+2025-04-24 17:15:24 - [Z00000] no hay nadie. Espera...
+2025-04-24 17:15:24 - [H00004] esperando grupo en túnel3
+2025-04-24 17:15:24 - [H00004] se prepara para salir por TUNEL_3
+2025-04-24 17:15:26 - [H00005] esperando grupo en túnel3
+2025-04-24 17:15:26 - [H00005] se prepara para salir por TUNEL_3
+2025-04-24 17:15:26 - [H00005] se prepara para salir por TUNEL_3
+2025-04-24 17:15:26 - [H00006] preparandose para entrar al mundo exterior...
+2025-04-24 17:15:27 - [Z00000] entra a RIESGO_1
+2025-04-24 17:15:27 - [Z00000] no hay nadie. Espera...
+2025-04-24 17:15:27 - [H00006] esperando grupo en túnel1
+2025-04-24 17:15:27 - [H00006] se prepara para salir por TUNEL_1
+2025-04-24 17:15:28 - [H00007] preparandose para entrar al mundo exterior...
+2025-04-24 17:15:30 - [Z00000] entra a RIESGO_2
+2025-04-24 17:15:30 - [Z00000] no hay nadie. Espera...
+2025-04-24 17:15:30 - [H00007] esperando grupo en túnel4
+2025-04-24 17:15:30 - [H00007] se prepara para salir por TUNEL_4
+2025-04-24 17:15:30 - [H00008] preparandose para entrar al mundo exterior...
+2025-04-24 17:15:31 - [H00009] preparandose para entrar al mundo exterior...
+2025-04-24 17:15:31 - [H00008] esperando grupo en túnel3
+2025-04-24 17:15:31 - [H00008] se prepara para salir por TUNEL_3
+2025-04-24 17:15:32 - [Z00000] entra a RIESGO_3
+2025-04-24 17:15:32 - [Z00000] no hay nadie. Espera...
+2025-04-24 17:15:33 - [H00010] preparandose para entrar al mundo exterior...
+2025-04-24 17:15:33 - [H00009] esperando grupo en túnel2
+2025-04-24 17:15:33 - [H00009] se prepara para salir por TUNEL_2
+2025-04-24 17:15:34 - [H00011] preparandose para entrar al mundo exterior...
+2025-04-24 17:15:34 - [H00010] esperando grupo en túnel3
+2025-04-24 17:15:34 - [H00010] se prepara para salir por TUNEL_3
+2025-04-24 17:15:34 - [H00010] se prepara para salir por TUNEL_3
+2025-04-24 17:15:34 - [H00005] entra a TUNEL_3 desde TUNEL_3
+2025-04-24 17:15:35 - [Z00000] entra a RIESGO_1
+2025-04-24 17:15:35 - [Z00000] no hay nadie. Espera...
+2025-04-24 17:15:36 - [H00011] esperando grupo en túnel2
+2025-04-24 17:15:36 - [H00011] se prepara para salir por TUNEL_2
+2025-04-24 17:15:36 - [H00012] preparandose para entrar al mundo exterior...
+2025-04-24 17:15:37 - [Z00000] entra a RIESGO_1
+2025-04-24 17:15:37 - [Z00000] no hay nadie. Espera...
+2025-04-24 17:15:38 - [H00012] esperando grupo en túnel1
+2025-04-24 17:15:38 - [H00012] se prepara para salir por TUNEL_1
+2025-04-24 17:15:38 - [H00001] se prepara para salir por TUNEL_1
+2025-04-24 17:15:38 - [H00013] preparandose para entrar al mundo exterior...
+2025-04-24 17:15:39 - [Z00000] entra a RIESGO_4
+2025-04-24 17:15:39 - [Z00000] no hay nadie. Espera...
+2025-04-24 17:15:39 - [H00013] esperando grupo en túnel1
+2025-04-24 17:15:39 - [H00013] se prepara para salir por TUNEL_1
+2025-04-24 17:15:40 - [H00014] preparandose para entrar al mundo exterior...
+2025-04-24 17:15:41 - [H00015] preparandose para entrar al mundo exterior...
+2025-04-24 17:15:41 - [H00014] esperando grupo en túnel2
+2025-04-24 17:15:41 - [H00014] se prepara para salir por TUNEL_2
+2025-04-24 17:15:41 - [H00014] se prepara para salir por TUNEL_2
+2025-04-24 17:15:42 - [Z00000] entra a RIESGO_4
+2025-04-24 17:15:42 - [Z00000] no hay nadie. Espera...
+2025-04-24 17:15:43 - [H00015] esperando grupo en túnel3
+2025-04-24 17:15:43 - [H00015] se prepara para salir por TUNEL_3
+2025-04-24 17:15:43 - [H00016] preparandose para entrar al mundo exterior...
+2025-04-24 17:15:45 - [Z00000] entra a RIESGO_2
+2025-04-24 17:15:45 - [Z00000] no hay nadie. Espera...
+2025-04-24 17:15:45 - [H00016] esperando grupo en túnel3
+2025-04-24 17:15:45 - [H00016] se prepara para salir por TUNEL_3
+2025-04-24 17:15:45 - [H00010] entra a TUNEL_3 desde TUNEL_3
+2025-04-24 17:15:45 - [H00016] se prepara para salir por TUNEL_3
+2025-04-24 17:15:45 - [H00017] preparandose para entrar al mundo exterior...
+2025-04-24 17:15:46 - [H00017] esperando grupo en túnel1
+2025-04-24 17:15:46 - [H00017] se prepara para salir por TUNEL_1
+2025-04-24 17:15:46 - [H00001] entra a TUNEL_1 desde TUNEL_1
+2025-04-24 17:15:46 - [H00006] se prepara para salir por TUNEL_1
+2025-04-24 17:15:47 - [Z00000] entra a RIESGO_3
+2025-04-24 17:15:47 - [Z00000] no hay nadie. Espera...
+2025-04-24 17:15:47 - [H00018] preparandose para entrar al mundo exterior...
+2025-04-24 17:15:49 - [Z00000] entra a RIESGO_4
+2025-04-24 17:15:49 - [Z00000] no hay nadie. Espera...
+2025-04-24 17:15:49 - [H00019] preparandose para entrar al mundo exterior...
+2025-04-24 17:15:49 - [H00018] esperando grupo en túnel3
+2025-04-24 17:15:49 - [H00018] se prepara para salir por TUNEL_3
+2025-04-24 17:15:50 - [H00020] preparandose para entrar al mundo exterior...
+2025-04-24 17:15:50 - [H00019] esperando grupo en túnel3
+2025-04-24 17:15:50 - [H00019] se prepara para salir por TUNEL_3
+2025-04-24 17:15:50 - [H00016] entra a TUNEL_3 desde TUNEL_3
+2025-04-24 17:15:50 - [H00004] se prepara para salir por TUNEL_3
+2025-04-24 17:15:51 - [H00020] esperando grupo en túnel3
+2025-04-24 17:15:51 - [H00020] se prepara para salir por TUNEL_3
+2025-04-24 17:15:52 - [Z00000] entra a RIESGO_1
+2025-04-24 17:15:52 - [Z00000] no hay nadie. Espera...
+2025-04-24 17:15:52 - [H00021] preparandose para entrar al mundo exterior...
+2025-04-24 17:15:54 - [H00022] preparandose para entrar al mundo exterior...
+2025-04-24 17:15:54 - [H00021] esperando grupo en túnel3
+2025-04-24 17:15:54 - [H00021] se prepara para salir por TUNEL_3
+2025-04-24 17:15:54 - [H00004] entra a TUNEL_3 desde TUNEL_3
+2025-04-24 17:15:54 - [H00021] se prepara para salir por TUNEL_3
+2025-04-24 17:15:54 - [Z00000] entra a RIESGO_4
+2025-04-24 17:15:54 - [Z00000] no hay nadie. Espera...
+2025-04-24 17:15:55 - [H00022] esperando grupo en túnel4
+2025-04-24 17:15:55 - [H00022] se prepara para salir por TUNEL_4
+2025-04-24 17:15:55 - [H00002] se prepara para salir por TUNEL_4
+2025-04-24 17:15:55 - [H00023] preparandose para entrar al mundo exterior...
+2025-04-24 17:15:57 - [H00023] esperando grupo en túnel1
+2025-04-24 17:15:57 - [H00023] se prepara para salir por TUNEL_1
+2025-04-24 17:15:57 - [Z00000] entra a RIESGO_3
+2025-04-24 17:15:57 - [Z00000] no hay nadie. Espera...
+2025-04-24 17:15:57 - [H00024] preparandose para entrar al mundo exterior...
+2025-04-24 17:15:59 - [H00024] esperando grupo en túnel4
+2025-04-24 17:15:59 - [H00024] se prepara para salir por TUNEL_4
+2025-04-24 17:16:00 - [H00025] preparandose para entrar al mundo exterior...
+2025-04-24 17:16:00 - [Z00000] entra a RIESGO_1
+2025-04-24 17:16:00 - [Z00000] no hay nadie. Espera...
+2025-04-24 17:16:01 - [H00025] esperando grupo en túnel4
+2025-04-24 17:16:01 - [H00025] se prepara para salir por TUNEL_4
+2025-04-24 17:16:01 - [H00002] entra a TUNEL_4 desde TUNEL_4
+2025-04-24 17:16:01 - [H00025] se prepara para salir por TUNEL_4
+2025-04-24 17:16:02 - [Z00000] entra a RIESGO_1
+2025-04-24 17:16:02 - [Z00000] no hay nadie. Espera...
+2025-04-24 17:16:02 - [H00026] preparandose para entrar al mundo exterior...
+2025-04-24 17:16:03 - [H00026] esperando grupo en túnel4
+2025-04-24 17:16:03 - [H00026] se prepara para salir por TUNEL_4
+2025-04-24 17:16:04 - [H00027] preparandose para entrar al mundo exterior...
+2025-04-24 17:16:04 - [Z00000] entra a RIESGO_4
+2025-04-24 17:16:04 - [Z00000] no hay nadie. Espera...
+2025-04-24 17:16:05 - [H00028] preparandose para entrar al mundo exterior...
+2025-04-24 17:16:06 - [H00027] esperando grupo en túnel2
+2025-04-24 17:16:06 - [H00027] se prepara para salir por TUNEL_2
+2025-04-24 17:16:06 - [H00029] preparandose para entrar al mundo exterior...
+2025-04-24 17:16:07 - [H00028] esperando grupo en túnel3
+2025-04-24 17:16:07 - [H00028] se prepara para salir por TUNEL_3
+2025-04-24 17:16:07 - [Z00000] entra a RIESGO_3
+2025-04-24 17:16:07 - [Z00000] no hay nadie. Espera...
+2025-04-24 17:16:08 - [H00029] esperando grupo en túnel2
+2025-04-24 17:16:08 - [H00029] se prepara para salir por TUNEL_2
+2025-04-24 17:16:08 - [H00029] se prepara para salir por TUNEL_2
+2025-04-24 17:16:08 - [H00014] entra a TUNEL_2 desde TUNEL_2
+2025-04-24 17:16:09 - [H00030] preparandose para entrar al mundo exterior...
+2025-04-24 17:16:09 - [Z00000] entra a RIESGO_1
+2025-04-24 17:16:09 - [Z00000] no hay nadie. Espera...
+2025-04-24 17:16:10 - [H00030] esperando grupo en túnel3
+2025-04-24 17:16:10 - [H00030] se prepara para salir por TUNEL_3
+2025-04-24 17:16:10 - [H00021] entra a TUNEL_3 desde TUNEL_3
+2025-04-24 17:16:10 - [H00030] se prepara para salir por TUNEL_3
+2025-04-24 17:16:11 - [H00031] preparandose para entrar al mundo exterior...
+2025-04-24 17:16:11 - [Z00000] entra a RIESGO_4
+2025-04-24 17:16:11 - [Z00000] no hay nadie. Espera...
+2025-04-24 17:16:13 - [H00031] esperando grupo en túnel1
+2025-04-24 17:16:13 - [H00031] se prepara para salir por TUNEL_1
+2025-04-24 17:16:13 - [H00031] se prepara para salir por TUNEL_1
+2025-04-24 17:16:13 - [H00006] entra a TUNEL_1 desde TUNEL_1
+2025-04-24 17:16:13 - [H00032] preparandose para entrar al mundo exterior...
+2025-04-24 17:16:14 - [Z00000] entra a RIESGO_4
+2025-04-24 17:16:14 - [Z00000] no hay nadie. Espera...
+2025-04-24 17:52:12 - [Z00000] entra a RIESGO_2
+2025-04-24 17:52:12 - [H00001] preparandose para entrar al mundo exterior...
+2025-04-24 17:52:12 - [Z00000] no hay nadie. Espera...
+2025-04-24 17:52:13 - [H00002] preparandose para entrar al mundo exterior...
+2025-04-24 17:52:14 - [H00001] esperando grupo en túnel4
+2025-04-24 17:52:14 - [H00001] se prepara para salir por TUNEL_4
+2025-04-24 17:52:15 - [H00002] esperando grupo en túnel4
+2025-04-24 17:52:15 - [H00002] se prepara para salir por TUNEL_4
+2025-04-24 17:52:15 - [H00003] preparandose para entrar al mundo exterior...
+2025-04-24 17:52:15 - [Z00000] entra a RIESGO_2
+2025-04-24 17:52:15 - [Z00000] no hay nadie. Espera...
+2025-04-24 17:52:16 - [H00004] preparandose para entrar al mundo exterior...
+2025-04-24 17:52:17 - [H00003] esperando grupo en túnel1
+2025-04-24 17:52:17 - [H00003] se prepara para salir por TUNEL_1
+2025-04-24 17:52:17 - [H00004] esperando grupo en túnel2
+2025-04-24 17:52:17 - [H00004] se prepara para salir por TUNEL_2
+2025-04-24 17:52:17 - [H00005] preparandose para entrar al mundo exterior...
+2025-04-24 17:52:18 - [Z00000] entra a RIESGO_2
+2025-04-24 17:52:18 - [Z00000] no hay nadie. Espera...
+2025-04-24 17:52:19 - [H00006] preparandose para entrar al mundo exterior...
+2025-04-24 17:52:19 - [H00005] esperando grupo en túnel2
+2025-04-24 17:52:19 - [H00005] se prepara para salir por TUNEL_2
+2025-04-24 17:52:20 - [H00006] esperando grupo en túnel3
+2025-04-24 17:52:20 - [H00006] se prepara para salir por TUNEL_3
+2025-04-24 17:52:20 - [H00007] preparandose para entrar al mundo exterior...
+2025-04-24 17:52:21 - [Z00000] entra a RIESGO_3
+2025-04-24 17:52:21 - [Z00000] no hay nadie. Espera...
+2025-04-24 17:52:21 - [H00008] preparandose para entrar al mundo exterior...
+2025-04-24 17:52:22 - [H00007] esperando grupo en túnel4
+2025-04-24 17:52:22 - [H00007] se prepara para salir por TUNEL_4
+2025-04-24 17:52:22 - [H00007] se prepara para salir por TUNEL_4
+2025-04-24 17:52:23 - [H00008] esperando grupo en túnel2
+2025-04-24 17:52:23 - [H00008] se prepara para salir por TUNEL_2
+2025-04-24 17:52:23 - [H00008] se prepara para salir por TUNEL_2
+2025-04-24 17:52:23 - [Z00000] entra a RIESGO_4
+2025-04-24 17:52:23 - [Z00000] no hay nadie. Espera...
+2025-04-24 17:52:23 - [H00009] preparandose para entrar al mundo exterior...
+2025-04-24 17:52:24 - [H00010] preparandose para entrar al mundo exterior...
+2025-04-24 17:52:24 - [H00009] esperando grupo en túnel1
+2025-04-24 17:52:24 - [H00009] se prepara para salir por TUNEL_1
+2025-04-24 17:52:25 - [Z00000] entra a RIESGO_4
+2025-04-24 17:52:25 - [Z00000] no hay nadie. Espera...
+2025-04-24 17:52:25 - [H00011] preparandose para entrar al mundo exterior...
+2025-04-24 17:52:25 - [H00010] esperando grupo en túnel3
+2025-04-24 17:52:25 - [H00010] se prepara para salir por TUNEL_3
+2025-04-24 17:52:26 - [H00011] esperando grupo en túnel3
+2025-04-24 17:52:26 - [H00011] se prepara para salir por TUNEL_3
+2025-04-24 17:52:26 - [H00011] se prepara para salir por TUNEL_3
+2025-04-24 17:52:27 - [H00012] preparandose para entrar al mundo exterior...
+2025-04-24 17:52:27 - [Z00000] entra a RIESGO_2
+2025-04-24 17:52:27 - [Z00000] no hay nadie. Espera...
+2025-04-24 17:52:28 - [H00013] preparandose para entrar al mundo exterior...
+2025-04-24 17:52:28 - [H00012] esperando grupo en túnel4
+2025-04-24 17:52:28 - [H00012] se prepara para salir por TUNEL_4
+2025-04-24 17:52:29 - [H00013] esperando grupo en túnel4
+2025-04-24 17:52:29 - [H00013] se prepara para salir por TUNEL_4
+2025-04-24 17:52:29 - [H00013] se prepara para salir por TUNEL_4
+2025-04-24 17:52:29 - [H00007] entra a TUNEL_4 desde TUNEL_4
+2025-04-24 17:52:30 - [H00014] preparandose para entrar al mundo exterior...
+2025-04-24 17:52:30 - [Z00000] entra a RIESGO_2
+2025-04-24 17:52:30 - [Z00000] no hay nadie. Espera...
+2025-04-24 17:52:32 - [H00015] preparandose para entrar al mundo exterior...
+2025-04-24 17:52:32 - [H00014] esperando grupo en túnel4
+2025-04-24 17:52:32 - [H00014] se prepara para salir por TUNEL_4
+2025-04-24 17:52:33 - [Z00000] entra a RIESGO_3
+2025-04-24 17:52:33 - [Z00000] no hay nadie. Espera...
+2025-04-24 17:52:33 - [H00016] preparandose para entrar al mundo exterior...
+2025-04-24 17:52:33 - [H00015] esperando grupo en túnel4
+2025-04-24 17:52:33 - [H00015] se prepara para salir por TUNEL_4
+2025-04-24 17:52:33 - [H00013] entra a TUNEL_4 desde TUNEL_4
+2025-04-24 17:52:33 - [H00015] se prepara para salir por TUNEL_4
+2025-04-24 17:52:34 - [H00017] preparandose para entrar al mundo exterior...
+2025-04-24 17:52:35 - [Z00000] entra a RIESGO_4
+2025-04-24 17:52:35 - [Z00000] no hay nadie. Espera...
+2025-04-24 17:52:35 - [H00018] preparandose para entrar al mundo exterior...
+2025-04-24 17:52:35 - [H00016] esperando grupo en túnel2
+2025-04-24 17:52:35 - [H00016] se prepara para salir por TUNEL_2
+2025-04-24 17:52:35 - [H00017] esperando grupo en túnel3
+2025-04-24 17:52:35 - [H00017] se prepara para salir por TUNEL_3
+2025-04-24 17:52:36 - [H00019] preparandose para entrar al mundo exterior...
+2025-04-24 17:52:37 - [H00018] esperando grupo en túnel1
+2025-04-24 17:52:37 - [H00018] se prepara para salir por TUNEL_1
+2025-04-24 17:52:37 - [H00003] se prepara para salir por TUNEL_1
+2025-04-24 17:52:37 - [H00019] esperando grupo en túnel2
+2025-04-24 17:52:37 - [H00019] se prepara para salir por TUNEL_2
+2025-04-24 17:52:37 - [H00019] se prepara para salir por TUNEL_2
+2025-04-24 17:52:37 - [H00008] entra a TUNEL_2 desde TUNEL_2
+2025-04-24 17:52:38 - [H00020] preparandose para entrar al mundo exterior...
+2025-04-24 17:52:38 - [Z00000] entra a RIESGO_2
+2025-04-24 17:52:38 - [Z00000] no hay nadie. Espera...
+2025-04-24 17:52:38 - [H00021] preparandose para entrar al mundo exterior...
+2025-04-24 17:52:39 - [H00020] esperando grupo en túnel1
+2025-04-24 17:52:39 - [H00020] se prepara para salir por TUNEL_1
+2025-04-24 17:52:40 - [H00022] preparandose para entrar al mundo exterior...
+2025-04-24 17:52:40 - [H00021] esperando grupo en túnel3
+2025-04-24 17:52:40 - [H00021] se prepara para salir por TUNEL_3
+2025-04-24 17:52:40 - [H00010] se prepara para salir por TUNEL_3
+2025-04-24 17:52:40 - [H00011] entra a TUNEL_3 desde TUNEL_3
+2025-04-24 17:52:41 - [Z00000] entra a RIESGO_2
+2025-04-24 17:52:41 - [Z00000] no hay nadie. Espera...
+2025-04-24 17:52:41 - [H00022] esperando grupo en túnel4
+2025-04-24 17:52:41 - [H00022] se prepara para salir por TUNEL_4
+2025-04-24 17:52:42 - [H00023] preparandose para entrar al mundo exterior...
+2025-04-24 17:52:43 - [H00024] preparandose para entrar al mundo exterior...
+2025-04-24 17:52:43 - [H00023] esperando grupo en túnel3
+2025-04-24 17:52:43 - [H00023] se prepara para salir por TUNEL_3
+2025-04-24 17:52:43 - [Z00000] entra a RIESGO_2
+2025-04-24 17:52:43 - [Z00000] no hay nadie. Espera...
+2025-04-24 17:52:44 - [H00025] preparandose para entrar al mundo exterior...
+2025-04-24 17:52:45 - [H00024] esperando grupo en túnel4
+2025-04-24 17:52:45 - [H00024] se prepara para salir por TUNEL_4
+2025-04-24 17:52:45 - [H00024] se prepara para salir por TUNEL_4
+2025-04-24 17:52:45 - [H00015] entra a TUNEL_4 desde TUNEL_4
+2025-04-24 17:52:45 - [H00026] preparandose para entrar al mundo exterior...
+2025-04-24 17:52:46 - [H00027] preparandose para entrar al mundo exterior...
+2025-04-24 17:52:46 - [Z00000] entra a RIESGO_1
+2025-04-24 17:52:46 - [Z00000] no hay nadie. Espera...
+2025-04-24 17:52:46 - [H00025] esperando grupo en túnel2
+2025-04-24 17:52:46 - [H00025] se prepara para salir por TUNEL_2
+2025-04-24 17:52:47 - [H00027] esperando grupo en túnel2
+2025-04-24 17:52:47 - [H00027] se prepara para salir por TUNEL_2
+2025-04-24 17:52:47 - [H00019] entra a TUNEL_2 desde TUNEL_2
+2025-04-24 17:52:47 - [H00004] se prepara para salir por TUNEL_2
+2025-04-24 17:52:47 - [H00026] esperando grupo en túnel4
+2025-04-24 17:52:47 - [H00026] se prepara para salir por TUNEL_4
+2025-04-24 17:52:48 - [H00028] preparandose para entrar al mundo exterior...
+2025-04-24 17:52:48 - [Z00000] entra a RIESGO_1
+2025-04-24 17:52:48 - [Z00000] no hay nadie. Espera...
+2025-04-24 17:52:48 - [H00029] preparandose para entrar al mundo exterior...
+2025-04-24 17:52:49 - [H00028] esperando grupo en túnel4
+2025-04-24 17:52:49 - [H00028] se prepara para salir por TUNEL_4
+2025-04-24 17:52:49 - [H00026] se prepara para salir por TUNEL_4
+2025-04-24 17:52:49 - [H00024] entra a TUNEL_4 desde TUNEL_4
+2025-04-24 17:52:49 - [H00007] sale del tunel
+2025-04-24 17:52:49 - [H00007] recolectando comida en RIESGO_4
+2025-04-24 17:52:50 - [H00030] preparandose para entrar al mundo exterior...
+2025-04-24 17:52:50 - [H00029] esperando grupo en túnel1
+2025-04-24 17:52:50 - [H00029] se prepara para salir por TUNEL_1
+2025-04-24 17:52:50 - [H00003] entra a TUNEL_1 desde TUNEL_1
+2025-04-24 17:52:50 - [H00029] se prepara para salir por TUNEL_1
+2025-04-24 17:52:51 - [Z00000] entra a RIESGO_4
+2025-04-24 17:52:51 - [Z00000] atacando al humano H00007
+2025-04-24 17:52:51 - [H00030] esperando grupo en túnel4
+2025-04-24 17:52:51 - [H00030] se prepara para salir por TUNEL_4
+2025-04-24 17:52:51 - [H00031] preparandose para entrar al mundo exterior...
+2025-04-24 17:52:52 - [H00007] no logró defenderse y ha muerto.
+2025-04-24 17:52:52 - [Z00000] H00007 ha sido convertido en Z00007
+2025-04-24 17:52:52 - [H00007] interrumpido.
+2025-04-24 17:52:52 - [Z00000] mató al humano. Total muertes: 1
+2025-04-24 17:52:52 - [Z00000] entra a RIESGO_4
+2025-04-24 17:52:52 - [Z00007] entra a RIESGO_1
+2025-04-24 17:52:52 - [Z00000] no hay nadie. Espera...
+2025-04-24 17:52:52 - [Z00007] no hay nadie. Espera...
+2025-04-24 17:52:52 - [H00031] esperando grupo en túnel4
+2025-04-24 17:52:52 - [H00031] se prepara para salir por TUNEL_4
+2025-04-24 17:52:52 - [H00012] se prepara para salir por TUNEL_4
+2025-04-24 17:52:52 - [H00026] entra a TUNEL_4 desde TUNEL_4
+2025-04-24 17:52:53 - [H00032] preparandose para entrar al mundo exterior...
+2025-04-24 17:52:54 - [Z00007] entra a RIESGO_2
+2025-04-24 17:52:54 - [Z00007] no hay nadie. Espera...
+2025-04-24 17:52:54 - [H00033] preparandose para entrar al mundo exterior...
+2025-04-24 17:52:55 - [H00032] esperando grupo en túnel4
+2025-04-24 17:52:55 - [H00032] se prepara para salir por TUNEL_4
+2025-04-24 17:52:55 - [Z00000] entra a RIESGO_3
+2025-04-24 17:52:55 - [Z00000] no hay nadie. Espera...
+2025-04-24 17:52:55 - [H00034] preparandose para entrar al mundo exterior...
+2025-04-24 17:52:56 - [H00033] esperando grupo en túnel2
+2025-04-24 17:52:56 - [H00033] se prepara para salir por TUNEL_2
+2025-04-24 17:52:56 - [H00034] esperando grupo en túnel1
+2025-04-24 17:52:56 - [H00034] se prepara para salir por TUNEL_1
+2025-04-24 17:52:57 - [H00035] preparandose para entrar al mundo exterior...
+2025-04-24 17:52:57 - [Z00007] entra a RIESGO_3
+2025-04-24 17:52:57 - [Z00007] no hay nadie. Espera...
+2025-04-24 17:52:57 - [Z00000] entra a RIESGO_2
+2025-04-24 17:52:57 - [Z00000] no hay nadie. Espera...
+2025-04-24 17:52:58 - [H00036] preparandose para entrar al mundo exterior...
+2025-04-24 17:52:58 - [H00035] esperando grupo en túnel2
+2025-04-24 17:52:58 - [H00035] se prepara para salir por TUNEL_2
+2025-04-24 17:52:58 - [H00004] entra a TUNEL_2 desde TUNEL_2
+2025-04-24 17:52:58 - [H00035] se prepara para salir por TUNEL_2
+2025-04-24 17:52:59 - [H00036] esperando grupo en túnel4
+2025-04-24 17:52:59 - [H00036] se prepara para salir por TUNEL_4
+2025-04-24 17:52:59 - [H00012] entra a TUNEL_4 desde TUNEL_4
+2025-04-24 17:52:59 - [H00001] se prepara para salir por TUNEL_4
+2025-04-24 17:52:59 - [H00037] preparandose para entrar al mundo exterior...
+2025-04-24 17:52:59 - [Z00007] entra a RIESGO_3
+2025-04-24 17:52:59 - [Z00007] no hay nadie. Espera...
+2025-04-24 17:53:00 - [Z00000] entra a RIESGO_4
+2025-04-24 17:53:00 - [Z00000] no hay nadie. Espera...
+2025-04-24 17:53:00 - [H00038] preparandose para entrar al mundo exterior...
+2025-04-24 17:53:01 - [H00037] esperando grupo en túnel1
+2025-04-24 17:53:01 - [H00037] se prepara para salir por TUNEL_1
+2025-04-24 17:53:01 - [H00037] se prepara para salir por TUNEL_1
+2025-04-24 17:53:01 - [H00029] entra a TUNEL_1 desde TUNEL_1
+2025-04-24 17:53:02 - [H00039] preparandose para entrar al mundo exterior...
+2025-04-24 17:53:02 - [Z00007] entra a RIESGO_2
+2025-04-24 17:53:02 - [Z00007] no hay nadie. Espera...
+2025-04-24 17:53:02 - [H00038] esperando grupo en túnel4
+2025-04-24 17:53:02 - [H00038] se prepara para salir por TUNEL_4
+2025-04-24 17:53:02 - [Z00000] entra a RIESGO_2
+2025-04-24 17:53:02 - [Z00000] no hay nadie. Espera...
+2025-04-24 17:53:03 - [H00039] esperando grupo en túnel2
+2025-04-24 17:53:03 - [H00039] se prepara para salir por TUNEL_2
+2025-04-24 17:53:03 - [H00040] preparandose para entrar al mundo exterior...
+2025-04-24 17:53:04 - [Z00007] entra a RIESGO_2
+2025-04-24 17:53:04 - [Z00007] no hay nadie. Espera...
+2025-04-24 17:53:04 - [H00041] preparandose para entrar al mundo exterior...
+2025-04-24 17:53:04 - [Z00000] entra a RIESGO_3
+2025-04-24 17:53:04 - [Z00000] no hay nadie. Espera...
+2025-04-24 17:53:05 - [H00040] esperando grupo en túnel4
+2025-04-24 17:53:05 - [H00040] se prepara para salir por TUNEL_4
+2025-04-24 17:53:05 - [H00040] se prepara para salir por TUNEL_4
+2025-04-24 17:53:05 - [H00001] entra a TUNEL_4 desde TUNEL_4
+2025-04-24 17:53:05 - [H00041] esperando grupo en túnel4
+2025-04-24 17:53:05 - [H00041] se prepara para salir por TUNEL_4
+2025-04-24 17:53:06 - [H00042] preparandose para entrar al mundo exterior...
+2025-04-24 17:53:07 - [Z00000] entra a RIESGO_3
+2025-04-24 17:53:07 - [Z00000] no hay nadie. Espera...
+2025-04-24 17:53:07 - [Z00007] entra a RIESGO_4
+2025-04-24 17:53:07 - [Z00007] no hay nadie. Espera...
+2025-04-24 17:53:07 - [H00043] preparandose para entrar al mundo exterior...
+2025-04-24 17:53:08 - [H00042] esperando grupo en túnel2
+2025-04-24 17:53:08 - [H00042] se prepara para salir por TUNEL_2
+2025-04-24 17:53:08 - [H00035] entra a TUNEL_2 desde TUNEL_2
+2025-04-24 17:53:08 - [H00042] se prepara para salir por TUNEL_2
+2025-04-24 17:53:08 - [H00043] esperando grupo en túnel1
+2025-04-24 17:53:08 - [H00043] se prepara para salir por TUNEL_1
+2025-04-24 17:53:09 - [H00044] preparandose para entrar al mundo exterior...
+2025-04-24 17:53:09 - [Z00000] entra a RIESGO_2
+2025-04-24 17:53:09 - [Z00000] no hay nadie. Espera...
+2025-04-24 17:53:09 - [Z00007] entra a RIESGO_1
+2025-04-24 17:53:09 - [Z00007] no hay nadie. Espera...
+2025-04-24 17:53:10 - [H00045] preparandose para entrar al mundo exterior...
+2025-04-24 17:53:10 - [H00044] esperando grupo en túnel4
+2025-04-24 17:53:10 - [H00044] se prepara para salir por TUNEL_4
+2025-04-24 17:53:10 - [H00040] entra a TUNEL_4 desde TUNEL_4
+2025-04-24 17:53:10 - [H00002] se prepara para salir por TUNEL_4
+2025-04-24 17:53:11 - [H00046] preparandose para entrar al mundo exterior...
+2025-04-24 17:53:11 - [H00045] esperando grupo en túnel1
+2025-04-24 17:53:11 - [H00045] se prepara para salir por TUNEL_1
+2025-04-24 17:53:11 - [H00037] entra a TUNEL_1 desde TUNEL_1
+2025-04-24 17:53:11 - [H00045] se prepara para salir por TUNEL_1
+2025-04-24 17:53:11 - [Z00000] entra a RIESGO_1
+2025-04-24 17:53:11 - [Z00000] no hay nadie. Espera...
+2025-04-24 17:53:12 - [Z00007] entra a RIESGO_1
+2025-04-24 17:53:12 - [Z00007] no hay nadie. Espera...
+2025-04-24 17:53:12 - [H00046] esperando grupo en túnel4
+2025-04-24 17:53:12 - [H00046] se prepara para salir por TUNEL_4
+2025-04-24 17:53:12 - [H00047] preparandose para entrar al mundo exterior...
+2025-04-24 17:53:14 - [Z00000] entra a RIESGO_3
+2025-04-24 17:53:14 - [Z00000] no hay nadie. Espera...
+2025-04-24 17:53:14 - [H00047] esperando grupo en túnel4
+2025-04-24 17:53:14 - [H00047] se prepara para salir por TUNEL_4
+2025-04-24 17:53:14 - [H00047] se prepara para salir por TUNEL_4
+2025-04-24 17:53:14 - [H00002] entra a TUNEL_4 desde TUNEL_4
+2025-04-24 17:53:14 - [H00048] preparandose para entrar al mundo exterior...
+2025-04-24 17:53:15 - [Z00007] entra a RIESGO_2
+2025-04-24 17:53:15 - [Z00007] no hay nadie. Espera...
+2025-04-24 17:53:15 - [H00048] esperando grupo en túnel3
+2025-04-24 17:53:15 - [H00048] se prepara para salir por TUNEL_3
+2025-04-24 17:53:15 - [H00010] entra a TUNEL_3 desde TUNEL_3
+2025-04-24 17:53:15 - [H00048] se prepara para salir por TUNEL_3
+2025-04-24 17:53:15 - [H00049] preparandose para entrar al mundo exterior...
+2025-04-24 17:53:16 - [Z00000] entra a RIESGO_2
+2025-04-24 17:53:16 - [Z00000] no hay nadie. Espera...
+2025-04-24 17:53:16 - [H00050] preparandose para entrar al mundo exterior...
+2025-04-24 17:53:17 - [H00049] esperando grupo en túnel3
+2025-04-24 17:53:17 - [H00049] se prepara para salir por TUNEL_3
+2025-04-24 17:53:17 - [H00051] preparandose para entrar al mundo exterior...
+2025-04-24 17:53:17 - [Z00007] entra a RIESGO_1
+2025-04-24 17:53:17 - [Z00007] no hay nadie. Espera...
+2025-04-24 17:53:18 - [Z00000] entra a RIESGO_3
+2025-04-24 17:53:18 - [Z00000] no hay nadie. Espera...
+2025-04-24 17:53:18 - [H00050] esperando grupo en túnel4
+2025-04-24 17:53:18 - [H00050] se prepara para salir por TUNEL_4
+2025-04-24 17:53:18 - [H00052] preparandose para entrar al mundo exterior...
+2025-04-24 17:53:19 - [H00051] esperando grupo en túnel1
+2025-04-24 17:53:19 - [H00051] se prepara para salir por TUNEL_1
+2025-04-24 17:53:20 - [Z00000] entra a RIESGO_3
+2025-04-24 17:53:20 - [Z00000] no hay nadie. Espera...
+2025-04-24 17:53:20 - [Z00007] entra a RIESGO_4
+2025-04-24 17:53:20 - [Z00007] no hay nadie. Espera...
+2025-04-24 17:53:20 - [H00052] esperando grupo en túnel2
+2025-04-24 17:53:20 - [H00052] se prepara para salir por TUNEL_2
+2025-04-24 17:53:20 - [H00053] preparandose para entrar al mundo exterior...
+2025-04-24 17:53:22 - [H00053] esperando grupo en túnel3
+2025-04-24 17:53:22 - [H00053] se prepara para salir por TUNEL_3
+2025-04-24 17:53:22 - [H00048] entra a TUNEL_3 desde TUNEL_3
+2025-04-24 17:53:22 - [H00053] se prepara para salir por TUNEL_3
+2025-04-24 17:53:22 - [Z00000] entra a RIESGO_3
+2025-04-24 17:53:22 - [Z00000] no hay nadie. Espera...
+2025-04-24 17:53:22 - [H00054] preparandose para entrar al mundo exterior...
+2025-04-24 17:53:22 - [Z00007] entra a RIESGO_1
+2025-04-24 17:53:22 - [Z00007] no hay nadie. Espera...
+2025-04-24 17:53:23 - [H00055] preparandose para entrar al mundo exterior...
+2025-04-24 17:53:23 - [H00054] esperando grupo en túnel1
+2025-04-24 17:53:23 - [H00054] se prepara para salir por TUNEL_1
+2025-04-24 17:53:23 - [H00054] se prepara para salir por TUNEL_1
+2025-04-24 17:53:23 - [H00045] entra a TUNEL_1 desde TUNEL_1
+2025-04-24 18:07:21 - [Z00000] entra a RIESGO_3
+2025-04-24 18:07:21 - [H00001] preparandose para entrar al mundo exterior...
+2025-04-24 18:07:21 - [Z00000] no hay nadie. Espera...
+2025-04-24 18:07:22 - [H00001] esperando grupo en túnel4
+2025-04-24 18:07:22 - [H00001] se prepara para salir por TUNEL_4
+2025-04-24 18:07:23 - [H00002] preparandose para entrar al mundo exterior...
+2025-04-24 18:07:24 - [Z00000] entra a RIESGO_3
+2025-04-24 18:07:24 - [Z00000] no hay nadie. Espera...
+2025-04-24 18:07:24 - [H00002] esperando grupo en túnel4
+2025-04-24 18:07:24 - [H00002] se prepara para salir por TUNEL_4
+2025-04-24 18:07:25 - [H00003] preparandose para entrar al mundo exterior...
+2025-04-24 18:07:25 - [H00004] preparandose para entrar al mundo exterior...
+2025-04-24 18:07:26 - [Z00000] entra a RIESGO_4
+2025-04-24 18:07:26 - [Z00000] no hay nadie. Espera...
+2025-04-24 18:07:26 - [H00005] preparandose para entrar al mundo exterior...
+2025-04-24 18:07:26 - [H00004] esperando grupo en túnel2
+2025-04-24 18:07:26 - [H00004] se prepara para salir por TUNEL_2
+2025-04-24 18:07:27 - [H00003] esperando grupo en túnel1
+2025-04-24 18:07:27 - [H00003] se prepara para salir por TUNEL_1
+2025-04-24 18:07:28 - [H00005] esperando grupo en túnel1
+2025-04-24 18:07:28 - [H00005] se prepara para salir por TUNEL_1
+2025-04-24 18:07:28 - [H00006] preparandose para entrar al mundo exterior...
+2025-04-24 18:07:28 - [Z00000] entra a RIESGO_3
+2025-04-24 18:07:28 - [Z00000] no hay nadie. Espera...
+2025-04-24 18:07:29 - [H00007] preparandose para entrar al mundo exterior...
+2025-04-24 18:07:30 - [H00006] esperando grupo en túnel4
+2025-04-24 18:07:30 - [H00006] se prepara para salir por TUNEL_4
+2025-04-24 18:07:30 - [H00006] se prepara para salir por TUNEL_4
+2025-04-24 18:07:30 - [H00008] preparandose para entrar al mundo exterior...
+2025-04-24 18:07:30 - [Z00000] entra a RIESGO_3
+2025-04-24 18:07:30 - [Z00000] no hay nadie. Espera...
+2025-04-24 18:07:31 - [H00007] esperando grupo en túnel4
+2025-04-24 18:07:31 - [H00007] se prepara para salir por TUNEL_4
+2025-04-24 18:07:31 - [H00008] esperando grupo en túnel4
+2025-04-24 18:07:31 - [H00008] se prepara para salir por TUNEL_4
+2025-04-24 18:07:31 - [H00008] se prepara para salir por TUNEL_4
+2025-04-24 18:07:31 - [H00006] entra a TUNEL_4 desde TUNEL_4
+2025-04-24 18:07:31 - [H00009] preparandose para entrar al mundo exterior...
+2025-04-24 18:07:33 - [Z00000] entra a RIESGO_3
+2025-04-24 18:07:33 - [Z00000] no hay nadie. Espera...
+2025-04-24 18:07:33 - [H00009] esperando grupo en túnel1
+2025-04-24 18:07:33 - [H00009] se prepara para salir por TUNEL_1
+2025-04-24 18:07:33 - [H00009] se prepara para salir por TUNEL_1
+2025-04-24 18:07:33 - [H00010] preparandose para entrar al mundo exterior...
+2025-04-24 18:07:34 - [H00010] esperando grupo en túnel4
+2025-04-24 18:07:34 - [H00010] se prepara para salir por TUNEL_4
+2025-04-24 18:07:34 - [H00011] preparandose para entrar al mundo exterior...
+2025-04-24 18:07:35 - [Z00000] entra a RIESGO_4
+2025-04-24 18:07:35 - [Z00000] no hay nadie. Espera...
+2025-04-24 18:07:35 - [H00012] preparandose para entrar al mundo exterior...
+2025-04-24 18:07:36 - [H00011] esperando grupo en túnel2
+2025-04-24 18:07:36 - [H00011] se prepara para salir por TUNEL_2
+2025-04-24 18:07:36 - [H00013] preparandose para entrar al mundo exterior...
+2025-04-24 18:07:37 - [H00012] esperando grupo en túnel4
+2025-04-24 18:07:37 - [H00012] se prepara para salir por TUNEL_4
+2025-04-24 18:07:37 - [H00008] entra a TUNEL_4 desde TUNEL_4
+2025-04-24 18:07:37 - [H00012] se prepara para salir por TUNEL_4
+2025-04-24 18:07:38 - [H00014] preparandose para entrar al mundo exterior...
+2025-04-24 18:07:38 - [H00013] esperando grupo en túnel4
+2025-04-24 18:07:38 - [H00013] se prepara para salir por TUNEL_4
+2025-04-24 18:07:38 - [Z00000] entra a RIESGO_2
+2025-04-24 18:07:38 - [Z00000] no hay nadie. Espera...
+2025-04-24 18:07:39 - [H00014] esperando grupo en túnel3
+2025-04-24 18:07:39 - [H00014] se prepara para salir por TUNEL_3
+2025-04-24 18:07:39 - [H00015] preparandose para entrar al mundo exterior...
+2025-04-24 18:07:40 - [Z00000] entra a RIESGO_2
+2025-04-24 18:07:40 - [Z00000] no hay nadie. Espera...
+2025-04-24 18:07:41 - [H00016] preparandose para entrar al mundo exterior...
+2025-04-24 18:07:41 - [H00015] esperando grupo en túnel3
+2025-04-24 18:07:41 - [H00015] se prepara para salir por TUNEL_3
+2025-04-24 18:27:40 - [Z00000] entra a RIESGO_2
+2025-04-24 18:27:40 - [H00001] preparandose para entrar al mundo exterior...
+2025-04-24 18:27:40 - [Z00000] no hay nadie. Espera...
+2025-04-24 18:27:40 - [H00002] preparandose para entrar al mundo exterior...
+2025-04-24 18:27:41 - [H00001] esperando grupo en túnel1
+2025-04-24 18:27:41 - [H00001] se prepara para salir por TUNEL_1
+2025-04-24 18:27:42 - [H00003] preparandose para entrar al mundo exterior...
+2025-04-24 18:27:42 - [H00002] esperando grupo en túnel1
+2025-04-24 18:27:42 - [H00002] se prepara para salir por TUNEL_1
+2025-04-24 18:27:42 - [Z00000] entra a RIESGO_2
+2025-04-24 18:27:42 - [Z00000] no hay nadie. Espera...
+2025-04-24 18:27:43 - [H00003] esperando grupo en túnel3
+2025-04-24 18:27:43 - [H00003] se prepara para salir por TUNEL_3
+2025-04-24 18:27:44 - [H00004] preparandose para entrar al mundo exterior...
+2025-04-24 18:27:45 - [Z00000] entra a RIESGO_4
+2025-04-24 18:27:45 - [Z00000] no hay nadie. Espera...
+2025-04-24 18:27:45 - [H00005] preparandose para entrar al mundo exterior...
+2025-04-24 18:27:45 - [H00004] esperando grupo en túnel1
+2025-04-24 18:27:45 - [H00004] se prepara para salir por TUNEL_1
+2025-04-24 18:27:45 - [H00004] se prepara para salir por TUNEL_1
+2025-04-24 18:27:45 - [H00006] preparandose para entrar al mundo exterior...
+2025-04-24 18:27:47 - [H00005] esperando grupo en túnel2
+2025-04-24 18:27:47 - [H00005] se prepara para salir por TUNEL_2
+2025-04-24 18:27:47 - [H00007] preparandose para entrar al mundo exterior...
+2025-04-24 18:27:47 - [Z00000] entra a RIESGO_3
+2025-04-24 18:27:47 - [Z00000] no hay nadie. Espera...
+2025-04-24 18:27:47 - [H00006] esperando grupo en túnel2
+2025-04-24 18:27:47 - [H00006] se prepara para salir por TUNEL_2
+2025-04-24 18:27:48 - [H00007] esperando grupo en túnel3
+2025-04-24 18:27:48 - [H00007] se prepara para salir por TUNEL_3
+2025-04-24 18:27:48 - [H00008] preparandose para entrar al mundo exterior...
+2025-04-24 18:27:50 - [H00009] preparandose para entrar al mundo exterior...
+2025-04-24 18:27:50 - [H00008] esperando grupo en túnel1
+2025-04-24 18:27:50 - [Z00000] entra a RIESGO_1
+2025-04-24 18:27:50 - [H00008] se prepara para salir por TUNEL_1
+2025-04-24 18:27:50 - [Z00000] no hay nadie. Espera...
+2025-04-24 18:27:51 - [H00010] preparandose para entrar al mundo exterior...
+2025-04-24 18:27:51 - [H00009] esperando grupo en túnel2
+2025-04-24 18:27:51 - [H00009] se prepara para salir por TUNEL_2
+2025-04-24 18:27:51 - [H00009] se prepara para salir por TUNEL_2
+2025-04-24 18:27:52 - [H00011] preparandose para entrar al mundo exterior...
+2025-04-24 18:27:52 - [H00010] esperando grupo en túnel4
+2025-04-24 18:27:52 - [H00010] se prepara para salir por TUNEL_4
+2025-04-24 18:27:52 - [Z00000] entra a RIESGO_3
+2025-04-24 18:27:52 - [Z00000] no hay nadie. Espera...
+2025-04-24 18:27:53 - [H00012] preparandose para entrar al mundo exterior...
+2025-04-24 18:27:54 - [H00013] preparandose para entrar al mundo exterior...
+2025-04-24 18:27:54 - [H00011] esperando grupo en túnel3
+2025-04-24 18:27:54 - [H00011] se prepara para salir por TUNEL_3
+2025-04-24 18:27:54 - [H00011] se prepara para salir por TUNEL_3
+2025-04-24 18:27:54 - [H00012] esperando grupo en túnel1
+2025-04-24 18:27:54 - [H00012] se prepara para salir por TUNEL_1
+2025-04-24 18:27:54 - [H00008] se prepara para salir por TUNEL_1
+2025-04-24 18:27:54 - [H00004] entra a TUNEL_1 desde ZONA_COMUN
+2025-04-24 18:27:55 - [H00014] preparandose para entrar al mundo exterior...
+2025-04-24 18:27:55 - [H00013] esperando grupo en túnel4
+2025-04-24 18:27:55 - [H00013] se prepara para salir por TUNEL_4
+2025-04-24 18:27:55 - [Z00000] entra a RIESGO_1
+2025-04-24 18:27:55 - [Z00000] no hay nadie. Espera...
+2025-04-24 18:27:56 - [H00015] preparandose para entrar al mundo exterior...
+2025-04-24 18:27:56 - [H00014] esperando grupo en túnel3
+2025-04-24 18:27:56 - [H00014] se prepara para salir por TUNEL_3
+2025-04-24 18:27:57 - [H00015] esperando grupo en túnel1
+2025-04-24 18:27:57 - [H00015] se prepara para salir por TUNEL_1
+2025-04-24 18:27:57 - [H00016] preparandose para entrar al mundo exterior...
+2025-04-24 18:27:58 - [Z00000] entra a RIESGO_2
+2025-04-24 18:27:58 - [Z00000] no hay nadie. Espera...
+2025-04-24 18:27:58 - [H00016] esperando grupo en túnel1
+2025-04-24 18:27:58 - [H00016] se prepara para salir por TUNEL_1
+2025-04-24 18:27:58 - [H00015] se prepara para salir por TUNEL_1
+2025-04-24 18:27:58 - [H00008] entra a TUNEL_1 desde ZONA_COMUN
+2025-04-24 18:27:58 - [H00017] preparandose para entrar al mundo exterior...
+2025-04-24 18:28:00 - [H00018] preparandose para entrar al mundo exterior...
+2025-04-24 18:28:00 - [Z00000] entra a RIESGO_3
+2025-04-24 18:28:00 - [Z00000] no hay nadie. Espera...
+2025-04-24 18:28:00 - [H00017] esperando grupo en túnel3
+2025-04-24 18:28:00 - [H00017] se prepara para salir por TUNEL_3
+2025-04-24 18:28:00 - [H00017] se prepara para salir por TUNEL_3
+2025-04-24 18:28:00 - [H00011] entra a TUNEL_3 desde ZONA_COMUN
+2025-04-24 18:28:01 - [H00019] preparandose para entrar al mundo exterior...
+2025-04-24 18:28:01 - [H00018] esperando grupo en túnel3
+2025-04-24 18:28:01 - [H00018] se prepara para salir por TUNEL_3
+2025-04-24 18:28:02 - [H00019] esperando grupo en túnel3
+2025-04-24 18:28:02 - [H00019] se prepara para salir por TUNEL_3
+2025-04-24 18:28:02 - [H00018] se prepara para salir por TUNEL_3
+2025-04-24 18:28:02 - [H00017] entra a TUNEL_3 desde ZONA_COMUN
+2025-04-24 18:28:02 - [H00020] preparandose para entrar al mundo exterior...
+2025-04-24 18:28:03 - [Z00000] entra a RIESGO_4
+2025-04-24 18:28:03 - [Z00000] no hay nadie. Espera...
+2025-04-24 18:28:04 - [H00021] preparandose para entrar al mundo exterior...
+2025-04-24 18:28:04 - [H00020] esperando grupo en túnel2
+2025-04-24 18:28:04 - [H00020] se prepara para salir por TUNEL_2
+2025-04-24 18:28:05 - [H00022] preparandose para entrar al mundo exterior...
+2025-04-24 18:28:05 - [Z00000] entra a RIESGO_3
+2025-04-24 18:28:05 - [Z00000] no hay nadie. Espera...
+2025-04-24 18:28:05 - [H00021] esperando grupo en túnel3
+2025-04-24 18:28:05 - [H00021] se prepara para salir por TUNEL_3
+2025-04-24 18:28:07 - [H00022] esperando grupo en túnel4
+2025-04-24 18:28:07 - [H00022] se prepara para salir por TUNEL_4
+2025-04-24 18:28:07 - [H00022] se prepara para salir por TUNEL_4
+2025-04-24 18:28:07 - [H00023] preparandose para entrar al mundo exterior...
+2025-04-24 18:28:08 - [Z00000] entra a RIESGO_2
+2025-04-24 18:28:08 - [Z00000] no hay nadie. Espera...
+2025-04-24 18:28:08 - [H00024] preparandose para entrar al mundo exterior...
+2025-04-24 18:28:08 - [H00023] esperando grupo en túnel4
+2025-04-24 18:28:08 - [H00023] se prepara para salir por TUNEL_4
+2025-04-24 18:28:09 - [H00025] preparandose para entrar al mundo exterior...
+2025-04-24 18:28:09 - [H00024] esperando grupo en túnel2
+2025-04-24 18:28:09 - [H00024] se prepara para salir por TUNEL_2
+2025-04-24 18:28:09 - [H00024] se prepara para salir por TUNEL_2
+2025-04-24 18:28:09 - [H00009] entra a TUNEL_2 desde ZONA_COMUN
+2025-04-24 18:28:10 - [H00026] preparandose para entrar al mundo exterior...
+2025-04-24 18:28:10 - [Z00000] entra a RIESGO_4
+2025-04-24 18:28:10 - [Z00000] no hay nadie. Espera...
+2025-04-24 18:28:10 - [H00025] esperando grupo en túnel1
+2025-04-24 18:28:10 - [H00025] se prepara para salir por TUNEL_1
+2025-04-24 18:28:12 - [H00026] esperando grupo en túnel3
+2025-04-24 18:28:12 - [H00026] se prepara para salir por TUNEL_3
+2025-04-24 18:28:12 - [H00021] se prepara para salir por TUNEL_3
+2025-04-24 18:28:12 - [H00018] entra a TUNEL_3 desde ZONA_COMUN
+2025-04-24 18:28:12 - [H00027] preparandose para entrar al mundo exterior...
+2025-04-24 18:28:13 - [Z00000] entra a RIESGO_3
+2025-04-24 18:28:13 - [Z00000] no hay nadie. Espera...
+2025-04-24 18:28:14 - [H00027] esperando grupo en túnel2
+2025-04-24 18:28:14 - [H00027] se prepara para salir por TUNEL_2
+2025-04-24 18:28:14 - [H00028] preparandose para entrar al mundo exterior...
+2025-04-24 18:28:15 - [H00029] preparandose para entrar al mundo exterior...
+2025-04-24 18:28:15 - [Z00000] entra a RIESGO_2
+2025-04-24 18:28:15 - [Z00000] no hay nadie. Espera...
+2025-04-24 18:28:16 - [H00028] esperando grupo en túnel3
+2025-04-24 18:28:16 - [H00028] se prepara para salir por TUNEL_3
+2025-04-24 18:28:16 - [H00030] preparandose para entrar al mundo exterior...
+2025-04-24 18:28:17 - [H00029] esperando grupo en túnel4
+2025-04-24 18:28:17 - [H00029] se prepara para salir por TUNEL_4
+2025-04-24 18:28:17 - [H00029] se prepara para salir por TUNEL_4
+2025-04-24 18:28:17 - [H00022] entra a TUNEL_4 desde ZONA_COMUN
+2025-04-24 18:28:17 - [H00031] preparandose para entrar al mundo exterior...
+2025-04-24 18:28:17 - [H00032] preparandose para entrar al mundo exterior...
+2025-04-24 18:28:18 - [H00030] esperando grupo en túnel3
+2025-04-24 18:28:18 - [H00030] se prepara para salir por TUNEL_3
+2025-04-24 18:28:18 - [H00028] se prepara para salir por TUNEL_3
+2025-04-24 18:28:18 - [H00021] entra a TUNEL_3 desde ZONA_COMUN
+2025-04-24 18:28:18 - [Z00000] entra a RIESGO_4
+2025-04-24 18:28:18 - [Z00000] no hay nadie. Espera...
+2025-04-24 18:28:18 - [H00031] esperando grupo en túnel2
+2025-04-24 18:28:18 - [H00031] se prepara para salir por TUNEL_2
+2025-04-24 18:28:18 - [H00027] se prepara para salir por TUNEL_2
+2025-04-24 18:28:18 - [H00024] entra a TUNEL_2 desde ZONA_COMUN
+2025-04-24 18:28:19 - [H00032] esperando grupo en túnel2
+2025-04-24 18:28:19 - [H00032] se prepara para salir por TUNEL_2
+2025-04-24 18:28:19 - [H00033] preparandose para entrar al mundo exterior...
+2025-04-24 18:28:20 - [H00034] preparandose para entrar al mundo exterior...
+2025-04-24 18:28:20 - [H00033] esperando grupo en túnel4
+2025-04-24 18:28:20 - [H00033] se prepara para salir por TUNEL_4
+2025-04-24 18:28:21 - [Z00000] entra a RIESGO_3
+2025-04-24 18:28:21 - [Z00000] no hay nadie. Espera...
+2025-04-24 18:28:21 - [H00035] preparandose para entrar al mundo exterior...
+2025-04-24 18:28:22 - [H00034] esperando grupo en túnel2
+2025-04-24 18:28:22 - [H00034] se prepara para salir por TUNEL_2
+2025-04-24 18:28:22 - [H00027] entra a TUNEL_2 desde ZONA_COMUN
+2025-04-24 18:28:22 - [H00031] se prepara para salir por TUNEL_2
+2025-04-24 18:28:22 - [H00036] preparandose para entrar al mundo exterior...
+2025-04-24 18:28:23 - [H00035] esperando grupo en túnel1
+2025-04-24 18:28:23 - [H00035] se prepara para salir por TUNEL_1
+2025-04-24 18:28:23 - [H00025] se prepara para salir por TUNEL_1
+2025-04-24 18:28:23 - [H00015] entra a TUNEL_1 desde ZONA_COMUN
+2025-04-24 18:28:23 - [Z00000] entra a RIESGO_4
+2025-04-24 18:28:23 - [Z00000] no hay nadie. Espera...
+2025-04-24 18:28:24 - [H00036] esperando grupo en túnel4
+2025-04-24 18:28:24 - [H00036] se prepara para salir por TUNEL_4
+2025-04-24 18:28:24 - [H00033] se prepara para salir por TUNEL_4
+2025-04-24 18:28:24 - [H00029] entra a TUNEL_4 desde ZONA_COMUN
+2025-04-24 18:28:24 - [H00037] preparandose para entrar al mundo exterior...
+2025-04-24 18:28:24 - [H00038] preparandose para entrar al mundo exterior...
+2025-04-24 18:28:25 - [H00037] esperando grupo en túnel4
+2025-04-24 18:28:25 - [H00037] se prepara para salir por TUNEL_4
+2025-04-24 18:28:25 - [Z00000] entra a RIESGO_1
+2025-04-24 18:28:25 - [Z00000] no hay nadie. Espera...
+2025-04-24 18:28:26 - [H00038] esperando grupo en túnel2
+2025-04-24 18:28:26 - [H00038] se prepara para salir por TUNEL_2
+2025-04-24 18:28:26 - [H00039] preparandose para entrar al mundo exterior...
+2025-04-24 18:28:27 - [H00040] preparandose para entrar al mundo exterior...
+2025-04-24 18:28:28 - [Z00000] entra a RIESGO_3
+2025-04-24 18:28:28 - [Z00000] no hay nadie. Espera...
+2025-04-24 18:28:28 - [H00039] esperando grupo en túnel2
+2025-04-24 18:28:28 - [H00039] se prepara para salir por TUNEL_2
+2025-04-24 18:28:28 - [H00031] entra a TUNEL_2 desde ZONA_COMUN
+2025-04-24 18:28:28 - [H00038] se prepara para salir por TUNEL_2
+2025-04-24 18:28:28 - [H00009] sale del tunel
+2025-04-24 18:28:28 - [H00009] recolectando comida en ZONA_COMUN
+2025-04-24 18:28:28 - [H00041] preparandose para entrar al mundo exterior...
+2025-04-24 18:28:29 - [H00040] esperando grupo en túnel2
+2025-04-24 18:28:29 - [H00040] se prepara para salir por TUNEL_2
+2025-04-24 18:28:29 - [H00042] preparandose para entrar al mundo exterior...
+2025-04-24 18:28:30 - [H00041] esperando grupo en túnel1
+2025-04-24 18:28:30 - [H00041] se prepara para salir por TUNEL_1
+2025-04-24 18:28:30 - [H00043] preparandose para entrar al mundo exterior...
+2025-04-24 18:28:31 - [Z00000] entra a RIESGO_1
+2025-04-24 18:28:31 - [Z00000] no hay nadie. Espera...
+2025-04-24 18:28:31 - [H00042] esperando grupo en túnel4
+2025-04-24 18:28:31 - [H00042] se prepara para salir por TUNEL_4
+2025-04-24 18:28:31 - [H00037] se prepara para salir por TUNEL_4
+2025-04-24 18:28:31 - [H00033] entra a TUNEL_4 desde ZONA_COMUN
+2025-04-24 18:28:31 - [H00044] preparandose para entrar al mundo exterior...
+2025-04-24 18:28:31 - [H00009] recolectó 2 piezas de comida.
+2025-04-24 18:28:32 - [H00043] esperando grupo en túnel4
+2025-04-24 18:28:32 - [H00043] se prepara para salir por TUNEL_4
+2025-04-24 18:28:32 - [H00045] preparandose para entrar al mundo exterior...
+2025-04-24 18:28:33 - [H00044] esperando grupo en túnel3
+2025-04-24 18:28:33 - [H00044] se prepara para salir por TUNEL_3
+2025-04-24 18:28:33 - [H00045] esperando grupo en túnel4
+2025-04-24 18:28:33 - [H00045] se prepara para salir por TUNEL_4
+2025-04-24 18:28:33 - [H00043] se prepara para salir por TUNEL_4
+2025-04-24 18:28:33 - [H00037] entra a TUNEL_4 desde ZONA_COMUN
+2025-04-24 18:28:33 - [Z00000] entra a RIESGO_4
+2025-04-24 18:28:33 - [Z00000] no hay nadie. Espera...
+2025-04-24 18:28:34 - [H00046] preparandose para entrar al mundo exterior...
+2025-04-24 18:28:35 - [Z00000] entra a RIESGO_3
+2025-04-24 18:28:35 - [Z00000] no hay nadie. Espera...
+2025-04-24 18:28:36 - [H00046] esperando grupo en túnel2
+2025-04-24 18:28:36 - [H00046] se prepara para salir por TUNEL_2
+2025-04-24 18:28:36 - [H00040] se prepara para salir por TUNEL_2
+2025-04-24 18:28:36 - [H00038] entra a TUNEL_2 desde ZONA_COMUN
+2025-04-24 18:28:36 - [H00047] preparandose para entrar al mundo exterior...
+2025-04-24 18:28:38 - [H00048] preparandose para entrar al mundo exterior...
+2025-04-24 18:28:38 - [Z00000] entra a RIESGO_3
+2025-04-24 18:28:38 - [Z00000] no hay nadie. Espera...
+2025-04-24 18:28:38 - [H00047] esperando grupo en túnel2
+2025-04-24 18:28:38 - [H00047] se prepara para salir por TUNEL_2
+2025-04-24 18:28:38 - [H00049] preparandose para entrar al mundo exterior...
+2025-04-24 18:28:39 - [H00050] preparandose para entrar al mundo exterior...
+2025-04-24 18:28:40 - [H00049] esperando grupo en túnel2
+2025-04-24 18:28:40 - [H00049] se prepara para salir por TUNEL_2
+2025-04-24 18:28:40 - [H00047] se prepara para salir por TUNEL_2
+2025-04-24 18:28:40 - [H00040] entra a TUNEL_2 desde ZONA_COMUN
+2025-04-24 18:28:40 - [H00048] esperando grupo en túnel1
+2025-04-24 18:28:40 - [H00048] se prepara para salir por TUNEL_1
+2025-04-24 18:28:40 - [H00041] se prepara para salir por TUNEL_1
+2025-04-24 18:28:40 - [H00025] entra a TUNEL_1 desde ZONA_COMUN
+2025-04-24 18:28:41 - [Z00000] entra a RIESGO_3
+2025-04-24 18:28:41 - [Z00000] no hay nadie. Espera...
+2025-04-24 18:28:41 - [H00050] esperando grupo en túnel2
+2025-04-24 18:28:41 - [H00050] se prepara para salir por TUNEL_2
+2025-04-24 18:28:41 - [H00051] preparandose para entrar al mundo exterior...
+2025-04-24 18:28:42 - [H00051] esperando grupo en túnel1
+2025-04-24 18:28:42 - [H00051] se prepara para salir por TUNEL_1
+2025-04-24 18:28:42 - [H00052] preparandose para entrar al mundo exterior...
+2025-04-24 18:28:43 - [H00052] esperando grupo en túnel2
+2025-04-24 18:28:43 - [H00052] se prepara para salir por TUNEL_2
+2025-04-24 18:28:43 - [H00050] se prepara para salir por TUNEL_2
+2025-04-24 18:28:43 - [H00047] entra a TUNEL_2 desde ZONA_COMUN
+2025-04-24 18:28:43 - [H00053] preparandose para entrar al mundo exterior...
+2025-04-24 18:28:43 - [Z00000] entra a RIESGO_4
+2025-04-24 18:28:43 - [Z00000] no hay nadie. Espera...
+2025-04-24 18:28:45 - [H00054] preparandose para entrar al mundo exterior...
+2025-04-24 18:28:45 - [H00053] esperando grupo en túnel3
+2025-04-24 18:28:45 - [H00053] se prepara para salir por TUNEL_3
+2025-04-24 18:28:45 - [H00044] se prepara para salir por TUNEL_3
+2025-04-24 18:28:45 - [H00028] entra a TUNEL_3 desde ZONA_COMUN
+2025-04-24 18:28:46 - [Z00000] entra a RIESGO_2
+2025-04-24 18:28:46 - [Z00000] atacando al humano H00009
+2025-04-24 18:28:46 - [H00009] logró defenderse.
+2025-04-24 18:28:46 - [Z00000] el humano se defendió. Sigue con vida.
+2025-04-24 18:28:46 - [Z00000] entra a RIESGO_4
+2025-04-24 18:28:46 - [Z00000] no hay nadie. Espera...
+2025-04-24 18:28:47 - [H00054] esperando grupo en túnel1
+2025-04-24 18:28:47 - [H00054] se prepara para salir por TUNEL_1
+2025-04-24 18:28:47 - [H00051] se prepara para salir por TUNEL_1
+2025-04-24 18:28:47 - [H00041] entra a TUNEL_1 desde ZONA_COMUN
+2025-04-24 18:28:47 - [H00055] preparandose para entrar al mundo exterior...
+2025-04-24 18:28:48 - [H00056] preparandose para entrar al mundo exterior...
+2025-04-24 18:28:48 - [H00055] esperando grupo en túnel2
+2025-04-24 18:28:48 - [H00055] se prepara para salir por TUNEL_2
+2025-04-24 18:28:49 - [Z00000] entra a RIESGO_2
+2025-04-24 18:28:49 - [Z00000] atacando al humano H00009
+2025-04-24 18:28:49 - [H00056] esperando grupo en túnel2
+2025-04-24 18:28:49 - [H00056] se prepara para salir por TUNEL_2
+2025-04-24 18:28:49 - [H00055] se prepara para salir por TUNEL_2
+2025-04-24 18:28:49 - [H00050] entra a TUNEL_2 desde ZONA_COMUN
+2025-04-24 18:28:49 - [H00057] preparandose para entrar al mundo exterior...
+2025-04-24 18:28:50 - [H00009] ya fue atacado. Ignorando ataque.
+2025-04-24 18:28:50 - [Z00000] el humano se defendió. Sigue con vida.
+2025-04-24 18:28:50 - [Z00000] entra a RIESGO_2
+2025-04-24 18:28:50 - [Z00000] atacando al humano H00009
+2025-04-24 18:28:50 - [H00058] preparandose para entrar al mundo exterior...
+2025-04-24 18:28:51 - [H00057] esperando grupo en túnel1
+2025-04-24 18:28:51 - [H00057] se prepara para salir por TUNEL_1
+2025-04-24 18:28:51 - [H00009] ya fue atacado. Ignorando ataque.
+2025-04-24 18:28:51 - [Z00000] el humano se defendió. Sigue con vida.
+2025-04-24 18:28:51 - [Z00000] entra a RIESGO_4
+2025-04-24 18:28:51 - [Z00000] no hay nadie. Espera...
+2025-04-24 18:28:51 - [H00058] esperando grupo en túnel3
+2025-04-24 18:28:51 - [H00058] se prepara para salir por TUNEL_3
+2025-04-24 18:28:51 - [H00059] preparandose para entrar al mundo exterior...
+2025-04-24 18:28:52 - [H00060] preparandose para entrar al mundo exterior...
+2025-04-24 18:28:53 - [H00060] esperando grupo en túnel3
+2025-04-24 18:28:53 - [H00060] se prepara para salir por TUNEL_3
+2025-04-24 18:28:53 - [H00058] se prepara para salir por TUNEL_3
+2025-04-24 18:28:53 - [H00044] entra a TUNEL_3 desde ZONA_COMUN
+2025-04-24 18:28:53 - [H00059] esperando grupo en túnel1
+2025-04-24 18:28:53 - [H00059] se prepara para salir por TUNEL_1
+2025-04-24 18:28:53 - [H00057] se prepara para salir por TUNEL_1
+2025-04-24 18:28:53 - [H00051] entra a TUNEL_1 desde ZONA_COMUN
+2025-04-24 18:28:54 - [Z00000] entra a RIESGO_1
+2025-04-24 18:28:54 - [Z00000] no hay nadie. Espera...
+2025-04-24 18:28:54 - [H00061] preparandose para entrar al mundo exterior...
+2025-04-24 18:28:55 - [H00062] preparandose para entrar al mundo exterior...
+2025-04-24 18:38:52 - [Z00000] entra a RIESGO_1
+2025-04-24 18:38:52 - [H00001] preparandose para entrar al mundo exterior...
+2025-04-24 18:38:52 - [Z00000] no hay nadie. Espera...
+2025-04-24 18:38:54 - [H00002] preparandose para entrar al mundo exterior...
+2025-04-24 18:38:54 - [H00001] esperando grupo en túnel1
+2025-04-24 18:38:54 - [H00001] se prepara para salir por TUNEL_1
+2025-04-24 18:38:55 - [Z00000] entra a RIESGO_2
+2025-04-24 18:38:55 - [Z00000] no hay nadie. Espera...
+2025-04-24 18:38:55 - [H00003] preparandose para entrar al mundo exterior...
+2025-04-24 18:38:55 - [H00002] esperando grupo en túnel1
+2025-04-24 18:38:55 - [H00002] se prepara para salir por TUNEL_1
+2025-04-24 18:38:55 - [H00004] preparandose para entrar al mundo exterior...
+2025-04-24 18:38:57 - [H00003] esperando grupo en túnel3
+2025-04-24 18:38:57 - [H00003] se prepara para salir por TUNEL_3
+2025-04-24 18:38:57 - [H00005] preparandose para entrar al mundo exterior...
+2025-04-24 18:38:57 - [H00004] esperando grupo en túnel3
+2025-04-24 18:38:57 - [H00004] se prepara para salir por TUNEL_3
+2025-04-24 18:38:57 - [Z00000] entra a RIESGO_3
+2025-04-24 18:38:57 - [Z00000] no hay nadie. Espera...
+2025-04-24 18:38:58 - [H00006] preparandose para entrar al mundo exterior...
+2025-04-24 18:38:58 - [H00005] esperando grupo en túnel3
+2025-04-24 18:38:58 - [H00005] se prepara para salir por TUNEL_3
+2025-04-24 18:38:58 - [H00005] se prepara para salir por TUNEL_3
+2025-04-24 18:38:59 - [H00007] preparandose para entrar al mundo exterior...
+2025-04-24 18:38:59 - [Z00000] entra a RIESGO_1
+2025-04-24 18:38:59 - [Z00000] no hay nadie. Espera...
+2025-04-24 18:39:00 - [H00007] esperando grupo en túnel2
+2025-04-24 18:39:00 - [H00007] se prepara para salir por TUNEL_2
+2025-04-24 18:39:00 - [H00006] esperando grupo en túnel3
+2025-04-24 18:39:00 - [H00006] se prepara para salir por TUNEL_3
+2025-04-24 18:39:00 - [H00008] preparandose para entrar al mundo exterior...
+2025-04-24 18:39:01 - [H00009] preparandose para entrar al mundo exterior...
+2025-04-24 18:39:02 - [Z00000] entra a RIESGO_1
+2025-04-24 18:39:02 - [Z00000] no hay nadie. Espera...
+2025-04-24 18:39:02 - [H00010] preparandose para entrar al mundo exterior...
+2025-04-24 18:39:02 - [H00008] esperando grupo en túnel2
+2025-04-24 18:39:02 - [H00008] se prepara para salir por TUNEL_2
+2025-04-24 18:39:03 - [H00011] preparandose para entrar al mundo exterior...
+2025-04-24 18:39:03 - [H00009] esperando grupo en túnel1
+2025-04-24 18:39:03 - [H00009] se prepara para salir por TUNEL_1
+2025-04-24 18:39:03 - [H00009] se prepara para salir por TUNEL_1
+2025-04-24 18:39:04 - [H00010] esperando grupo en túnel1
+2025-04-24 18:39:04 - [H00010] se prepara para salir por TUNEL_1
+2025-04-24 18:39:04 - [H00012] preparandose para entrar al mundo exterior...
+2025-04-24 18:39:04 - [H00011] esperando grupo en túnel1
+2025-04-24 18:39:04 - [H00011] se prepara para salir por TUNEL_1
+2025-04-24 18:39:04 - [H00010] se prepara para salir por TUNEL_1
+2025-04-24 18:39:04 - [H00009] entra a TUNEL_1 desde ZONA_COMUN
+2025-04-24 18:39:05 - [H00013] preparandose para entrar al mundo exterior...
+2025-04-24 18:39:05 - [Z00000] entra a RIESGO_2
+2025-04-24 18:39:05 - [Z00000] no hay nadie. Espera...
+2025-04-24 18:39:06 - [H00014] preparandose para entrar al mundo exterior...
+2025-04-24 18:39:06 - [H00012] esperando grupo en túnel3
+2025-04-24 18:39:06 - [H00012] se prepara para salir por TUNEL_3
+2025-04-24 18:39:06 - [H00006] se prepara para salir por TUNEL_3
+2025-04-24 18:39:06 - [H00005] entra a TUNEL_3 desde ZONA_COMUN
+2025-04-24 18:39:07 - [H00015] preparandose para entrar al mundo exterior...
+2025-04-24 18:39:07 - [H00013] esperando grupo en túnel4
+2025-04-24 18:39:07 - [H00013] se prepara para salir por TUNEL_4
+2025-04-24 18:39:07 - [H00014] esperando grupo en túnel1
+2025-04-24 18:39:07 - [H00014] se prepara para salir por TUNEL_1
+2025-04-24 18:39:07 - [Z00000] entra a RIESGO_2
+2025-04-24 18:39:07 - [Z00000] no hay nadie. Espera...
+2025-04-24 18:39:08 - [H00015] esperando grupo en túnel1
+2025-04-24 18:39:08 - [H00015] se prepara para salir por TUNEL_1
+2025-04-24 18:39:08 - [H00014] se prepara para salir por TUNEL_1
+2025-04-24 18:39:08 - [H00010] entra a TUNEL_1 desde ZONA_COMUN
+2025-04-24 18:39:08 - [H00016] preparandose para entrar al mundo exterior...
+2025-04-24 18:39:09 - [Z00000] entra a RIESGO_3
+2025-04-24 18:39:09 - [Z00000] no hay nadie. Espera...
+2025-04-24 18:39:09 - [H00016] esperando grupo en túnel3
+2025-04-24 18:39:09 - [H00016] se prepara para salir por TUNEL_3
+2025-04-24 18:39:09 - [H00017] preparandose para entrar al mundo exterior...
+2025-04-24 18:39:11 - [H00018] preparandose para entrar al mundo exterior...
+2025-04-24 18:39:11 - [H00017] esperando grupo en túnel3
+2025-04-24 18:39:11 - [H00017] se prepara para salir por TUNEL_3
+2025-04-24 18:39:11 - [H00016] se prepara para salir por TUNEL_3
+2025-04-24 18:39:11 - [H00006] entra a TUNEL_3 desde ZONA_COMUN
+2025-04-24 18:39:12 - [Z00000] entra a RIESGO_4
+2025-04-24 18:39:12 - [Z00000] no hay nadie. Espera...
+2025-04-24 18:39:12 - [H00019] preparandose para entrar al mundo exterior...
+2025-04-24 18:39:12 - [H00018] esperando grupo en túnel1
+2025-04-24 18:39:12 - [H00018] se prepara para salir por TUNEL_1
+2025-04-24 18:39:12 - [H00020] preparandose para entrar al mundo exterior...
+2025-04-24 18:39:13 - [H00019] esperando grupo en túnel2
+2025-04-24 18:39:13 - [H00019] se prepara para salir por TUNEL_2
+2025-04-24 18:39:13 - [H00019] se prepara para salir por TUNEL_2
+2025-04-24 18:39:14 - [Z00000] entra a RIESGO_4
+2025-04-24 18:39:14 - [Z00000] no hay nadie. Espera...
+2025-04-24 18:39:14 - [H00020] esperando grupo en túnel2
+2025-04-24 18:39:14 - [H00020] se prepara para salir por TUNEL_2
+2025-04-24 18:39:14 - [H00021] preparandose para entrar al mundo exterior...
+2025-04-24 18:39:16 - [H00022] preparandose para entrar al mundo exterior...
+2025-04-24 18:39:16 - [Z00000] entra a RIESGO_2
+2025-04-24 18:39:16 - [Z00000] no hay nadie. Espera...
+2025-04-24 18:39:16 - [H00021] esperando grupo en túnel1
+2025-04-24 18:39:16 - [H00021] se prepara para salir por TUNEL_1
+2025-04-24 18:39:16 - [H00018] se prepara para salir por TUNEL_1
+2025-04-24 18:39:16 - [H00014] entra a TUNEL_1 desde ZONA_COMUN
+2025-04-24 18:39:16 - [H00023] preparandose para entrar al mundo exterior...
+2025-04-24 18:39:17 - [H00022] esperando grupo en túnel3
+2025-04-24 18:39:17 - [H00022] se prepara para salir por TUNEL_3
+2025-04-24 18:39:17 - [H00024] preparandose para entrar al mundo exterior...
+2025-04-24 18:39:18 - [H00023] esperando grupo en túnel4
+2025-04-24 18:39:18 - [H00023] se prepara para salir por TUNEL_4
+2025-04-24 18:39:18 - [H00025] preparandose para entrar al mundo exterior...
+2025-04-24 18:39:19 - [Z00000] entra a RIESGO_3
+2025-04-24 18:39:19 - [Z00000] no hay nadie. Espera...
+2025-04-24 18:39:19 - [H00024] esperando grupo en túnel4
+2025-04-24 18:39:19 - [H00024] se prepara para salir por TUNEL_4
+2025-04-24 18:39:19 - [H00024] se prepara para salir por TUNEL_4
+2025-04-24 18:39:20 - [H00026] preparandose para entrar al mundo exterior...
+2025-04-24 18:39:20 - [H00025] esperando grupo en túnel1
+2025-04-24 18:39:20 - [H00025] se prepara para salir por TUNEL_1
+2025-04-24 18:39:21 - [H00026] esperando grupo en túnel4
+2025-04-24 18:39:21 - [H00026] se prepara para salir por TUNEL_4
+2025-04-24 18:39:21 - [Z00000] entra a RIESGO_1
+2025-04-24 18:39:21 - [Z00000] no hay nadie. Espera...
+2025-04-24 18:43:31 - [H00001] preparandose para entrar al mundo exterior...
+2025-04-24 18:43:31 - [Z00000] entra a RIESGO_1
+2025-04-24 18:43:31 - [Z00000] no hay nadie. Espera...
+2025-04-24 18:43:32 - [H00002] preparandose para entrar al mundo exterior...
+2025-04-24 18:43:33 - [H00001] esperando grupo en túnel3
+2025-04-24 18:43:33 - [H00001] se prepara para salir por TUNEL_3
+2025-04-24 18:43:33 - [H00003] preparandose para entrar al mundo exterior...
+2025-04-24 18:43:33 - [H00002] esperando grupo en túnel4
+2025-04-24 18:43:33 - [H00002] se prepara para salir por TUNEL_4
+2025-04-24 18:43:34 - [Z00000] entra a RIESGO_3
+2025-04-24 18:43:34 - [Z00000] no hay nadie. Espera...
+2025-04-24 18:43:34 - [H00003] esperando grupo en túnel3
+2025-04-24 18:43:34 - [H00003] se prepara para salir por TUNEL_3
+2025-04-24 18:43:35 - [H00004] preparandose para entrar al mundo exterior...
+2025-04-24 18:43:36 - [H00005] preparandose para entrar al mundo exterior...
+2025-04-24 18:43:36 - [Z00000] entra a RIESGO_1
+2025-04-24 18:43:36 - [Z00000] no hay nadie. Espera...
+2025-04-24 18:43:36 - [H00004] esperando grupo en túnel3
+2025-04-24 18:43:36 - [H00004] se prepara para salir por TUNEL_3
+2025-04-24 18:43:36 - [H00004] se prepara para salir por TUNEL_3
+2025-04-24 18:43:37 - [H00005] esperando grupo en túnel3
+2025-04-24 18:43:37 - [H00005] se prepara para salir por TUNEL_3
+2025-04-24 18:43:37 - [H00006] preparandose para entrar al mundo exterior...
+2025-04-24 18:43:38 - [H00006] esperando grupo en túnel3
+2025-04-24 18:43:38 - [H00006] se prepara para salir por TUNEL_3
+2025-04-24 18:43:38 - [H00005] se prepara para salir por TUNEL_3
+2025-04-24 18:43:38 - [H00004] entra a TUNEL_3 desde ZONA_COMUN
+2025-04-24 18:43:38 - [H00007] preparandose para entrar al mundo exterior...
+2025-04-24 18:43:39 - [Z00000] entra a RIESGO_3
+2025-04-24 18:43:39 - [Z00000] no hay nadie. Espera...
+2025-04-24 18:43:40 - [H00007] esperando grupo en túnel1
+2025-04-24 18:43:40 - [H00007] se prepara para salir por TUNEL_1
+2025-04-24 18:43:40 - [H00008] preparandose para entrar al mundo exterior...
+2025-04-24 18:43:41 - [H00009] preparandose para entrar al mundo exterior...
+2025-04-24 18:43:41 - [Z00000] entra a RIESGO_1
+2025-04-24 18:43:41 - [Z00000] no hay nadie. Espera...
+2025-04-24 18:43:41 - [H00008] esperando grupo en túnel1
+2025-04-24 18:43:41 - [H00008] se prepara para salir por TUNEL_1
+2025-04-24 18:43:42 - [H00009] esperando grupo en túnel4
+2025-04-24 18:43:42 - [H00009] se prepara para salir por TUNEL_4
+2025-04-24 18:43:42 - [H00010] preparandose para entrar al mundo exterior...
+2025-04-24 18:43:43 - [Z00000] entra a RIESGO_4
+2025-04-24 18:43:43 - [Z00000] no hay nadie. Espera...
+2025-04-24 18:43:44 - [H00011] preparandose para entrar al mundo exterior...
+2025-04-24 18:43:44 - [H00010] esperando grupo en túnel1
+2025-04-24 18:43:44 - [H00010] se prepara para salir por TUNEL_1
+2025-04-24 18:43:44 - [H00010] se prepara para salir por TUNEL_1
+2025-04-24 18:43:45 - [H00012] preparandose para entrar al mundo exterior...
+2025-04-24 18:43:45 - [H00011] esperando grupo en túnel4
+2025-04-24 18:43:45 - [H00011] se prepara para salir por TUNEL_4
+2025-04-24 18:43:45 - [H00011] se prepara para salir por TUNEL_4
+2025-04-24 18:43:46 - [H00013] preparandose para entrar al mundo exterior...
+2025-04-24 18:43:46 - [H00012] esperando grupo en túnel2
+2025-04-24 18:43:46 - [H00012] se prepara para salir por TUNEL_2
+2025-04-24 18:43:46 - [Z00000] entra a RIESGO_2
+2025-04-24 18:43:46 - [Z00000] no hay nadie. Espera...
+2025-04-24 18:43:47 - [H00013] esperando grupo en túnel2
+2025-04-24 18:43:47 - [H00013] se prepara para salir por TUNEL_2
+2025-04-24 18:43:47 - [H00014] preparandose para entrar al mundo exterior...
+2025-04-24 18:43:49 - [Z00000] entra a RIESGO_3
+2025-04-24 18:43:49 - [Z00000] no hay nadie. Espera...
+2025-04-24 18:43:49 - [H00015] preparandose para entrar al mundo exterior...
+2025-04-24 18:43:49 - [H00014] esperando grupo en túnel3
+2025-04-24 18:43:49 - [H00014] se prepara para salir por TUNEL_3
+2025-04-24 18:43:50 - [H00015] esperando grupo en túnel4
+2025-04-24 18:43:50 - [H00015] se prepara para salir por TUNEL_4
+2025-04-24 18:43:51 - [H00016] preparandose para entrar al mundo exterior...
+2025-04-24 18:43:51 - [Z00000] entra a RIESGO_4
+2025-04-24 18:43:51 - [Z00000] no hay nadie. Espera...
+2025-04-24 18:43:52 - [H00017] preparandose para entrar al mundo exterior...
+2025-04-24 18:43:53 - [H00016] esperando grupo en túnel2
+2025-04-24 18:43:53 - [H00016] se prepara para salir por TUNEL_2
+2025-04-24 18:43:53 - [H00016] se prepara para salir por TUNEL_2
+2025-04-24 18:43:53 - [H00017] esperando grupo en túnel2
+2025-04-24 18:43:53 - [H00017] se prepara para salir por TUNEL_2
+2025-04-24 18:43:54 - [H00018] preparandose para entrar al mundo exterior...
+2025-04-24 18:43:54 - [Z00000] entra a RIESGO_3
+2025-04-24 18:43:54 - [Z00000] no hay nadie. Espera...
+2025-04-24 18:43:55 - [H00018] esperando grupo en túnel1
+2025-04-24 18:43:55 - [H00018] se prepara para salir por TUNEL_1
+2025-04-24 18:43:55 - [H00019] preparandose para entrar al mundo exterior...
+2025-04-24 18:43:56 - [Z00000] entra a RIESGO_4
+2025-04-24 18:43:56 - [Z00000] no hay nadie. Espera...
+2025-04-24 18:43:56 - [H00019] esperando grupo en túnel4
+2025-04-24 18:43:56 - [H00019] se prepara para salir por TUNEL_4
+2025-04-24 18:43:56 - [H00019] se prepara para salir por TUNEL_4
+2025-04-24 18:43:56 - [H00011] entra a TUNEL_4 desde ZONA_COMUN
+2025-04-24 18:43:56 - [H00020] preparandose para entrar al mundo exterior...
+2025-04-24 18:43:58 - [H00020] esperando grupo en túnel4
+2025-04-24 18:43:58 - [H00020] se prepara para salir por TUNEL_4
+2025-04-24 18:43:58 - [H00021] preparandose para entrar al mundo exterior...
+2025-04-24 18:43:59 - [Z00000] entra a RIESGO_4
+2025-04-24 18:43:59 - [Z00000] no hay nadie. Espera...
+2025-04-24 18:43:59 - [H00022] preparandose para entrar al mundo exterior...
+2025-04-24 18:44:00 - [H00021] esperando grupo en túnel1
+2025-04-24 18:44:00 - [H00021] se prepara para salir por TUNEL_1
+2025-04-24 18:44:00 - [H00018] se prepara para salir por TUNEL_1
+2025-04-24 18:44:00 - [H00010] entra a TUNEL_1 desde ZONA_COMUN
+2025-04-24 18:44:01 - [H00022] esperando grupo en túnel4
+2025-04-24 18:44:01 - [H00022] se prepara para salir por TUNEL_4
+2025-04-24 18:44:01 - [H00020] se prepara para salir por TUNEL_4
+2025-04-24 18:44:01 - [H00019] entra a TUNEL_4 desde ZONA_COMUN
+2025-04-24 18:44:01 - [H00023] preparandose para entrar al mundo exterior...
+2025-04-24 18:44:02 - [Z00000] entra a RIESGO_4
+2025-04-24 18:44:02 - [Z00000] no hay nadie. Espera...
+2025-04-24 18:44:02 - [H00023] esperando grupo en túnel2
+2025-04-24 18:44:02 - [H00023] se prepara para salir por TUNEL_2
+2025-04-24 18:44:02 - [H00017] se prepara para salir por TUNEL_2
+2025-04-24 18:44:02 - [H00016] entra a TUNEL_2 desde ZONA_COMUN
+2025-04-24 18:44:03 - [H00024] preparandose para entrar al mundo exterior...
+2025-04-24 18:44:04 - [H00025] preparandose para entrar al mundo exterior...
+2025-04-24 18:44:04 - [H00024] esperando grupo en túnel2
+2025-04-24 18:44:04 - [H00024] se prepara para salir por TUNEL_2
+2025-04-24 18:44:04 - [Z00000] entra a RIESGO_2
+2025-04-24 18:44:04 - [Z00000] no hay nadie. Espera...
+2025-04-24 18:44:05 - [H00026] preparandose para entrar al mundo exterior...
+2025-04-24 18:44:05 - [H00025] esperando grupo en túnel1
+2025-04-24 18:44:05 - [H00025] se prepara para salir por TUNEL_1
+2025-04-24 18:44:06 - [H00026] esperando grupo en túnel2
+2025-04-24 18:44:06 - [H00026] se prepara para salir por TUNEL_2
+2025-04-24 18:44:06 - [H00024] se prepara para salir por TUNEL_2
+2025-04-24 18:44:06 - [H00017] entra a TUNEL_2 desde ZONA_COMUN
+2025-04-24 18:44:07 - [H00027] preparandose para entrar al mundo exterior...
+2025-04-24 18:44:07 - [Z00000] entra a RIESGO_3
+2025-04-24 18:44:07 - [Z00000] no hay nadie. Espera...
+2025-04-24 18:44:08 - [H00028] preparandose para entrar al mundo exterior...
+2025-04-24 18:44:08 - [H00027] esperando grupo en túnel4
+2025-04-24 18:44:08 - [H00027] se prepara para salir por TUNEL_4
+2025-04-24 18:44:09 - [H00029] preparandose para entrar al mundo exterior...
+2025-04-24 18:44:09 - [H00028] esperando grupo en túnel2
+2025-04-24 18:44:09 - [H00028] se prepara para salir por TUNEL_2
+2025-04-24 18:44:10 - [Z00000] entra a RIESGO_4
+2025-04-24 18:44:10 - [Z00000] no hay nadie. Espera...
+2025-04-24 18:44:10 - [H00029] esperando grupo en túnel2
+2025-04-24 18:44:10 - [H00029] se prepara para salir por TUNEL_2
+2025-04-24 18:44:10 - [H00028] se prepara para salir por TUNEL_2
+2025-04-24 18:44:10 - [H00024] entra a TUNEL_2 desde ZONA_COMUN
+2025-04-24 18:44:11 - [H00030] preparandose para entrar al mundo exterior...
+2025-04-24 18:44:12 - [H00031] preparandose para entrar al mundo exterior...
+2025-04-24 18:44:12 - [H00030] esperando grupo en túnel3
+2025-04-24 18:44:12 - [H00030] se prepara para salir por TUNEL_3
+2025-04-24 18:44:12 - [H00014] se prepara para salir por TUNEL_3
+2025-04-24 18:44:12 - [H00005] entra a TUNEL_3 desde ZONA_COMUN
+2025-04-24 18:44:13 - [Z00000] entra a RIESGO_3
+2025-04-24 18:44:13 - [Z00000] no hay nadie. Espera...
+2025-04-24 18:44:14 - [H00031] esperando grupo en túnel2
+2025-04-24 18:44:14 - [H00031] se prepara para salir por TUNEL_2
+2025-04-24 18:44:14 - [H00032] preparandose para entrar al mundo exterior...
+2025-04-24 18:44:15 - [H00033] preparandose para entrar al mundo exterior...
+2025-04-24 18:44:15 - [Z00000] entra a RIESGO_2
+2025-04-24 18:44:15 - [Z00000] no hay nadie. Espera...
+2025-04-24 18:44:16 - [H00032] esperando grupo en túnel1
+2025-04-24 18:44:16 - [H00032] se prepara para salir por TUNEL_1
+2025-04-24 18:44:16 - [H00025] se prepara para salir por TUNEL_1
+2025-04-24 18:44:16 - [H00018] entra a TUNEL_1 desde ZONA_COMUN
+2025-04-24 18:44:17 - [H00033] esperando grupo en túnel3
+2025-04-24 18:44:17 - [H00033] se prepara para salir por TUNEL_3
+2025-04-24 18:44:17 - [H00034] preparandose para entrar al mundo exterior...
+2025-04-24 18:44:18 - [H00035] preparandose para entrar al mundo exterior...
+2025-04-24 18:44:18 - [Z00000] entra a RIESGO_4
+2025-04-24 18:44:18 - [Z00000] no hay nadie. Espera...
+2025-04-24 18:44:18 - [H00034] esperando grupo en túnel4
+2025-04-24 18:44:18 - [H00034] se prepara para salir por TUNEL_4
+2025-04-24 18:44:18 - [H00027] se prepara para salir por TUNEL_4
+2025-04-24 18:44:18 - [H00020] entra a TUNEL_4 desde ZONA_COMUN
+2025-04-24 18:44:19 - [H00036] preparandose para entrar al mundo exterior...
+2025-04-24 18:44:20 - [H00035] esperando grupo en túnel3
+2025-04-24 18:44:20 - [H00035] se prepara para salir por TUNEL_3
+2025-04-24 18:44:20 - [H00033] se prepara para salir por TUNEL_3
+2025-04-24 18:44:20 - [H00014] entra a TUNEL_3 desde ZONA_COMUN
+2025-04-24 18:44:20 - [Z00000] entra a RIESGO_2
+2025-04-24 18:44:20 - [Z00000] no hay nadie. Espera...
+2025-04-24 18:44:21 - [H00037] preparandose para entrar al mundo exterior...
+2025-04-24 18:44:21 - [H00036] esperando grupo en túnel2
+2025-04-24 18:44:21 - [H00036] se prepara para salir por TUNEL_2
+2025-04-24 18:44:21 - [H00031] se prepara para salir por TUNEL_2
+2025-04-24 18:44:21 - [H00028] entra a TUNEL_2 desde ZONA_COMUN
+2025-04-24 18:44:22 - [H00037] esperando grupo en túnel3
+2025-04-24 18:44:22 - [H00037] se prepara para salir por TUNEL_3
+2025-04-24 18:44:22 - [H00038] preparandose para entrar al mundo exterior...
+2025-04-24 18:44:23 - [Z00000] entra a RIESGO_2
+2025-04-24 18:44:23 - [Z00000] no hay nadie. Espera...
+2025-04-24 18:44:23 - [H00039] preparandose para entrar al mundo exterior...
+2025-04-24 18:44:24 - [H00038] esperando grupo en túnel2
+2025-04-24 18:44:24 - [H00038] se prepara para salir por TUNEL_2
+2025-04-24 18:44:25 - [H00040] preparandose para entrar al mundo exterior...
+2025-04-24 18:44:25 - [H00039] esperando grupo en túnel4
+2025-04-24 18:44:25 - [H00039] se prepara para salir por TUNEL_4
+2025-04-24 18:44:26 - [Z00000] entra a RIESGO_3
+2025-04-24 18:44:26 - [Z00000] no hay nadie. Espera...
+2025-04-24 18:44:26 - [H00040] esperando grupo en túnel3
+2025-04-24 18:44:26 - [H00040] se prepara para salir por TUNEL_3
+2025-04-24 18:44:26 - [H00037] se prepara para salir por TUNEL_3
+2025-04-24 18:44:26 - [H00033] entra a TUNEL_3 desde ZONA_COMUN
+2025-04-24 18:44:26 - [H00041] preparandose para entrar al mundo exterior...
+2025-04-24 18:44:28 - [H00041] esperando grupo en túnel2
+2025-04-24 18:44:28 - [H00041] se prepara para salir por TUNEL_2
+2025-04-24 18:44:28 - [H00038] se prepara para salir por TUNEL_2
+2025-04-24 18:44:28 - [H00031] entra a TUNEL_2 desde ZONA_COMUN
+2025-04-24 18:44:28 - [H00042] preparandose para entrar al mundo exterior...
+2025-04-24 18:44:28 - [Z00000] entra a RIESGO_2
+2025-04-24 18:44:28 - [Z00000] no hay nadie. Espera...
+2025-04-24 18:44:29 - [H00042] esperando grupo en túnel3
+2025-04-24 18:44:29 - [H00042] se prepara para salir por TUNEL_3
+2025-04-24 18:44:30 - [H00043] preparandose para entrar al mundo exterior...
+2025-04-24 18:53:09 - [Z00000] entra a RIESGO_2
+2025-04-24 18:53:09 - [H00001] preparandose para entrar al mundo exterior...
+2025-04-24 18:53:09 - [Z00000] no hay nadie. Espera...
+2025-04-24 18:53:10 - [H00002] preparandose para entrar al mundo exterior...
+2025-04-24 18:53:10 - [H00001] esperando grupo en túnel1
+2025-04-24 18:53:10 - [H00001] se prepara para salir por TUNEL_1
+2025-04-24 18:53:11 - [Z00000] entra a RIESGO_1
+2025-04-24 18:53:11 - [Z00000] no hay nadie. Espera...
+2025-04-24 18:53:11 - [H00003] preparandose para entrar al mundo exterior...
+2025-04-24 18:53:12 - [H00002] esperando grupo en túnel4
+2025-04-24 18:53:12 - [H00002] se prepara para salir por TUNEL_4
+2025-04-24 18:53:12 - [H00004] preparandose para entrar al mundo exterior...
+2025-04-24 18:53:13 - [H00003] esperando grupo en túnel4
+2025-04-24 18:53:13 - [H00003] se prepara para salir por TUNEL_4
+2025-04-24 18:53:13 - [H00005] preparandose para entrar al mundo exterior...
+2025-04-24 18:53:14 - [Z00000] entra a RIESGO_3
+2025-04-24 18:53:14 - [Z00000] no hay nadie. Espera...
+2025-04-24 18:53:14 - [H00004] esperando grupo en túnel4
+2025-04-24 18:53:14 - [H00004] se prepara para salir por TUNEL_4
+2025-04-24 18:53:14 - [H00004] se prepara para salir por TUNEL_4
+2025-04-24 18:53:14 - [H00002] se prepara para salir por TUNEL_4
+2025-04-24 18:53:14 - [H00003] se prepara para salir por TUNEL_4
+2025-04-24 18:53:14 - [H00004] entra a TUNEL_4 desde ZONA_COMUN
+2025-04-24 18:53:15 - [H00006] preparandose para entrar al mundo exterior...
+2025-04-24 18:53:15 - [H00004] sale del tunel
+2025-04-24 18:53:15 - [H00003] entra a TUNEL_4 desde ZONA_COMUN
+2025-04-24 18:53:15 - [H00004] recolectando comida en ZONA_COMUN
+2025-04-24 18:53:15 - [H00005] esperando grupo en túnel1
+2025-04-24 18:53:15 - [H00005] se prepara para salir por TUNEL_1
+2025-04-24 18:53:15 - [H00007] preparandose para entrar al mundo exterior...
+2025-04-24 18:53:16 - [H00003] sale del tunel
+2025-04-24 18:53:16 - [H00002] entra a TUNEL_4 desde ZONA_COMUN
+2025-04-24 18:53:16 - [H00003] recolectando comida en ZONA_COMUN
+2025-04-24 18:53:16 - [Z00000] entra a RIESGO_1
+2025-04-24 18:53:16 - [Z00000] no hay nadie. Espera...
+2025-04-24 18:53:16 - [H00006] esperando grupo en túnel3
+2025-04-24 18:53:16 - [H00006] se prepara para salir por TUNEL_3
+2025-04-24 18:53:17 - [H00002] sale del tunel
+2025-04-24 18:53:17 - [H00002] recolectando comida en ZONA_COMUN
+2025-04-24 18:53:17 - [H00008] preparandose para entrar al mundo exterior...
+2025-04-24 18:53:17 - [H00007] esperando grupo en túnel3
+2025-04-24 18:53:17 - [H00007] se prepara para salir por TUNEL_3
+2025-04-24 18:53:18 - [H00008] esperando grupo en túnel2
+2025-04-24 18:53:18 - [H00008] se prepara para salir por TUNEL_2
+2025-04-24 18:53:18 - [H00009] preparandose para entrar al mundo exterior...
+2025-04-24 18:53:18 - [Z00000] entra a RIESGO_3
+2025-04-24 18:53:18 - [Z00000] no hay nadie. Espera...
+2025-04-24 18:53:19 - [H00004] recolectó 2 piezas de comida.
+2025-04-24 18:53:19 - [H00004] entra a TUNEL_4 desde ZONA_COMUN
+2025-04-24 18:53:20 - [H00009] esperando grupo en túnel2
+2025-04-24 18:53:20 - [H00009] se prepara para salir por TUNEL_2
+2025-04-24 18:53:20 - [H00004] sale del tunel
+2025-04-24 18:53:20 - ]H00004] ha dejado comida en el refugio
+2025-04-24 18:53:20 - [H00004] dejó 2 piezas de comida.
+2025-04-24 18:53:20 - [H00004] descansa.
+2025-04-24 18:53:20 - [H00003] recolectó 2 piezas de comida.
+2025-04-24 18:53:20 - [H00003] entra a TUNEL_4 desde ZONA_COMUN
+2025-04-24 18:53:20 - [H00010] preparandose para entrar al mundo exterior...
+2025-04-24 18:53:21 - [H00002] recolectó 2 piezas de comida.
+2025-04-24 18:53:21 - [Z00000] entra a RIESGO_2
+2025-04-24 18:53:21 - [Z00000] no hay nadie. Espera...
+2025-04-24 18:53:21 - [H00003] sale del tunel
+2025-04-24 18:53:21 - [H00002] entra a TUNEL_4 desde ZONA_COMUN
+2025-04-24 18:53:21 - ]H00003] ha dejado comida en el refugio
+2025-04-24 18:53:21 - [H00003] dejó 2 piezas de comida.
+2025-04-24 18:53:21 - [H00003] descansa.
+2025-04-24 18:53:21 - [H00010] esperando grupo en túnel2
+2025-04-24 18:53:21 - [H00010] se prepara para salir por TUNEL_2
+2025-04-24 18:53:21 - [H00010] se prepara para salir por TUNEL_2
+2025-04-24 18:53:21 - [H00008] se prepara para salir por TUNEL_2
+2025-04-24 18:53:21 - [H00009] se prepara para salir por TUNEL_2
+2025-04-24 18:53:21 - [H00009] entra a TUNEL_2 desde ZONA_COMUN
+2025-04-24 18:53:22 - [H00011] preparandose para entrar al mundo exterior...
+2025-04-24 18:53:22 - [H00002] sale del tunel
+2025-04-24 18:53:22 - ]H00002] ha dejado comida en el refugio
+2025-04-24 18:53:22 - [H00002] dejó 2 piezas de comida.
+2025-04-24 18:53:22 - [H00002] descansa.
+2025-04-24 18:53:22 - [H00009] sale del tunel
+2025-04-24 18:53:22 - [H00010] entra a TUNEL_2 desde ZONA_COMUN
+2025-04-24 18:53:22 - [H00009] recolectando comida en ZONA_COMUN
+2025-04-24 18:53:23 - [Z00000] entra a RIESGO_4
+2025-04-24 18:53:23 - [Z00000] atacando al humano H00003
+2025-04-24 18:53:23 - [H00010] sale del tunel
+2025-04-24 18:53:23 - [H00008] entra a TUNEL_2 desde ZONA_COMUN
+2025-04-24 18:53:23 - [H00010] recolectando comida en ZONA_COMUN
+2025-04-24 18:53:24 - [H00011] esperando grupo en túnel1
+2025-04-24 18:53:24 - [H00011] se prepara para salir por TUNEL_1
+2025-04-24 18:53:24 - [H00011] se prepara para salir por TUNEL_1
+2025-04-24 18:53:24 - [H00001] se prepara para salir por TUNEL_1
+2025-04-24 18:53:24 - [H00005] se prepara para salir por TUNEL_1
+2025-04-24 18:53:24 - [H00005] entra a TUNEL_1 desde ZONA_COMUN
+2025-04-24 18:53:24 - [H00012] preparandose para entrar al mundo exterior...
+2025-04-24 18:53:24 - [H00004] intentando comer.
+2025-04-24 18:53:24 - [H00004] ha cogido un alimento del refugio.
+2025-04-24 18:53:24 - [H00003] intentando comer.
+2025-04-24 18:53:24 - [H00003] ha cogido un alimento del refugio.
+2025-04-24 18:53:24 - [H00008] sale del tunel
+2025-04-24 18:53:24 - [H00008] recolectando comida en ZONA_COMUN
+2025-04-24 18:53:24 - [H00003] no logró defenderse y ha muerto.
+2025-04-24 18:53:24 - [H00003] interrumpido.
+2025-04-24 18:53:24 - [Z00000] H00003 ha sido convertido en Z00003
+2025-04-24 18:53:24 - [Z00000] mató al humano. Total muertes: 1
+2025-04-24 18:53:24 - [Z00000] entra a RIESGO_1
+2025-04-24 18:53:24 - [Z00000] no hay nadie. Espera...
+2025-04-24 18:53:24 - [Z00003] entra a RIESGO_1
+2025-04-24 18:53:24 - [Z00003] no hay nadie. Espera...
+2025-04-24 18:53:25 - [H00001] entra a TUNEL_1 desde ZONA_COMUN
+2025-04-24 18:53:25 - [H00005] sale del tunel
+2025-04-24 18:53:25 - [H00005] recolectando comida en ZONA_COMUN
+2025-04-24 18:53:25 - [H00013] preparandose para entrar al mundo exterior...
+2025-04-24 18:53:25 - [H00012] esperando grupo en túnel3
+2025-04-24 18:53:25 - [H00012] se prepara para salir por TUNEL_3
+2025-04-24 18:53:25 - [H00012] se prepara para salir por TUNEL_3
+2025-04-24 18:53:25 - [H00006] se prepara para salir por TUNEL_3
+2025-04-24 18:53:25 - [H00007] se prepara para salir por TUNEL_3
+2025-04-24 18:53:25 - [H00007] entra a TUNEL_3 desde ZONA_COMUN
+2025-04-24 18:53:26 - [H00001] sale del tunel
+2025-04-24 18:53:26 - [H00011] entra a TUNEL_1 desde ZONA_COMUN
+2025-04-24 18:53:26 - [H00001] recolectando comida en ZONA_COMUN
+2025-04-24 18:53:26 - [H00014] preparandose para entrar al mundo exterior...
+2025-04-24 18:53:26 - [H00002] intentando comer.
+2025-04-24 18:53:26 - [H00002] ha cogido un alimento del refugio.
+2025-04-24 18:53:26 - [H00012] entra a TUNEL_3 desde ZONA_COMUN
+2025-04-24 18:53:26 - [H00007] sale del tunel
+2025-04-24 18:53:26 - [H00007] recolectando comida en ZONA_COMUN
+2025-04-24 18:53:26 - [H00013] esperando grupo en túnel2
+2025-04-24 18:53:26 - [H00013] se prepara para salir por TUNEL_2
+2025-04-24 18:53:27 - [H00011] sale del tunel
+2025-04-24 18:53:27 - [H00011] recolectando comida en ZONA_COMUN
+2025-04-24 18:53:27 - [Z00000] entra a RIESGO_4
+2025-04-24 18:53:27 - [Z00000] atacando al humano H00004
+2025-04-24 18:53:27 - [H00009] recolectó 2 piezas de comida.
+2025-04-24 18:53:27 - [H00009] entra a TUNEL_2 desde ZONA_COMUN
+2025-04-24 18:53:27 - [H00006] entra a TUNEL_3 desde ZONA_COMUN
+2025-04-24 18:53:27 - [H00012] sale del tunel
+2025-04-24 18:53:27 - [H00012] recolectando comida en ZONA_COMUN
+2025-04-24 18:53:27 - [Z00003] entra a RIESGO_4
+2025-04-24 18:53:27 - [Z00003] atacando al humano H00004
+2025-04-24 18:53:28 - [H00015] preparandose para entrar al mundo exterior...
+2025-04-24 18:53:28 - [H00014] esperando grupo en túnel3
+2025-04-24 18:53:28 - [H00014] se prepara para salir por TUNEL_3
+2025-04-24 18:53:28 - [H00009] sale del tunel
+2025-04-24 18:53:28 - [H00013] se prepara para salir por TUNEL_2
+2025-04-24 18:53:28 - ]H00009] ha dejado comida en el refugio
+2025-04-24 18:53:28 - [H00009] dejó 2 piezas de comida.
+2025-04-24 18:53:28 - [H00009] descansa.
+2025-04-24 18:53:28 - [H00004] interrumpido.
+2025-04-24 18:53:28 - [H00004] logró defenderse.
+2025-04-24 18:53:28 - [Z00000] el humano se defendió. Sigue con vida.
+2025-04-24 18:53:28 - [Z00000] entra a RIESGO_4
+2025-04-24 18:53:28 - [Z00000] atacando al humano H00003
+2025-04-24 18:53:28 - [H00010] recolectó 2 piezas de comida.
+2025-04-24 18:53:28 - [H00010] entra a TUNEL_2 desde ZONA_COMUN
+2025-04-24 18:53:28 - [H00006] sale del tunel
+2025-04-24 18:53:28 - [H00014] se prepara para salir por TUNEL_3
+2025-04-24 18:53:28 - [H00006] recolectando comida en ZONA_COMUN
+2025-04-24 18:53:28 - [H00004] ya fue atacado. Ignorando ataque.
+2025-04-24 18:53:28 - [Z00003] el humano se defendió. Sigue con vida.
+2025-04-24 18:53:28 - [Z00003] entra a RIESGO_2
+2025-04-24 18:53:28 - [Z00003] atacando al humano H00008
+2025-04-24 18:53:28 - [H00005] recolectó 2 piezas de comida.
+2025-04-24 18:53:28 - [H00005] entra a TUNEL_1 desde ZONA_COMUN
+2025-04-24 18:53:28 - [H00008] recolectó 2 piezas de comida.
+2025-04-24 18:53:29 - [H00015] esperando grupo en túnel4
+2025-04-24 18:53:29 - [H00015] se prepara para salir por TUNEL_4
+2025-04-24 18:53:29 - [H00001] recolectó 2 piezas de comida.
+2025-04-24 18:53:29 - [H00010] sale del tunel
+2025-04-24 18:53:29 - [H00008] entra a TUNEL_2 desde ZONA_COMUN
+2025-04-24 18:53:29 - ]H00010] ha dejado comida en el refugio
+2025-04-24 18:53:29 - [H00010] dejó 2 piezas de comida.
+2025-04-24 18:53:29 - [H00010] descansa.
+2025-04-24 18:53:29 - [H00003] ya fue atacado. Ignorando ataque.
+2025-04-24 18:53:29 - [Z00000] el humano se defendió. Sigue con vida.
+2025-04-24 18:53:29 - [Z00000] entra a RIESGO_4
+2025-04-24 18:53:29 - [Z00000] atacando al humano H00003
+2025-04-24 18:53:29 - [H00016] preparandose para entrar al mundo exterior...
+2025-04-24 18:53:29 - [H00005] sale del tunel
+2025-04-24 18:53:29 - [H00001] entra a TUNEL_1 desde ZONA_COMUN
+2025-04-24 18:53:29 - ]H00005] ha dejado comida en el refugio
+2025-04-24 18:53:29 - [H00005] dejó 2 piezas de comida.
+2025-04-24 18:53:29 - [H00005] descansa.
+2025-04-24 18:53:30 - [H00008] logró defenderse.
+2025-04-24 18:53:30 - [H00008] interrumpido.
+2025-04-24 18:53:30 - [Z00003] el humano se defendió. Sigue con vida.
+2025-04-24 18:53:30 - [Z00003] entra a RIESGO_2
+2025-04-24 18:53:30 - [Z00003] atacando al humano H00009
+2025-04-24 18:53:30 - [H00011] recolectó 2 piezas de comida.
+2025-04-24 18:53:30 - [H00009] intentando comer.
+2025-04-24 18:53:30 - [H00009] ha cogido un alimento del refugio.
+2025-04-24 18:53:30 - [H00003] ya fue atacado. Ignorando ataque.
+2025-04-24 18:53:30 - [Z00000] el humano se defendió. Sigue con vida.
+2025-04-24 18:53:30 - [Z00000] entra a RIESGO_1
+2025-04-24 18:53:30 - [Z00000] atacando al humano H00001
+2025-04-24 18:53:30 - [H00001] sale del tunel
+2025-04-24 18:53:30 - ]H00001] ha dejado comida en el refugio
+2025-04-24 18:53:30 - [H00001] dejó 2 piezas de comida.
+2025-04-24 18:53:30 - [H00001] descansa.
+2025-04-24 18:53:30 - [H00011] entra a TUNEL_1 desde ZONA_COMUN
+2025-04-24 18:53:31 - [H00009] logró defenderse.
+2025-04-24 18:53:31 - [H00009] interrumpido.
+2025-04-24 18:53:31 - [Z00003] el humano se defendió. Sigue con vida.
+2025-04-24 18:53:31 - [Z00003] entra a RIESGO_2
+2025-04-24 18:53:31 - [Z00003] atacando al humano H00009
+2025-04-24 18:53:31 - [H00017] preparandose para entrar al mundo exterior...
+2025-04-24 18:53:31 - [H00007] recolectó 2 piezas de comida.
+2025-04-24 18:53:31 - [H00007] entra a TUNEL_3 desde ZONA_COMUN
+2025-04-24 18:53:31 - [H00002] preparandose para entrar al mundo exterior...
+2025-04-24 18:53:31 - [H00001] logró defenderse.
+2025-04-24 18:53:31 - [H00001] interrumpido.
+2025-04-24 18:53:31 - [Z00000] el humano se defendió. Sigue con vida.
+2025-04-24 18:53:31 - [Z00000] entra a RIESGO_3
+2025-04-24 18:53:31 - [Z00000] atacando al humano H00012
+2025-04-24 18:53:31 - [H00016] esperando grupo en túnel3
+2025-04-24 18:53:31 - [H00016] se prepara para salir por TUNEL_3
+2025-04-24 18:53:31 - [H00016] se prepara para salir por TUNEL_3
+2025-04-24 18:53:31 - [H00009] ya fue atacado. Ignorando ataque.
+2025-04-24 18:53:31 - [Z00003] el humano se defendió. Sigue con vida.
+2025-04-24 18:53:31 - [Z00003] entra a RIESGO_4
+2025-04-24 18:53:31 - [Z00003] atacando al humano H00003
+2025-04-24 18:53:31 - [H00011] sale del tunel
+2025-04-24 18:53:31 - ]H00011] ha dejado comida en el refugio
+2025-04-24 18:53:31 - [H00011] dejó 2 piezas de comida.
+2025-04-24 18:53:31 - [H00011] descansa.
+2025-04-24 18:53:32 - [H00007] sale del tunel
+2025-04-24 18:53:32 - [H00014] entra a TUNEL_3 desde ZONA_COMUN
+2025-04-24 18:53:32 - ]H00007] ha dejado comida en el refugio
+2025-04-24 18:53:32 - [H00007] dejó 2 piezas de comida.
+2025-04-24 18:53:32 - [H00007] descansa.
+2025-04-24 18:53:32 - [H00006] recolectó 2 piezas de comida.
+2025-04-24 18:53:32 - [H00003] ya fue atacado. Ignorando ataque.
+2025-04-24 18:53:32 - [Z00003] el humano se defendió. Sigue con vida.
+2025-04-24 18:53:32 - [Z00003] entra a RIESGO_1
+2025-04-24 18:53:32 - [Z00003] atacando al humano H00001
+2025-04-24 18:53:32 - [H00012] recolectó 2 piezas de comida.
+2025-04-24 18:53:32 - [H00018] preparandose para entrar al mundo exterior...
+2025-04-24 18:53:32 - [H00012] no logró defenderse y ha muerto.
+2025-04-24 18:53:32 - [H00012] interrumpido.
+2025-04-24 18:53:32 - [Z00000] H00012 ha sido convertido en Z00012
+2025-04-24 18:53:32 - [Z00000] mató al humano. Total muertes: 2
+2025-04-24 18:53:32 - [Z00000] entra a RIESGO_3
+2025-04-24 18:53:32 - [Z00000] atacando al humano H00007
+2025-04-24 18:53:32 - [Z00012] entra a RIESGO_4
+2025-04-24 18:53:32 - [Z00012] atacando al humano H00003
+2025-04-24 18:53:32 - [H00010] intentando comer.
+2025-04-24 18:53:32 - [H00010] ha cogido un alimento del refugio.
+2025-04-24 18:53:33 - [H00002] esperando grupo en túnel2
+2025-04-24 18:53:33 - [H00002] se prepara para salir por TUNEL_2
+2025-04-24 18:53:33 - [H00002] se prepara para salir por TUNEL_2
+2025-04-24 18:53:33 - [H00017] esperando grupo en túnel1
+2025-04-24 18:53:33 - [H00017] se prepara para salir por TUNEL_1
+2025-04-24 18:53:33 - [H00019] preparandose para entrar al mundo exterior...
+2025-04-24 18:53:33 - [H00014] sale del tunel
+2025-04-24 18:53:33 - [H00016] entra a TUNEL_3 desde ZONA_COMUN
+2025-04-24 18:53:33 - [H00014] recolectando comida en ZONA_COMUN
+2025-04-24 18:53:33 - [H00003] ya fue atacado. Ignorando ataque.
+2025-04-24 18:53:33 - [Z00012] el humano se defendió. Sigue con vida.
+2025-04-24 18:53:33 - [Z00012] entra a RIESGO_4
+2025-04-24 18:53:33 - [Z00012] atacando al humano H00004
+2025-04-24 18:53:33 - [H00005] intentando comer.
+2025-04-24 18:53:33 - [H00005] ha cogido un alimento del refugio.
+2025-04-24 18:53:33 - [H00001] ya fue atacado. Ignorando ataque.
+2025-04-24 18:53:33 - [Z00003] el humano se defendió. Sigue con vida.
+2025-04-24 18:53:33 - [Z00003] entra a RIESGO_4
+2025-04-24 18:53:33 - [Z00003] atacando al humano H00002
+2025-04-24 18:53:33 - [H00011] intentando comer.
+2025-04-24 18:53:33 - [H00011] ha cogido un alimento del refugio.
+2025-04-24 18:53:34 - [H00018] esperando grupo en túnel3
+2025-04-24 18:53:34 - [H00018] se prepara para salir por TUNEL_3
+2025-04-24 18:53:34 - [H00004] ya fue atacado. Ignorando ataque.
+2025-04-24 18:53:34 - [Z00012] el humano se defendió. Sigue con vida.
+2025-04-24 18:53:34 - [Z00012] entra a RIESGO_1
+2025-04-24 18:53:34 - [Z00012] atacando al humano H00005
+2025-04-24 18:53:34 - [H00007] logró defenderse.
+2025-04-24 18:53:34 - [H00007] interrumpido.
+2025-04-24 18:53:34 - [Z00000] el humano se defendió. Sigue con vida.
+2025-04-24 18:53:34 - [Z00000] entra a RIESGO_3
+2025-04-24 18:53:34 - [Z00000] atacando al humano H00006
+2025-04-24 18:53:34 - [H00016] sale del tunel
+2025-04-24 18:53:34 - [H00006] entra a TUNEL_3 desde ZONA_COMUN
+2025-04-24 18:53:34 - [H00016] recolectando comida en ZONA_COMUN
+2025-04-24 18:53:34 - [H00018] se prepara para salir por TUNEL_3
+2025-04-24 18:53:34 - [H00002] logró defenderse.
+2025-04-24 18:53:34 - [H00002] interrumpido.
+2025-04-24 18:53:34 - [Z00003] el humano se defendió. Sigue con vida.
+2025-04-24 18:53:34 - [Z00003] entra a RIESGO_1
+2025-04-24 18:53:34 - [Z00003] atacando al humano H00001
+2025-04-24 18:53:34 - [H00019] esperando grupo en túnel3
+2025-04-24 18:53:34 - [H00019] se prepara para salir por TUNEL_3
+2025-04-24 18:53:34 - [H00006] interrumpido.
+2025-04-24 18:53:34 - [H00006] logró defenderse.
+2025-04-24 18:53:34 - [Z00000] el humano se defendió. Sigue con vida.
+2025-04-24 18:53:34 - [Z00000] entra a RIESGO_4
+2025-04-24 18:53:34 - [Z00000] atacando al humano H00002
+2025-04-24 18:53:34 - [H00020] preparandose para entrar al mundo exterior...
+2025-04-24 18:53:35 - [H00005] logró defenderse.
+2025-04-24 18:53:35 - [H00005] interrumpido.
+2025-04-24 18:53:35 - [Z00012] el humano se defendió. Sigue con vida.
+2025-04-24 18:53:35 - [Z00012] entra a RIESGO_1
+2025-04-24 18:53:35 - [Z00012] atacando al humano H00011
+2025-04-24 18:53:35 - [H00001] ya fue atacado. Ignorando ataque.
+2025-04-24 18:53:35 - [Z00003] el humano se defendió. Sigue con vida.
+2025-04-24 18:53:35 - [Z00003] entra a RIESGO_2
+2025-04-24 18:53:35 - [Z00003] atacando al humano H00010
+2025-04-24 18:53:35 - [H00021] preparandose para entrar al mundo exterior...
+2025-04-24 18:53:36 - [H00002] ya fue atacado. Ignorando ataque.
+2025-04-24 18:53:36 - [Z00000] el humano se defendió. Sigue con vida.
+2025-04-24 18:53:36 - [Z00000] entra a RIESGO_4
+2025-04-24 18:53:36 - [Z00000] atacando al humano H00003
+2025-04-24 18:53:36 - [H00020] esperando grupo en túnel3
+2025-04-24 18:53:36 - [H00020] se prepara para salir por TUNEL_3
+2025-04-24 18:53:36 - [H00010] logró defenderse.
+2025-04-24 18:53:36 - [Z00003] el humano se defendió. Sigue con vida.
+2025-04-24 18:53:36 - [H00010] interrumpido.
+2025-04-24 18:53:36 - [Z00003] entra a RIESGO_2
+2025-04-24 18:53:36 - [Z00003] atacando al humano H00010
+2025-04-24 18:53:36 - [H00014] recolectó 2 piezas de comida.
+2025-04-24 18:53:36 - [H00022] preparandose para entrar al mundo exterior...
+2025-04-24 18:53:36 - [H00011] logró defenderse.
+2025-04-24 18:53:36 - [H00011] interrumpido.
+2025-04-24 18:53:36 - [Z00012] el humano se defendió. Sigue con vida.
+2025-04-24 18:53:36 - [Z00012] entra a RIESGO_2
+2025-04-24 18:53:36 - [Z00012] atacando al humano H00010
+2025-04-24 18:53:36 - [H00003] ya fue atacado. Ignorando ataque.
+2025-04-24 18:53:36 - [Z00000] el humano se defendió. Sigue con vida.
+2025-04-24 18:53:36 - [Z00000] entra a RIESGO_2
+2025-04-24 18:53:36 - [Z00000] atacando al humano H00010
+2025-04-24 18:53:37 - [H00021] esperando grupo en túnel2
+2025-04-24 18:53:37 - [H00021] se prepara para salir por TUNEL_2
+2025-04-24 18:53:37 - [H00010] ya fue atacado. Ignorando ataque.
+2025-04-24 18:53:37 - [Z00003] el humano se defendió. Sigue con vida.
+2025-04-24 18:53:37 - [Z00003] entra a RIESGO_1
+2025-04-24 18:53:37 - [Z00003] atacando al humano H00001
+2025-04-24 18:53:37 - [H00010] ya fue atacado. Ignorando ataque.
+2025-04-24 18:53:37 - [Z00000] el humano se defendió. Sigue con vida.
+2025-04-24 18:53:37 - [Z00000] entra a RIESGO_3
+2025-04-24 18:53:37 - [Z00000] atacando al humano H00006
+2025-04-24 18:53:37 - [H00016] recolectó 2 piezas de comida.
+2025-04-24 18:53:38 - [H00010] ya fue atacado. Ignorando ataque.
+2025-04-24 18:53:38 - [Z00012] el humano se defendió. Sigue con vida.
+2025-04-24 18:53:38 - [Z00012] entra a RIESGO_1
+2025-04-24 18:53:38 - [Z00012] atacando al humano H00001
+2025-04-24 18:53:38 - [H00023] preparandose para entrar al mundo exterior...
+2025-04-24 18:53:38 - [H00022] esperando grupo en túnel1
+2025-04-24 18:53:38 - [H00022] se prepara para salir por TUNEL_1
+2025-04-24 18:53:38 - [H00001] ya fue atacado. Ignorando ataque.
+2025-04-24 18:53:38 - [Z00003] el humano se defendió. Sigue con vida.
+2025-04-24 18:53:38 - [Z00003] entra a RIESGO_1
+2025-04-24 18:53:38 - [Z00003] atacando al humano H00001
+2025-04-24 18:53:38 - [H00001] ya fue atacado. Ignorando ataque.
+2025-04-24 18:53:38 - [Z00012] el humano se defendió. Sigue con vida.
+2025-04-24 18:53:38 - [Z00012] entra a RIESGO_4
+2025-04-24 18:53:38 - [Z00012] atacando al humano H00003
+2025-04-24 18:53:39 - [H00006] ya fue atacado. Ignorando ataque.
+2025-04-24 18:53:39 - [Z00000] el humano se defendió. Sigue con vida.
+2025-04-24 18:53:39 - [Z00000] entra a RIESGO_1
+2025-04-24 18:53:39 - [Z00000] atacando al humano H00005
+2025-04-24 18:53:39 - [H00023] esperando grupo en túnel2
+2025-04-24 18:53:39 - [H00023] se prepara para salir por TUNEL_2
+2025-04-24 18:53:39 - [H00023] se prepara para salir por TUNEL_2
+2025-04-24 18:53:39 - [H00021] se prepara para salir por TUNEL_2
+2025-04-24 18:53:39 - [H00003] ya fue atacado. Ignorando ataque.
+2025-04-24 18:53:39 - [Z00012] el humano se defendió. Sigue con vida.
+2025-04-24 18:53:39 - [Z00012] entra a RIESGO_1
+2025-04-24 18:53:39 - [Z00012] atacando al humano H00011
+2025-04-24 18:53:39 - [H00024] preparandose para entrar al mundo exterior...
+2025-04-24 18:53:39 - [H00005] ya fue atacado. Ignorando ataque.
+2025-04-24 18:53:39 - [Z00000] el humano se defendió. Sigue con vida.
+2025-04-24 18:53:39 - [Z00000] entra a RIESGO_3
+2025-04-24 18:53:39 - [Z00000] atacando al humano H00006
+2025-04-24 18:53:40 - [H00001] ya fue atacado. Ignorando ataque.
+2025-04-24 18:53:40 - [Z00003] el humano se defendió. Sigue con vida.
+2025-04-24 18:53:40 - [Z00003] entra a RIESGO_1
+2025-04-24 18:53:40 - [Z00003] atacando al humano H00011
+2025-04-24 18:53:40 - [H00011] ya fue atacado. Ignorando ataque.
+2025-04-24 18:53:40 - [Z00012] el humano se defendió. Sigue con vida.
+2025-04-24 18:53:40 - [Z00012] entra a RIESGO_1
+2025-04-24 18:53:40 - [Z00012] atacando al humano H00011
+2025-04-24 18:53:40 - [H00024] esperando grupo en túnel2
+2025-04-24 18:53:40 - [H00024] se prepara para salir por TUNEL_2
+2025-04-24 18:53:40 - [H00024] se prepara para salir por TUNEL_2
+2025-04-24 18:53:40 - [H00025] preparandose para entrar al mundo exterior...
+2025-04-24 18:53:41 - [H00006] ya fue atacado. Ignorando ataque.
+2025-04-24 18:53:41 - [Z00000] el humano se defendió. Sigue con vida.
+2025-04-24 18:53:41 - [Z00000] entra a RIESGO_4
+2025-04-24 18:53:41 - [Z00000] atacando al humano H00004
+2025-04-24 18:53:41 - [H00011] ya fue atacado. Ignorando ataque.
+2025-04-24 18:53:41 - [Z00012] el humano se defendió. Sigue con vida.
+2025-04-24 18:53:41 - [Z00012] entra a RIESGO_4
+2025-04-24 18:53:41 - [Z00012] atacando al humano H00002
+2025-04-24 18:53:41 - [H00011] ya fue atacado. Ignorando ataque.
+2025-04-24 18:53:41 - [Z00003] el humano se defendió. Sigue con vida.
+2025-04-24 18:53:41 - [Z00003] entra a RIESGO_4
+2025-04-24 18:53:41 - [Z00003] atacando al humano H00003
+2025-04-24 18:53:41 - [H00002] ya fue atacado. Ignorando ataque.
+2025-04-24 18:53:41 - [Z00012] el humano se defendió. Sigue con vida.
+2025-04-24 18:53:41 - [Z00012] entra a RIESGO_2
+2025-04-24 18:53:41 - [Z00012] atacando al humano H00010
+2025-04-24 18:53:42 - [H00026] preparandose para entrar al mundo exterior...
+2025-04-24 18:53:42 - [H00004] ya fue atacado. Ignorando ataque.
+2025-04-24 18:53:42 - [Z00000] el humano se defendió. Sigue con vida.
+2025-04-24 18:53:42 - [Z00000] entra a RIESGO_2
+2025-04-24 18:53:42 - [Z00000] atacando al humano H00008
+2025-04-24 18:53:42 - [H00003] ya fue atacado. Ignorando ataque.
+2025-04-24 18:53:42 - [Z00003] el humano se defendió. Sigue con vida.
+2025-04-24 18:53:42 - [Z00003] entra a RIESGO_1
+2025-04-24 18:53:42 - [Z00003] atacando al humano H00001
+2025-04-24 18:53:42 - [H00025] esperando grupo en túnel4
+2025-04-24 18:53:42 - [H00025] se prepara para salir por TUNEL_4
+2025-04-24 18:53:42 - [H00010] ya fue atacado. Ignorando ataque.
+2025-04-24 18:53:42 - [Z00012] el humano se defendió. Sigue con vida.
+2025-04-24 18:53:42 - [Z00012] entra a RIESGO_2
+2025-04-24 18:53:42 - [Z00012] atacando al humano H00008
+2025-04-24 18:53:43 - [H00008] ya fue atacado. Ignorando ataque.
+2025-04-24 18:53:43 - [Z00000] el humano se defendió. Sigue con vida.
+2025-04-24 18:53:43 - [Z00000] entra a RIESGO_2
+2025-04-24 18:53:43 - [Z00000] atacando al humano H00008
+2025-04-24 18:53:43 - [H00027] preparandose para entrar al mundo exterior...
+2025-04-24 18:53:43 - [H00001] ya fue atacado. Ignorando ataque.
+2025-04-24 18:53:43 - [Z00003] el humano se defendió. Sigue con vida.
+2025-04-24 18:53:43 - [Z00003] entra a RIESGO_2
+2025-04-24 18:53:43 - [Z00003] atacando al humano H00009
+2025-04-24 18:53:43 - [H00026] esperando grupo en túnel2
+2025-04-24 18:53:43 - [H00026] se prepara para salir por TUNEL_2
+2025-04-24 18:53:43 - [H00008] ya fue atacado. Ignorando ataque.
+2025-04-24 18:53:43 - [Z00000] el humano se defendió. Sigue con vida.
+2025-04-24 18:53:43 - [Z00000] entra a RIESGO_2
+2025-04-24 18:53:43 - [Z00000] atacando al humano H00008
+2025-04-24 18:53:43 - [H00008] ya fue atacado. Ignorando ataque.
+2025-04-24 18:53:43 - [Z00012] el humano se defendió. Sigue con vida.
+2025-04-24 18:53:43 - [Z00012] entra a RIESGO_2
+2025-04-24 18:53:43 - [Z00012] atacando al humano H00010
+2025-04-24 18:53:44 - [H00028] preparandose para entrar al mundo exterior...
+2025-04-24 18:53:44 - [H00010] ya fue atacado. Ignorando ataque.
+2025-04-24 18:53:44 - [Z00012] el humano se defendió. Sigue con vida.
+2025-04-24 18:53:44 - [Z00012] entra a RIESGO_1
+2025-04-24 18:53:44 - [Z00012] atacando al humano H00005
+2025-04-24 18:53:44 - [H00009] ya fue atacado. Ignorando ataque.
+2025-04-24 18:53:44 - [Z00003] el humano se defendió. Sigue con vida.
+2025-04-24 18:53:44 - [Z00003] entra a RIESGO_4
+2025-04-24 18:53:44 - [Z00003] atacando al humano H00003
+2025-04-24 18:53:45 - [H00027] esperando grupo en túnel2
+2025-04-24 18:53:45 - [H00027] se prepara para salir por TUNEL_2
+2025-04-24 18:53:45 - [H00027] se prepara para salir por TUNEL_2
+2025-04-24 18:53:45 - [H00026] se prepara para salir por TUNEL_2
+2025-04-24 18:53:45 - [H00005] ya fue atacado. Ignorando ataque.
+2025-04-24 18:53:45 - [Z00012] el humano se defendió. Sigue con vida.
+2025-04-24 18:53:45 - [Z00012] entra a RIESGO_4
+2025-04-24 18:53:45 - [Z00012] atacando al humano H00004
+2025-04-24 18:53:45 - [H00008] ya fue atacado. Ignorando ataque.
+2025-04-24 18:53:45 - [Z00000] el humano se defendió. Sigue con vida.
+2025-04-24 18:53:45 - [Z00000] entra a RIESGO_2
+2025-04-24 18:53:45 - [Z00000] atacando al humano H00010
+2025-04-24 18:53:45 - [H00003] ya fue atacado. Ignorando ataque.
+2025-04-24 18:53:45 - [Z00003] el humano se defendió. Sigue con vida.
+2025-04-24 18:53:45 - [Z00003] entra a RIESGO_2
+2025-04-24 18:53:45 - [Z00003] atacando al humano H00010
+2025-04-24 18:53:45 - [H00028] esperando grupo en túnel1
+2025-04-24 18:53:45 - [H00028] se prepara para salir por TUNEL_1
+2025-04-24 18:53:45 - [H00028] se prepara para salir por TUNEL_1
+2025-04-24 18:53:45 - [H00022] se prepara para salir por TUNEL_1
+2025-04-24 18:53:45 - [H00017] se prepara para salir por TUNEL_1
+2025-04-24 18:53:45 - [H00017] entra a TUNEL_1 desde ZONA_COMUN
+2025-04-24 18:53:45 - [H00029] preparandose para entrar al mundo exterior...
+2025-04-24 18:53:46 - [H00010] ya fue atacado. Ignorando ataque.
+2025-04-24 18:53:46 - [Z00003] el humano se defendió. Sigue con vida.
+2025-04-24 18:53:46 - [Z00003] entra a RIESGO_1
+2025-04-24 18:53:46 - [Z00003] atacando al humano H00005
+2025-04-24 18:53:46 - [H00004] ya fue atacado. Ignorando ataque.
+2025-04-24 18:53:46 - [Z00012] el humano se defendió. Sigue con vida.
+2025-04-24 18:53:46 - [Z00012] entra a RIESGO_4
+2025-04-24 18:53:46 - [Z00012] atacando al humano H00003
+2025-04-24 18:53:46 - [H00010] ya fue atacado. Ignorando ataque.
+2025-04-24 18:53:46 - [Z00000] el humano se defendió. Sigue con vida.
+2025-04-24 18:53:46 - [Z00000] entra a RIESGO_1
+2025-04-24 18:53:46 - [Z00000] atacando al humano H00001
+2025-04-24 18:53:46 - [H00017] sale del tunel
+2025-04-24 18:53:46 - [H00028] entra a TUNEL_1 desde ZONA_COMUN
+2025-04-24 18:53:46 - [H00017] recolectando comida en ZONA_COMUN
+2025-04-24 18:53:47 - [H00029] esperando grupo en túnel1
+2025-04-24 18:53:47 - [H00029] se prepara para salir por TUNEL_1
+2025-04-24 18:53:47 - [H00005] ya fue atacado. Ignorando ataque.
+2025-04-24 18:53:47 - [Z00003] el humano se defendió. Sigue con vida.
+2025-04-24 18:53:47 - [Z00003] entra a RIESGO_1
+2025-04-24 18:53:47 - [Z00003] atacando al humano H00011
+2025-04-24 18:53:47 - [H00003] ya fue atacado. Ignorando ataque.
+2025-04-24 18:53:47 - [Z00012] el humano se defendió. Sigue con vida.
+2025-04-24 18:53:47 - [Z00012] entra a RIESGO_4
+2025-04-24 18:53:47 - [Z00012] atacando al humano H00002
+2025-04-24 18:53:47 - [H00030] preparandose para entrar al mundo exterior...
+2025-04-24 18:53:47 - [H00028] sale del tunel
+2025-04-24 18:53:47 - [H00022] entra a TUNEL_1 desde ZONA_COMUN
+2025-04-24 18:53:47 - [H00029] se prepara para salir por TUNEL_1
+2025-04-24 18:53:47 - [H00028] recolectando comida en ZONA_COMUN
+2025-04-24 18:53:47 - [H00001] ya fue atacado. Ignorando ataque.
+2025-04-24 18:53:47 - [Z00000] el humano se defendió. Sigue con vida.
+2025-04-24 18:53:47 - [Z00000] entra a RIESGO_4
+2025-04-24 18:53:47 - [Z00000] atacando al humano H00002
+2025-04-24 18:53:47 - [H00011] ya fue atacado. Ignorando ataque.
+2025-04-24 18:53:47 - [Z00003] el humano se defendió. Sigue con vida.
+2025-04-24 18:53:47 - [Z00003] entra a RIESGO_4
+2025-04-24 18:53:47 - [Z00003] atacando al humano H00003
+2025-04-24 18:53:48 - [H00002] ya fue atacado. Ignorando ataque.
+2025-04-24 18:53:48 - [Z00012] el humano se defendió. Sigue con vida.
+2025-04-24 18:53:48 - [Z00012] entra a RIESGO_4
+2025-04-24 18:53:48 - [Z00012] atacando al humano H00002
+2025-04-24 18:53:48 - [H00003] ya fue atacado. Ignorando ataque.
+2025-04-24 18:53:48 - [Z00003] el humano se defendió. Sigue con vida.
+2025-04-24 18:53:48 - [Z00003] entra a RIESGO_3
+2025-04-24 18:53:48 - [Z00003] atacando al humano H00014
+2025-04-24 18:53:48 - [H00029] entra a TUNEL_1 desde ZONA_COMUN
+2025-04-24 18:53:48 - [H00022] sale del tunel
+2025-04-24 18:53:48 - [H00022] recolectando comida en ZONA_COMUN
+2025-04-24 18:53:48 - [H00002] ya fue atacado. Ignorando ataque.
+2025-04-24 18:53:48 - [Z00000] el humano se defendió. Sigue con vida.
+2025-04-24 18:53:48 - [Z00000] entra a RIESGO_4
+2025-04-24 18:53:48 - [Z00000] atacando al humano H00003
+2025-04-24 18:59:51 - [H00001] preparandose para entrar al mundo exterior...
+2025-04-24 18:59:51 - [Z00000] entra a RIESGO_3
+2025-04-24 18:59:51 - [Z00000] no hay nadie. Espera...
+2025-04-24 18:59:52 - [H00002] preparandose para entrar al mundo exterior...
+2025-04-24 18:59:53 - [H00001] esperando grupo en túnel4
+2025-04-24 18:59:53 - [H00001] se prepara para salir por TUNEL_4
+2025-04-24 18:59:54 - [H00003] preparandose para entrar al mundo exterior...
+2025-04-24 18:59:54 - [Z00000] entra a RIESGO_3
+2025-04-24 18:59:54 - [Z00000] no hay nadie. Espera...
+2025-04-24 18:59:54 - [H00002] esperando grupo en túnel2
+2025-04-24 18:59:54 - [H00002] se prepara para salir por TUNEL_2
+2025-04-24 18:59:55 - [H00004] preparandose para entrar al mundo exterior...
+2025-04-24 18:59:55 - [H00003] esperando grupo en túnel2
+2025-04-24 18:59:55 - [H00003] se prepara para salir por TUNEL_2
+2025-04-24 18:59:56 - [Z00000] entra a RIESGO_1
+2025-04-24 18:59:56 - [Z00000] no hay nadie. Espera...
+2025-04-24 18:59:56 - [H00005] preparandose para entrar al mundo exterior...
+2025-04-24 18:59:56 - [H00004] esperando grupo en túnel2
+2025-04-24 18:59:56 - [H00004] se prepara para salir por TUNEL_2
+2025-04-24 18:59:56 - [H00004] se prepara para salir por TUNEL_2
+2025-04-24 18:59:56 - [H00002] se prepara para salir por TUNEL_2
+2025-04-24 18:59:56 - [H00003] se prepara para salir por TUNEL_2
+2025-04-24 18:59:56 - [H00003] entra a TUNEL_2 desde TUNEL_2
+2025-04-24 18:59:57 - [H00002] entra a TUNEL_2 desde TUNEL_2
+2025-04-24 18:59:57 - [H00003] sale del tunel
+2025-04-24 18:59:57 - [H00003] recolectando comida en RIESGO_2
+2025-04-24 18:59:58 - [H00006] preparandose para entrar al mundo exterior...
+2025-04-24 18:59:58 - [Z00000] entra a RIESGO_1
+2025-04-24 18:59:58 - [Z00000] no hay nadie. Espera...
+2025-04-24 18:59:58 - [H00005] esperando grupo en túnel3
+2025-04-24 18:59:58 - [H00005] se prepara para salir por TUNEL_3
+2025-04-24 18:59:58 - [H00002] sale del tunel
+2025-04-24 18:59:58 - [H00004] entra a TUNEL_2 desde TUNEL_2
+2025-04-24 18:59:58 - [H00002] recolectando comida en RIESGO_2
+2025-04-24 18:59:59 - [H00004] sale del tunel
+2025-04-24 18:59:59 - [H00004] recolectando comida en RIESGO_2
+2025-04-24 19:00:00 - [H00006] esperando grupo en túnel4
+2025-04-24 19:00:00 - [H00006] se prepara para salir por TUNEL_4
+2025-04-24 19:00:00 - [H00007] preparandose para entrar al mundo exterior...
+2025-04-24 19:00:01 - [Z00000] entra a RIESGO_1
+2025-04-24 19:00:01 - [Z00000] no hay nadie. Espera...
+2025-04-24 19:00:01 - [H00008] preparandose para entrar al mundo exterior...
+2025-04-24 19:00:02 - [H00007] esperando grupo en túnel3
+2025-04-24 19:00:02 - [H00007] se prepara para salir por TUNEL_3
+2025-04-24 19:00:02 - [H00003] recolectó 2 piezas de comida.
+2025-04-24 19:00:02 - [H00003] entra a TUNEL_2 desde TUNEL_2
+2025-04-24 19:00:02 - [H00009] preparandose para entrar al mundo exterior...
+2025-04-24 19:00:02 - [H00008] esperando grupo en túnel3
+2025-04-24 19:00:02 - [H00008] se prepara para salir por TUNEL_3
+2025-04-24 19:00:02 - [H00008] se prepara para salir por TUNEL_3
+2025-04-24 19:00:02 - [H00005] se prepara para salir por TUNEL_3
+2025-04-24 19:00:02 - [H00007] se prepara para salir por TUNEL_3
+2025-04-24 19:00:02 - [H00007] entra a TUNEL_3 desde TUNEL_3
+2025-04-24 19:00:02 - [H00010] preparandose para entrar al mundo exterior...
+2025-04-24 19:00:03 - [H00003] sale del tunel
+2025-04-24 19:00:03 - ]H00003] ha dejado comida en el refugio
+2025-04-24 19:00:03 - [H00003] dejó 2 piezas de comida.
+2025-04-24 19:00:03 - [H00003] descansa.
+2025-04-24 19:00:03 - [H00002] recolectó 2 piezas de comida.
+2025-04-24 19:00:03 - [H00002] entra a TUNEL_2 desde TUNEL_2
+2025-04-24 19:00:03 - [H00009] esperando grupo en túnel1
+2025-04-24 19:00:03 - [H00009] se prepara para salir por TUNEL_1
+2025-04-24 19:00:03 - [H00007] sale del tunel
+2025-04-24 19:00:03 - [H00008] entra a TUNEL_3 desde TUNEL_3
+2025-04-24 19:00:03 - [H00007] recolectando comida en RIESGO_3
+2025-04-24 19:00:04 - [H00011] preparandose para entrar al mundo exterior...
+2025-04-24 19:00:04 - [Z00000] entra a RIESGO_2
+2025-04-24 19:00:04 - [Z00000] atacando al humano H00004
+2025-04-24 19:00:04 - [H00010] esperando grupo en túnel2
+2025-04-24 19:00:04 - [H00010] se prepara para salir por TUNEL_2
+2025-04-24 19:00:04 - [H00010] se prepara para salir por TUNEL_2
+2025-04-24 19:00:04 - [H00002] sale del tunel
+2025-04-24 19:00:04 - ]H00002] ha dejado comida en el refugio
+2025-04-24 19:00:04 - [H00002] dejó 2 piezas de comida.
+2025-04-24 19:00:04 - [H00002] descansa.
+2025-04-24 19:00:04 - [H00004] recolectó 2 piezas de comida.
+2025-04-24 19:00:04 - [H00004] entra a TUNEL_2 desde TUNEL_2
+2025-04-24 19:00:04 - [H00008] sale del tunel
+2025-04-24 19:00:04 - [H00005] entra a TUNEL_3 desde TUNEL_3
+2025-04-24 19:00:04 - [H00008] recolectando comida en RIESGO_3
+2025-04-24 19:00:04 - [H00004] interrumpido.
+2025-04-24 19:00:04 - [H00004] logró defenderse.
+2025-04-24 19:00:04 - [Z00000] el humano se defendió. Sigue con vida.
+2025-04-24 19:00:04 - [Z00000] entra a RIESGO_4
+2025-04-24 19:00:04 - [Z00000] no hay nadie. Espera...
+2025-04-24 19:00:05 - [H00005] sale del tunel
+2025-04-24 19:00:05 - [H00005] recolectando comida en RIESGO_3
+2025-04-24 19:00:05 - [H00012] preparandose para entrar al mundo exterior...
+2025-04-24 19:00:05 - [H00011] esperando grupo en túnel4
+2025-04-24 19:00:05 - [H00011] se prepara para salir por TUNEL_4
+2025-04-24 19:00:05 - [H00011] se prepara para salir por TUNEL_4
+2025-04-24 19:00:05 - [H00001] se prepara para salir por TUNEL_4
+2025-04-24 19:00:05 - [H00006] se prepara para salir por TUNEL_4
+2025-04-24 19:00:05 - [H00006] entra a TUNEL_4 desde TUNEL_4
+2025-04-24 19:00:06 - [H00003] intentando comer.
+2025-04-24 19:00:06 - [H00003] ha cogido un alimento del refugio.
+2025-04-24 19:00:06 - [H00012] esperando grupo en túnel4
+2025-04-24 19:00:06 - [H00012] se prepara para salir por TUNEL_4
+2025-04-24 19:00:06 - [H00011] entra a TUNEL_4 desde TUNEL_4
+2025-04-24 19:00:06 - [H00006] sale del tunel
+2025-04-24 19:00:06 - [H00012] se prepara para salir por TUNEL_4
+2025-04-24 19:00:06 - [H00006] recolectando comida en RIESGO_4
+2025-04-24 19:00:07 - [H00007] recolectó 2 piezas de comida.
+2025-04-24 19:00:07 - [H00007] entra a TUNEL_3 desde TUNEL_3
+2025-04-24 19:00:07 - [H00013] preparandose para entrar al mundo exterior...
+2025-04-24 19:00:07 - [Z00000] entra a RIESGO_2
+2025-04-24 19:00:07 - [Z00000] no hay nadie. Espera...
+2025-04-24 19:00:07 - [H00011] sale del tunel
+2025-04-24 19:00:07 - [H00001] entra a TUNEL_4 desde TUNEL_4
+2025-04-24 19:00:07 - [H00011] recolectando comida en RIESGO_4
+2025-04-24 19:00:08 - [H00002] intentando comer.
+2025-04-24 19:00:08 - [H00002] ha cogido un alimento del refugio.
+2025-04-24 19:00:08 - [H00007] sale del tunel
+2025-04-24 19:00:08 - ]H00007] ha dejado comida en el refugio
+2025-04-24 19:00:08 - [H00007] dejó 2 piezas de comida.
+2025-04-24 19:00:08 - [H00007] descansa.
+2025-04-24 19:00:08 - [H00014] preparandose para entrar al mundo exterior...
+2025-04-24 19:00:08 - [H00001] sale del tunel
+2025-04-24 19:00:08 - [H00012] entra a TUNEL_4 desde TUNEL_4
+2025-04-24 19:00:08 - [H00001] recolectando comida en RIESGO_4
+2025-04-24 19:00:09 - [H00008] recolectó 2 piezas de comida.
+2025-04-24 19:00:09 - [H00008] entra a TUNEL_3 desde TUNEL_3
+2025-04-24 19:00:09 - [H00013] esperando grupo en túnel1
+2025-04-24 19:00:09 - [H00013] se prepara para salir por TUNEL_1
+2025-04-24 19:00:09 - [H00012] sale del tunel
+2025-04-24 19:00:09 - [H00012] recolectando comida en RIESGO_4
+2025-04-24 19:00:10 - [H00005] recolectó 2 piezas de comida.
+2025-04-24 19:00:10 - [H00003] preparandose para entrar al mundo exterior...
+2025-04-24 19:00:10 - [H00007] intentando comer.
+2025-04-24 19:00:10 - [H00007] ha cogido un alimento del refugio.
+2025-04-24 19:00:10 - [H00015] preparandose para entrar al mundo exterior...
+2025-04-24 19:00:10 - [Z00000] entra a RIESGO_1
+2025-04-24 19:00:10 - [Z00000] no hay nadie. Espera...
+2025-04-24 19:00:10 - [H00014] esperando grupo en túnel2
+2025-04-24 19:00:10 - [H00014] se prepara para salir por TUNEL_2
+2025-04-24 19:00:10 - [H00014] se prepara para salir por TUNEL_2
+2025-04-24 19:00:10 - [H00008] sale del tunel
+2025-04-24 19:00:10 - [H00005] entra a TUNEL_3 desde TUNEL_3
+2025-04-24 19:00:10 - ]H00008] ha dejado comida en el refugio
+2025-04-24 19:00:10 - [H00008] dejó 2 piezas de comida.
+2025-04-24 19:00:10 - [H00008] descansa.
+2025-04-24 19:00:11 - [H00006] recolectó 2 piezas de comida.
+2025-04-24 19:00:11 - [H00006] entra a TUNEL_4 desde TUNEL_4
+2025-04-24 19:00:11 - [H00002] preparandose para entrar al mundo exterior...
+2025-04-24 19:00:11 - [H00005] sale del tunel
+2025-04-24 19:00:11 - ]H00005] ha dejado comida en el refugio
+2025-04-24 19:00:11 - [H00005] dejó 2 piezas de comida.
+2025-04-24 19:00:11 - [H00005] descansa.
+2025-04-24 19:00:11 - [H00016] preparandose para entrar al mundo exterior...
+2025-04-24 19:00:11 - [H00011] recolectó 2 piezas de comida.
+2025-04-24 19:00:12 - [H00011] entra a TUNEL_4 desde TUNEL_4
+2025-04-24 19:00:12 - [H00006] sale del tunel
+2025-04-24 19:00:12 - ]H00006] ha dejado comida en el refugio
+2025-04-24 19:00:12 - [H00006] dejó 2 piezas de comida.
+2025-04-24 19:00:12 - [H00006] descansa.
+2025-04-24 19:00:12 - [H00003] esperando grupo en túnel3
+2025-04-24 19:00:12 - [H00003] se prepara para salir por TUNEL_3
+2025-04-24 19:00:12 - [H00015] esperando grupo en túnel3
+2025-04-24 19:00:12 - [H00015] se prepara para salir por TUNEL_3
+2025-04-24 19:00:12 - [H00001] recolectó 2 piezas de comida.
+2025-04-24 19:00:12 - [Z00000] entra a RIESGO_4
+2025-04-24 19:00:12 - [Z00000] atacando al humano H00001
+2025-04-24 19:00:13 - [H00011] sale del tunel
+2025-04-24 19:00:13 - [H00001] entra a TUNEL_4 desde TUNEL_4
+2025-04-24 19:00:13 - ]H00011] ha dejado comida en el refugio
+2025-04-24 19:00:13 - [H00011] dejó 2 piezas de comida.
+2025-04-24 19:00:13 - [H00011] descansa.
+2025-04-24 19:00:13 - [H00017] preparandose para entrar al mundo exterior...
+2025-04-24 19:00:13 - [H00001] interrumpido.
+2025-04-24 19:00:13 - [H00001] no logró defenderse y ha muerto.
+2025-04-24 19:00:13 - [Z00000] H00001 ha sido convertido en Z00001
+2025-04-24 19:00:13 - [Z00000] mató al humano. Total muertes: 1
+2025-04-24 19:00:13 - [Z00000] entra a RIESGO_1
+2025-04-24 19:00:13 - [Z00000] no hay nadie. Espera...
+2025-04-24 19:00:13 - [Z00001] entra a RIESGO_1
+2025-04-24 19:00:13 - [Z00001] no hay nadie. Espera...
+2025-04-24 19:00:13 - [H00002] esperando grupo en túnel2
+2025-04-24 19:00:13 - [H00002] se prepara para salir por TUNEL_2
+2025-04-24 19:00:13 - [H00016] esperando grupo en túnel1
+2025-04-24 19:00:13 - [H00016] se prepara para salir por TUNEL_1
+2025-04-24 19:00:13 - [H00016] se prepara para salir por TUNEL_1
+2025-04-24 19:00:13 - [H00013] se prepara para salir por TUNEL_1
+2025-04-24 19:00:13 - [H00009] se prepara para salir por TUNEL_1
+2025-04-24 19:00:13 - [H00009] entra a TUNEL_1 desde TUNEL_1
+2025-04-24 19:00:13 - [H00012] recolectó 2 piezas de comida.
+2025-04-24 19:00:13 - [H00008] intentando comer.
+2025-04-24 19:00:13 - [H00008] ha cogido un alimento del refugio.
+2025-04-24 19:00:14 - [H00005] intentando comer.
+2025-04-24 19:00:14 - [H00005] ha cogido un alimento del refugio.
+2025-04-24 19:00:14 - [H00018] preparandose para entrar al mundo exterior...
+2025-04-24 19:00:14 - [H00009] sale del tunel
+2025-04-24 19:00:14 - [H00016] entra a TUNEL_1 desde TUNEL_1
+2025-04-24 19:00:14 - [H00009] recolectando comida en RIESGO_1
+2025-04-24 19:00:14 - [H00007] preparandose para entrar al mundo exterior...
+2025-04-24 19:00:14 - [H00017] esperando grupo en túnel4
+2025-04-24 19:00:14 - [H00017] se prepara para salir por TUNEL_4
+2025-04-24 19:00:14 - [H00017] se prepara para salir por TUNEL_4
+2025-04-24 19:00:15 - [H00013] entra a TUNEL_1 desde TUNEL_1
+2025-04-24 19:00:15 - [H00016] sale del tunel
+2025-04-24 19:00:15 - [H00016] recolectando comida en RIESGO_1
+2025-04-24 19:00:15 - [H00019] preparandose para entrar al mundo exterior...
+2025-04-24 19:00:15 - [H00007] esperando grupo en túnel2
+2025-04-24 19:00:15 - [H00007] se prepara para salir por TUNEL_2
+2025-04-24 19:00:15 - [H00007] se prepara para salir por TUNEL_2
+2025-04-24 19:00:15 - [H00002] se prepara para salir por TUNEL_2
+2025-04-24 19:00:15 - [H00006] intentando comer.
+2025-04-24 19:00:15 - [H00006] ha cogido un alimento del refugio.
+2025-04-24 19:00:15 - [Z00000] entra a RIESGO_2
+2025-04-24 19:00:15 - [Z00000] no hay nadie. Espera...
+2025-04-24 19:00:15 - [Z00001] entra a RIESGO_3
+2025-04-24 19:00:15 - [Z00001] no hay nadie. Espera...
+2025-04-24 19:00:16 - [H00018] esperando grupo en túnel1
+2025-04-24 19:00:16 - [H00018] se prepara para salir por TUNEL_1
+2025-04-24 19:00:16 - [H00013] sale del tunel
+2025-04-24 19:00:16 - [H00018] se prepara para salir por TUNEL_1
+2025-04-24 19:00:16 - [H00013] recolectando comida en RIESGO_1
+2025-04-24 19:00:16 - [H00011] intentando comer.
+2025-04-24 19:00:16 - [H00011] ha cogido un alimento del refugio.
+2025-04-24 19:00:16 - [H00020] preparandose para entrar al mundo exterior...
+2025-04-24 19:00:17 - [H00019] esperando grupo en túnel2
+2025-04-24 19:00:17 - [H00019] se prepara para salir por TUNEL_2
+2025-04-24 19:00:17 - [H00019] se prepara para salir por TUNEL_2
+2025-04-24 19:00:17 - [H00005] preparandose para entrar al mundo exterior...
+2025-04-24 19:00:17 - [H00009] recolectó 2 piezas de comida.
+2025-04-24 19:00:17 - [H00009] entra a TUNEL_1 desde TUNEL_1
+2025-04-24 19:00:18 - [Z00000] entra a RIESGO_4
+2025-04-24 19:00:18 - [Z00000] atacando al humano H00012
+2025-04-24 19:00:18 - [H00021] preparandose para entrar al mundo exterior...
+2025-04-24 19:00:18 - [Z00001] entra a RIESGO_3
+2025-04-24 19:00:18 - [Z00001] no hay nadie. Espera...
+2025-04-24 19:00:18 - [H00009] sale del tunel
+2025-04-24 19:00:18 - [H00018] entra a TUNEL_1 desde TUNEL_1
+2025-04-24 19:00:18 - ]H00009] ha dejado comida en el refugio
+2025-04-24 19:00:18 - [H00009] dejó 2 piezas de comida.
+2025-04-24 19:00:18 - [H00009] descansa.
+2025-04-24 19:00:18 - [H00008] preparandose para entrar al mundo exterior...
+2025-04-24 19:00:18 - [H00022] preparandose para entrar al mundo exterior...
+2025-04-24 19:00:18 - [H00020] esperando grupo en túnel3
+2025-04-24 19:00:18 - [H00020] se prepara para salir por TUNEL_3
+2025-04-24 19:00:18 - [H00020] se prepara para salir por TUNEL_3
+2025-04-24 19:00:18 - [H00003] se prepara para salir por TUNEL_3
+2025-04-24 19:00:18 - [H00015] se prepara para salir por TUNEL_3
+2025-04-24 19:00:18 - [H00015] entra a TUNEL_3 desde TUNEL_3
+2025-04-24 19:00:19 - [H00005] esperando grupo en túnel3
+2025-04-24 19:00:19 - [H00005] se prepara para salir por TUNEL_3
+2025-04-24 19:00:19 - [H00006] preparandose para entrar al mundo exterior...
+2025-04-24 19:00:19 - [H00021] esperando grupo en túnel3
+2025-04-24 19:00:19 - [H00021] se prepara para salir por TUNEL_3
+2025-04-24 19:00:19 - [H00023] preparandose para entrar al mundo exterior...
+2025-04-24 19:00:19 - [H00012] logró defenderse.
+2025-04-24 19:00:19 - [H00012] interrumpido.
+2025-04-24 19:00:19 - [Z00000] el humano se defendió. Sigue con vida.
+2025-04-24 19:00:19 - [Z00000] entra a RIESGO_2
+2025-04-24 19:00:19 - [Z00000] no hay nadie. Espera...
+2025-04-24 19:00:19 - [H00018] sale del tunel
+2025-04-24 19:00:19 - [H00018] recolectando comida en RIESGO_1
+2025-04-24 19:00:19 - [H00008] esperando grupo en túnel1
+2025-04-24 19:00:19 - [H00008] se prepara para salir por TUNEL_1
+2025-04-24 19:00:19 - [H00008] se prepara para salir por TUNEL_1
+2025-04-24 19:00:19 - [H00015] sale del tunel
+2025-04-24 19:00:19 - [H00005] se prepara para salir por TUNEL_3
+2025-04-24 19:00:19 - [H00020] entra a TUNEL_3 desde TUNEL_3
+2025-04-24 19:00:19 - [H00015] recolectando comida en RIESGO_3
+2025-04-24 19:00:19 - [H00021] se prepara para salir por TUNEL_3
+2025-04-24 19:00:19 - [H00016] recolectó 2 piezas de comida.
+2025-04-24 19:00:19 - [H00016] entra a TUNEL_1 desde TUNEL_1
+2025-04-24 19:00:20 - [H00013] recolectó 2 piezas de comida.
+2025-04-24 19:00:20 - [H00006] esperando grupo en túnel4
+2025-04-24 19:00:20 - [H00006] se prepara para salir por TUNEL_4
+2025-04-24 19:00:20 - [H00024] preparandose para entrar al mundo exterior...
+2025-04-24 19:00:20 - [H00023] esperando grupo en túnel3
+2025-04-24 19:00:20 - [H00023] se prepara para salir por TUNEL_3
+2025-04-24 19:00:20 - [H00022] esperando grupo en túnel2
+2025-04-24 19:00:20 - [H00022] se prepara para salir por TUNEL_2
+2025-04-24 19:00:20 - [H00009] intentando comer.
+2025-04-24 19:00:20 - [H00009] ha cogido un alimento del refugio.
+2025-04-24 19:00:20 - [H00003] entra a TUNEL_3 desde TUNEL_3
+2025-04-24 19:00:20 - [H00020] sale del tunel
+2025-04-24 19:00:20 - [H00020] recolectando comida en RIESGO_3
+2025-04-24 19:00:20 - [H00023] se prepara para salir por TUNEL_3
+2025-04-24 19:00:20 - [Z00001] entra a RIESGO_3
+2025-04-24 19:00:20 - [Z00001] atacando al humano H00015
+2025-04-24 19:00:20 - [H00016] sale del tunel
+2025-04-24 19:00:20 - [H00013] entra a TUNEL_1 desde TUNEL_1
+2025-04-24 19:00:20 - ]H00016] ha dejado comida en el refugio
+2025-04-24 19:00:20 - [H00016] dejó 2 piezas de comida.
+2025-04-24 19:00:20 - [H00016] descansa.
+2025-04-24 19:00:21 - [H00011] preparandose para entrar al mundo exterior...
+2025-04-24 19:00:21 - [H00015] logró defenderse.
+2025-04-24 19:00:21 - [Z00001] el humano se defendió. Sigue con vida.
+2025-04-24 19:00:21 - [Z00001] entra a RIESGO_2
+2025-04-24 19:00:21 - [Z00001] no hay nadie. Espera...
+2025-04-24 19:00:21 - [H00015] interrumpido mientras recolectaba comida.
+2025-04-24 19:00:21 - [H00015] preparandose para entrar al mundo exterior...
+2025-04-24 19:00:21 - [H00003] sale del tunel
+2025-04-24 19:00:21 - [H00005] entra a TUNEL_3 desde TUNEL_3
+2025-04-24 19:00:21 - [H00003] recolectando comida en RIESGO_3
+2025-04-24 19:00:21 - [H00013] sale del tunel
+2025-04-24 19:00:21 - [H00008] entra a TUNEL_1 desde TUNEL_1
+2025-04-24 19:00:21 - ]H00013] ha dejado comida en el refugio
+2025-04-24 19:00:21 - [H00013] dejó 2 piezas de comida.
+2025-04-24 19:00:21 - [H00013] descansa.
+2025-04-24 19:00:22 - [Z00000] entra a RIESGO_2
+2025-04-24 19:00:22 - [Z00000] no hay nadie. Espera...
+2025-04-24 19:00:22 - [H00024] esperando grupo en túnel4
+2025-04-24 19:00:22 - [H00024] se prepara para salir por TUNEL_4
+2025-04-24 19:00:22 - [H00024] se prepara para salir por TUNEL_4
+2025-04-24 19:00:22 - [H00006] se prepara para salir por TUNEL_4
+2025-04-24 19:00:22 - [H00025] preparandose para entrar al mundo exterior...
+2025-04-24 19:00:22 - [H00015] esperando grupo en túnel3
+2025-04-24 19:00:22 - [H00015] se prepara para salir por TUNEL_3
+2025-04-24 19:00:22 - [H00021] entra a TUNEL_3 desde TUNEL_3
+2025-04-24 19:00:22 - [H00015] se prepara para salir por TUNEL_3
+2025-04-24 19:00:22 - [H00005] sale del tunel
+2025-04-24 19:00:22 - [H00005] recolectando comida en RIESGO_3
+2025-04-24 19:00:22 - [H00011] esperando grupo en túnel2
+2025-04-24 19:00:22 - [H00011] se prepara para salir por TUNEL_2
+2025-04-24 19:00:22 - [H00011] se prepara para salir por TUNEL_2
+2025-04-24 19:00:22 - [H00022] se prepara para salir por TUNEL_2
+2025-04-24 19:00:22 - [H00008] sale del tunel
+2025-04-24 19:00:22 - [H00008] recolectando comida en RIESGO_1
+2025-04-24 19:00:23 - [H00026] preparandose para entrar al mundo exterior...
+2025-04-24 19:00:23 - [H00023] entra a TUNEL_3 desde TUNEL_3
+2025-04-24 19:00:23 - [H00021] sale del tunel
+2025-04-24 19:00:23 - [H00021] recolectando comida en RIESGO_3
+2025-04-24 19:00:23 - [H00016] intentando comer.
+2025-04-24 19:00:23 - [H00016] ha cogido un alimento del refugio.
+2025-04-24 19:00:23 - [H00013] intentando comer.
+2025-04-24 19:00:23 - [H00013] ha cogido un alimento del refugio.
+2025-04-24 19:00:24 - [H00025] esperando grupo en túnel3
+2025-04-24 19:00:24 - [H00025] se prepara para salir por TUNEL_3
+2025-04-24 19:00:24 - [H00025] se prepara para salir por TUNEL_3
+2025-04-24 19:00:24 - [Z00001] entra a RIESGO_3
+2025-04-24 19:00:24 - [Z00001] atacando al humano H00020
+2025-04-24 19:00:24 - [H00018] recolectó 2 piezas de comida.
+2025-04-24 19:00:24 - [H00018] entra a TUNEL_1 desde TUNEL_1
+2025-04-24 19:00:24 - [H00009] preparandose para entrar al mundo exterior...
+2025-04-24 19:00:24 - [H00027] preparandose para entrar al mundo exterior...
+2025-04-24 19:00:24 - [Z00000] entra a RIESGO_3
+2025-04-24 19:00:24 - [Z00000] atacando al humano H00003
+2025-04-24 19:00:24 - [H00023] sale del tunel
+2025-04-24 19:00:24 - [H00015] entra a TUNEL_3 desde TUNEL_3
+2025-04-24 19:00:24 - [H00023] recolectando comida en RIESGO_3
+2025-04-24 19:00:25 - [H00026] esperando grupo en túnel4
+2025-04-24 19:00:25 - [H00026] se prepara para salir por TUNEL_4
+2025-04-24 19:00:25 - [H00026] se prepara para salir por TUNEL_4
+2025-04-24 19:00:25 - [H00020] logró defenderse.
+2025-04-24 19:00:25 - [H00020] interrumpido mientras recolectaba comida.
+2025-04-24 19:00:25 - [Z00001] el humano se defendió. Sigue con vida.
+2025-04-24 19:00:25 - [Z00001] entra a RIESGO_1
+2025-04-24 19:00:25 - [H00020] preparandose para entrar al mundo exterior...
+2025-04-24 19:00:25 - [Z00001] atacando al humano H00008
+2025-04-24 19:00:25 - [H00028] preparandose para entrar al mundo exterior...
+2025-04-24 19:00:25 - [H00018] sale del tunel
+2025-04-24 19:00:25 - ]H00018] ha dejado comida en el refugio
+2025-04-24 19:00:25 - [H00018] dejó 2 piezas de comida.
+2025-04-24 19:00:25 - [H00018] descansa.
+2025-04-24 19:00:25 - [H00027] esperando grupo en túnel4
+2025-04-24 19:00:25 - [H00027] se prepara para salir por TUNEL_4
+2025-04-24 19:00:25 - [H00025] entra a TUNEL_3 desde TUNEL_3
+2025-04-24 19:00:25 - [H00015] sale del tunel
+2025-04-24 19:00:25 - [H00015] recolectando comida en RIESGO_3
+2025-04-24 19:00:25 - [H00008] logró defenderse.
+2025-04-24 19:00:25 - [H00008] interrumpido mientras recolectaba comida.
+2025-04-24 19:00:25 - [Z00001] el humano se defendió. Sigue con vida.
+2025-04-24 19:00:25 - [Z00001] entra a RIESGO_3
+2025-04-24 19:00:25 - [H00008] preparandose para entrar al mundo exterior...
+2025-04-24 19:00:25 - [Z00001] atacando al humano H00005
+2025-04-24 19:00:25 - [H00003] recolectó 2 piezas de comida.
+2025-04-24 19:00:25 - [H00005] recolectó 2 piezas de comida.
+2025-04-24 19:00:26 - [H00003] interrumpido.
+2025-04-24 19:00:26 - [H00003] no logró defenderse y ha muerto.
+2025-04-24 19:00:26 - [Z00000] H00003 ha sido convertido en Z00003
+2025-04-24 19:00:26 - [Z00000] mató al humano. Total muertes: 2
+2025-04-24 19:00:26 - [Z00000] entra a RIESGO_4
+2025-04-24 19:00:26 - [Z00000] atacando al humano H00012
+2025-04-24 19:00:26 - [Z00003] entra a RIESGO_3
+2025-04-24 19:00:26 - [Z00003] atacando al humano H00005
+2025-04-24 19:00:26 - [H00009] esperando grupo en túnel3
+2025-04-24 19:00:26 - [H00009] se prepara para salir por TUNEL_3
+2025-04-24 19:00:26 - [H00028] esperando grupo en túnel4
+2025-04-24 19:00:26 - [H00028] se prepara para salir por TUNEL_4
+2025-04-24 19:00:26 - [H00028] se prepara para salir por TUNEL_4
+2025-04-24 19:00:26 - [H00027] se prepara para salir por TUNEL_4
+2025-04-24 19:00:26 - [H00029] preparandose para entrar al mundo exterior...
+2025-04-24 19:00:26 - [H00020] esperando grupo en túnel2
+2025-04-24 19:00:26 - [H00020] se prepara para salir por TUNEL_2
+2025-04-24 19:00:26 - [H00020] se prepara para salir por TUNEL_2
+2025-04-24 19:00:26 - [H00009] se prepara para salir por TUNEL_3
+2025-04-24 19:00:26 - [H00005] entra a TUNEL_3 desde TUNEL_3
+2025-04-24 19:00:26 - [H00025] sale del tunel
+2025-04-24 19:00:26 - [H00025] recolectando comida en RIESGO_3
+2025-04-24 19:00:26 - [H00008] esperando grupo en túnel3
+2025-04-24 19:00:26 - [H00008] se prepara para salir por TUNEL_3
+2025-04-24 19:00:27 - [H00016] preparandose para entrar al mundo exterior...
+2025-04-24 19:00:27 - [H00005] logró defenderse.
+2025-04-24 19:00:27 - [H00005] interrumpido.
+2025-04-24 19:00:27 - [Z00001] el humano se defendió. Sigue con vida.
+2025-04-24 19:00:27 - [Z00001] entra a RIESGO_4
+2025-04-24 19:00:27 - [Z00001] atacando al humano H00012
+2025-04-24 19:00:27 - [H00013] preparandose para entrar al mundo exterior...
+2025-04-24 19:00:27 - [H00005] ya fue atacado. Ignorando ataque.
+2025-04-24 19:00:27 - [Z00003] el humano se defendió. Sigue con vida.
+2025-04-24 19:00:27 - [Z00003] entra a RIESGO_2
+2025-04-24 19:00:27 - [Z00003] no hay nadie. Espera...
+2025-04-24 19:00:27 - [H00030] preparandose para entrar al mundo exterior...
+2025-04-24 19:00:27 - [H00012] ya fue atacado. Ignorando ataque.
+2025-04-24 19:00:27 - [Z00000] el humano se defendió. Sigue con vida.
+2025-04-24 19:00:27 - [Z00000] entra a RIESGO_1
+2025-04-24 19:00:27 - [Z00000] no hay nadie. Espera...
+2025-04-24 19:00:28 - [H00021] recolectó 2 piezas de comida.
+2025-04-24 19:00:28 - [H00031] preparandose para entrar al mundo exterior...
+2025-04-24 19:00:28 - [H00029] esperando grupo en túnel3
+2025-04-24 19:00:28 - [H00029] se prepara para salir por TUNEL_3
+2025-04-24 19:00:28 - [H00018] intentando comer.
+2025-04-24 19:00:28 - [H00018] ha cogido un alimento del refugio.
+2025-04-24 19:00:28 - [H00012] ya fue atacado. Ignorando ataque.
+2025-04-24 19:00:28 - [Z00001] el humano se defendió. Sigue con vida.
+2025-04-24 19:00:28 - [Z00001] entra a RIESGO_4
+2025-04-24 19:00:28 - [Z00001] atacando al humano H00012
+2025-04-24 19:00:28 - [H00023] recolectó 2 piezas de comida.
+2025-04-24 19:00:28 - [H00013] esperando grupo en túnel1
+2025-04-24 19:00:28 - [H00013] se prepara para salir por TUNEL_1
+2025-04-24 19:00:29 - [H00032] preparandose para entrar al mundo exterior...
+2025-04-24 19:00:29 - [H00030] esperando grupo en túnel1
+2025-04-24 19:00:29 - [H00030] se prepara para salir por TUNEL_1
+2025-04-24 19:00:29 - [H00030] se prepara para salir por TUNEL_1
+2025-04-24 19:00:29 - [H00013] se prepara para salir por TUNEL_1
+2025-04-24 19:00:29 - [H00016] esperando grupo en túnel4
+2025-04-24 19:00:29 - [H00016] se prepara para salir por TUNEL_4
+2025-04-24 19:00:29 - [H00016] se prepara para salir por TUNEL_4
+2025-04-24 19:00:29 - [H00015] fue atacado y no pudo recolectar comida.
+2025-04-24 19:00:29 - [Z00000] entra a RIESGO_1
+2025-04-24 19:00:29 - [Z00000] no hay nadie. Espera...
+2025-04-24 19:00:29 - [Z00003] entra a RIESGO_4
+2025-04-24 19:00:29 - [Z00003] atacando al humano H00012
+2025-04-24 19:00:29 - [H00012] ya fue atacado. Ignorando ataque.
+2025-04-24 19:00:29 - [Z00001] el humano se defendió. Sigue con vida.
+2025-04-24 19:00:29 - [Z00001] entra a RIESGO_1
+2025-04-24 19:00:29 - [Z00001] no hay nadie. Espera...
+2025-04-24 19:00:29 - [H00025] recolectó 2 piezas de comida.
+2025-04-24 19:00:30 - [H00031] esperando grupo en túnel1
+2025-04-24 19:00:30 - [H00031] se prepara para salir por TUNEL_1
+2025-04-24 19:00:30 - [H00031] se prepara para salir por TUNEL_1
+2025-04-24 19:00:30 - [H00030] entra a TUNEL_1 desde TUNEL_1
+2025-04-24 19:00:30 - [H00033] preparandose para entrar al mundo exterior...
+2025-04-24 19:00:30 - [H00032] esperando grupo en túnel1
+2025-04-24 19:00:30 - [H00032] se prepara para salir por TUNEL_1
+2025-04-24 19:00:30 - [H00034] preparandose para entrar al mundo exterior...
+2025-04-24 19:00:31 - [H00012] ya fue atacado. Ignorando ataque.
+2025-04-24 19:00:31 - [Z00003] el humano se defendió. Sigue con vida.
+2025-04-24 19:00:31 - [Z00003] entra a RIESGO_4
+2025-04-24 19:00:31 - [Z00003] atacando al humano H00012
+2025-04-24 19:00:31 - [H00030] sale del tunel
+2025-04-24 19:00:31 - [H00032] se prepara para salir por TUNEL_1
+2025-04-24 19:00:31 - [H00013] entra a TUNEL_1 desde TUNEL_1
+2025-04-24 19:00:31 - [H00030] recolectando comida en RIESGO_1
+2025-04-24 19:00:31 - [H00035] preparandose para entrar al mundo exterior...
+2025-04-24 19:00:31 - [H00033] esperando grupo en túnel4
+2025-04-24 19:00:31 - [H00033] se prepara para salir por TUNEL_4
+2025-04-24 19:00:32 - [H00034] esperando grupo en túnel1
+2025-04-24 19:00:32 - [H00034] se prepara para salir por TUNEL_1
+2025-04-24 19:00:32 - [Z00000] entra a RIESGO_4
+2025-04-24 19:00:32 - [Z00000] atacando al humano H00012
+2025-04-24 19:00:32 - [H00012] ya fue atacado. Ignorando ataque.
+2025-04-24 19:00:32 - [Z00003] el humano se defendió. Sigue con vida.
+2025-04-24 19:00:32 - [Z00003] entra a RIESGO_3
+2025-04-24 19:00:32 - [Z00003] atacando al humano H00023
+2025-04-24 19:00:32 - [H00013] sale del tunel
+2025-04-24 19:00:32 - [H00034] se prepara para salir por TUNEL_1
+2025-04-24 19:00:32 - [H00013] recolectando comida en RIESGO_1
+2025-04-24 19:00:32 - [H00031] entra a TUNEL_1 desde TUNEL_1
+2025-04-24 19:00:32 - [H00036] preparandose para entrar al mundo exterior...
+2025-04-24 19:00:32 - [H00018] preparandose para entrar al mundo exterior...
+2025-04-24 19:00:32 - [Z00001] entra a RIESGO_3
+2025-04-24 19:00:32 - [Z00001] atacando al humano H00023
+2025-04-24 19:00:32 - [H00035] esperando grupo en túnel4
+2025-04-24 19:00:32 - [H00035] se prepara para salir por TUNEL_4
+2025-04-24 19:00:32 - [H00035] se prepara para salir por TUNEL_4
+2025-04-24 19:00:32 - [H00033] se prepara para salir por TUNEL_4
+2025-04-24 19:00:33 - [H00032] entra a TUNEL_1 desde TUNEL_1
+2025-04-24 19:00:33 - [H00031] sale del tunel
+2025-04-24 19:00:33 - [H00031] recolectando comida en RIESGO_1
+2025-04-24 19:00:33 - [H00012] ya fue atacado. Ignorando ataque.
+2025-04-24 19:00:33 - [Z00000] el humano se defendió. Sigue con vida.
+2025-04-24 19:00:33 - [Z00000] entra a RIESGO_3
+2025-04-24 19:00:33 - [Z00000] atacando al humano H00015
+2025-04-24 19:00:33 - [H00023] logró defenderse.
+2025-04-24 19:00:33 - [H00023] interrumpido.
+2025-04-24 19:00:33 - [Z00003] el humano se defendió. Sigue con vida.
+2025-04-24 19:00:33 - [Z00003] entra a RIESGO_1
+2025-04-24 19:00:33 - [Z00003] atacando al humano H00031
+2025-04-24 19:00:33 - [H00037] preparandose para entrar al mundo exterior...
+2025-04-24 19:00:33 - [H00018] esperando grupo en túnel2
+2025-04-24 19:00:33 - [H00018] se prepara para salir por TUNEL_2
+2025-04-24 19:00:34 - [H00023] ya fue atacado. Ignorando ataque.
+2025-04-24 19:00:34 - [Z00001] el humano se defendió. Sigue con vida.
+2025-04-24 19:00:34 - [Z00001] entra a RIESGO_1
+2025-04-24 19:00:34 - [Z00001] atacando al humano H00013
+2025-04-24 19:00:34 - [H00032] sale del tunel
+2025-04-24 19:00:34 - [H00034] entra a TUNEL_1 desde TUNEL_1
+2025-04-24 19:00:34 - [H00032] recolectando comida en RIESGO_1
+2025-04-24 19:00:34 - [H00015] ya fue atacado. Ignorando ataque.
+2025-04-24 19:00:34 - [Z00000] el humano se defendió. Sigue con vida.
+2025-04-24 19:00:34 - [Z00000] entra a RIESGO_4
+2025-04-24 19:00:34 - [Z00000] atacando al humano H00012
+2025-04-24 19:00:34 - [H00030] recolectó 2 piezas de comida.
+2025-04-24 19:00:34 - [H00036] esperando grupo en túnel2
+2025-04-24 19:00:34 - [H00036] se prepara para salir por TUNEL_2
+2025-04-24 19:00:34 - [H00036] se prepara para salir por TUNEL_2
+2025-04-24 19:00:34 - [H00018] se prepara para salir por TUNEL_2
+2025-04-24 19:00:34 - [H00031] logró defenderse.
+2025-04-24 19:00:34 - [H00031] interrumpido mientras recolectaba comida.
+2025-04-24 19:00:34 - [Z00003] el humano se defendió. Sigue con vida.
+2025-04-24 19:00:34 - [Z00003] entra a RIESGO_4
+2025-04-24 19:00:34 - [H00031] preparandose para entrar al mundo exterior...
+2025-04-24 19:00:34 - [Z00003] atacando al humano H00012
+2025-04-24 19:00:34 - [H00038] preparandose para entrar al mundo exterior...
+2025-04-24 19:00:34 - [H00037] esperando grupo en túnel2
+2025-04-24 19:00:34 - [H00037] se prepara para salir por TUNEL_2
+2025-04-24 19:00:34 - [H00037] se prepara para salir por TUNEL_2
+2025-04-24 19:00:35 - [H00013] logró defenderse.
+2025-04-24 19:00:35 - [H00013] interrumpido mientras recolectaba comida.
+2025-04-24 19:00:35 - [Z00001] el humano se defendió. Sigue con vida.
+2025-04-24 19:00:35 - [Z00001] entra a RIESGO_3
+2025-04-24 19:00:35 - [Z00001] atacando al humano H00025
+2025-04-24 19:00:35 - [H00013] preparandose para entrar al mundo exterior...
+2025-04-24 19:00:35 - [H00034] sale del tunel
+2025-04-24 19:00:35 - [H00034] recolectando comida en RIESGO_1
+2025-04-24 19:00:35 - [H00030] entra a TUNEL_1 desde TUNEL_1
+2025-04-24 19:00:35 - [H00012] ya fue atacado. Ignorando ataque.
+2025-04-24 19:00:35 - [Z00000] el humano se defendió. Sigue con vida.
+2025-04-24 19:00:35 - [Z00000] entra a RIESGO_1
+2025-04-24 19:00:35 - [Z00000] atacando al humano H00034
+2025-04-24 19:00:35 - [H00025] logró defenderse.
+2025-04-24 19:00:35 - [H00025] interrumpido.
+2025-04-24 19:00:35 - [Z00001] el humano se defendió. Sigue con vida.
+2025-04-24 19:00:35 - [Z00001] entra a RIESGO_2
+2025-04-24 19:00:35 - [Z00001] no hay nadie. Espera...
+2025-04-24 19:00:35 - [H00031] esperando grupo en túnel3
+2025-04-24 19:00:35 - [H00031] se prepara para salir por TUNEL_3
+2025-04-24 19:00:35 - [H00031] se prepara para salir por TUNEL_3
+2025-04-24 19:00:35 - [H00029] se prepara para salir por TUNEL_3
+2025-04-24 19:00:35 - [H00008] se prepara para salir por TUNEL_3
+2025-04-24 19:00:35 - [H00038] esperando grupo en túnel2
+2025-04-24 19:00:35 - [H00038] se prepara para salir por TUNEL_2
+2025-04-24 19:00:35 - [H00039] preparandose para entrar al mundo exterior...
+2025-04-24 19:00:36 - [H00030] sale del tunel
+2025-04-24 19:00:36 - ]H00030] ha dejado comida en el refugio
+2025-04-24 19:00:36 - [H00030] dejó 2 piezas de comida.
+2025-04-24 19:00:36 - [H00030] descansa.
+2025-04-24 19:00:36 - [H00012] ya fue atacado. Ignorando ataque.
+2025-04-24 19:00:36 - [Z00003] el humano se defendió. Sigue con vida.
+2025-04-24 19:00:36 - [Z00003] entra a RIESGO_1
+2025-04-24 19:00:36 - [Z00003] atacando al humano H00034
+2025-04-24 19:00:36 - [H00034] logró defenderse.
+2025-04-24 19:00:36 - [H00034] interrumpido mientras recolectaba comida.
+2025-04-24 19:00:36 - [Z00000] el humano se defendió. Sigue con vida.
+2025-04-24 19:00:36 - [Z00000] entra a RIESGO_4
+2025-04-24 19:00:36 - [H00034] preparandose para entrar al mundo exterior...
+2025-04-24 19:00:36 - [Z00000] atacando al humano H00012
+2025-04-24 19:00:36 - [H00040] preparandose para entrar al mundo exterior...
+2025-04-24 19:00:36 - [H00013] esperando grupo en túnel4
+2025-04-24 19:00:36 - [H00013] se prepara para salir por TUNEL_4
+2025-04-24 19:00:36 - [H00013] se prepara para salir por TUNEL_4
+2025-04-24 19:00:36 - [H00034] ya fue atacado. Ignorando ataque.
+2025-04-24 19:00:36 - [Z00003] el humano se defendió. Sigue con vida.
+2025-04-24 19:00:36 - [Z00003] entra a RIESGO_3
+2025-04-24 19:00:36 - [Z00003] atacando al humano H00021
+2025-04-24 19:00:37 - [H00041] preparandose para entrar al mundo exterior...
+2025-04-24 19:00:37 - [H00039] esperando grupo en túnel2
+2025-04-24 19:00:37 - [H00039] se prepara para salir por TUNEL_2
+2025-04-24 19:00:37 - [H00039] se prepara para salir por TUNEL_2
+2025-04-24 19:00:37 - [H00038] se prepara para salir por TUNEL_2
+2025-04-24 19:00:37 - [H00021] interrumpido.
+2025-04-24 19:00:37 - [H00021] logró defenderse.
+2025-04-24 19:00:37 - [Z00003] el humano se defendió. Sigue con vida.
+2025-04-24 19:00:37 - [Z00003] entra a RIESGO_2
+2025-04-24 19:00:37 - [Z00003] no hay nadie. Espera...
+2025-04-24 19:00:37 - [H00032] recolectó 2 piezas de comida.
+2025-04-24 19:00:37 - [H00032] entra a TUNEL_1 desde TUNEL_1
+2025-04-24 19:00:37 - [H00042] preparandose para entrar al mundo exterior...
+2025-04-24 19:00:37 - [H00012] ya fue atacado. Ignorando ataque.
+2025-04-24 19:00:37 - [Z00000] el humano se defendió. Sigue con vida.
+2025-04-24 19:00:37 - [Z00000] entra a RIESGO_1
+2025-04-24 19:00:37 - [Z00000] no hay nadie. Espera...
+2025-04-24 19:00:37 - [H00040] esperando grupo en túnel1
+2025-04-24 19:00:37 - [H00040] se prepara para salir por TUNEL_1
+2025-04-24 19:00:37 - [H00040] se prepara para salir por TUNEL_1
+2025-04-24 19:00:38 - [H00034] esperando grupo en túnel1
+2025-04-24 19:00:38 - [H00034] se prepara para salir por TUNEL_1
+2025-04-24 19:00:38 - [Z00001] entra a RIESGO_2
+2025-04-24 19:00:38 - [Z00001] no hay nadie. Espera...
+2025-04-24 19:00:38 - [H00032] sale del tunel
+2025-04-24 19:00:38 - [H00034] se prepara para salir por TUNEL_1
+2025-04-24 19:00:38 - [H00040] entra a TUNEL_1 desde TUNEL_1
+2025-04-24 19:00:38 - ]H00032] ha dejado comida en el refugio
+2025-04-24 19:00:38 - [H00032] dejó 2 piezas de comida.
+2025-04-24 19:00:38 - [H00032] descansa.
+2025-04-24 19:00:38 - [H00042] esperando grupo en túnel2
+2025-04-24 19:00:38 - [H00042] se prepara para salir por TUNEL_2
+2025-04-24 19:00:38 - [H00042] se prepara para salir por TUNEL_2
+2025-04-24 19:00:38 - [H00041] esperando grupo en túnel2
+2025-04-24 19:00:38 - [H00041] se prepara para salir por TUNEL_2
+2025-04-24 19:00:39 - [H00040] sale del tunel
+2025-04-24 19:00:39 - [H00034] entra a TUNEL_1 desde TUNEL_1
+2025-04-24 19:00:39 - [H00040] recolectando comida en RIESGO_1
+2025-04-24 19:00:39 - [H00043] preparandose para entrar al mundo exterior...
+2025-04-24 19:00:39 - [Z00003] entra a RIESGO_3
+2025-04-24 19:00:39 - [Z00003] atacando al humano H00021
+2025-04-24 19:00:39 - [Z00000] entra a RIESGO_1
+2025-04-24 19:00:39 - [Z00000] atacando al humano H00040
+2025-04-24 19:00:39 - [H00030] intentando comer.
+2025-04-24 19:00:39 - [H00030] ha cogido un alimento del refugio.
+2025-04-24 19:00:40 - [Z00001] entra a RIESGO_2
+2025-04-24 19:00:40 - [Z00001] no hay nadie. Espera...
+2025-04-24 19:00:40 - [H00021] ya fue atacado. Ignorando ataque.
+2025-04-24 19:00:40 - [Z00003] el humano se defendió. Sigue con vida.
+2025-04-24 19:00:40 - [Z00003] entra a RIESGO_3
+2025-04-24 19:00:40 - [Z00003] atacando al humano H00021
+2025-04-24 19:00:40 - [H00034] sale del tunel
+2025-04-24 19:00:40 - [H00034] recolectando comida en RIESGO_1
+2025-04-24 19:00:40 - [H00044] preparandose para entrar al mundo exterior...
+2025-04-24 19:00:40 - [H00021] ya fue atacado. Ignorando ataque.
+2025-04-24 19:00:40 - [Z00003] el humano se defendió. Sigue con vida.
+2025-04-24 19:00:40 - [Z00003] entra a RIESGO_4
+2025-04-24 19:00:40 - [Z00003] atacando al humano H00012
+2025-04-24 19:00:40 - [H00040] logró defenderse.
+2025-04-24 19:00:40 - [H00040] interrumpido mientras recolectaba comida.
+2025-04-24 19:00:40 - [Z00000] el humano se defendió. Sigue con vida.
+2025-04-24 19:00:40 - [Z00000] entra a RIESGO_1
+2025-04-24 19:00:40 - [H00040] preparandose para entrar al mundo exterior...
+2025-04-24 19:00:40 - [Z00000] atacando al humano H00034
+2025-04-24 19:00:40 - [H00032] intentando comer.
+2025-04-24 19:00:40 - [H00032] ha cogido un alimento del refugio.
+2025-04-24 19:00:41 - [H00043] esperando grupo en túnel1
+2025-04-24 19:00:41 - [H00043] se prepara para salir por TUNEL_1
+2025-04-24 19:00:41 - [H00044] esperando grupo en túnel2
+2025-04-24 19:00:41 - [H00044] se prepara para salir por TUNEL_2
+2025-04-24 19:00:41 - [H00044] se prepara para salir por TUNEL_2
+2025-04-24 19:00:41 - [H00041] se prepara para salir por TUNEL_2
+2025-04-24 19:00:41 - [H00045] preparandose para entrar al mundo exterior...
+2025-04-24 19:00:42 - [H00012] ya fue atacado. Ignorando ataque.
+2025-04-24 19:00:42 - [Z00003] el humano se defendió. Sigue con vida.
+2025-04-24 19:00:42 - [Z00003] entra a RIESGO_2
+2025-04-24 19:00:42 - [Z00003] no hay nadie. Espera...
+2025-04-24 19:00:42 - [H00034] ya fue atacado. Ignorando ataque.
+2025-04-24 19:00:42 - [Z00000] el humano se defendió. Sigue con vida.
+2025-04-24 19:00:42 - [Z00000] entra a RIESGO_4
+2025-04-24 19:00:42 - [Z00000] atacando al humano H00012
+2025-04-24 19:00:42 - [Z00001] entra a RIESGO_4
+2025-04-24 19:00:42 - [Z00001] atacando al humano H00012
+2025-04-24 19:00:42 - [H00040] esperando grupo en túnel2
+2025-04-24 19:00:42 - [H00040] se prepara para salir por TUNEL_2
+2025-04-24 19:00:42 - [H00040] se prepara para salir por TUNEL_2
+2025-04-24 19:00:43 - [H00046] preparandose para entrar al mundo exterior...
+2025-04-24 19:00:43 - [H00012] ya fue atacado. Ignorando ataque.
+2025-04-24 19:00:43 - [Z00000] el humano se defendió. Sigue con vida.
+2025-04-24 19:00:43 - [Z00000] entra a RIESGO_3
+2025-04-24 19:00:43 - [Z00000] atacando al humano H00023
+2025-04-24 19:00:43 - [H00012] ya fue atacado. Ignorando ataque.
+2025-04-24 19:00:43 - [Z00001] el humano se defendió. Sigue con vida.
+2025-04-24 19:00:43 - [Z00001] entra a RIESGO_1
+2025-04-24 19:00:43 - [Z00001] atacando al humano H00034
+2025-04-24 19:00:43 - [H00045] esperando grupo en túnel3
+2025-04-24 19:00:43 - [H00045] se prepara para salir por TUNEL_3
+2025-04-24 19:00:44 - [H00047] preparandose para entrar al mundo exterior...
+2025-04-24 19:00:44 - [H00030] preparandose para entrar al mundo exterior...
+2025-04-24 19:00:44 - [H00023] ya fue atacado. Ignorando ataque.
+2025-04-24 19:00:44 - [Z00000] el humano se defendió. Sigue con vida.
+2025-04-24 19:00:44 - [Z00000] entra a RIESGO_3
+2025-04-24 19:00:44 - [Z00000] atacando al humano H00021
+2025-04-24 19:00:44 - [Z00003] entra a RIESGO_3
+2025-04-24 19:00:44 - [Z00003] atacando al humano H00023
+2025-04-24 19:00:44 - [H00034] ya fue atacado. Ignorando ataque.
+2025-04-24 19:00:44 - [Z00001] el humano se defendió. Sigue con vida.
+2025-04-24 19:00:44 - [Z00001] entra a RIESGO_4
+2025-04-24 19:00:44 - [Z00001] atacando al humano H00012
+2025-04-24 19:00:44 - [H00046] esperando grupo en túnel1
+2025-04-24 19:00:44 - [H00046] se prepara para salir por TUNEL_1
+2025-04-24 19:00:45 - [H00047] esperando grupo en túnel4
+2025-04-24 19:00:45 - [H00047] se prepara para salir por TUNEL_4
+2025-04-24 19:00:45 - [H00021] ya fue atacado. Ignorando ataque.
+2025-04-24 19:00:45 - [Z00000] el humano se defendió. Sigue con vida.
+2025-04-24 19:00:45 - [Z00000] entra a RIESGO_3
+2025-04-24 19:00:45 - [Z00000] atacando al humano H00021
+2025-04-24 19:00:45 - [H00032] preparandose para entrar al mundo exterior...
+2025-04-24 19:00:45 - [H00012] ya fue atacado. Ignorando ataque.
+2025-04-24 19:00:45 - [Z00001] el humano se defendió. Sigue con vida.
+2025-04-24 19:00:45 - [Z00001] entra a RIESGO_1
+2025-04-24 19:00:45 - [Z00001] atacando al humano H00034
+2025-04-24 19:00:45 - [H00048] preparandose para entrar al mundo exterior...
+2025-04-24 19:00:45 - [H00034] fue atacado y no pudo recolectar comida.
+2025-04-24 19:00:45 - [H00034] entra a TUNEL_1 desde TUNEL_1
+2025-04-24 19:00:45 - [H00030] esperando grupo en túnel4
+2025-04-24 19:00:45 - [H00030] se prepara para salir por TUNEL_4
+2025-04-24 19:00:45 - [H00030] se prepara para salir por TUNEL_4
+2025-04-24 19:00:45 - [H00047] se prepara para salir por TUNEL_4
+2025-04-24 19:00:45 - [H00023] ya fue atacado. Ignorando ataque.
+2025-04-24 19:00:45 - [Z00003] el humano se defendió. Sigue con vida.
+2025-04-24 19:00:45 - [Z00003] entra a RIESGO_3
+2025-04-24 19:00:45 - [Z00003] atacando al humano H00025
+2025-04-24 19:00:45 - [H00034] ya fue atacado. Ignorando ataque.
+2025-04-24 19:00:45 - [Z00001] el humano se defendió. Sigue con vida.
+2025-04-24 19:00:45 - [Z00001] entra a RIESGO_2
+2025-04-24 19:00:45 - [Z00001] no hay nadie. Espera...
+2025-04-24 19:00:46 - [H00025] ya fue atacado. Ignorando ataque.
+2025-04-24 19:00:46 - [Z00003] el humano se defendió. Sigue con vida.
+2025-04-24 19:00:46 - [Z00003] entra a RIESGO_4
+2025-04-24 19:00:46 - [Z00003] atacando al humano H00012
+2025-04-24 19:00:46 - [H00032] esperando grupo en túnel4
+2025-04-24 19:00:46 - [H00032] se prepara para salir por TUNEL_4
+2025-04-24 19:00:46 - [H00032] se prepara para salir por TUNEL_4
+2025-04-24 19:00:46 - [H00034] sale del tunel
+2025-04-24 19:00:46 - [H00046] se prepara para salir por TUNEL_1
+2025-04-24 19:00:46 - [H00043] se prepara para salir por TUNEL_1
+2025-04-24 19:00:46 - [H00034] descansa.
+2025-04-24 19:00:46 - [H00046] entra a TUNEL_1 desde TUNEL_1
+2025-04-24 19:00:46 - [H00021] ya fue atacado. Ignorando ataque.
+2025-04-24 19:00:46 - [Z00000] el humano se defendió. Sigue con vida.
+2025-04-24 19:00:46 - [Z00000] entra a RIESGO_4
+2025-04-24 19:00:46 - [Z00000] atacando al humano H00012
+2025-04-24 19:00:46 - [H00049] preparandose para entrar al mundo exterior...
+2025-04-24 19:00:47 - [H00012] ya fue atacado. Ignorando ataque.
+2025-04-24 19:00:47 - [Z00003] el humano se defendió. Sigue con vida.
+2025-04-24 19:00:47 - [Z00003] entra a RIESGO_1
+2025-04-24 19:00:47 - [Z00003] no hay nadie. Espera...
+2025-04-24 19:00:47 - [H00048] esperando grupo en túnel2
+2025-04-24 19:00:47 - [H00048] se prepara para salir por TUNEL_2
+2025-04-24 19:00:47 - [H00012] ya fue atacado. Ignorando ataque.
+2025-04-24 19:00:47 - [Z00000] el humano se defendió. Sigue con vida.
+2025-04-24 19:00:47 - [Z00000] entra a RIESGO_2
+2025-04-24 19:00:47 - [Z00000] no hay nadie. Espera...
+2025-04-24 19:00:47 - [H00046] sale del tunel
+2025-04-24 19:00:47 - [H00043] entra a TUNEL_1 desde TUNEL_1
+2025-04-24 19:00:47 - [H00046] recolectando comida en RIESGO_1
+2025-04-24 19:00:47 - [H00050] preparandose para entrar al mundo exterior...
+2025-04-24 19:00:48 - [H00043] sale del tunel
+2025-04-24 19:00:48 - [H00043] recolectando comida en RIESGO_1
+2025-04-24 19:00:48 - [H00049] esperando grupo en túnel2
+2025-04-24 19:00:48 - [H00049] se prepara para salir por TUNEL_2
+2025-04-24 19:00:48 - [H00049] se prepara para salir por TUNEL_2
+2025-04-24 19:00:48 - [H00048] se prepara para salir por TUNEL_2
+2025-04-24 19:00:48 - [Z00001] entra a RIESGO_1
+2025-04-24 19:00:48 - [Z00001] atacando al humano H00043
+2025-04-24 19:00:49 - [H00043] interrumpido mientras recolectaba comida.
+2025-04-24 19:00:49 - [H00043] no logró defenderse y ha muerto.
+2025-04-24 19:00:49 - [H00043] preparandose para entrar al mundo exterior...
+2025-04-24 19:00:49 - [Z00001] H00043 ha sido convertido en Z00043
+2025-04-24 19:00:49 - [H00043] interrumpido.
+2025-04-24 19:00:49 - [Z00001] mató al humano. Total muertes: 1
+2025-04-24 19:00:49 - [Z00001] entra a RIESGO_4
+2025-04-24 19:00:49 - [Z00001] atacando al humano H00012
+2025-04-24 19:00:49 - [Z00043] entra a RIESGO_3
+2025-04-24 19:00:49 - [Z00043] atacando al humano H00015
+2025-04-24 19:00:49 - [Z00003] entra a RIESGO_2
+2025-04-24 19:00:49 - [Z00003] no hay nadie. Espera...
+2025-04-24 19:00:49 - [H00051] preparandose para entrar al mundo exterior...
+2025-04-24 19:00:49 - [H00050] esperando grupo en túnel1
+2025-04-24 19:00:49 - [H00050] se prepara para salir por TUNEL_1
+2025-04-24 19:00:49 - [H00015] ya fue atacado. Ignorando ataque.
+2025-04-24 19:00:49 - [Z00043] el humano se defendió. Sigue con vida.
+2025-04-24 19:00:49 - [Z00043] entra a RIESGO_2
+2025-04-24 19:00:49 - [Z00043] no hay nadie. Espera...
+2025-04-24 19:00:50 - [H00034] intentando comer.
+2025-04-24 19:00:50 - [H00034] ha cogido un alimento del refugio.
+2025-04-24 19:00:50 - [Z00000] entra a RIESGO_1
+2025-04-24 19:00:50 - [Z00000] atacando al humano H00046
+2025-04-24 19:00:50 - [H00012] ya fue atacado. Ignorando ataque.
+2025-04-24 19:00:50 - [Z00001] el humano se defendió. Sigue con vida.
+2025-04-24 19:00:50 - [Z00001] entra a RIESGO_4
+2025-04-24 19:00:50 - [Z00001] atacando al humano H00012
+2025-04-24 19:00:50 - [H00052] preparandose para entrar al mundo exterior...
+2025-04-24 19:00:50 - [H00046] recolectó 2 piezas de comida.
+2025-04-24 19:00:50 - [H00046] entra a TUNEL_1 desde TUNEL_1
+2025-04-24 19:00:51 - [H00012] ya fue atacado. Ignorando ataque.
+2025-04-24 19:00:51 - [Z00001] el humano se defendió. Sigue con vida.
+2025-04-24 19:00:51 - [Z00001] entra a RIESGO_1
+2025-04-24 19:00:51 - [Z00001] no hay nadie. Espera...
+2025-04-24 19:00:51 - [H00046] logró defenderse.
+2025-04-24 19:00:51 - [H00046] interrumpido.
+2025-04-24 19:00:51 - [Z00000] el humano se defendió. Sigue con vida.
+2025-04-24 19:00:51 - [Z00000] entra a RIESGO_4
+2025-04-24 19:00:51 - [Z00000] atacando al humano H00012
+2025-04-24 19:00:51 - [H00053] preparandose para entrar al mundo exterior...
+2025-04-24 19:00:51 - [H00051] esperando grupo en túnel3
+2025-04-24 19:00:51 - [H00051] se prepara para salir por TUNEL_3
+2025-04-24 19:00:52 - [H00052] esperando grupo en túnel1
+2025-04-24 19:00:52 - [H00052] se prepara para salir por TUNEL_1
+2025-04-24 19:00:52 - [H00052] se prepara para salir por TUNEL_1
+2025-04-24 19:00:52 - [H00050] se prepara para salir por TUNEL_1
+2025-04-24 19:00:52 - [Z00003] entra a RIESGO_2
+2025-04-24 19:00:52 - [Z00003] no hay nadie. Espera...
+2025-04-24 19:00:52 - [H00012] ya fue atacado. Ignorando ataque.
+2025-04-24 19:00:52 - [Z00000] el humano se defendió. Sigue con vida.
+2025-04-24 19:00:52 - [Z00000] entra a RIESGO_4
+2025-04-24 19:00:52 - [Z00000] atacando al humano H00012
+2025-04-24 19:00:52 - [Z00043] entra a RIESGO_4
+2025-04-24 19:00:52 - [Z00043] atacando al humano H00012
+2025-04-24 19:00:52 - [H00053] esperando grupo en túnel3
+2025-04-24 19:00:52 - [H00053] se prepara para salir por TUNEL_3
+2025-04-24 19:00:52 - [H00053] se prepara para salir por TUNEL_3
+2025-04-24 19:00:52 - [H00051] se prepara para salir por TUNEL_3
+2025-04-24 19:00:52 - [H00045] se prepara para salir por TUNEL_3
+2025-04-24 19:00:52 - [H00012] ya fue atacado. Ignorando ataque.
+2025-04-24 19:00:52 - [Z00000] el humano se defendió. Sigue con vida.
+2025-04-24 19:00:52 - [Z00000] entra a RIESGO_2
+2025-04-24 19:00:52 - [Z00000] no hay nadie. Espera...
+2025-04-24 19:00:53 - [H00054] preparandose para entrar al mundo exterior...
+2025-04-24 19:00:53 - [Z00001] entra a RIESGO_2
+2025-04-24 19:00:53 - [Z00001] no hay nadie. Espera...
+2025-04-24 19:00:53 - [H00012] ya fue atacado. Ignorando ataque.
+2025-04-24 19:00:53 - [Z00043] el humano se defendió. Sigue con vida.
+2025-04-24 19:00:53 - [Z00043] entra a RIESGO_2
+2025-04-24 19:00:53 - [Z00043] no hay nadie. Espera...
+2025-04-24 19:00:54 - [H00054] esperando grupo en túnel4
+2025-04-24 19:00:54 - [H00054] se prepara para salir por TUNEL_4
+2025-04-24 19:00:54 - [Z00003] entra a RIESGO_3
+2025-04-24 19:00:54 - [Z00003] atacando al humano H00021
+2025-04-24 19:00:54 - [Z00000] entra a RIESGO_3
+2025-04-24 19:00:54 - [Z00000] atacando al humano H00015
+2025-04-24 19:00:54 - [H00055] preparandose para entrar al mundo exterior...
+2025-04-24 19:00:55 - [H00034] recuperandose de las heridas....
+2025-04-24 19:00:59 - [H00001] preparandose para entrar al mundo exterior...
+2025-04-24 19:00:59 - [Z00000] entra a RIESGO_3
+2025-04-24 19:00:59 - [Z00000] no hay nadie. Espera...
+2025-04-24 19:01:01 - [H00002] preparandose para entrar al mundo exterior...
+2025-04-24 19:01:01 - [H00001] esperando grupo en túnel1
+2025-04-24 19:01:01 - [H00001] se prepara para salir por TUNEL_1
+2025-04-24 19:01:01 - [Z00000] entra a RIESGO_2
+2025-04-24 19:01:01 - [Z00000] no hay nadie. Espera...
+2025-04-24 19:01:02 - [H00003] preparandose para entrar al mundo exterior...
+2025-04-24 19:01:02 - [H00004] preparandose para entrar al mundo exterior...
+2025-04-24 19:01:02 - [H00002] esperando grupo en túnel3
+2025-04-24 19:01:02 - [H00002] se prepara para salir por TUNEL_3
+2025-04-24 19:01:03 - [H00005] preparandose para entrar al mundo exterior...
+2025-04-24 19:01:04 - [H00003] esperando grupo en túnel4
+2025-04-24 19:01:04 - [H00003] se prepara para salir por TUNEL_4
+2025-04-24 19:01:04 - [H00006] preparandose para entrar al mundo exterior...
+2025-04-24 19:01:04 - [H00004] esperando grupo en túnel1
+2025-04-24 19:01:04 - [H00004] se prepara para salir por TUNEL_1
+2025-04-24 19:01:04 - [Z00000] entra a RIESGO_2
+2025-04-24 19:01:04 - [Z00000] no hay nadie. Espera...
+2025-04-24 19:01:05 - [H00005] esperando grupo en túnel1
+2025-04-24 19:01:05 - [H00005] se prepara para salir por TUNEL_1
+2025-04-24 19:01:05 - [H00005] se prepara para salir por TUNEL_1
+2025-04-24 19:01:05 - [H00001] se prepara para salir por TUNEL_1
+2025-04-24 19:01:05 - [H00004] se prepara para salir por TUNEL_1
+2025-04-24 19:01:05 - [H00004] entra a TUNEL_1 desde TUNEL_1
+2025-04-24 19:01:05 - [H00006] esperando grupo en túnel2
+2025-04-24 19:01:05 - [H00006] se prepara para salir por TUNEL_2
+2025-04-24 19:01:05 - [H00007] preparandose para entrar al mundo exterior...
+2025-04-24 19:01:06 - [H00005] entra a TUNEL_1 desde TUNEL_1
+2025-04-24 19:01:06 - [H00004] sale del tunel
+2025-04-24 19:01:06 - [H00004] recolectando comida en RIESGO_1
+2025-04-24 19:01:07 - [H00001] entra a TUNEL_1 desde TUNEL_1
+2025-04-24 19:01:07 - [H00005] sale del tunel
+2025-04-24 19:01:07 - [H00005] recolectando comida en RIESGO_1
+2025-04-24 19:01:07 - [Z00000] entra a RIESGO_3
+2025-04-24 19:01:07 - [Z00000] no hay nadie. Espera...
+2025-04-24 19:01:07 - [H00008] preparandose para entrar al mundo exterior...
+2025-04-24 19:01:07 - [H00007] esperando grupo en túnel2
+2025-04-24 19:01:07 - [H00007] se prepara para salir por TUNEL_2
+2025-04-24 19:01:08 - [H00001] sale del tunel
+2025-04-24 19:01:08 - [H00001] recolectando comida en RIESGO_1
+2025-04-24 19:01:08 - [H00008] esperando grupo en túnel1
+2025-04-24 19:01:08 - [H00008] se prepara para salir por TUNEL_1
+2025-04-24 19:01:09 - [H00009] preparandose para entrar al mundo exterior...
+2025-04-24 19:01:09 - [H00004] recolectó 2 piezas de comida.
+2025-04-24 19:01:09 - [H00004] entra a TUNEL_1 desde TUNEL_1
+2025-04-24 19:01:09 - [Z00000] entra a RIESGO_4
+2025-04-24 19:01:09 - [Z00000] no hay nadie. Espera...
+2025-04-24 19:01:10 - [H00004] sale del tunel
+2025-04-24 19:01:10 - [H00008] se prepara para salir por TUNEL_1
+2025-04-24 19:01:10 - ]H00004] ha dejado comida en el refugio
+2025-04-24 19:01:10 - [H00004] dejó 2 piezas de comida.
+2025-04-24 19:01:10 - [H00004] descansa.
+2025-04-24 19:01:10 - [H00009] esperando grupo en túnel1
+2025-04-24 19:01:10 - [H00009] se prepara para salir por TUNEL_1
+2025-04-24 19:01:10 - [H00009] se prepara para salir por TUNEL_1
+2025-04-24 19:01:10 - [H00008] entra a TUNEL_1 desde TUNEL_1
+2025-04-24 19:01:10 - [H00010] preparandose para entrar al mundo exterior...
+2025-04-24 19:01:11 - [H00008] sale del tunel
+2025-04-24 19:01:11 - [H00009] entra a TUNEL_1 desde TUNEL_1
+2025-04-24 19:01:11 - [H00008] recolectando comida en RIESGO_1
+2025-04-24 19:01:12 - [Z00000] entra a RIESGO_2
+2025-04-24 19:01:12 - [Z00000] no hay nadie. Espera...
+2025-04-24 19:01:12 - [H00005] recolectó 2 piezas de comida.
+2025-04-24 19:01:12 - [H00001] recolectó 2 piezas de comida.
+2025-04-24 19:01:12 - [H00010] esperando grupo en túnel1
+2025-04-24 19:01:12 - [H00010] se prepara para salir por TUNEL_1
+2025-04-24 19:01:12 - [H00009] sale del tunel
+2025-04-24 19:01:12 - [H00005] entra a TUNEL_1 desde TUNEL_1
+2025-04-24 19:01:12 - [H00010] se prepara para salir por TUNEL_1
+2025-04-24 19:01:12 - [H00009] recolectando comida en RIESGO_1
+2025-04-24 19:01:12 - [H00011] preparandose para entrar al mundo exterior...
+2025-04-24 19:01:12 - [H00004] intentando comer.
+2025-04-24 19:01:12 - [H00004] ha cogido un alimento del refugio.
+2025-04-24 19:01:13 - [H00005] sale del tunel
+2025-04-24 19:01:13 - [H00001] entra a TUNEL_1 desde TUNEL_1
+2025-04-24 19:01:13 - ]H00005] ha dejado comida en el refugio
+2025-04-24 19:01:13 - [H00005] dejó 2 piezas de comida.
+2025-04-24 19:01:13 - [H00005] descansa.
+2025-04-24 19:01:13 - [H00011] esperando grupo en túnel3
+2025-04-24 19:01:13 - [H00011] se prepara para salir por TUNEL_3
+2025-04-24 19:01:13 - [H00012] preparandose para entrar al mundo exterior...
+2025-04-24 19:01:14 - [Z00000] entra a RIESGO_2
+2025-04-24 19:01:14 - [Z00000] no hay nadie. Espera...
+2025-04-24 19:01:14 - [H00001] sale del tunel
+2025-04-24 19:01:14 - [H00010] entra a TUNEL_1 desde TUNEL_1
+2025-04-24 19:01:14 - ]H00001] ha dejado comida en el refugio
+2025-04-24 19:01:14 - [H00001] dejó 2 piezas de comida.
+2025-04-24 19:01:14 - [H00001] descansa.
+2025-04-24 19:01:15 - [H00008] recolectó 2 piezas de comida.
+2025-04-24 19:01:15 - [H00012] esperando grupo en túnel3
+2025-04-24 19:01:15 - [H00012] se prepara para salir por TUNEL_3
+2025-04-24 19:01:15 - [H00012] se prepara para salir por TUNEL_3
+2025-04-24 19:01:15 - [H00002] se prepara para salir por TUNEL_3
+2025-04-24 19:01:15 - [H00011] se prepara para salir por TUNEL_3
+2025-04-24 19:01:15 - [H00011] entra a TUNEL_3 desde TUNEL_3
+2025-04-24 19:01:15 - [H00010] sale del tunel
+2025-04-24 19:01:15 - [H00008] entra a TUNEL_1 desde TUNEL_1
+2025-04-24 19:01:15 - [H00010] recolectando comida en RIESGO_1
+2025-04-24 19:01:15 - [H00013] preparandose para entrar al mundo exterior...

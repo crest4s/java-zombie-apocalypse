@@ -3,11 +3,20 @@ package UI;
 import Entidades.Humano;
 import Entidades.Zombi;
 import Zonas.MapaZonas;
+import Zonas.Tunel;
 import Zonas.Zona;
 import static Zonas.Zona.DESCANSO;
 import static Zonas.Zona.RIESGO_1;
+import static Zonas.Zona.TUNEL_1;
+import static Zonas.Zona.TUNEL_2;
+import static Zonas.Zona.TUNEL_3;
+import static Zonas.Zona.TUNEL_4;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.util.List;
+import java.util.stream.Collectors;
 import javax.swing.SwingUtilities;
+import javax.swing.Timer;
 
 public class ApocalipsisGUI extends javax.swing.JFrame implements ZonaChangeListener{
     /**
@@ -15,56 +24,131 @@ public class ApocalipsisGUI extends javax.swing.JFrame implements ZonaChangeList
      */
     
     private MapaZonas mapa = new MapaZonas();
+    private final Tunel[] tuneles;
     
-    public ApocalipsisGUI() {
+    public ApocalipsisGUI(MapaZonas mapa, Tunel[] tuneles) {
+        this.mapa = mapa;
+        this.tuneles = tuneles;
+        this.mapa.setZonaChangeListener(this);
         initComponents();
+        
+        Timer refrescoTimer = new Timer(700, new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                actualizarTodasLasZonas();
+            }
+        });
+        refrescoTimer.start();
     }
     
+    @Override
     public void onCambioZona(String entidadId, Zona zonaAnterior, Zona zonaNueva, boolean esZombi) {
         SwingUtilities.invokeLater(() -> {
-            actualizarPanelZona(zonaAnterior);
-            actualizarPanelZona(zonaNueva);
+            if (zonaAnterior != null && !zonaAnterior.equals(zonaNueva)){
+                actualizarPanelZona(zonaAnterior);
+            }
+            if (zonaNueva != null) {
+                actualizarPanelZona (zonaNueva);
+            }
         });
     }
     
+    private void actualizarTodasLasZonas() {
+        for (Zona zona : Zona.values()) {
+            actualizarPanelZona(zona);
+        }
+    }
     private void actualizarPanelZona(Zona zona){
         List<Humano> humanos = mapa.humanosEnZona(zona);
         List<Zombi> zombis = mapa.zombisEnZona(zona);
-        
-        String textoHumanos = humanos.stream()
-        .map(Humano::getIdHumano)
-        .reduce((a, b) -> a + ", " + b)
-        .orElse("");
+        if (!zona.name().startsWith("TUNEL")){
+            String textoHumanos = humanos.stream()
+            .map(Humano::getIdHumano)
+            .collect(Collectors.joining(", "));
 
-        String textoZombis = zombis.stream()
-            .map(Zombi::getIdZombi)
-            .reduce((a, b) -> a + ", " + b)
-            .orElse("");
-        
-        switch(zona){
-            case RIESGO_1 -> {
-                textRiesgoHumanos1.setText(textoHumanos);
-                textRiesgoZombis1.setText(textoZombis);
-            }
-            case RIESGO_2 -> {
-                textRiesgoHumanos2.setText(textoHumanos);
-                textRiesgoZombis2.setText(textoZombis);
-            }
-            case RIESGO_3 -> {
-                textRiesgoHumanos3.setText(textoHumanos);
-                textRiesgoZombis3.setText(textoZombis);
-            }
-            case RIESGO_4 -> {
-                textRiesgoHumanos4.setText(textoHumanos);
-                textRiesgoZombis4.setText(textoZombis);
-            }
-            case TUNEL_1
-            case DESCANSO -> textDescanso.setText(textoHumanos);
-            case ZONA_COMUN -> textComun.setText(textoHumanos);
-            case COMEDOR -> textComedor.setText(textoHumanos);
+            String textoZombis = zombis.stream()
+                .map(Zombi::getIdZombi)
+                .collect(Collectors.joining(", "));
 
+            switch(zona){
+                case RIESGO_1 -> {
+                    if (!textRiesgoHumanos1.getText().equals(textoHumanos)) {
+                        textRiesgoHumanos1.setText(textoHumanos);
+                    }
+                    if (!textRiesgoZombis1.getText().equals(textoZombis)) {
+                        textRiesgoZombis1.setText(textoZombis);
+                    }
+                }
+                case RIESGO_2 -> {
+                    if (!textRiesgoHumanos2.getText().equals(textoHumanos)) {
+                        textRiesgoHumanos2.setText(textoHumanos);
+                    }
+                    if (!textRiesgoZombis2.getText().equals(textoZombis)) {
+                        textRiesgoZombis2.setText(textoZombis);
+                    }
+                }
+                case RIESGO_3 -> {
+                    if (!textRiesgoHumanos3.getText().equals(textoHumanos)) {
+                        textRiesgoHumanos3.setText(textoHumanos);
+                    }
+                    if (!textRiesgoZombis3.getText().equals(textoZombis)) {
+                        textRiesgoZombis3.setText(textoZombis);
+                    }
+                }
+                case RIESGO_4 -> {
+                    if (!textRiesgoHumanos4.getText().equals(textoHumanos)) {
+                        textRiesgoHumanos4.setText(textoHumanos);
+                    }
+                    if (!textRiesgoZombis4.getText().equals(textoZombis)) {
+                        textRiesgoZombis4.setText(textoZombis);
+                    }
+                }
+                case DESCANSO -> textDescanso.setText(textoHumanos);
+                case ZONA_COMUN -> textComun.setText(textoHumanos);
+                case COMEDOR -> textComedor.setText(textoHumanos);
+            } 
+        } else {
+            // Túneles: actualizar ambos lados
+            Tunel tunel = obtenerTunelPorZona(zona);
+
+            String textoRefugio = tunel.getLadoRefugio().stream()
+                .map(Humano::getIdHumano)
+                .collect(Collectors.joining(", "));
+
+            String textoRiesgo = tunel.getLadoRiesgo().stream()
+                .map(Humano::getIdHumano)
+                .collect(Collectors.joining(", "));
+            
+            switch(zona){
+                case TUNEL_1 -> {
+                    textEsperaRefugio1.setText(textoRefugio);
+                    textEsperaRiesgo1.setText(textoRiesgo);
+                }
+                case TUNEL_2 -> {
+                    textEsperaRefugio2.setText(textoRefugio);
+                    textEsperaRiesgo2.setText(textoRiesgo);
+                }
+                case TUNEL_3 -> {
+                    textEsperaRefugio3.setText(textoRefugio);
+                    textEsperaRiesgo3.setText(textoRiesgo);
+                }
+                case TUNEL_4 -> {
+                    textEsperaRefugio4.setText(textoRefugio);
+                    textEsperaRiesgo4.setText(textoRiesgo);
+                }
+            }
         }
     }
+    private Tunel obtenerTunelPorZona(Zona zona) {
+        return switch (zona) {
+            case TUNEL_1 -> tuneles[0];
+            case TUNEL_2 -> tuneles[1];
+            case TUNEL_3 -> tuneles[2];
+            case TUNEL_4 -> tuneles[3];
+            default -> throw new IllegalArgumentException("Zona no es un túnel: " + zona);
+        };
+    }
+
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -134,7 +218,9 @@ public class ApocalipsisGUI extends javax.swing.JFrame implements ZonaChangeList
         scrollDescanso.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
 
         textDescanso.setColumns(20);
+        textDescanso.setLineWrap(true);
         textDescanso.setRows(5);
+        textDescanso.setWrapStyleWord(true);
         scrollDescanso.setViewportView(textDescanso);
 
         jPanel1.add(scrollDescanso, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 140, 240, 100));
@@ -143,7 +229,9 @@ public class ApocalipsisGUI extends javax.swing.JFrame implements ZonaChangeList
         scrollComedor.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
 
         textComedor.setColumns(20);
+        textComedor.setLineWrap(true);
         textComedor.setRows(5);
+        textComedor.setWrapStyleWord(true);
         scrollComedor.setViewportView(textComedor);
 
         jPanel1.add(scrollComedor, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 300, 150, 100));
@@ -152,7 +240,9 @@ public class ApocalipsisGUI extends javax.swing.JFrame implements ZonaChangeList
         scrollComun.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
 
         textComun.setColumns(20);
+        textComun.setLineWrap(true);
         textComun.setRows(5);
+        textComun.setWrapStyleWord(true);
         scrollComun.setViewportView(textComun);
 
         jPanel1.add(scrollComun, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 460, 240, 100));
@@ -161,7 +251,9 @@ public class ApocalipsisGUI extends javax.swing.JFrame implements ZonaChangeList
         refugioTunel1.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
 
         textEsperaRefugio1.setColumns(20);
+        textEsperaRefugio1.setLineWrap(true);
         textEsperaRefugio1.setRows(5);
+        textEsperaRefugio1.setWrapStyleWord(true);
         refugioTunel1.setViewportView(textEsperaRefugio1);
 
         jPanel1.add(refugioTunel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 140, 100, 100));
@@ -170,7 +262,9 @@ public class ApocalipsisGUI extends javax.swing.JFrame implements ZonaChangeList
         refugioTunel2.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
 
         textEsperaRefugio2.setColumns(20);
+        textEsperaRefugio2.setLineWrap(true);
         textEsperaRefugio2.setRows(5);
+        textEsperaRefugio2.setWrapStyleWord(true);
         refugioTunel2.setViewportView(textEsperaRefugio2);
 
         jPanel1.add(refugioTunel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 290, 100, 100));
@@ -179,7 +273,9 @@ public class ApocalipsisGUI extends javax.swing.JFrame implements ZonaChangeList
         refugioTunel3.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
 
         textEsperaRefugio3.setColumns(20);
+        textEsperaRefugio3.setLineWrap(true);
         textEsperaRefugio3.setRows(5);
+        textEsperaRefugio3.setWrapStyleWord(true);
         refugioTunel3.setViewportView(textEsperaRefugio3);
 
         jPanel1.add(refugioTunel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 450, 100, 100));
@@ -188,7 +284,9 @@ public class ApocalipsisGUI extends javax.swing.JFrame implements ZonaChangeList
         riesgoTunel1.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
 
         textEsperaRiesgo1.setColumns(20);
+        textEsperaRiesgo1.setLineWrap(true);
         textEsperaRiesgo1.setRows(5);
+        textEsperaRiesgo1.setWrapStyleWord(true);
         riesgoTunel1.setViewportView(textEsperaRiesgo1);
 
         jPanel1.add(riesgoTunel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 140, 120, 100));
@@ -197,7 +295,9 @@ public class ApocalipsisGUI extends javax.swing.JFrame implements ZonaChangeList
         riesgoHumanos1.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
 
         textRiesgoHumanos1.setColumns(20);
+        textRiesgoHumanos1.setLineWrap(true);
         textRiesgoHumanos1.setRows(5);
+        textRiesgoHumanos1.setWrapStyleWord(true);
         riesgoHumanos1.setViewportView(textRiesgoHumanos1);
 
         jPanel1.add(riesgoHumanos1, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 140, 110, 100));
@@ -206,7 +306,9 @@ public class ApocalipsisGUI extends javax.swing.JFrame implements ZonaChangeList
         riesgoTunel2.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
 
         textEsperaRiesgo2.setColumns(20);
+        textEsperaRiesgo2.setLineWrap(true);
         textEsperaRiesgo2.setRows(5);
+        textEsperaRiesgo2.setWrapStyleWord(true);
         riesgoTunel2.setViewportView(textEsperaRiesgo2);
 
         jPanel1.add(riesgoTunel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 290, 120, 100));
@@ -215,7 +317,9 @@ public class ApocalipsisGUI extends javax.swing.JFrame implements ZonaChangeList
         riesgoTunel3.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
 
         textEsperaRiesgo3.setColumns(20);
+        textEsperaRiesgo3.setLineWrap(true);
         textEsperaRiesgo3.setRows(5);
+        textEsperaRiesgo3.setWrapStyleWord(true);
         riesgoTunel3.setViewportView(textEsperaRiesgo3);
 
         jPanel1.add(riesgoTunel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 450, 120, 100));
@@ -224,7 +328,9 @@ public class ApocalipsisGUI extends javax.swing.JFrame implements ZonaChangeList
         riesgoHumanos2.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
 
         textRiesgoHumanos2.setColumns(20);
+        textRiesgoHumanos2.setLineWrap(true);
         textRiesgoHumanos2.setRows(5);
+        textRiesgoHumanos2.setWrapStyleWord(true);
         riesgoHumanos2.setViewportView(textRiesgoHumanos2);
 
         jPanel1.add(riesgoHumanos2, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 280, 110, 100));
@@ -233,7 +339,9 @@ public class ApocalipsisGUI extends javax.swing.JFrame implements ZonaChangeList
         riesgoHumanos3.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
 
         textRiesgoHumanos3.setColumns(20);
+        textRiesgoHumanos3.setLineWrap(true);
         textRiesgoHumanos3.setRows(5);
+        textRiesgoHumanos3.setWrapStyleWord(true);
         riesgoHumanos3.setViewportView(textRiesgoHumanos3);
 
         jPanel1.add(riesgoHumanos3, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 420, 110, 100));
@@ -242,7 +350,9 @@ public class ApocalipsisGUI extends javax.swing.JFrame implements ZonaChangeList
         riesgoZombi3.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
 
         textRiesgoZombis3.setColumns(20);
+        textRiesgoZombis3.setLineWrap(true);
         textRiesgoZombis3.setRows(5);
+        textRiesgoZombis3.setWrapStyleWord(true);
         riesgoZombi3.setViewportView(textRiesgoZombis3);
 
         jPanel1.add(riesgoZombi3, new org.netbeans.lib.awtextra.AbsoluteConstraints(1130, 420, 110, 100));
@@ -251,7 +361,9 @@ public class ApocalipsisGUI extends javax.swing.JFrame implements ZonaChangeList
         riesgoZombi2.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
 
         textRiesgoZombis2.setColumns(20);
+        textRiesgoZombis2.setLineWrap(true);
         textRiesgoZombis2.setRows(5);
+        textRiesgoZombis2.setWrapStyleWord(true);
         riesgoZombi2.setViewportView(textRiesgoZombis2);
 
         jPanel1.add(riesgoZombi2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1130, 280, 110, 100));
@@ -260,7 +372,9 @@ public class ApocalipsisGUI extends javax.swing.JFrame implements ZonaChangeList
         riesgoZombi1.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
 
         textRiesgoZombis1.setColumns(20);
+        textRiesgoZombis1.setLineWrap(true);
         textRiesgoZombis1.setRows(5);
+        textRiesgoZombis1.setWrapStyleWord(true);
         riesgoZombi1.setViewportView(textRiesgoZombis1);
 
         jPanel1.add(riesgoZombi1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1130, 140, 110, 100));
@@ -269,7 +383,9 @@ public class ApocalipsisGUI extends javax.swing.JFrame implements ZonaChangeList
         refugioTunel4.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
 
         textEsperaRefugio4.setColumns(20);
+        textEsperaRefugio4.setLineWrap(true);
         textEsperaRefugio4.setRows(5);
+        textEsperaRefugio4.setWrapStyleWord(true);
         refugioTunel4.setViewportView(textEsperaRefugio4);
 
         jPanel1.add(refugioTunel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 610, 100, 100));
@@ -278,7 +394,9 @@ public class ApocalipsisGUI extends javax.swing.JFrame implements ZonaChangeList
         riesgoTunel4.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
 
         textEsperaRiesgo4.setColumns(20);
+        textEsperaRiesgo4.setLineWrap(true);
         textEsperaRiesgo4.setRows(5);
+        textEsperaRiesgo4.setWrapStyleWord(true);
         riesgoTunel4.setViewportView(textEsperaRiesgo4);
 
         jPanel1.add(riesgoTunel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 610, 120, 100));
@@ -287,7 +405,9 @@ public class ApocalipsisGUI extends javax.swing.JFrame implements ZonaChangeList
         riesgoHumanos4.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
 
         textRiesgoHumanos4.setColumns(20);
+        textRiesgoHumanos4.setLineWrap(true);
         textRiesgoHumanos4.setRows(5);
+        textRiesgoHumanos4.setWrapStyleWord(true);
         riesgoHumanos4.setViewportView(textRiesgoHumanos4);
 
         jPanel1.add(riesgoHumanos4, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 560, 110, 100));
@@ -296,7 +416,9 @@ public class ApocalipsisGUI extends javax.swing.JFrame implements ZonaChangeList
         riesgoZombi4.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
 
         textRiesgoZombis4.setColumns(20);
+        textRiesgoZombis4.setLineWrap(true);
         textRiesgoZombis4.setRows(5);
+        textRiesgoZombis4.setWrapStyleWord(true);
         riesgoZombi4.setViewportView(textRiesgoZombis4);
 
         jPanel1.add(riesgoZombi4, new org.netbeans.lib.awtextra.AbsoluteConstraints(1130, 560, 110, 100));
@@ -376,39 +498,15 @@ public class ApocalipsisGUI extends javax.swing.JFrame implements ZonaChangeList
     /**
      * @param args the command line arguments
      */
+    /*
     public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(ApocalipsisGUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(ApocalipsisGUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(ApocalipsisGUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(ApocalipsisGUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-        //</editor-fold>
-
-        /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new ApocalipsisGUI().setVisible(true);
             }
-        });
-    }
-
+        }); 
+   }
+    */
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton botonParar;
     private javax.swing.JTextField contadorComida;
