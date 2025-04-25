@@ -5,6 +5,7 @@ import java.util.Random;
 import java.util.concurrent.BrokenBarrierException;
 import Helpers.ApocalipsisLogger;
 import Helpers.IdGenerator;
+import UI.ApocalipsisGUI;
 import Zonas.MapaZonas;
 import Zonas.Refugio;
 import Zonas.Tunel;
@@ -20,8 +21,9 @@ public class Humano extends Thread{
     private final Random random = new Random();
     private final MapaZonas mapa;
     private int comidaRecolectada;
+    private final ApocalipsisGUI gui;
     
-    public Humano(IdGenerator idgen, Refugio ref, Tunel tun[], MapaZonas mapa){
+    public Humano(IdGenerator idgen, Refugio ref, Tunel tun[], MapaZonas mapa, ApocalipsisGUI gui){
         this.ref = ref;
         this.tuneles = tun;     
         this.zonaActual = Zona.ZONA_COMUN;
@@ -30,6 +32,7 @@ public class Humano extends Thread{
         this.haSidoAtacado = false;
         this.mapa = mapa;
         this.comidaRecolectada = 0;
+        this.gui = gui;
     }
     
     @Override
@@ -77,8 +80,11 @@ public class Humano extends Thread{
                     
                     // Vuelta a la zona segura
                     tunel.entrarTunel(this, true);
+                    gui.mostrarHumanoTunel(this, tunel.getZona());
                     sleep(1000);
+                    gui.quitarHumanoTunel(tunel.getZona());
                     tunel.salirTunel(this);
+                    
                     haSidoAtacado = false; //resetear estado de atacado una vez sale del túnel
 
                     //Dejar la comida recolectada

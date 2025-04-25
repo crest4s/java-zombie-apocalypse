@@ -15,7 +15,7 @@ public class Tunel {
     private int id;
     private Zona zona;
     
-    private CyclicBarrier esperaExpedicion = new CyclicBarrier(3);
+    //private CyclicBarrier esperaExpedicion = new CyclicBarrier(3);
     private Semaphore accesoTunel = new Semaphore(1);
     
     private final Object monitor = new Object();
@@ -24,13 +24,9 @@ public class Tunel {
     
     private final List<Humano> grupoExpedicion = new ArrayList<>();
     private final int TAM_GRUPO = 3;
-
     
     private final List<Humano> ladoRefugio = new CopyOnWriteArrayList<>();
     private final List<Humano> ladoRiesgo = new CopyOnWriteArrayList<>();
-    
-    private Humano humanoDentro;
-
     
     public Tunel(int id){
         this.id=id;
@@ -72,7 +68,7 @@ public class Tunel {
         }
     }
    
-    //gestionar zonas a las que entra
+    //Gestionar zonas a las que entra
     public void entrarTunel(Humano hum, boolean desdeExterior) throws InterruptedException, IOException, BrokenBarrierException {
         ApocalipsisLogger logger = ApocalipsisLogger.getInstance();
 
@@ -82,13 +78,11 @@ public class Tunel {
                 ladoRiesgo.add(hum);
             }
             // Bloquea hasta que el túnel esté libre
-            accesoTunel.acquire();
-            humanoDentro = hum;
             hum.setZonaActual(zona);
+            accesoTunel.acquire();
             
             synchronized (monitor) {
                 esperandoExterior--;
-                // ladoRiesgo.add(hum);
                 ladoRiesgo.remove(hum);
             }
         } else {
@@ -103,13 +97,11 @@ public class Tunel {
                     monitor.wait(); // Espera si hay gente del exterior esperando
                 }
             }
-            accesoTunel.acquire();
-            humanoDentro = hum;
             hum.setZonaActual(zona);
+            accesoTunel.acquire();
             
             synchronized (monitor) {
                 esperandoRefugio--;
-                // ladoRefugio.add(hum);
                 ladoRefugio.remove(hum); 
             }
         }
@@ -117,11 +109,8 @@ public class Tunel {
     }
     
     public void salirTunel(Humano hum) throws IOException{
-        ApocalipsisLogger logger = ApocalipsisLogger.getInstance();
-        //ladoRiesgo.remove(hum);
-        //ladoRefugio.remove(hum); 
+        ApocalipsisLogger logger = ApocalipsisLogger.getInstance(); 
         accesoTunel.release(); //ya ha salido del tunel, se queda libre
-        humanoDentro = null;
         synchronized (monitor) {
             monitor.notifyAll(); //despierta a todos para ver quien puede entrar
         }        
@@ -138,9 +127,5 @@ public class Tunel {
             default -> throw new IllegalArgumentException("ID de túnel no válido");
         }
         return zonaInsegura;
-    }
-    
-    public Humano getDentro(){
-        return humanoDentro;
     }
 }

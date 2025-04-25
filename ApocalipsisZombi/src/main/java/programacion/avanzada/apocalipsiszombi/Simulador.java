@@ -24,7 +24,7 @@ public class Simulador {
         z.start();
         
         for(int i = 1; i<=10000; i++){
-            new Humano(idgen, ref, tun, mapa).start();
+            new Humano(idgen, ref, tun, mapa, gui).start();
             sleep((int)(Math.random()*1500 + 500));
         }
     }

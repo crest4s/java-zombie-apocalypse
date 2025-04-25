@@ -110,7 +110,6 @@ public class ApocalipsisGUI extends javax.swing.JFrame implements ZonaChangeList
         } else {
             // Túneles: actualizar ambos lados
             Tunel tunel = obtenerTunelPorZona(zona);
-            Humano hum = tunel.getDentro();
 
             String textoRefugio = tunel.getLadoRefugio().stream()
                 .map(Humano::getIdHumano)
@@ -124,38 +123,18 @@ public class ApocalipsisGUI extends javax.swing.JFrame implements ZonaChangeList
                 case TUNEL_1 -> {
                     textEsperaRefugio1.setText(textoRefugio);
                     textEsperaRiesgo1.setText(textoRiesgo);
-                    if (hum != null){
-                        tunel1.setText(hum.getIdHumano());
-                    } else {
-                        tunel1.setText("");
-                    }
                 }
                 case TUNEL_2 -> {
                     textEsperaRefugio2.setText(textoRefugio);
                     textEsperaRiesgo2.setText(textoRiesgo);
-                    if (hum != null){
-                        tunel2.setText(hum.getIdHumano());
-                    } else {
-                        tunel2.setText("");
-                    }
                 }
                 case TUNEL_3 -> {
                     textEsperaRefugio3.setText(textoRefugio);
                     textEsperaRiesgo3.setText(textoRiesgo);
-                    if (hum != null){
-                        tunel3.setText(hum.getIdHumano());
-                    } else {
-                        tunel3.setText("");
-                    }
                 }
                 case TUNEL_4 -> {
                     textEsperaRefugio4.setText(textoRefugio);
                     textEsperaRiesgo4.setText(textoRiesgo);
-                    if (hum != null){
-                        tunel4.setText(hum.getIdHumano());
-                    } else {
-                        tunel4.setText("");
-                    }
                 }
             }
         }
@@ -169,7 +148,24 @@ public class ApocalipsisGUI extends javax.swing.JFrame implements ZonaChangeList
             default -> throw new IllegalArgumentException("Zona no es un túnel: " + zona);
         };
     }
-
+    
+    public void mostrarHumanoTunel(Humano hum, Zona zona){
+        switch (zona) {
+            case TUNEL_1 -> tunel1.setText(hum.getIdHumano());
+            case TUNEL_2 -> tunel2.setText(hum.getIdHumano());
+            case TUNEL_3 -> tunel3.setText(hum.getIdHumano());
+            case TUNEL_4 -> tunel4.setText(hum.getIdHumano());
+        }
+    }
+    
+    public void quitarHumanoTunel(Zona zona) {
+        switch (zona) {
+            case TUNEL_1 -> tunel1.setText("");
+            case TUNEL_2 -> tunel2.setText("");
+            case TUNEL_3 -> tunel3.setText("");
+            case TUNEL_4 -> tunel4.setText("");
+        }
+    }
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -579,4 +575,5 @@ public class ApocalipsisGUI extends javax.swing.JFrame implements ZonaChangeList
     private javax.swing.JTextField tunel3;
     private javax.swing.JTextField tunel4;
     // End of variables declaration//GEN-END:variables
+
 }
