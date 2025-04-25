@@ -58,7 +58,7 @@ public class ApocalipsisGUI extends javax.swing.JFrame implements ZonaChangeList
             actualizarPanelZona(zona);
         }
     }
-    private void actualizarPanelZona(Zona zona){
+    public void actualizarPanelZona(Zona zona){
         List<Humano> humanos = mapa.humanosEnZona(zona);
         List<Zombi> zombis = mapa.zombisEnZona(zona);
         if (!zona.name().startsWith("TUNEL")){
