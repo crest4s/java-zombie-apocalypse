@@ -32,7 +32,7 @@ public class ApocalipsisGUI extends javax.swing.JFrame implements ZonaChangeList
         this.mapa.setZonaChangeListener(this);
         initComponents();
         
-        Timer refrescoTimer = new Timer(700, new ActionListener() {
+        Timer refrescoTimer = new Timer(300, new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 actualizarTodasLasZonas();
@@ -110,6 +110,7 @@ public class ApocalipsisGUI extends javax.swing.JFrame implements ZonaChangeList
         } else {
             // Túneles: actualizar ambos lados
             Tunel tunel = obtenerTunelPorZona(zona);
+            Humano hum = tunel.getDentro();
 
             String textoRefugio = tunel.getLadoRefugio().stream()
                 .map(Humano::getIdHumano)
@@ -123,18 +124,38 @@ public class ApocalipsisGUI extends javax.swing.JFrame implements ZonaChangeList
                 case TUNEL_1 -> {
                     textEsperaRefugio1.setText(textoRefugio);
                     textEsperaRiesgo1.setText(textoRiesgo);
+                    if (hum != null){
+                        tunel1.setText(hum.getIdHumano());
+                    } else {
+                        tunel1.setText("");
+                    }
                 }
                 case TUNEL_2 -> {
                     textEsperaRefugio2.setText(textoRefugio);
                     textEsperaRiesgo2.setText(textoRiesgo);
+                    if (hum != null){
+                        tunel2.setText(hum.getIdHumano());
+                    } else {
+                        tunel2.setText("");
+                    }
                 }
                 case TUNEL_3 -> {
                     textEsperaRefugio3.setText(textoRefugio);
                     textEsperaRiesgo3.setText(textoRiesgo);
+                    if (hum != null){
+                        tunel3.setText(hum.getIdHumano());
+                    } else {
+                        tunel3.setText("");
+                    }
                 }
                 case TUNEL_4 -> {
                     textEsperaRefugio4.setText(textoRefugio);
                     textEsperaRiesgo4.setText(textoRiesgo);
+                    if (hum != null){
+                        tunel4.setText(hum.getIdHumano());
+                    } else {
+                        tunel4.setText("");
+                    }
                 }
             }
         }

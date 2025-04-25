@@ -28,6 +28,8 @@ public class Tunel {
     
     private final List<Humano> ladoRefugio = new CopyOnWriteArrayList<>();
     private final List<Humano> ladoRiesgo = new CopyOnWriteArrayList<>();
+    
+    private Humano humanoDentro;
 
     
     public Tunel(int id){
@@ -77,21 +79,24 @@ public class Tunel {
         if (desdeExterior) {
             synchronized (monitor) {
                 esperandoExterior++;
+                ladoRiesgo.add(hum);
             }
             // Bloquea hasta que el túnel esté libre
             accesoTunel.acquire();
+            humanoDentro = hum;
             hum.setZonaActual(zona);
             
             synchronized (monitor) {
                 esperandoExterior--;
-                ladoRiesgo.add(hum);
+                // ladoRiesgo.add(hum);
+                ladoRiesgo.remove(hum);
             }
         } else {
             synchronized (monitor) {
                 esperandoRefugio++;
-            }
+                ladoRefugio.add(hum);
+            }            
             esperarGrupoParaSalir(hum); // espera al grupo
-
             // Bloquea hasta que el túnel esté libre (y nadie del exterior esté esperando)
             synchronized (monitor) {
                 while (esperandoExterior > 0) {
@@ -99,11 +104,13 @@ public class Tunel {
                 }
             }
             accesoTunel.acquire();
+            humanoDentro = hum;
             hum.setZonaActual(zona);
             
             synchronized (monitor) {
                 esperandoRefugio--;
-                ladoRefugio.add(hum);
+                // ladoRefugio.add(hum);
+                ladoRefugio.remove(hum); 
             }
         }
         logger.log("[" + hum.getIdHumano() + "] entra a " + zona + " desde " + hum.getZonaActual());
@@ -111,9 +118,10 @@ public class Tunel {
     
     public void salirTunel(Humano hum) throws IOException{
         ApocalipsisLogger logger = ApocalipsisLogger.getInstance();
-        ladoRiesgo.remove(hum);
-        ladoRefugio.remove(hum); 
+        //ladoRiesgo.remove(hum);
+        //ladoRefugio.remove(hum); 
         accesoTunel.release(); //ya ha salido del tunel, se queda libre
+        humanoDentro = null;
         synchronized (monitor) {
             monitor.notifyAll(); //despierta a todos para ver quien puede entrar
         }        
@@ -130,5 +138,9 @@ public class Tunel {
             default -> throw new IllegalArgumentException("ID de túnel no válido");
         }
         return zonaInsegura;
+    }
+    
+    public Humano getDentro(){
+        return humanoDentro;
     }
 }
