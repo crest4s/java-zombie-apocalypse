@@ -154,6 +154,7 @@ public class Humano extends Thread{
             return false;
         } else {
             logger.log("[" + id + "] no logró defenderse y ha muerto.");
+            mapa.quitarHumanoZona(this, zonaActual);
             return true;
         }
     }
