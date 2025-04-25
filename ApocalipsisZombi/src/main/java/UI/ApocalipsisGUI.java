@@ -24,7 +24,7 @@ public class ApocalipsisGUI extends javax.swing.JFrame implements ZonaChangeList
      */
     
     private MapaZonas mapa = new MapaZonas();
-    private final Tunel[] tuneles;
+    private Tunel[] tuneles;
     
     public ApocalipsisGUI(MapaZonas mapa, Tunel[] tuneles) {
         this.mapa = mapa;
@@ -575,5 +575,9 @@ public class ApocalipsisGUI extends javax.swing.JFrame implements ZonaChangeList
     private javax.swing.JTextField tunel3;
     private javax.swing.JTextField tunel4;
     // End of variables declaration//GEN-END:variables
+
+    public void setTuneles(Tunel[] tun) {
+        this.tuneles = tun;
+    }
 
 }

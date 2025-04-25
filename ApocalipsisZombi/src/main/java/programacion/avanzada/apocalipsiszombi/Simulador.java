@@ -13,11 +13,13 @@ public class Simulador {
 
     public static void main(String[] args) throws InterruptedException {
         IdGenerator idgen = new IdGenerator();
-        Tunel[] tun = {new Tunel(1), new Tunel(2), new Tunel(3), new Tunel(4)}; 
-        Refugio ref = new Refugio();
         MapaZonas mapa = new MapaZonas();
+        Refugio ref = new Refugio();
+        ApocalipsisGUI gui = new ApocalipsisGUI(mapa, new Tunel[0]);
         
-        ApocalipsisGUI gui = new ApocalipsisGUI(mapa, tun);
+        Tunel[] tun = {new Tunel(1, gui), new Tunel(2, gui), new Tunel(3, gui), new Tunel(4, gui)}; 
+        
+        gui.setTuneles(tun);
         gui.setVisible(true);
 
         Zombi z = new Zombi(mapa);

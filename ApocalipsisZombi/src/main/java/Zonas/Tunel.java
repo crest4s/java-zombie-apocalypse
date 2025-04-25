@@ -3,9 +3,9 @@ package Zonas;
 import Entidades.Humano;
 import java.io.IOException;
 import java.util.concurrent.BrokenBarrierException;
-import java.util.concurrent.CyclicBarrier;
 import java.util.concurrent.Semaphore;
 import Helpers.ApocalipsisLogger;
+import UI.ApocalipsisGUI;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
@@ -17,6 +17,7 @@ public class Tunel {
     
     //private CyclicBarrier esperaExpedicion = new CyclicBarrier(3);
     private Semaphore accesoTunel = new Semaphore(1);
+    private ApocalipsisGUI gui;
     
     private final Object monitor = new Object();
     private int esperandoExterior = 0;
@@ -28,8 +29,10 @@ public class Tunel {
     private final List<Humano> ladoRefugio = new CopyOnWriteArrayList<>();
     private final List<Humano> ladoRiesgo = new CopyOnWriteArrayList<>();
     
-    public Tunel(int id){
-        this.id=id;
+    public Tunel(int id, ApocalipsisGUI gui){
+        this.id = id;
+        this.gui = gui;
+        
         switch (id) {
             case 1 -> this.zona = Zona.TUNEL_1;
             case 2 -> this.zona = Zona.TUNEL_2;
@@ -72,48 +75,55 @@ public class Tunel {
     public void entrarTunel(Humano hum, boolean desdeExterior) throws InterruptedException, IOException, BrokenBarrierException {
         ApocalipsisLogger logger = ApocalipsisLogger.getInstance();
 
+        hum.setZonaActual(zona);                    // Aparece en la zona de túnel
+        gui.mostrarHumanoTunel(hum, zona);          // Lo mostramos en el campo de túnel
+
         if (desdeExterior) {
             synchronized (monitor) {
                 esperandoExterior++;
-                ladoRiesgo.add(hum);
             }
-            // Bloquea hasta que el túnel esté libre
-            hum.setZonaActual(zona);
+
             accesoTunel.acquire();
-            
+
             synchronized (monitor) {
                 esperandoExterior--;
-                ladoRiesgo.remove(hum);
+                gui.quitarHumanoTunel(zona);        // Sale del TextField del túnel
             }
+
         } else {
             synchronized (monitor) {
                 esperandoRefugio++;
-                ladoRefugio.add(hum);
-            }            
-            esperarGrupoParaSalir(hum); // espera al grupo
-            // Bloquea hasta que el túnel esté libre (y nadie del exterior esté esperando)
-            synchronized (monitor) {
-                while (esperandoExterior > 0) {
-                    monitor.wait(); // Espera si hay gente del exterior esperando
+                grupoExpedicion.add(hum);
+
+                while (grupoExpedicion.size() < TAM_GRUPO && esperandoExterior == 0) {
+                    monitor.wait();  // Esperamos a completar el grupo o a que haya exteriores
                 }
-            }
-            hum.setZonaActual(zona);
-            accesoTunel.acquire();
-            
-            synchronized (monitor) {
+
+                if (esperandoExterior > 0 && grupoExpedicion.get(0) != hum) {
+                    // Si no soy el primero del grupo y hay exteriores esperando, me espero
+                    while (grupoExpedicion.get(0) != hum) {
+                        monitor.wait();
+                    }
+                }
+
+                accesoTunel.acquire(); // Túnel libre para entrar
+                grupoExpedicion.remove(hum);
                 esperandoRefugio--;
-                ladoRefugio.remove(hum); 
+                monitor.notifyAll();   // Por si hay otros esperando
             }
+
+            gui.quitarHumanoTunel(zona); // Sale del TextField del túnel
         }
         logger.log("[" + hum.getIdHumano() + "] entra a " + zona + " desde " + hum.getZonaActual());
     }
     
     public void salirTunel(Humano hum) throws IOException{
         ApocalipsisLogger logger = ApocalipsisLogger.getInstance(); 
-        accesoTunel.release(); //ya ha salido del tunel, se queda libre
+        accesoTunel.release();  // Libera el túnel
+
         synchronized (monitor) {
-            monitor.notifyAll(); //despierta a todos para ver quien puede entrar
-        }        
+            monitor.notifyAll(); // Notifica para que los siguientes puedan entrar
+    }     
         logger.log("[" + hum.getIdHumano() + "] sale del tunel");
     }
     
