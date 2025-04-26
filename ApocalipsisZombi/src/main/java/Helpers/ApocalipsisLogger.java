@@ -14,7 +14,8 @@ public class ApocalipsisLogger {
     private static final DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
 
     private ApocalipsisLogger() throws IOException {
-        writer = new BufferedWriter(new FileWriter(FILE_NAME, true)); // append = true
+        // Sobreescribir el archivo (append = false)
+        writer = new BufferedWriter(new FileWriter(FILE_NAME, false));
     }
 
     public static ApocalipsisLogger getInstance() throws IOException {
@@ -36,7 +37,7 @@ public class ApocalipsisLogger {
             try {
                 writer.write(linea);
                 writer.newLine();
-                writer.flush(); // importante para que se guarde al momento
+                writer.flush();
             } catch (IOException e) {
                 System.err.println("Error escribiendo en el log: " + e.getMessage());
             }
@@ -53,4 +54,3 @@ public class ApocalipsisLogger {
         }
     }
 }
-

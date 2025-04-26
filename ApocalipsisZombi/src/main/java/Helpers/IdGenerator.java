@@ -6,7 +6,7 @@ public class IdGenerator {
     private final AtomicInteger humanoCounter = new AtomicInteger(1);
 
     public String nuevoIdHumano() {
-        return String.format("H%05d", humanoCounter.getAndIncrement());
+        return String.format("H%04d", humanoCounter.getAndIncrement());
     }
     
     public String nuevoIdZombi(String idHumano) {

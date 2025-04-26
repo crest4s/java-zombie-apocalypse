@@ -19,7 +19,7 @@ public class Refugio {
         ApocalipsisLogger logger = ApocalipsisLogger.getInstance();
         semaforoComida.acquire();
         cantidadComida += comida;
-        logger.log("]" + id + "] ha dejado comida en el refugio");
+        logger.log("[" + id + "] ha dejado comida en el refugio");
         semaforoComida.release();
     }
     

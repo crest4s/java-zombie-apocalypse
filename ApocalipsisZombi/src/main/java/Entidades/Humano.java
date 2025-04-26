@@ -5,15 +5,14 @@ import java.util.Random;
 import java.util.concurrent.BrokenBarrierException;
 import Helpers.ApocalipsisLogger;
 import Helpers.IdGenerator;
-import UI.ApocalipsisGUI;
 import Zonas.MapaZonas;
 import Zonas.Refugio;
 import Zonas.Tunel;
 import Zonas.Zona;
 
-public class Humano extends Thread{
+public class Humano extends Thread {
     private final Refugio ref;
-    private final Tunel tuneles[];
+    private final Tunel[] tuneles;
     private Zona zonaActual;
     private final String id;
     private boolean marcado;
@@ -21,147 +20,122 @@ public class Humano extends Thread{
     private final Random random = new Random();
     private final MapaZonas mapa;
     private int comidaRecolectada;
-    private final ApocalipsisGUI gui;
-    
-    public Humano(IdGenerator idgen, Refugio ref, Tunel tun[], MapaZonas mapa, ApocalipsisGUI gui){
+
+    public Humano(IdGenerator idgen, Refugio ref, Tunel[] tuneles, MapaZonas mapa) {
         this.ref = ref;
-        this.tuneles = tun;     
+        this.tuneles = tuneles;
         this.zonaActual = Zona.ZONA_COMUN;
         this.id = idgen.nuevoIdHumano();
         this.marcado = false;
         this.haSidoAtacado = false;
         this.mapa = mapa;
         this.comidaRecolectada = 0;
-        this.gui = gui;
     }
-    
+
     @Override
-    public void run(){
+    public void run() {
         try {
             ApocalipsisLogger logger = ApocalipsisLogger.getInstance();
-            while(true){
-                try {
-                    //Entrada a zona comun
-                    setZonaActual(Zona.ZONA_COMUN); 
-                    logger.log("[" + id + "] preparandose para entrar al mundo exterior...");
-                    sleepRandom(1000, 2000);
-                    
-                    //Seleccion de tunel
-                    int indiceTunel = random.nextInt(tuneles.length);
-                    Tunel tunel = tuneles[indiceTunel];
-                    
-                    //Proceso de espera a grupo para tunel
-                    logger.log("[" + id + "] esperando grupo en túnel" + (indiceTunel + 1));
-                    tunel.esperarGrupoParaSalir(this); 
-                    
-                    //Proceso interior del tunel
-                    tunel.entrarTunel(this, false);
-                    sleep(1000);
-                    tunel.salirTunel(this);
-                    
-                    //Exploracion en el exterior
-                    Zona inseguraActual = tunel.getAreaInsegura();
-                    setZonaActual(inseguraActual);
-                    logger.log("[" + id + "] recolectando comida en " + zonaActual);
-                    try {
-                        sleepRandom(3000, 5000);
-                    } catch (InterruptedException ie) {
-                        logger.log("[" + id + "] interrumpido mientras recolectaba comida.");
-                        continue;
-                    }
-                    
-                    // Solo recolecta comida si no fue atacado por un zombi
-                    if (!haSidoAtacado) {
-                        comidaRecolectada++;
-                        logger.log("[" + id + "] recolectó 2 piezas de comida.");
-                    } else {
-                        logger.log("[" + id + "] fue atacado y no pudo recolectar comida.");
-                    }
-                    
-                    // Vuelta a la zona segura
-                    tunel.entrarTunel(this, true);
-                    gui.mostrarHumanoTunel(this, tunel.getZona());
-                    sleep(1000);
-                    gui.quitarHumanoTunel(tunel.getZona());
-                    tunel.salirTunel(this);
-                    
-                    haSidoAtacado = false; //resetear estado de atacado una vez sale del túnel
+            while (!isInterrupted()) {
+                setZonaActual(Zona.ZONA_COMUN);
+                logger.log("[" + id + "] preparándose para salir...");
+                sleepRandom(1000, 2000);
 
-                    //Dejar la comida recolectada
-                    if(comidaRecolectada > 0){
-                        ref.dejarComida(2, id);
-                        comidaRecolectada--;
-                        logger.log("[" + id + "] dejó 2 piezas de comida.");   
-                    }
-                    
-                    //Entrada a la zona de descanso
+                int indiceTunel = random.nextInt(tuneles.length);
+                Tunel tunel = tuneles[indiceTunel];
+
+                logger.log("[" + id + "] esperando en túnel " + tuneles[indiceTunel].getZona().name());
+                tunel.esperarGrupoParaSalir(this);
+
+                tunel.entrarTunel(this, false);
+                sleep(1000);
+                tunel.salirTunel(this);
+
+                setZonaActual(tunel.getAreaInsegura());
+                logger.log("[" + id + "] explorando en " + zonaActual);
+                sleepRandom(3000, 5000);
+
+                if (!haSidoAtacado) {
+                    comidaRecolectada += 2;
+                    logger.log("[" + id + "] recolectó 2 unidades de comida.");
+                }
+
+                tunel.entrarTunel(this, true);
+                sleep(1000);
+                tunel.salirTunel(this);
+
+                if (comidaRecolectada > 0) {
+                    ref.dejarComida(2, id);
+                    comidaRecolectada = 0;
+                }
+
+                haSidoAtacado = false;
+
+                setZonaActual(Zona.DESCANSO);
+                logger.log("[" + id + "] descansando...");
+                sleepRandom(2000, 4000);
+
+                setZonaActual(Zona.COMEDOR);
+                logger.log("[" + id + "] intentando comer...");
+                ref.cogerComida(id);
+                sleepRandom(3000, 5000);
+
+                if (marcado) {
                     setZonaActual(Zona.DESCANSO);
-                    logger.log("[" + id + "] descansa.");
-                    sleepRandom(2000, 4000);
-                    
-                    //Entrada al comedor
-                    setZonaActual(Zona.COMEDOR);
-                    logger.log("[" + id + "] intentando comer.");
-                    ref.cogerComida(id); // bloqueará si no hay comida
+                    logger.log("[" + id + "] curándose heridas...");
                     sleepRandom(3000, 5000);
-
-                    //Si fue marcado, se recupera
-                    if (marcado) {
-                        setZonaActual(Zona.DESCANSO);
-                        logger.log("[" + id + "] recuperandose de las heridas....");
-                        sleepRandom(3000, 5000);
-                        marcado = false;
-                    }
-                } catch (InterruptedException | BrokenBarrierException e) {
-                    logger.log("[" + id + "] interrumpido."); // Si el humano muere se interrumpe por "interrupt()"
-                    break;
+                    marcado = false;
                 }
             }
-        } 
-        catch (IOException ex) {}
+        } catch (InterruptedException | BrokenBarrierException e) {
+            try {
+                ApocalipsisLogger.getInstance().log("[" + id + "] interrumpido o muerto.");
+            } catch (IOException ignored) {}
+            Thread.currentThread().interrupt();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
-    
-    public Zona getZonaActual(){
-        return zonaActual;
-    }
-    
-    public String getIdHumano() {
-        return id;
-    }
-    
-    public synchronized void setZonaActual(Zona nuevaZona){
+
+    public synchronized void setZonaActual(Zona nuevaZona) {
         if (this.zonaActual != null && !this.zonaActual.equals(nuevaZona)) {
             mapa.quitarHumanoZona(this, this.zonaActual);
         }
         this.zonaActual = nuevaZona;
         mapa.guardarHumano(this, nuevaZona);
     }
-    private void sleepRandom(int min, int max) throws InterruptedException {
-        sleep(min + random.nextInt(max - min + 1));
+
+    public Zona getZonaActual() {
+        return zonaActual;
     }
-    
+
+    public String getIdHumano() {
+        return id;
+    }
+
     public synchronized boolean serAtacado() throws IOException {
         ApocalipsisLogger logger = ApocalipsisLogger.getInstance();
-
+        if (this.isInterrupted()) return false;
+        
         if (haSidoAtacado) {
-            logger.log("[" + id + "] ya fue atacado. Ignorando ataque.");
             return false;
         }
 
         haSidoAtacado = true;
- 
-        this.interrupt();
-        
-        boolean seDefiende = random.nextInt(3) < 2; // 2/3 posibilidad de sobrevivir
-
+        boolean seDefiende = random.nextInt(3) < 2; // 2/3 chance de defenderse
         if (seDefiende) {
             marcado = true;
-            logger.log("[" + id + "] logró defenderse.");
+            logger.log("[" + id + "] ha sido herido pero sobrevivió al ataque.");
             return false;
         } else {
-            logger.log("[" + id + "] no logró defenderse y ha muerto.");
             mapa.quitarHumanoZona(this, zonaActual);
+            logger.log("[" + id + "] fue eliminado por un zombi.");
+            interrupt();
             return true;
         }
+    }
+
+    private void sleepRandom(int min, int max) throws InterruptedException {
+        sleep(min + random.nextInt(max - min + 1));
     }
 }
