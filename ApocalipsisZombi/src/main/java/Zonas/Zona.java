@@ -11,5 +11,6 @@ public enum Zona {
     TUNEL_4, 
     DESCANSO, 
     COMEDOR, 
-    ZONA_COMUN
+    ZONA_COMUN,
+    TRANSITO
 }

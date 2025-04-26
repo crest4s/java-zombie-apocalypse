@@ -2,6 +2,7 @@ package Zonas;
 
 import Entidades.Zombi;
 import Entidades.Humano;
+import UI.ActualizadorGUI;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
@@ -10,6 +11,7 @@ import java.util.concurrent.CopyOnWriteArrayList;
 public class MapaZonas {
     private final Map<Zona, List<Humano>> humanosPorZona = new ConcurrentHashMap<>();
     private final Map<Zona, List<Zombi>> zombisPorZona = new ConcurrentHashMap<>();
+    private ActualizadorGUI act;
 
     public MapaZonas() {
         for (Zona zona : Zona.values()) {
@@ -17,19 +19,20 @@ public class MapaZonas {
             zombisPorZona.put(zona, new CopyOnWriteArrayList<>());
         }
     }
-
+    
+    public void setActualizador(ActualizadorGUI act){
+        this.act = act;
+    }
+    
     // Humanos
     public void guardarHumano(Humano h, Zona z) {
         humanosPorZona.get(z).add(h);
+        act.actualizarZona(z);
     }
 
     public void quitarHumanoZona(Humano h, Zona z) {
         humanosPorZona.get(z).remove(h);
-    }
-
-    public void moverHumanoZona(Humano h, Zona anterior, Zona nueva) {
-        quitarHumanoZona(h, anterior);
-        guardarHumano(h, nueva);
+        act.actualizarZona(z);
     }
 
     // Zombis

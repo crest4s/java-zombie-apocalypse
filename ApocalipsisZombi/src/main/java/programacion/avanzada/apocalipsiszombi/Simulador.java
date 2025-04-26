@@ -6,6 +6,8 @@ import Zonas.Tunel;
 import Zonas.Refugio;
 import Entidades.Zombi;
 import Entidades.Humano;
+import UI.ActualizadorGUI;
+import UI.ApocalipsisGUI;
 
 public class Simulador {
 
@@ -16,12 +18,24 @@ public class Simulador {
         
         // Crear túneles
         Tunel[] tuneles = {
-            new Tunel(1),
-            new Tunel(2),
-            new Tunel(3),
-            new Tunel(4)
+            new Tunel(1, mapa),
+            new Tunel(2, mapa),
+            new Tunel(3, mapa),
+            new Tunel(4, mapa)
         };
-
+        
+        //GUI
+        ApocalipsisGUI gui = new ApocalipsisGUI();
+        gui.setVisible(true);
+        
+        //Actualizador 
+        ActualizadorGUI act = new ActualizadorGUI(gui, mapa, tuneles, refugio);
+        mapa.setActualizador(act);
+        refugio.setActualizador(act);
+        for(Tunel tunel : tuneles){
+            tunel.setActualizador(act);
+        }
+        
         // Crear y lanzar zombi inicial
         Zombi primerZombi = new Zombi(mapa);
         primerZombi.start();

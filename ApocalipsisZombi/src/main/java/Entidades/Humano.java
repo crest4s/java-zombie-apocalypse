@@ -130,6 +130,9 @@ public class Humano extends Thread {
         } else {
             mapa.quitarHumanoZona(this, zonaActual);
             logger.log("[" + id + "] fue eliminado por un zombi.");
+            for (Tunel tunel : tuneles) {
+                tunel.eliminarHumanoDeColas(this);
+            }
             interrupt();
             return true;
         }
