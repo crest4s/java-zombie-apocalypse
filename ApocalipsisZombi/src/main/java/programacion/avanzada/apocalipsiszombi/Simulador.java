@@ -6,6 +6,7 @@ import Zonas.Tunel;
 import Zonas.Refugio;
 import Entidades.Zombi;
 import Entidades.Humano;
+import Helpers.PausaGlobal;
 import UI.ActualizadorGUI;
 import UI.ApocalipsisGUI;
 
@@ -45,6 +46,7 @@ public class Simulador {
             Humano h = new Humano(idgen, refugio, tuneles, mapa);
             h.start();
             try {
+                PausaGlobal.getInstance().esperarSiPausado();
                 Thread.sleep((int) (Math.random() * 1500 + 500)); // Sleep entre 0.5s y 2s
             } catch (InterruptedException e) {
                 Thread.currentThread().interrupt();

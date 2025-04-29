@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Random;
 import Helpers.ApocalipsisLogger;
 import Helpers.IdGenerator;
+import Helpers.PausaGlobal;
 import Zonas.MapaZonas;
 import Zonas.Zona;
 
@@ -35,17 +36,22 @@ public class Zombi extends Thread {
         try {
             ApocalipsisLogger logger = ApocalipsisLogger.getInstance();
             while (true) {
+                PausaGlobal.getInstance().esperarSiPausado();
                 int zona = random.nextInt(4) + 1;
                 setZonaActual(Zona.valueOf("RIESGO_" + zona));
                 logger.log("[" + id + "] entra a " + zonaActual);
+                PausaGlobal.getInstance().esperarSiPausado();
 
                 List<Humano> humanos = mapa.humanosEnZona(zonaActual);
                 if (!humanos.isEmpty()) {
+                    PausaGlobal.getInstance().esperarSiPausado();
                     Humano objetivo = humanos.get(random.nextInt(humanos.size()));
                     logger.log("[" + id + "] atacando a " + objetivo.getIdHumano());
                     sleepRandom(500, 1500);
+                    PausaGlobal.getInstance().esperarSiPausado();
 
                     boolean muerto = objetivo.serAtacado();
+                    PausaGlobal.getInstance().esperarSiPausado();
                     if (muerto) {
                         muertes++;
                         convertirEnZombi(objetivo);
@@ -54,6 +60,7 @@ public class Zombi extends Thread {
                 } else {
                     logger.log("[" + id + "] no encontró humanos.");
                     sleepRandom(2000, 3000);
+                    PausaGlobal.getInstance().esperarSiPausado();
                 }
             }
         } catch (InterruptedException e) {

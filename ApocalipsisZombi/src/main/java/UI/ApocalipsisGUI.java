@@ -1,5 +1,7 @@
 package UI;
 
+import Helpers.PausaGlobal;
+
 public class ApocalipsisGUI extends javax.swing.JFrame{
     private boolean running = true;
 
@@ -396,7 +398,7 @@ public class ApocalipsisGUI extends javax.swing.JFrame{
                 botonPararActionPerformed(evt);
             }
         });
-        jPanel1.add(botonParar, new org.netbeans.lib.awtextra.AbsoluteConstraints(1170, 690, -1, -1));
+        jPanel1.add(botonParar, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 50, -1, -1));
 
         contadorComida.setEditable(false);
         contadorComida.setText("0   ");
@@ -479,8 +481,10 @@ public class ApocalipsisGUI extends javax.swing.JFrame{
         pausarOSeguir();
         if (running) {
             botonParar.setText("Parar");
+            PausaGlobal.getInstance().reanudar();
         } else {
             botonParar.setText("Reanudar");
+            PausaGlobal.getInstance().pausar();
         }
     }//GEN-LAST:event_botonPararActionPerformed
 
