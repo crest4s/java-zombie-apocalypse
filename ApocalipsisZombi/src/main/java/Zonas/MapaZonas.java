@@ -38,10 +38,12 @@ public class MapaZonas {
     // Zombis
     public void guardarZombi(Zombi z, Zona zombiZona) {
         zombisPorZona.get(zombiZona).add(z);
+        act.actualizarZona(zombiZona);
     }
 
     public void quitarZombiZona(Zombi z, Zona zombiZona) {
         zombisPorZona.get(zombiZona).remove(z);
+        act.actualizarZona(zombiZona);
     }
 
     // Consultas
