@@ -37,7 +37,7 @@ public class Simulador {
         }
         
         // Crear y lanzar zombi inicial
-        Zombi primerZombi = new Zombi(mapa);
+        Zombi primerZombi = new Zombi(mapa, idgen);
         primerZombi.start();
 
         // Crear humanos progresivamente

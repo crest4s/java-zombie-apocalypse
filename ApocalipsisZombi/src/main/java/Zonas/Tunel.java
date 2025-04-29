@@ -105,8 +105,9 @@ public class Tunel {
         } else {
             synchronized (monitor) {
                 while (true) {
-                    if (!grupoFormado.isEmpty() && grupoFormado.peek().equals(h) && accesoTunel.tryAcquire()) {
-                        grupoFormado.poll();
+                    if (!grupoFormado.isEmpty() && grupoFormado.peek().equals(h) && accesoTunel.availablePermits() > 0) {
+                        accesoTunel.acquire(); //se reserva el acceso
+                        grupoFormado.poll(); //sale del grupo formado
                         colaRefugio.remove(h); //sale de las colas
                         act.actualizarColas(zona); 
                         setHumanoDentro(h); //entra al tunel
@@ -115,7 +116,7 @@ public class Tunel {
                         logger.log("[" + h.getIdHumano() + "] entra al túnel desde el refugio.");
                         break;
                     } else {
-                        monitor.wait();
+                        monitor.wait(); //si no soy el primero, espero
                     }
                 }
             }

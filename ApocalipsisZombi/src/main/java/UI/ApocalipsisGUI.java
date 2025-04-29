@@ -401,6 +401,8 @@ public class ApocalipsisGUI extends javax.swing.JFrame{
         contadorComida.setEditable(false);
         contadorComida.setText("jTextField1");
         contadorComida.setFocusable(false);
+        contadorComida.setMaximumSize(null);
+        contadorComida.setName(""); // NOI18N
         contadorComida.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 contadorComidaActionPerformed(evt);
@@ -412,28 +414,41 @@ public class ApocalipsisGUI extends javax.swing.JFrame{
         jLabel4.setFocusable(false);
         jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 310, -1, -1));
 
+        tunel1.setEditable(false);
+        tunel1.setText("                  ");
         tunel1.setToolTipText("");
         tunel1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         tunel1.setFocusable(false);
-        tunel1.setMaximumSize(new java.awt.Dimension(64, 22));
+        tunel1.setMaximumSize(new java.awt.Dimension(71, 22));
+        tunel1.setMinimumSize(new java.awt.Dimension(71, 22));
+        tunel1.setPreferredSize(new java.awt.Dimension(71, 22));
         jPanel1.add(tunel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 180, -1, -1));
 
+        tunel2.setEditable(false);
+        tunel2.setText("                     ");
         tunel2.setToolTipText("");
         tunel2.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         tunel2.setFocusable(false);
-        tunel2.setMaximumSize(new java.awt.Dimension(64, 22));
+        tunel2.setMaximumSize(null);
+        tunel2.setPreferredSize(new java.awt.Dimension(71, 22));
         jPanel1.add(tunel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 320, -1, -1));
 
+        tunel3.setEditable(false);
+        tunel3.setText("                     ");
         tunel3.setToolTipText("");
         tunel3.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         tunel3.setFocusable(false);
-        tunel3.setMaximumSize(new java.awt.Dimension(64, 22));
+        tunel3.setMaximumSize(null);
+        tunel3.setPreferredSize(new java.awt.Dimension(71, 22));
         jPanel1.add(tunel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 460, -1, -1));
 
+        tunel4.setEditable(false);
+        tunel4.setText("                      ");
         tunel4.setToolTipText("");
         tunel4.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         tunel4.setFocusable(false);
-        tunel4.setMaximumSize(new java.awt.Dimension(64, 22));
+        tunel4.setMaximumSize(null);
+        tunel4.setPreferredSize(new java.awt.Dimension(71, 22));
         jPanel1.add(tunel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 600, -1, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());

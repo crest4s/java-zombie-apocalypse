@@ -14,15 +14,18 @@ public class Zombi extends Thread {
     private Zona zonaActual;
     private final Random random = new Random();
     private final MapaZonas mapa;
+    private IdGenerator idgen;
 
     public Zombi(IdGenerator idgen, String humId, MapaZonas mapa) {
         this.id = idgen.nuevoIdZombi(humId);
+        this.idgen = idgen;
         this.mapa = mapa;
         this.muertes = 0;
     }
 
-    public Zombi(MapaZonas mapa) {
-        this.id = "Z00000";
+    public Zombi(MapaZonas mapa, IdGenerator idgen) {
+        this.id = "Z0000";
+        this.idgen = idgen;
         this.mapa = mapa;
         this.muertes = 0;
     }
@@ -84,17 +87,18 @@ public class Zombi extends Thread {
 
     private Zombi convertirEnZombi(Humano h) throws IOException {
         if (h.getIdHumano().startsWith("Z")) return null;
-        Zombi nuevo = new Zombi(new IdGenerator(), h.getIdHumano(), mapa);
+        Zombi nuevo = new Zombi(idgen, h.getIdHumano(), mapa);
         Zona zona = h.getZonaActual();
-
+        
+        h.interrupt();
         mapa.quitarHumanoZona(h, zona);
-        mapa.guardarZombi(nuevo, zona);
+        
+        nuevo.setZonaActual(zona);
+        nuevo.start();
 
         ApocalipsisLogger logger = ApocalipsisLogger.getInstance();
         logger.log("[" + id + "] " + h.getIdHumano() + " ha sido convertido en zombi " + nuevo.getIdZombi());
 
-        h.interrupt();
-        nuevo.start();
         return nuevo;
     }
 }
