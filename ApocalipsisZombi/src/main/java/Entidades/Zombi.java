@@ -85,13 +85,14 @@ public class Zombi extends Thread {
         return id;
     }
 
-    private Zombi convertirEnZombi(Humano h) throws IOException {
+    private Zombi convertirEnZombi(Humano h) throws IOException, InterruptedException {
         if (h.getIdHumano().startsWith("Z")) return null;
         Zombi nuevo = new Zombi(idgen, h.getIdHumano(), mapa);
         Zona zona = h.getZonaActual();
         
         h.interrupt();
         mapa.quitarHumanoZona(h, zona);
+        h.join();
         
         nuevo.setZonaActual(zona);
         nuevo.start();

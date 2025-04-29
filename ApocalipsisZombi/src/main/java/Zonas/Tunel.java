@@ -127,17 +127,24 @@ public class Tunel {
         ApocalipsisLogger logger = ApocalipsisLogger.getInstance();
 
         synchronized (monitor) {
-            logger.log("[" + h.getIdHumano() + "] sale del " + zona.name());
+            
 
-            humanoEnTunel = null; // 1. Vaciar referencia
+            if (humanoEnTunel == h) {
+                humanoEnTunel = null;
+            } // 1. Vaciar referencia
+            
+            accesoTunel.release();
             act.actualizarTunel(this); // 2. Refrescar visualización
-
+            logger.log("[" + h.getIdHumano() + "] sale del " + zona.name());
+            
             if (grupoFormado.isEmpty() && barrier.getNumberWaiting() == 0) {
+                try {
+                    barrier.reset();
+                } catch (IllegalStateException e) {
+                    logger.log("[" + h.getIdHumano() + "] fallo al resetear el barrier.");
+                }
                 grupoActivo = false;
-                barrier.reset();
             }
-
-            accesoTunel.release(); // 3. Liberar el semáforo al final
             monitor.notifyAll();
         }
 }
@@ -153,8 +160,19 @@ public class Tunel {
     }
     
     public void eliminarHumanoDeColas(Humano h){
-        colaRefugio.remove(h);
-        colaRiesgo.remove(h);
-        act.actualizarColas(zona);
+        synchronized (monitor) {
+            colaRefugio.remove(h);
+            colaRiesgo.remove(h);
+            grupoFormado.remove(h);
+
+            if (humanoEnTunel == h) {
+                humanoEnTunel = null;
+                accesoTunel.release();
+                act.actualizarTunel(this);
+            }
+
+            act.actualizarColas(zona);
+            monitor.notifyAll(); // desbloquear esperas
+        }
     }
 }

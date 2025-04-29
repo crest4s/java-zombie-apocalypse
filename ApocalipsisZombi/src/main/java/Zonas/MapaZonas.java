@@ -52,4 +52,11 @@ public class MapaZonas {
     public List<Zombi> zombisEnZona(Zona z) {
         return zombisPorZona.get(z);
     }
+    
+    public synchronized void moverHumano(Humano h, Zona zonaOrigen, Zona zonaDestino) {
+        humanosPorZona.get(zonaOrigen).remove(h);
+        humanosPorZona.get(zonaDestino).add(h);
+        act.actualizarZona(zonaOrigen);
+        act.actualizarZona(zonaDestino);
+    }
 }

@@ -59,7 +59,7 @@ public class Humano extends Thread {
                     comidaRecolectada += 2;
                     logger.log("[" + id + "] recolectó 2 unidades de comida.");
                 }
-
+                
                 tunel.entrarTunel(this, true);
                 sleep(1000);
                 tunel.salirTunel(this);
@@ -92,17 +92,15 @@ public class Humano extends Thread {
                 ApocalipsisLogger.getInstance().log("[" + id + "] interrumpido o muerto.");
             } catch (IOException ignored) {}
             Thread.currentThread().interrupt();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        } catch (IOException e) {}
     }
 
-    public synchronized void setZonaActual(Zona nuevaZona) {
-        if (this.zonaActual != null && !this.zonaActual.equals(nuevaZona)) {
-            mapa.quitarHumanoZona(this, this.zonaActual);
+    public void setZonaActual(Zona nuevaZona) {
+        synchronized(this) {
+            Zona zonaAnterior = this.zonaActual;
+            this.zonaActual = nuevaZona;
+            mapa.moverHumano(this, zonaAnterior, nuevaZona);
         }
-        this.zonaActual = nuevaZona;
-        mapa.guardarHumano(this, nuevaZona);
     }
 
     public Zona getZonaActual() {

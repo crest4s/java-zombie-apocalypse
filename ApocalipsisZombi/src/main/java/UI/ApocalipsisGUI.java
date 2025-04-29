@@ -399,7 +399,7 @@ public class ApocalipsisGUI extends javax.swing.JFrame{
         jPanel1.add(botonParar, new org.netbeans.lib.awtextra.AbsoluteConstraints(1170, 690, -1, -1));
 
         contadorComida.setEditable(false);
-        contadorComida.setText("jTextField1");
+        contadorComida.setText("0   ");
         contadorComida.setFocusable(false);
         contadorComida.setMaximumSize(null);
         contadorComida.setName(""); // NOI18N
