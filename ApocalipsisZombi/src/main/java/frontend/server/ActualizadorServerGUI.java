@@ -1,6 +1,6 @@
-    package backend.ui;
+    package frontend.server;
 
-import frontend.ui.ApocalipsisGUI;
+import frontend.server.ServerGUI;
 import backend.zones.MapaZonas;
 import backend.zones.Zona;
 import backend.zones.Refugio;
@@ -15,14 +15,14 @@ import java.util.stream.Collectors;
 import javax.swing.SwingUtilities;
 import backend.server.ServidorRMI;
 
-    public class ActualizadorGUI {
-        private final ApocalipsisGUI gui;
+    public class ActualizadorServerGUI {
+        private final ServerGUI gui;
         private final MapaZonas mapa;
         private final Tunel[] tuneles;
         private final Refugio refugio;
         private final ServidorRMI objR;
 
-        public ActualizadorGUI(ApocalipsisGUI gui, ServidorRMI objRemoto, MapaZonas mapa, Tunel[] tuneles, Refugio refugio) {
+        public ActualizadorServerGUI(ServerGUI gui, ServidorRMI objRemoto, MapaZonas mapa, Tunel[] tuneles, Refugio refugio) {
             this.gui = gui;
             this.mapa = mapa;
             this.tuneles = tuneles;

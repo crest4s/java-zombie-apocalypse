@@ -1,4 +1,4 @@
-package backend.core;
+package programacion.avanzada.apocalipsiszombi;
 
 import backend.server.ServidorRMI;
 import backend.utils.IdGenerator;
@@ -8,8 +8,8 @@ import backend.zones.Refugio;
 import backend.entities.Zombi;
 import backend.entities.Humano;
 import backend.utils.PausaGlobal;
-import backend.ui.ActualizadorGUI;
-import frontend.ui.ApocalipsisGUI;
+import frontend.server.ActualizadorServerGUI;
+import frontend.server.ServerGUI;
 import java.net.MalformedURLException;
 import java.rmi.Naming;
 import java.rmi.RemoteException;
@@ -47,11 +47,11 @@ public class Simulador {
         
         
         // GUI
-        ApocalipsisGUI gui = new ApocalipsisGUI();
+        ServerGUI gui = new ServerGUI();
         gui.setVisible(true);
         
         //Actualizador 
-        ActualizadorGUI act = new ActualizadorGUI(gui, objRemoto, mapa, tuneles, refugio);
+        ActualizadorServerGUI act = new ActualizadorServerGUI(gui, objRemoto, mapa, tuneles, refugio);
         mapa.setActualizador(act);
         refugio.setActualizador(act);
         for(Tunel tunel : tuneles){

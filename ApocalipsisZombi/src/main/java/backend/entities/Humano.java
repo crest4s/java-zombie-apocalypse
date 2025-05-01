@@ -41,7 +41,7 @@ public class Humano extends Thread {
                 
                 setZonaActual(Zona.ZONA_COMUN);
                 logger.log("[" + id + "] preparándose para salir...");
-                sleepRandom(1000, 2000);
+                sleepConPausa(sleepRandom(1000, 2000));
                 PausaGlobal.getInstance().esperarSiPausado();
 
                 int indiceTunel = random.nextInt(tuneles.length);
@@ -53,14 +53,14 @@ public class Humano extends Thread {
                 
                 PausaGlobal.getInstance().esperarSiPausado();
                 tunel.entrarTunel(this, false);
-                sleep(1000);
+                sleepConPausa(1000);
                 PausaGlobal.getInstance().esperarSiPausado();
                 tunel.salirTunel(this);
                 PausaGlobal.getInstance().esperarSiPausado();
 
                 setZonaActual(tunel.getAreaInsegura());
                 logger.log("[" + id + "] explorando en " + zonaActual);
-                sleepRandom(3000, 5000);
+                sleepConPausa(sleepRandom(3000, 5000));
                 PausaGlobal.getInstance().esperarSiPausado();
 
                 if (!haSidoAtacado) {
@@ -70,7 +70,7 @@ public class Humano extends Thread {
                 
                 PausaGlobal.getInstance().esperarSiPausado();
                 tunel.entrarTunel(this, true);
-                sleep(1000);
+                sleepConPausa(1000);
                 PausaGlobal.getInstance().esperarSiPausado();
                 tunel.salirTunel(this);
                 PausaGlobal.getInstance().esperarSiPausado();
@@ -85,21 +85,21 @@ public class Humano extends Thread {
                 PausaGlobal.getInstance().esperarSiPausado();
                 setZonaActual(Zona.DESCANSO);
                 logger.log("[" + id + "] descansando...");
-                sleepRandom(2000, 4000);
+                sleepConPausa(sleepRandom(2000, 4000));
                 
                 PausaGlobal.getInstance().esperarSiPausado();
 
                 setZonaActual(Zona.COMEDOR);
                 logger.log("[" + id + "] intentando comer...");
                 ref.cogerComida(id);
-                sleepRandom(3000, 5000);
+                sleepConPausa(sleepRandom(3000, 5000));
                 
                 PausaGlobal.getInstance().esperarSiPausado();
 
                 if (marcado) {
                     setZonaActual(Zona.DESCANSO);
                     logger.log("[" + id + "] curándose heridas...");
-                    sleepRandom(3000, 5000);
+                    sleepConPausa(sleepRandom(3000, 5000));
                     PausaGlobal.getInstance().esperarSiPausado();
                     marcado = false;
                 }
@@ -155,7 +155,30 @@ public class Humano extends Thread {
         }
     }
 
-    private void sleepRandom(int min, int max) throws InterruptedException {
-        sleep(min + random.nextInt(max - min + 1));
+    private int sleepRandom(int min, int max) throws InterruptedException {
+        return min + random.nextInt(max - min + 1);
+    }
+    
+    public void sleepConPausa(long duracionTotal) throws InterruptedException {
+        long tiempoRestante = duracionTotal;
+        long inicio = System.currentTimeMillis();
+
+        while (tiempoRestante > 0) {
+            PausaGlobal.getInstance().esperarSiPausado();
+
+            try {
+                Thread.sleep(tiempoRestante);
+                break; // finalizó correctamente
+            } catch (InterruptedException e) {
+                if (PausaGlobal.getInstance().estaPausado()) {
+                    PausaGlobal.getInstance().esperarSiPausado(); // espera a ser reanudado
+                } else {
+                    throw e; // interrupción real, no por pausa
+                }
+            }
+
+            long ahora = System.currentTimeMillis();
+            tiempoRestante = duracionTotal - (ahora - inicio);
+        }
     }
 }

@@ -1,11 +1,11 @@
-package frontend.ui;
+package frontend.server;
 
 import backend.utils.PausaGlobal;
 
-public class ApocalipsisGUI extends javax.swing.JFrame{
+public class ServerGUI extends javax.swing.JFrame{
     private boolean running = true;
 
-    public ApocalipsisGUI() {
+    public ServerGUI() {
         initComponents();
     }
 

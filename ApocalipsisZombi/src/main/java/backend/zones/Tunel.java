@@ -8,7 +8,7 @@ import java.util.concurrent.BrokenBarrierException;
 import java.util.concurrent.CyclicBarrier;
 import java.util.concurrent.Semaphore;
 import backend.utils.ApocalipsisLogger;
-import backend.ui.ActualizadorGUI;
+import frontend.server.ActualizadorServerGUI;
 
 public class Tunel {
     private final int id;
@@ -21,7 +21,7 @@ public class Tunel {
     private final Queue<Humano> colaRiesgo = new LinkedList<>();
     private final Queue<Humano> grupoFormado = new LinkedList<>();
     private Humano humanoEnTunel = null;
-    private ActualizadorGUI act;
+    private ActualizadorServerGUI act;
     private MapaZonas mapa;
 
     public Tunel(int id, MapaZonas mapa) {
@@ -36,7 +36,7 @@ public class Tunel {
         }
     }
     
-    public void setActualizador(ActualizadorGUI act){
+    public void setActualizador(ActualizadorServerGUI act){
         this.act = act;
     }
     

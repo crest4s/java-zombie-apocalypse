@@ -15,7 +15,7 @@ public class ClienteGUI extends javax.swing.JFrame {
     public ClienteGUI() {
         initComponents();
         conectarServidor();
-        iniciarActualizacionesPeriodicas();
+        //iniciarActualizacionesPeriodicas();
     }
     
     public javax.swing.JTextField getTextRefugio() { return refugioTextField; }
@@ -41,12 +41,13 @@ public class ClienteGUI extends javax.swing.JFrame {
         try{
             servidor = (ServidorRemoto) Naming.lookup("//localhost/objeto");
             System.out.println("Cliente conectando al servidor");
+            new Thread(new ActualizadorClienteGUI(this, servidor)).start();
         } catch (MalformedURLException | NotBoundException | RemoteException e){
             JOptionPane.showMessageDialog(this, "Error al conectar al servidor", "Error", JOptionPane.ERROR_MESSAGE);
         }
     }
     
-    private void iniciarActualizacionesPeriodicas() {
+    /*private void iniciarActualizacionesPeriodicas() {
         new Thread(() -> {
             while (true) {
                 try {
@@ -58,7 +59,7 @@ public class ClienteGUI extends javax.swing.JFrame {
                 }
             }
         }).start();
-    }
+    }*/
 
     private void actualizarDatos() throws RemoteException {
         // Actualizar humanos en refugio

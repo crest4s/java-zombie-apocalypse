@@ -47,7 +47,7 @@ public class Zombi extends Thread {
                     PausaGlobal.getInstance().esperarSiPausado();
                     Humano objetivo = humanos.get(random.nextInt(humanos.size()));
                     logger.log("[" + id + "] atacando a " + objetivo.getIdHumano());
-                    sleepRandom(500, 1500);
+                    sleepConPausa(sleepRandom(500, 1500));
                     PausaGlobal.getInstance().esperarSiPausado();
 
                     boolean muerto = objetivo.serAtacado();
@@ -59,7 +59,7 @@ public class Zombi extends Thread {
                     }
                 } else {
                     logger.log("[" + id + "] no encontró humanos.");
-                    sleepRandom(2000, 3000);
+                    sleepConPausa(sleepRandom(2000, 3000));
                     PausaGlobal.getInstance().esperarSiPausado();
                 }
             }
@@ -72,8 +72,31 @@ public class Zombi extends Thread {
         }
     }
 
-    private void sleepRandom(int min, int max) throws InterruptedException {
-        sleep(min + random.nextInt(max - min + 1));
+    private int sleepRandom(int min, int max) throws InterruptedException {
+        return min + random.nextInt(max - min + 1);
+    }
+    
+    public void sleepConPausa(long duracionTotal) throws InterruptedException {
+        long tiempoRestante = duracionTotal;
+        long inicio = System.currentTimeMillis();
+
+        while (tiempoRestante > 0) {
+            PausaGlobal.getInstance().esperarSiPausado();
+
+            try {
+                Thread.sleep(tiempoRestante);
+                break; // finalizó correctamente
+            } catch (InterruptedException e) {
+                if (PausaGlobal.getInstance().estaPausado()) {
+                    PausaGlobal.getInstance().esperarSiPausado(); // espera a ser reanudado
+                } else {
+                    throw e; // interrupción real, no por pausa
+                }
+            }
+
+            long ahora = System.currentTimeMillis();
+            tiempoRestante = duracionTotal - (ahora - inicio);
+        }
     }
 
     public void setZonaActual(Zona zona) {
