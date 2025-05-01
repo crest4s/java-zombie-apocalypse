@@ -87,6 +87,10 @@ public class Zombi extends Thread {
     public Zona getZonaActual() {
         return zonaActual;
     }
+    
+    public int getMuertes(){
+        return muertes;
+    }
 
     public String getIdZombi() {
         return id;

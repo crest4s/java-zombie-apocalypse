@@ -1,51 +1,105 @@
-2025-04-29 18:00:05 - [Z0000] entra a RIESGO_4
-2025-04-29 18:00:05 - [H0001] preparándose para salir...
-2025-04-29 18:00:05 - [Z0000] no encontró humanos.
-2025-04-29 18:00:06 - [H0002] preparándose para salir...
-2025-04-29 18:00:07 - [H0001] esperando en túnel TUNEL_4
-2025-04-29 18:00:07 - [H0001] esperando en la cola del refugio en TUNEL_4
-2025-04-29 18:00:07 - [H0003] preparándose para salir...
-2025-04-29 18:00:08 - [Z0000] entra a RIESGO_1
-2025-04-29 18:00:08 - [Z0000] no encontró humanos.
-2025-04-29 18:00:08 - [H0002] esperando en túnel TUNEL_3
-2025-04-29 18:00:08 - [H0002] esperando en la cola del refugio en TUNEL_3
-2025-04-29 18:00:09 - [H0003] esperando en túnel TUNEL_3
-2025-04-29 18:00:09 - [H0003] esperando en la cola del refugio en TUNEL_3
-2025-04-29 18:00:09 - [H0004] preparándose para salir...
-2025-04-29 18:00:09 - [H0005] preparándose para salir...
-2025-04-29 18:00:11 - [H0006] preparándose para salir...
-2025-04-29 18:00:14 - [H0004] esperando en túnel TUNEL_4
-2025-04-29 18:00:14 - [H0006] esperando en túnel TUNEL_3
-2025-04-29 18:00:14 - [H0005] esperando en túnel TUNEL_2
-2025-04-29 18:00:14 - [Z0000] entra a RIESGO_3
-2025-04-29 18:00:14 - [Z0000] no encontró humanos.
-2025-04-29 18:00:14 - [H0004] esperando en la cola del refugio en TUNEL_4
-2025-04-29 18:00:14 - [H0006] esperando en la cola del refugio en TUNEL_3
-2025-04-29 18:00:14 - [H0005] esperando en la cola del refugio en TUNEL_2
-2025-04-29 18:00:14 - [H0006] entra al túnel desde el refugio.
-2025-04-29 18:00:15 - [H0007] preparándose para salir...
-2025-04-29 18:00:15 - [H0006] sale del TUNEL_3
-2025-04-29 18:00:15 - [H0006] explorando en RIESGO_3
-2025-04-29 18:00:15 - [H0002] entra al túnel desde el refugio.
-2025-04-29 18:00:16 - [H0002] sale del TUNEL_3
-2025-04-29 18:00:16 - [H0002] explorando en RIESGO_3
-2025-04-29 18:00:16 - [H0003] entra al túnel desde el refugio.
-2025-04-29 18:00:17 - [H0008] preparándose para salir...
-2025-04-29 18:00:17 - [H0007] esperando en túnel TUNEL_2
-2025-04-29 18:00:17 - [H0007] esperando en la cola del refugio en TUNEL_2
-2025-04-29 18:00:17 - [Z0000] entra a RIESGO_3
-2025-04-29 18:00:17 - [Z0000] atacando a H0002
-2025-04-29 18:00:17 - [H0009] preparándose para salir...
-2025-04-29 18:00:17 - [H0003] sale del TUNEL_3
-2025-04-29 18:00:17 - [H0003] explorando en RIESGO_3
-2025-04-29 18:00:18 - [H0002] ha sido herido pero sobrevivió al ataque.
-2025-04-29 18:00:18 - [Z0000] entra a RIESGO_2
-2025-04-29 18:00:18 - [Z0000] no encontró humanos.
-2025-04-29 18:00:18 - [H0008] esperando en túnel TUNEL_1
-2025-04-29 18:00:18 - [H0008] esperando en la cola del refugio en TUNEL_1
-2025-04-29 18:00:19 - [H0009] esperando en túnel TUNEL_1
-2025-04-29 18:00:19 - [H0009] esperando en la cola del refugio en TUNEL_1
-2025-04-29 18:00:19 - [H0010] preparándose para salir...
-2025-04-29 18:00:19 - [H0006] recolectó 2 unidades de comida.
-2025-04-29 18:00:19 - [H0006] espera desde el exterior en TUNEL_3
-2025-04-29 18:00:19 - [H0006] entra al túnel desde el exterior.
+2025-05-01 11:30:24 - [Z0000] entra a RIESGO_4
+2025-05-01 11:30:24 - [H0001] preparándose para salir...
+2025-05-01 11:30:24 - [Z0000] no encontró humanos.
+2025-05-01 11:30:25 - [H0002] preparándose para salir...
+2025-05-01 11:30:25 - [H0001] esperando en túnel TUNEL_1
+2025-05-01 11:30:25 - [H0001] esperando en la cola del refugio en TUNEL_1
+2025-05-01 11:30:26 - [Z0000] entra a RIESGO_4
+2025-05-01 11:30:26 - [Z0000] no encontró humanos.
+2025-05-01 11:30:27 - [H0003] preparándose para salir...
+2025-05-01 11:30:27 - [H0002] esperando en túnel TUNEL_1
+2025-05-01 11:30:27 - [H0002] esperando en la cola del refugio en TUNEL_1
+2025-05-01 11:30:28 - [H0004] preparándose para salir...
+2025-05-01 11:30:28 - [H0003] esperando en túnel TUNEL_2
+2025-05-01 11:30:28 - [H0003] esperando en la cola del refugio en TUNEL_2
+2025-05-01 11:30:29 - [Z0000] entra a RIESGO_1
+2025-05-01 11:30:29 - [Z0000] no encontró humanos.
+2025-05-01 11:30:29 - [H0005] preparándose para salir...
+2025-05-01 11:30:30 - [H0004] esperando en túnel TUNEL_2
+2025-05-01 11:30:30 - [H0004] esperando en la cola del refugio en TUNEL_2
+2025-05-01 11:30:30 - [H0006] preparándose para salir...
+2025-05-01 11:30:31 - [H0005] esperando en túnel TUNEL_2
+2025-05-01 11:30:31 - [H0005] esperando en la cola del refugio en TUNEL_2
+2025-05-01 11:30:31 - [H0005] entra al túnel desde el refugio.
+2025-05-01 11:30:31 - [Z0000] entra a RIESGO_2
+2025-05-01 11:30:31 - [Z0000] no encontró humanos.
+2025-05-01 11:30:32 - [H0005] sale del TUNEL_2
+2025-05-01 11:30:32 - [H0003] entra al túnel desde el refugio.
+2025-05-01 11:30:32 - [H0005] explorando en RIESGO_2
+2025-05-01 11:30:32 - [H0006] esperando en túnel TUNEL_1
+2025-05-01 11:30:32 - [H0006] esperando en la cola del refugio en TUNEL_1
+2025-05-01 11:30:32 - [H0006] entra al túnel desde el refugio.
+2025-05-01 11:30:32 - [H0007] preparándose para salir...
+2025-05-01 11:30:33 - [H0003] sale del TUNEL_2
+2025-05-01 11:30:33 - [H0003] explorando en RIESGO_2
+2025-05-01 11:30:33 - [H0004] entra al túnel desde el refugio.
+2025-05-01 11:30:33 - [H0006] sale del TUNEL_1
+2025-05-01 11:30:33 - [H0006] explorando en RIESGO_1
+2025-05-01 11:30:33 - [H0002] entra al túnel desde el refugio.
+2025-05-01 11:30:34 - [Z0000] entra a RIESGO_1
+2025-05-01 11:30:34 - [Z0000] atacando a H0006
+2025-05-01 11:30:34 - [H0008] preparándose para salir...
+2025-05-01 11:30:34 - [H0004] sale del TUNEL_2
+2025-05-01 11:30:34 - [H0004] explorando en RIESGO_2
+2025-05-01 11:30:34 - [H0002] sale del TUNEL_1
+2025-05-01 11:30:34 - [H0002] explorando en RIESGO_1
+2025-05-01 11:30:34 - [H0001] entra al túnel desde el refugio.
+2025-05-01 11:30:34 - [H0007] esperando en túnel TUNEL_4
+2025-05-01 11:30:34 - [H0007] esperando en la cola del refugio en TUNEL_4
+2025-05-01 11:30:35 - [H0009] preparándose para salir...
+2025-05-01 11:30:35 - [H0006] ha sido herido pero sobrevivió al ataque.
+2025-05-01 11:30:35 - [Z0000] entra a RIESGO_3
+2025-05-01 11:30:35 - [Z0000] no encontró humanos.
+2025-05-01 11:30:35 - [H0001] sale del TUNEL_1
+2025-05-01 11:30:35 - [H0001] explorando en RIESGO_1
+2025-05-01 11:30:35 - [H0005] recolectó 2 unidades de comida.
+2025-05-01 11:30:35 - [H0005] espera desde el exterior en TUNEL_2
+2025-05-01 11:30:35 - [H0005] entra al túnel desde el exterior.
+2025-05-01 11:30:35 - [H0008] esperando en túnel TUNEL_4
+2025-05-01 11:30:35 - [H0008] esperando en la cola del refugio en TUNEL_4
+2025-05-01 11:30:36 - [H0010] preparándose para salir...
+2025-05-01 11:30:36 - [H0003] recolectó 2 unidades de comida.
+2025-05-01 11:30:36 - [H0003] espera desde el exterior en TUNEL_2
+2025-05-01 11:30:36 - [H0005] sale del TUNEL_2
+2025-05-01 11:30:36 - [H0003] entra al túnel desde el exterior.
+2025-05-01 11:30:36 - [H0005] ha dejado comida en el refugio
+2025-05-01 11:30:36 - [H0005] descansando...
+2025-05-01 11:30:36 - [H0009] esperando en túnel TUNEL_2
+2025-05-01 11:30:36 - [H0009] esperando en la cola del refugio en TUNEL_2
+2025-05-01 11:30:37 - [Z0000] entra a RIESGO_4
+2025-05-01 11:30:37 - [Z0000] no encontró humanos.
+2025-05-01 11:30:37 - [H0004] recolectó 2 unidades de comida.
+2025-05-01 11:30:37 - [H0004] espera desde el exterior en TUNEL_2
+2025-05-01 11:30:37 - [H0011] preparándose para salir...
+2025-05-01 11:30:38 - [H0002] recolectó 2 unidades de comida.
+2025-05-01 11:30:38 - [H0003] sale del TUNEL_2
+2025-05-01 11:30:38 - [H0010] esperando en túnel TUNEL_1
+2025-05-01 11:30:38 - [H0003] ha dejado comida en el refugio
+2025-05-01 11:30:38 - [H0002] espera desde el exterior en TUNEL_1
+2025-05-01 11:30:38 - [H0004] entra al túnel desde el exterior.
+2025-05-01 11:30:38 - [H0003] descansando...
+2025-05-01 11:30:38 - [H0002] entra al túnel desde el exterior.
+2025-05-01 11:30:38 - [H0010] esperando en la cola del refugio en TUNEL_1
+2025-05-01 11:30:39 - [H0012] preparándose para salir...
+2025-05-01 11:30:43 - [H0012] esperando en túnel TUNEL_3
+2025-05-01 11:30:43 - [H0001] recolectó 2 unidades de comida.
+2025-05-01 11:30:43 - [H0006] espera desde el exterior en TUNEL_1
+2025-05-01 11:30:43 - [H0004] sale del TUNEL_2
+2025-05-01 11:30:43 - [H0011] esperando en túnel TUNEL_4
+2025-05-01 11:30:43 - [Z0000] entra a RIESGO_4
+2025-05-01 11:30:43 - [H0003] intentando comer...
+2025-05-01 11:30:43 - [Z0000] no encontró humanos.
+2025-05-01 11:30:43 - [H0005] intentando comer...
+2025-05-01 11:30:43 - [H0004] ha dejado comida en el refugio
+2025-05-01 11:30:43 - [H0003] ha cogido un alimento del refugio.
+2025-05-01 11:30:43 - [H0001] espera desde el exterior en TUNEL_1
+2025-05-01 11:30:43 - [H0011] esperando en la cola del refugio en TUNEL_4
+2025-05-01 11:30:43 - [H0002] sale del TUNEL_1
+2025-05-01 11:30:43 - [H0002] ha dejado comida en el refugio
+2025-05-01 11:30:43 - [H0005] ha cogido un alimento del refugio.
+2025-05-01 11:30:43 - [H0012] esperando en la cola del refugio en TUNEL_3
+2025-05-01 11:30:43 - [H0002] descansando...
+2025-05-01 11:30:43 - [H0004] descansando...
+2025-05-01 11:30:43 - [H0011] entra al túnel desde el refugio.
+2025-05-01 11:30:43 - [H0006] entra al túnel desde el exterior.
+2025-05-01 11:30:44 - [H0013] preparándose para salir...

@@ -1,5 +1,7 @@
 package programacion.avanzada.apocalipsiszombi;
 
+import servidor.ServidorRMI;
+import cliente.ClienteGUI;
 import Helpers.IdGenerator;
 import Zonas.MapaZonas;
 import Zonas.Tunel;
@@ -9,10 +11,14 @@ import Entidades.Humano;
 import Helpers.PausaGlobal;
 import UI.ActualizadorGUI;
 import UI.ApocalipsisGUI;
+import java.rmi.Naming;
+import java.rmi.RemoteException;
+import java.rmi.registry.LocateRegistry;
+import java.rmi.registry.Registry;
 
 public class Simulador {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws RemoteException {
         IdGenerator idgen = new IdGenerator();
         MapaZonas mapa = new MapaZonas();
         Refugio refugio = new Refugio();
@@ -25,12 +31,30 @@ public class Simulador {
             new Tunel(4, mapa)
         };
         
-        //GUI
+        ServidorRMI objRemoto = null;
+        try {
+            
+            objRemoto = new ServidorRMI(mapa);
+            // Crea e inicializa el registro RMI en el puerto 1099
+            LocateRegistry.createRegistry(1099);
+
+            // Registrar el objeto remoto en el registro
+            Naming.rebind("//localhost/objeto", objRemoto);
+            System.out.println("Servidor RMI listo.");
+
+        } catch (Exception e) {
+            System.err.println("Error en el servidor RMI: " + e.getMessage());
+            e.printStackTrace();
+            
+        }
+        
+        
+        // GUI
         ApocalipsisGUI gui = new ApocalipsisGUI();
         gui.setVisible(true);
         
         //Actualizador 
-        ActualizadorGUI act = new ActualizadorGUI(gui, mapa, tuneles, refugio);
+        ActualizadorGUI act = new ActualizadorGUI(gui, objRemoto, mapa, tuneles, refugio);
         mapa.setActualizador(act);
         refugio.setActualizador(act);
         for(Tunel tunel : tuneles){

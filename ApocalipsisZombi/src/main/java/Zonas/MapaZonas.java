@@ -55,6 +55,17 @@ public class MapaZonas {
         return zombisPorZona.get(z);
     }
     
+    public List<Zombi> getAllZombi(){
+        List<Zombi> todosZombi = new CopyOnWriteArrayList<>();
+        
+        todosZombi.addAll(zombisPorZona.get(Zona.RIESGO_1));
+        todosZombi.addAll(zombisPorZona.get(Zona.RIESGO_2));
+        todosZombi.addAll(zombisPorZona.get(Zona.RIESGO_3));
+        todosZombi.addAll(zombisPorZona.get(Zona.RIESGO_4));
+        
+        return todosZombi;
+    }
+    
     public synchronized void moverHumano(Humano h, Zona zonaOrigen, Zona zonaDestino) {
         humanosPorZona.get(zonaOrigen).remove(h);
         humanosPorZona.get(zonaDestino).add(h);
