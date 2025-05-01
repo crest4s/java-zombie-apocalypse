@@ -8,6 +8,7 @@ import java.net.MalformedURLException;
 import java.rmi.Naming;
 import java.rmi.NotBoundException;
 import java.rmi.RemoteException;
+import java.util.Map;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JOptionPane;
@@ -24,6 +25,7 @@ public class ClienteGUI extends javax.swing.JFrame {
     public ClienteGUI() {
         initComponents();
         conectarServidor();
+        iniciarActualizacionesPeriodicas();
     }
     
     public javax.swing.JTextField getTextRefugio() { return refugioTextField; }
@@ -55,8 +57,59 @@ public class ClienteGUI extends javax.swing.JFrame {
         }
     }
     
+    private void iniciarActualizacionesPeriodicas() {
+        new Thread(() -> {
+            while (true) {
+                try {
+                    if (servidor != null && servidor.necesitaActualizar()) {
+                        actualizarDatos();
+                    }
+                    Thread.sleep(100); 
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        }).start();
+    }
+
+    private void actualizarDatos() throws RemoteException {
+        // Actualizar humanos en refugio
+        refugioTextField.setText(String.valueOf(servidor.getHumanosRefugio()));
+        
+        // Actualizar humanos en túneles
+        int[] humanosTuneles = servidor.getHumanosTuneles();
+        tunel1TextField.setText(String.valueOf(humanosTuneles[0]));
+        tunel2TextField.setText(String.valueOf(humanosTuneles[1]));
+        tunel3TextField.setText(String.valueOf(humanosTuneles[2]));
+        tunel4TextField.setText(String.valueOf(humanosTuneles[3]));
+        
+        // Actualizar humanos en zonas de riesgo
+        int[] humanosRiesgo = servidor.getHumanosZonasRiesgo();
+        riesgo1HTextField.setText(String.valueOf(humanosRiesgo[0]));
+        riesgo2HTextField.setText(String.valueOf(humanosRiesgo[1]));
+        riesgo3HTextField.setText(String.valueOf(humanosRiesgo[2]));
+        riesgo4HTextField.setText(String.valueOf(humanosRiesgo[3]));
+        
+        // Actualizar zombis en zonas de riesgo
+        int[] zombisRiesgo = servidor.getZombisZonasRiesgo();
+        riesgo1ZTextField.setText(String.valueOf(zombisRiesgo[0]));
+        riesgo2ZTextField.setText(String.valueOf(zombisRiesgo[1]));
+        riesgo3ZTextField.setText(String.valueOf(zombisRiesgo[2]));
+        riesgo4ZTextField.setText(String.valueOf(zombisRiesgo[3]));
+        
+        // Actualizar top zombis letales
+        Map<String, Integer> topZombis = servidor.getTopZombisLetales();
+        StringBuilder sb = new StringBuilder();
+        for (Map.Entry<String, Integer> entry : topZombis.entrySet()) {
+            sb.append(entry.getKey()).append(": ").append(entry.getValue()).append("\n");
+        }
+        topZombisTextArea.setText(sb.toString());
+    }
+    
     public static void main (String[] args) throws RemoteException{
-        new ClienteGUI().setVisible(true);
+        java.awt.EventQueue.invokeLater(() -> {
+            new ClienteGUI().setVisible(true);
+        });
     }
     
     /**
@@ -168,7 +221,7 @@ public class ClienteGUI extends javax.swing.JFrame {
         tunel2TextField.setMaximumSize(new java.awt.Dimension(74, 26));
         tunel2TextField.setMinimumSize(new java.awt.Dimension(74, 26));
 
-        pauseResumeButton.setText("jButton1");
+        pauseResumeButton.setText("Pause");
         pauseResumeButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 pauseResumeButtonActionPerformed(evt);
@@ -287,7 +340,14 @@ public class ClienteGUI extends javax.swing.JFrame {
         try {
             // TODO add your handling code here:
             servidor.togglePausa();
-        } catch (RemoteException ex) {}
+            if (pauseResumeButton.getText().equals("Pausar")) {
+                pauseResumeButton.setText("Reanudar");
+            } else {
+                pauseResumeButton.setText("Pausar");
+            }
+        } catch (RemoteException ex) {
+            ex.printStackTrace();
+        }
     }//GEN-LAST:event_pauseResumeButtonActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

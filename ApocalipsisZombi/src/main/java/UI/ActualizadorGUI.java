@@ -2,9 +2,12 @@
 
     import Zonas.*;
     import Entidades.*;
+import java.rmi.RemoteException;
     import java.util.ArrayList;
     import java.util.List;
     import java.util.Queue;
+import java.util.logging.Level;
+import java.util.logging.Logger;
     import java.util.stream.Collectors;
     import javax.swing.SwingUtilities;
 import servidor.ServidorRMI;
@@ -39,35 +42,63 @@ import servidor.ServidorRMI;
                 switch (zona) {
                     case DESCANSO -> {
                         gui.getTextDescanso().setText(textoHumanos);
-                        objR.actualizarRefugio();
+                        try {
+                            objR.actualizarRefugio();
+                        } catch (RemoteException ex) {
+                            ex.printStackTrace();
+                        }
                     }
                     case COMEDOR -> {
                         gui.getTextComedor().setText(textoHumanos);
-                        objR.actualizarRefugio();
+                        try {
+                            objR.actualizarRefugio();
+                        } catch (RemoteException ex) {
+                            ex.printStackTrace();                        
+                        }
                     }
                     case ZONA_COMUN -> {
                         gui.getTextComun().setText(textoHumanos);
-                        objR.actualizarRefugio();
+                        try {
+                            objR.actualizarRefugio();
+                        } catch (RemoteException ex) {
+                            ex.printStackTrace();
+                        }
                     }
                     case RIESGO_1 -> {
                         gui.getTextRiesgoHumanos1().setText(textoHumanos);
                         gui.getTextRiesgoZombis1().setText(textoZombis);
-                        objR.actualizarRiesgo();
+                        try {
+                            objR.actualizarRiesgo();
+                        } catch (RemoteException ex) {
+                            ex.printStackTrace();
+                        }
                     }
                     case RIESGO_2 -> {
                         gui.getTextRiesgoHumanos2().setText(textoHumanos);
                         gui.getTextRiesgoZombis2().setText(textoZombis);
-                        objR.actualizarRiesgo();
+                        try {
+                            objR.actualizarRiesgo();
+                        } catch (RemoteException ex) {
+                            ex.printStackTrace();
+                        }
                     }
                     case RIESGO_3 -> {
                         gui.getTextRiesgoHumanos3().setText(textoHumanos);
                         gui.getTextRiesgoZombis3().setText(textoZombis);
-                        objR.actualizarRiesgo();
+                        try {
+                            objR.actualizarRiesgo();
+                        } catch (RemoteException ex) {
+                            ex.printStackTrace();
+                        }
                     }
                     case RIESGO_4 -> {
                         gui.getTextRiesgoHumanos4().setText(textoHumanos);
                         gui.getTextRiesgoZombis4().setText(textoZombis);
-                        objR.actualizarRiesgo();
+                        try {
+                            objR.actualizarRiesgo();
+                        } catch (RemoteException ex) {
+                            ex.printStackTrace();
+                        }
                     }
                     default -> {} // Nada si no aplica
                 }
@@ -110,22 +141,38 @@ import servidor.ServidorRMI;
                     case TUNEL_1 -> {
                         gui.getTextEsperaRefugio1().setText(textoRefugio);
                         gui.getTextEsperaRiesgo1().setText(textoRiesgo);
-                        objR.actualizarTunel();
+                        try {
+                            objR.actualizarTunel1(colaRefugio.size() + colaRiesgo.size());
+                        } catch (RemoteException ex) {
+                            ex.printStackTrace();
+                        }
                     }
                     case TUNEL_2 -> {
                         gui.getTextEsperaRefugio2().setText(textoRefugio);
                         gui.getTextEsperaRiesgo2().setText(textoRiesgo);
-                        objR.actualizarTunel();
+                        try {
+                            objR.actualizarTunel2(colaRefugio.size() + colaRiesgo.size());
+                        } catch (RemoteException ex) {
+                            ex.printStackTrace();
+                        }
                     }
                     case TUNEL_3 -> {
                         gui.getTextEsperaRefugio3().setText(textoRefugio);
                         gui.getTextEsperaRiesgo3().setText(textoRiesgo);
-                        objR.actualizarTunel();
+                        try {
+                            objR.actualizarTunel3(colaRefugio.size() + colaRiesgo.size());
+                        } catch (RemoteException ex) {
+                            ex.printStackTrace();
+                        }
                     }
                     case TUNEL_4 -> {
                         gui.getTextEsperaRefugio4().setText(textoRefugio);
                         gui.getTextEsperaRiesgo4().setText(textoRiesgo);
-                        objR.actualizarTunel();
+                        try {
+                            objR.actualizarTunel4(colaRefugio.size() + colaRiesgo.size());
+                        } catch (RemoteException ex) {
+                            ex.printStackTrace();
+                        }
                     }
                     default -> {} // Nada si no es túnel
                 }

@@ -24,8 +24,11 @@ public interface ServidorRemoto extends Remote{
     void togglePausa() throws RemoteException;
     
     // Métodos para actualizar la informacion cuando sea necesario
-    void actualizarRefugio() throws RemoteException;
-    void actualizarRiesgo() throws RemoteException;
-    void actualizarTunel() throws RemoteException;
+    int actualizarRefugio() throws RemoteException;
+    int[] actualizarRiesgo() throws RemoteException;
+    void actualizarTunel1(int i) throws RemoteException;
+    void actualizarTunel2(int i) throws RemoteException;
+    void actualizarTunel3(int i) throws RemoteException;
+    void actualizarTunel4(int i) throws RemoteException;
     boolean necesitaActualizar() throws RemoteException;
 }

@@ -398,7 +398,7 @@ public class ApocalipsisGUI extends javax.swing.JFrame{
                 botonPararActionPerformed(evt);
             }
         });
-        jPanel1.add(botonParar, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 50, -1, -1));
+        jPanel1.add(botonParar, new org.netbeans.lib.awtextra.AbsoluteConstraints(1200, 710, -1, -1));
 
         contadorComida.setEditable(false);
         contadorComida.setText("0   ");
@@ -466,7 +466,7 @@ public class ApocalipsisGUI extends javax.swing.JFrame{
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 751, Short.MAX_VALUE)
                 .addContainerGap())
         );
 

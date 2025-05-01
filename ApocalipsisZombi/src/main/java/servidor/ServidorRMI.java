@@ -15,29 +15,32 @@ import java.util.List;
 public class ServidorRMI extends UnicastRemoteObject implements ServidorRemoto{
     private final MapaZonas mapa;
     private boolean actualizacion;
+    private int[] extremoTuneles;
 
     public ServidorRMI(MapaZonas mapa) throws RemoteException {
         this.mapa = mapa;
         actualizacion = false;
+        extremoTuneles = new int[4];
     }
 
+    @Override
     public int getHumanosRefugio() throws RemoteException {
         return (mapa.humanosEnZona(Zona.DESCANSO).size()+mapa.humanosEnZona(Zona.COMEDOR).size()+mapa.humanosEnZona(Zona.ZONA_COMUN).size());
     }
     
-    //@Override
+    @Override
     public int[] getHumanosTuneles() throws RemoteException {
         int[] humTunel = new int[4];
         
-        humTunel[0] = mapa.humanosEnZona(Zona.TUNEL_1).size();
-        humTunel[1] = mapa.humanosEnZona(Zona.TUNEL_2).size();
-        humTunel[2] = mapa.humanosEnZona(Zona.TUNEL_3).size();
-        humTunel[3] = mapa.humanosEnZona(Zona.TUNEL_4).size();
+        humTunel[0] = mapa.humanosEnZona(Zona.TUNEL_1).size() + extremoTuneles[0];
+        humTunel[1] = mapa.humanosEnZona(Zona.TUNEL_2).size() + extremoTuneles[1];
+        humTunel[2] = mapa.humanosEnZona(Zona.TUNEL_3).size() + extremoTuneles[2];
+        humTunel[3] = mapa.humanosEnZona(Zona.TUNEL_4).size() + extremoTuneles[3];
         
         return humTunel;
     }
 
-    //@Override
+    @Override
     public int[] getHumanosZonasRiesgo() throws RemoteException {
         int[] humRiesgo = new int[4];
 
@@ -49,7 +52,7 @@ public class ServidorRMI extends UnicastRemoteObject implements ServidorRemoto{
         return humRiesgo;
     }
 
-    //@Override
+    @Override
     public int[] getZombisZonasRiesgo() throws RemoteException {
         int[] zombRiesgo = new int[4];
 
@@ -61,7 +64,7 @@ public class ServidorRMI extends UnicastRemoteObject implements ServidorRemoto{
         return zombRiesgo;
     }
 
-    //@Override
+    @Override
     public Map<String, Integer> getTopZombisLetales() throws RemoteException {
         Map<String, Integer> topZombis = new HashMap<>();
         
@@ -83,7 +86,7 @@ public class ServidorRMI extends UnicastRemoteObject implements ServidorRemoto{
                     ));
     }
 
-    //@Override
+    @Override
     public void togglePausa() throws RemoteException {
         PausaGlobal pausa = PausaGlobal.getInstance();
     
@@ -94,18 +97,51 @@ public class ServidorRMI extends UnicastRemoteObject implements ServidorRemoto{
         }
     }
     
-    public void actualizarRefugio() throws RemoteException{
-        
+    @Override
+    public int actualizarRefugio() throws RemoteException{
+        actualizacion = true;
+        return getHumanosRefugio();
     }
     
-    public void actualizarRiesgo() throws RemoteException{
-        
+    @Override
+    public int[] actualizarRiesgo() throws RemoteException{
+        actualizacion = true;
+        int[] humanosZombisRiesgo = new int[8];
+        for (int i = 0; i<8; i++){
+            if (i<4){
+                humanosZombisRiesgo[i] = getHumanosZonasRiesgo()[i];
+            } else {
+                humanosZombisRiesgo[i] = getZombisZonasRiesgo()[i-4];
+            }
+        }
+        return humanosZombisRiesgo;
     }
     
-    public void actualizarTunel() throws RemoteException{
-        
+    @Override
+    public void actualizarTunel1(int i) throws RemoteException{
+        actualizacion  = true;
+        extremoTuneles[0]=i;
     }
     
+    @Override
+    public void actualizarTunel2(int i) throws RemoteException{
+        actualizacion  = true;
+        extremoTuneles[1]=i;
+    }
+    
+    @Override
+    public void actualizarTunel3(int i) throws RemoteException{
+        actualizacion  = true;
+        extremoTuneles[2]=i;
+    }
+    
+    @Override
+    public void actualizarTunel4(int i) throws RemoteException{
+        actualizacion  = true;
+        extremoTuneles[3]=i;
+    }
+    
+    @Override
     public boolean necesitaActualizar() throws RemoteException{
         boolean act = actualizacion;
         if (act) {
