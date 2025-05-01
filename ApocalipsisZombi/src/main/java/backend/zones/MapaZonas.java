@@ -1,8 +1,8 @@
-package Zonas;
+package backend.zones;
 
-import Entidades.Zombi;
-import Entidades.Humano;
-import UI.ActualizadorGUI;
+import backend.entities.Zombi;
+import backend.entities.Humano;
+import backend.ui.ActualizadorGUI;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;

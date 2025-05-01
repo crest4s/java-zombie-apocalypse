@@ -1,15 +1,14 @@
-package Zonas;
+package backend.zones;
 
 import java.io.IOException;
 import java.util.concurrent.Semaphore;
-import Helpers.ApocalipsisLogger;
-import UI.ActualizadorGUI;
+import backend.utils.ApocalipsisLogger;
+import backend.ui.ActualizadorGUI;
 
 public class Refugio {
 
     private int cantidadComida;
     private final Semaphore semaforoComida;
-    private Zona[] zonasRefugio = {Zona.DESCANSO, Zona.COMEDOR, Zona.ZONA_COMUN};
     private ActualizadorGUI act;
     
     public Refugio(){

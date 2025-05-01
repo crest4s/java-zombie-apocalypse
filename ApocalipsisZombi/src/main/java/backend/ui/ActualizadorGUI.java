@@ -1,16 +1,19 @@
-    package UI;
+    package backend.ui;
 
-    import Zonas.*;
-    import Entidades.*;
+import frontend.ui.ApocalipsisGUI;
+import backend.zones.MapaZonas;
+import backend.zones.Zona;
+import backend.zones.Refugio;
+import backend.zones.Tunel;
+import backend.entities.Zombi;
+import backend.entities.Humano;
 import java.rmi.RemoteException;
-    import java.util.ArrayList;
-    import java.util.List;
-    import java.util.Queue;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-    import java.util.stream.Collectors;
-    import javax.swing.SwingUtilities;
-import servidor.ServidorRMI;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Queue;
+import java.util.stream.Collectors;
+import javax.swing.SwingUtilities;
+import backend.server.ServidorRMI;
 
     public class ActualizadorGUI {
         private final ApocalipsisGUI gui;

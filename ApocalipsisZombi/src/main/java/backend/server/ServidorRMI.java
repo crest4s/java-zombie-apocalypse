@@ -1,21 +1,21 @@
-package servidor;
+package backend.server;
 
-import Entidades.Zombi;
+import backend.entities.Zombi;
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.stream.Collectors;
-import Zonas.MapaZonas;
-import Helpers.PausaGlobal;
-import Zonas.Zona;
+import backend.zones.MapaZonas;
+import backend.utils.PausaGlobal;
+import backend.zones.Zona;
 import java.util.LinkedHashMap;
 import java.util.List;
 
 public class ServidorRMI extends UnicastRemoteObject implements ServidorRemoto{
     private final MapaZonas mapa;
     private boolean actualizacion;
-    private int[] extremoTuneles;
+    private final int[] extremoTuneles;
 
     public ServidorRMI(MapaZonas mapa) throws RemoteException {
         this.mapa = mapa;
@@ -140,7 +140,7 @@ public class ServidorRMI extends UnicastRemoteObject implements ServidorRemoto{
         actualizacion  = true;
         extremoTuneles[3]=i;
     }
-    
+        
     @Override
     public boolean necesitaActualizar() throws RemoteException{
         boolean act = actualizacion;

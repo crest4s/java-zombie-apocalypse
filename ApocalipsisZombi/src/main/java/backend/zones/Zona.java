@@ -1,4 +1,4 @@
-package Zonas;
+package backend.zones;
 
 public enum Zona {
     RIESGO_1, 

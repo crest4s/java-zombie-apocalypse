@@ -1,13 +1,5 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-package Helpers;
+package backend.utils;
 
-/**
- *
- * @author hugos
- */
 public class PausaGlobal {
     private static final PausaGlobal instancia = new PausaGlobal();
     private boolean pausado = false;

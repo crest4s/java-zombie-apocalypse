@@ -1,6 +1,6 @@
-package UI;
+package frontend.ui;
 
-import Helpers.PausaGlobal;
+import backend.utils.PausaGlobal;
 
 public class ApocalipsisGUI extends javax.swing.JFrame{
     private boolean running = true;

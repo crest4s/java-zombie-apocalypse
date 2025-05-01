@@ -1,20 +1,19 @@
-package programacion.avanzada.apocalipsiszombi;
+package backend.core;
 
-import servidor.ServidorRMI;
-import cliente.ClienteGUI;
-import Helpers.IdGenerator;
-import Zonas.MapaZonas;
-import Zonas.Tunel;
-import Zonas.Refugio;
-import Entidades.Zombi;
-import Entidades.Humano;
-import Helpers.PausaGlobal;
-import UI.ActualizadorGUI;
-import UI.ApocalipsisGUI;
+import backend.server.ServidorRMI;
+import backend.utils.IdGenerator;
+import backend.zones.MapaZonas;
+import backend.zones.Tunel;
+import backend.zones.Refugio;
+import backend.entities.Zombi;
+import backend.entities.Humano;
+import backend.utils.PausaGlobal;
+import backend.ui.ActualizadorGUI;
+import frontend.ui.ApocalipsisGUI;
+import java.net.MalformedURLException;
 import java.rmi.Naming;
 import java.rmi.RemoteException;
 import java.rmi.registry.LocateRegistry;
-import java.rmi.registry.Registry;
 
 public class Simulador {
 
@@ -42,10 +41,8 @@ public class Simulador {
             Naming.rebind("//localhost/objeto", objRemoto);
             System.out.println("Servidor RMI listo.");
 
-        } catch (Exception e) {
-            System.err.println("Error en el servidor RMI: " + e.getMessage());
-            e.printStackTrace();
-            
+        } catch (MalformedURLException | RemoteException e) {
+            System.err.println("Error en el servidor RMI: " + e.getMessage());            
         }
         
         

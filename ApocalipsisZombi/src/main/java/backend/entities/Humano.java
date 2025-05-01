@@ -1,15 +1,15 @@
-package Entidades;
+package backend.entities;
 
 import java.io.IOException;
 import java.util.Random;
 import java.util.concurrent.BrokenBarrierException;
-import Helpers.ApocalipsisLogger;
-import Helpers.IdGenerator;
-import Helpers.PausaGlobal;
-import Zonas.MapaZonas;
-import Zonas.Refugio;
-import Zonas.Tunel;
-import Zonas.Zona;
+import backend.utils.ApocalipsisLogger;
+import backend.utils.IdGenerator;
+import backend.utils.PausaGlobal;
+import backend.zones.MapaZonas;
+import backend.zones.Refugio;
+import backend.zones.Tunel;
+import backend.zones.Zona;
 
 public class Humano extends Thread {
     private final Refugio ref;

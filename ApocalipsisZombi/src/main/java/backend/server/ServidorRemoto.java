@@ -1,17 +1,9 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-package servidor;
+package backend.server;
 
 import java.rmi.Remote;
 import java.rmi.RemoteException;
 import java.util.Map;
 
-/**
- *
- * @author hugos
- */
 public interface ServidorRemoto extends Remote{
     // Métodos para obtener datos
     int getHumanosRefugio() throws RemoteException;

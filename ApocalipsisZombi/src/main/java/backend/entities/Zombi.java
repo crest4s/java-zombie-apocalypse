@@ -1,13 +1,13 @@
-package Entidades;
+package backend.entities;
 
 import java.io.IOException;
 import java.util.List;
 import java.util.Random;
-import Helpers.ApocalipsisLogger;
-import Helpers.IdGenerator;
-import Helpers.PausaGlobal;
-import Zonas.MapaZonas;
-import Zonas.Zona;
+import backend.utils.ApocalipsisLogger;
+import backend.utils.IdGenerator;
+import backend.utils.PausaGlobal;
+import backend.zones.MapaZonas;
+import backend.zones.Zona;
 
 public class Zombi extends Thread {
     private final String id;
@@ -15,7 +15,7 @@ public class Zombi extends Thread {
     private Zona zonaActual;
     private final Random random = new Random();
     private final MapaZonas mapa;
-    private IdGenerator idgen;
+    private final IdGenerator idgen;
 
     public Zombi(IdGenerator idgen, String humId, MapaZonas mapa) {
         this.id = idgen.nuevoIdZombi(humId);

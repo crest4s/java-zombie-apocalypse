@@ -1,14 +1,14 @@
-package Zonas;
+package backend.zones;
 
-import Entidades.Humano;
+import backend.entities.Humano;
 import java.io.IOException;
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.concurrent.BrokenBarrierException;
 import java.util.concurrent.CyclicBarrier;
 import java.util.concurrent.Semaphore;
-import Helpers.ApocalipsisLogger;
-import UI.ActualizadorGUI;
+import backend.utils.ApocalipsisLogger;
+import backend.ui.ActualizadorGUI;
 
 public class Tunel {
     private final int id;

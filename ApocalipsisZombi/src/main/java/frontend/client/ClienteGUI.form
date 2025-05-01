@@ -329,7 +329,7 @@
         </Component>
         <Component class="javax.swing.JButton" name="pauseResumeButton">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Pause"/>
+            <Property name="text" type="java.lang.String" value="Pausar"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="pauseResumeButtonActionPerformed"/>
