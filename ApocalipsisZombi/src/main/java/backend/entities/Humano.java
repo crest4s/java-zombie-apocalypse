@@ -38,50 +38,62 @@ public class Humano extends Thread {
         try {
             ApocalipsisLogger logger = ApocalipsisLogger.getInstance();
             while (!isInterrupted()) {
-                
                 setZonaActual(Zona.ZONA_COMUN);
                 logger.log("[" + id + "] preparándose para salir...");
                 sleepConPausa(sleepRandom(1000, 2000));
                 PausaGlobal.getInstance().esperarSiPausado();
-
+                
+                //Seleccion de tunel
                 int indiceTunel = random.nextInt(tuneles.length);
                 Tunel tunel = tuneles[indiceTunel];
 
+                //Entrada a tunel seleccionado
                 logger.log("[" + id + "] esperando en túnel " + tuneles[indiceTunel].getZona().name());
                 PausaGlobal.getInstance().esperarSiPausado();
                 tunel.esperarGrupoParaSalir(this);
                 
+                //Cruzar tunel
                 PausaGlobal.getInstance().esperarSiPausado();
                 tunel.entrarTunel(this, false);
                 sleepConPausa(1000);
+                
+                //Salir de tunel
                 PausaGlobal.getInstance().esperarSiPausado();
                 tunel.salirTunel(this);
                 PausaGlobal.getInstance().esperarSiPausado();
 
+                //Cambio a zona insegura
                 setZonaActual(tunel.getAreaInsegura());
                 logger.log("[" + id + "] explorando en " + zonaActual);
                 sleepConPausa(sleepRandom(3000, 5000));
                 PausaGlobal.getInstance().esperarSiPausado();
-
+                
+                //Comprobacion de ataque recibido
                 if (!haSidoAtacado) {
                     comidaRecolectada += 2;
                     logger.log("[" + id + "] recolectó 2 unidades de comida.");
                 }
                 
+                //Entrada a tunel para refugio
                 PausaGlobal.getInstance().esperarSiPausado();
                 tunel.entrarTunel(this, true);
                 sleepConPausa(1000);
+                
+                //Salida de tunel 
                 PausaGlobal.getInstance().esperarSiPausado();
                 tunel.salirTunel(this);
                 PausaGlobal.getInstance().esperarSiPausado();
 
+                //Guardar comida si es posible
                 if (comidaRecolectada > 0) {
                     ref.dejarComida(2, id);
                     comidaRecolectada = 0;
                 }
-
+                
+                //Se resetea el estado de atacado
                 haSidoAtacado = false;
                 
+                //
                 PausaGlobal.getInstance().esperarSiPausado();
                 setZonaActual(Zona.DESCANSO);
                 logger.log("[" + id + "] descansando...");

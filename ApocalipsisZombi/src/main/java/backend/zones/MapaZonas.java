@@ -2,7 +2,7 @@ package backend.zones;
 
 import backend.entities.Zombi;
 import backend.entities.Humano;
-import frontend.server.ActualizadorServerGUI;
+import frontend.server.ActualizadorGUI;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
@@ -11,7 +11,7 @@ import java.util.concurrent.CopyOnWriteArrayList;
 public class MapaZonas {
     private final Map<Zona, List<Humano>> humanosPorZona = new ConcurrentHashMap<>();
     private final Map<Zona, List<Zombi>> zombisPorZona = new ConcurrentHashMap<>();
-    private ActualizadorServerGUI act;
+    private ActualizadorGUI act;
 
     public MapaZonas() {
         for (Zona zona : Zona.values()) {
@@ -20,7 +20,7 @@ public class MapaZonas {
         }
     }
     
-    public void setActualizador(ActualizadorServerGUI act){
+    public void setActualizador(ActualizadorGUI act){
         this.act = act;
     }
     

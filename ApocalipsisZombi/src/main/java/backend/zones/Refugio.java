@@ -3,20 +3,20 @@ package backend.zones;
 import java.io.IOException;
 import java.util.concurrent.Semaphore;
 import backend.utils.ApocalipsisLogger;
-import frontend.server.ActualizadorServerGUI;
+import frontend.server.ActualizadorGUI;
 
 public class Refugio {
 
     private int cantidadComida;
     private final Semaphore semaforoComida;
-    private ActualizadorServerGUI act;
+    private ActualizadorGUI act;
     
     public Refugio(){
         this.cantidadComida = 0;
         this.semaforoComida = new Semaphore(1);
     }
     
-    public void setActualizador(ActualizadorServerGUI act){
+    public void setActualizador(ActualizadorGUI act){
         this.act = act;
     }
     

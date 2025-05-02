@@ -2,10 +2,10 @@ package frontend.server;
 
 import backend.utils.PausaGlobal;
 
-public class ServerGUI extends javax.swing.JFrame{
+public class ApocalipsisGUI extends javax.swing.JFrame{
     private boolean running = true;
 
-    public ServerGUI() {
+    public ApocalipsisGUI() {
         initComponents();
     }
 
