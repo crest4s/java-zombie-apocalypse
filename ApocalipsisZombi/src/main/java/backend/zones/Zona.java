@@ -1,5 +1,9 @@
 package backend.zones;
 
+/**
+ * Enumeración que representa todas las zonas posibles dentro del mapa del simulador apocalíptico.
+ * Incluye zonas seguras, túneles de acceso y zonas de riesgo donde se producen los ataques.
+ */
 public enum Zona {
     RIESGO_1, 
     RIESGO_2, 

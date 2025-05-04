@@ -6,15 +6,31 @@ import java.rmi.RemoteException;
 import java.util.Map;
 import javax.swing.SwingUtilities;
 
+/**
+ * Clase responsable de actualizar periódicamente la interfaz gráfica del cliente
+ * en función de los datos obtenidos desde el servidor RMI.
+ * Se ejecuta en un hilo separado.
+ */
 public class ActualizadorClienteGUI implements Runnable {
     private final ClienteGUI gui;
     private final ServidorRemoto servidor;
 
+    /**
+     * Constructor que inicializa la GUI del cliente y la conexión al servidor.
+     *
+     * @param gui interfaz gráfica del cliente
+     * @param servidor referencia remota al servidor RMI
+     */
     public ActualizadorClienteGUI(ClienteGUI gui, ServidorRemoto servidor) {
         this.gui = gui;
         this.servidor = servidor;
     }
 
+    /**
+     * Bucle principal del hilo.
+     * Consulta periódicamente al servidor para verificar si hay datos nuevos.
+     * Si los hay, actualiza la interfaz gráfica con la información más reciente.
+     */
     @Override
     public void run() {
         while (true) {
@@ -30,6 +46,11 @@ public class ActualizadorClienteGUI implements Runnable {
         }
     }
 
+    /**
+     * Obtiene los datos del servidor y actualiza la GUI en el hilo de eventos de Swing.
+     *
+     * @throws RemoteException si ocurre un error al comunicarse con el servidor RMI
+     */
     private void actualizarDatos() throws RemoteException {
         int refugio = servidor.getHumanosRefugio();
         int[] tuneles = servidor.getHumanosTuneles();

@@ -11,6 +11,10 @@ import backend.zones.Refugio;
 import backend.zones.Tunel;
 import backend.zones.Zona;
 
+/**
+ * Representa a un humano dentro del mundo post-apocalíptico.
+ * Cada humano es un hilo que sigue un ciclo de exploración, recolección y descanso.
+ */
 public class Humano extends Thread {
     private final Refugio ref;
     private final Tunel[] tuneles;
@@ -21,7 +25,15 @@ public class Humano extends Thread {
     private final Random random = new Random();
     private final MapaZonas mapa;
     private int comidaRecolectada;
-
+    
+    /**
+     * Crea una nueva instancia de humano
+     * 
+     * @param idgen
+     * @param ref
+     * @param tuneles
+     * @param mapa 
+     */
     public Humano(IdGenerator idgen, Refugio ref, Tunel[] tuneles, MapaZonas mapa) {
         this.ref = ref;
         this.tuneles = tuneles;
@@ -33,6 +45,10 @@ public class Humano extends Thread {
         this.comidaRecolectada = 0;
     }
 
+    /**
+     * Lógica principal del hilo. Simula el ciclo de vida de un humano:
+     * salir del refugio, explorar, recolectar comida, regresar, comer y descansar.
+     */
     @Override
     public void run() {
         try {
@@ -126,6 +142,11 @@ public class Humano extends Thread {
         } catch (IOException e) {}
     }
 
+    /**
+     * Cambia la zona actual del humano y actualiza el mapa.
+     * 
+     * @param nuevaZona nueva zona a la que se moverá el humano
+     */
     public void setZonaActual(Zona nuevaZona) {
         synchronized(this) {
             Zona zonaAnterior = this.zonaActual;
@@ -134,14 +155,30 @@ public class Humano extends Thread {
         }
     }
 
+    /**
+     * Obtiene la zona actual en la que se encuentra el humano.
+     * 
+     * @return zona actual
+     */
     public Zona getZonaActual() {
         return zonaActual;
     }
-
+    
+    /**
+     * Devuelve el identificador único del humano.
+     * 
+     * @return id del humano
+     */
     public String getIdHumano() {
         return id;
     }
 
+    /**
+     * Simula un ataque de un zombi al humano.
+     * 
+     * @return true si el humano fue eliminado, false si sobrevivió
+     * @throws IOException si falla el log
+     */
     public synchronized boolean serAtacado() throws IOException {
         ApocalipsisLogger logger = ApocalipsisLogger.getInstance();
         if (this.isInterrupted()) return false;
@@ -167,10 +204,24 @@ public class Humano extends Thread {
         }
     }
 
+    /**
+     * Genera un tiempo de espera aleatorio dentro de un rango.
+     * 
+     * @param min mínimo en milisegundos
+     * @param max máximo en milisegundos
+     * @return duración aleatoria en milisegundos
+     * @throws InterruptedException si el hilo es interrumpido
+     */
     private int sleepRandom(int min, int max) throws InterruptedException {
         return min + random.nextInt(max - min + 1);
     }
     
+    /**
+     * Realiza una pausa con control de pausa global.
+     * 
+     * @param duracionTotal duración total de la pausa en milisegundos
+     * @throws InterruptedException si el hilo es interrumpido
+     */
     public void sleepConPausa(long duracionTotal) throws InterruptedException {
         long tiempoRestante = duracionTotal;
         long inicio = System.currentTimeMillis();

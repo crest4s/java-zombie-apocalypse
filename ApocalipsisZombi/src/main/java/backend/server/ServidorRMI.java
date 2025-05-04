@@ -12,22 +12,44 @@ import backend.zones.Zona;
 import java.util.LinkedHashMap;
 import java.util.List;
 
+/**
+ * Implementación del servidor remoto usando RMI para la simulación apocalíptica.
+ * Permite consultar y actualizar el estado del sistema desde el cliente.
+ */
 public class ServidorRMI extends UnicastRemoteObject implements ServidorRemoto{
     private final MapaZonas mapa;
     private boolean actualizacion;
     private final int[] extremoTuneles;
 
+    /**
+     * Constructor del servidor RMI.
+     *
+     * @param mapa instancia del mapa de zonas compartido
+     * @throws RemoteException si ocurre un error de conexión remota
+     */
     public ServidorRMI(MapaZonas mapa) throws RemoteException {
         this.mapa = mapa;
         actualizacion = false;
         extremoTuneles = new int[4];
     }
-
+    
+    /**
+     * Devuelve el total de humanos que están dentro del refugio (zonas internas).
+     *
+     * @throws RemoteException 
+     * @return número total de humanos en el refugio
+     */
     @Override
     public int getHumanosRefugio() throws RemoteException {
         return (mapa.humanosEnZona(Zona.DESCANSO).size()+mapa.humanosEnZona(Zona.COMEDOR).size()+mapa.humanosEnZona(Zona.ZONA_COMUN).size());
     }
     
+    /**
+     * Devuelve la cantidad de humanos presentes en cada túnel (considerando ambos extremos).
+     *
+     * @throws RemoteException 
+     * @return array de 4 posiciones, una por túnel
+     */
     @Override
     public int[] getHumanosTuneles() throws RemoteException {
         int[] humTunel = new int[4];
@@ -40,6 +62,11 @@ public class ServidorRMI extends UnicastRemoteObject implements ServidorRemoto{
         return humTunel;
     }
 
+    /**
+     * Devuelve el número de humanos presentes en cada zona de riesgo.
+     *
+     * @return array de 4 posiciones correspondientes a las zonas de riesgo
+     */
     @Override
     public int[] getHumanosZonasRiesgo() throws RemoteException {
         int[] humRiesgo = new int[4];
@@ -52,6 +79,12 @@ public class ServidorRMI extends UnicastRemoteObject implements ServidorRemoto{
         return humRiesgo;
     }
 
+    /**
+     * Devuelve el número de zombis presentes en cada zona de riesgo.
+     * 
+     * @throws RemoteException 
+     * @return array de 4 posiciones correspondientes a las zonas de riesgo
+     */
     @Override
     public int[] getZombisZonasRiesgo() throws RemoteException {
         int[] zombRiesgo = new int[4];
@@ -63,6 +96,13 @@ public class ServidorRMI extends UnicastRemoteObject implements ServidorRemoto{
 
         return zombRiesgo;
     }
+
+    /**
+     * Devuelve el top 3 de zombis más letales (por número de muertes).
+     * 
+     * @throws RemoteException 
+     * @return mapa con IDs de zombis y número de muertes, ordenado descendentemente
+     */
 
     @Override
     public Map<String, Integer> getTopZombisLetales() throws RemoteException {
@@ -86,6 +126,14 @@ public class ServidorRMI extends UnicastRemoteObject implements ServidorRemoto{
                     ));
     }
 
+    /**
+     */
+    
+    /**
+     * Activa o desactiva la pausa global en la simulación.
+     * 
+     * @throws RemoteException 
+     */
     @Override
     public void togglePausa() throws RemoteException {
         PausaGlobal pausa = PausaGlobal.getInstance();
@@ -97,12 +145,23 @@ public class ServidorRMI extends UnicastRemoteObject implements ServidorRemoto{
         }
     }
     
+    /**
+     * Señaliza que se necesita actualizar el estado del refugio y devuelve el total actual.
+     * 
+     * @throws RemoteException 
+     */
     @Override
     public int actualizarRefugio() throws RemoteException{
         actualizacion = true;
         return getHumanosRefugio();
     }
     
+    /**
+     * Señaliza que se necesita actualizar las zonas de riesgo y devuelve humanos y zombis.
+     *
+     * @return array de 8 posiciones: 4 primeros para humanos, 4 últimos para zombis
+     * @throws RemoteException 
+     */
     @Override
     public int[] actualizarRiesgo() throws RemoteException{
         actualizacion = true;
@@ -117,30 +176,59 @@ public class ServidorRMI extends UnicastRemoteObject implements ServidorRemoto{
         return humanosZombisRiesgo;
     }
     
+    /**
+     * Actualiza el conteo de humanos en el extremo del túnel 1.
+     * 
+     * @param i
+     * @throws RemoteException 
+     */
     @Override
     public void actualizarTunel1(int i) throws RemoteException{
         actualizacion  = true;
         extremoTuneles[0]=i;
     }
     
+    /**
+     * Actualiza el conteo de humanos en el extremo del túnel 2.
+     * 
+     * @param i
+     * @throws RemoteException 
+     */
     @Override
     public void actualizarTunel2(int i) throws RemoteException{
         actualizacion  = true;
         extremoTuneles[1]=i;
     }
     
+    /**
+     * Actualiza el conteo de humanos en el extremo del túnel 3.
+     * 
+     * @param i
+     * @throws RemoteException 
+     */
     @Override
     public void actualizarTunel3(int i) throws RemoteException{
         actualizacion  = true;
         extremoTuneles[2]=i;
     }
     
+    /**
+     * Actualiza el conteo de humanos en el extremo del túnel 4.
+     * 
+     * @param i
+     * @throws RemoteException 
+     */
     @Override
     public void actualizarTunel4(int i) throws RemoteException{
         actualizacion  = true;
         extremoTuneles[3]=i;
     }
-        
+    /**
+     * Indica si hay datos nuevos que requieren actualización en la interfaz.
+     * 
+     * @return true si se ha solicitado actualización, false en caso contrario
+     * @throws RemoteException 
+     */
     @Override
     public boolean necesitaActualizar() throws RemoteException{
         boolean act = actualizacion;

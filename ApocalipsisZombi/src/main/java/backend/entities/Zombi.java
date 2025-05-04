@@ -9,6 +9,10 @@ import backend.utils.PausaGlobal;
 import backend.zones.MapaZonas;
 import backend.zones.Zona;
 
+/**
+ * Representa a un zombi en el simulador apocalíptico.
+ * Cada zombi es un hilo que se mueve por zonas inseguras y ataca a humanos.
+ */
 public class Zombi extends Thread {
     private final String id;
     private int muertes;
@@ -17,6 +21,13 @@ public class Zombi extends Thread {
     private final MapaZonas mapa;
     private final IdGenerator idgen;
 
+    /**
+     * Crea un nuevo zombi a partir de un humano convertido.
+     * 
+     * @param idgen generador de IDs
+     * @param humId ID del humano del que proviene
+     * @param mapa referencia al mapa de zonas
+     */
     public Zombi(IdGenerator idgen, String humId, MapaZonas mapa) {
         this.id = idgen.nuevoIdZombi(humId);
         this.idgen = idgen;
@@ -24,6 +35,12 @@ public class Zombi extends Thread {
         this.muertes = 0;
     }
 
+    /**
+     * Crea un zombi base con ID fijo "Z0000".
+     * 
+     * @param mapa referencia al mapa de zonas
+     * @param idgen generador de IDs
+     */
     public Zombi(MapaZonas mapa, IdGenerator idgen) {
         this.id = "Z0000";
         this.idgen = idgen;
@@ -31,6 +48,10 @@ public class Zombi extends Thread {
         this.muertes = 0;
     }
 
+    /**
+     * Lógica principal del hilo zombi. Se mueve por zonas de riesgo,
+     * busca humanos, los ataca y convierte si es posible.
+     */
     @Override
     public void run() {
         try {
@@ -72,10 +93,23 @@ public class Zombi extends Thread {
         }
     }
 
+    /**
+     * Genera un valor aleatorio de duración en milisegundos.
+     *
+     * @param min tiempo mínimo
+     * @param max tiempo máximo
+     * @return duración aleatoria
+     */
     private int sleepRandom(int min, int max) throws InterruptedException {
         return min + random.nextInt(max - min + 1);
     }
     
+    /**
+     * Pausa el hilo durante el tiempo indicado, respetando la pausa global.
+     *
+     * @param duracionTotal duración total en milisegundos
+     * @throws InterruptedException si el hilo es interrumpido
+     */
     public void sleepConPausa(long duracionTotal) throws InterruptedException {
         long tiempoRestante = duracionTotal;
         long inicio = System.currentTimeMillis();
@@ -99,6 +133,11 @@ public class Zombi extends Thread {
         }
     }
 
+    /**
+     * Cambia la zona actual del zombi y actualiza su posición en el mapa.
+     *
+     * @param zona nueva zona a la que se mueve el zombi
+     */
     public void setZonaActual(Zona zona) {
         if (this.zonaActual != null) {
             mapa.quitarZombiZona(this, this.zonaActual);
@@ -107,18 +146,41 @@ public class Zombi extends Thread {
         mapa.guardarZombi(this, zona);
     }
 
+    /**
+     * Devuelve la zona actual del zombi.
+     *
+     * @return zona en la que se encuentra el zombi
+     */
     public Zona getZonaActual() {
         return zonaActual;
     }
     
+    /**
+     * Devuelve el número total de humanos eliminados por este zombi.
+     *
+     * @return cantidad de muertes
+     */
     public int getMuertes(){
         return muertes;
     }
 
+    /**
+     * Devuelve el identificador único del zombi.
+     *
+     * @return ID del zombi
+     */
     public String getIdZombi() {
         return id;
     }
 
+    /**
+     * Convierte un humano muerto en un nuevo zombi.
+     *
+     * @param h humano a convertir
+     * @return nueva instancia de zombi creada a partir del humano
+     * @throws IOException si falla al escribir en el log
+     * @throws InterruptedException si el hilo del humano no puede unirse
+     */
     private Zombi convertirEnZombi(Humano h) throws IOException, InterruptedException {
         if (h.getIdHumano().startsWith("Z")) return null;
         Zombi nuevo = new Zombi(idgen, h.getIdHumano(), mapa);
