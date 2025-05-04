@@ -125,15 +125,26 @@ public class ApocalipsisGUI extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         botonParar = new javax.swing.JButton();
-        contadorComida = new javax.swing.JTextField();
-        jLabel4 = new javax.swing.JLabel();
         tunel1 = new javax.swing.JTextField();
         tunel2 = new javax.swing.JTextField();
         tunel3 = new javax.swing.JTextField();
         tunel4 = new javax.swing.JTextField();
         jPanel2 = new javax.swing.JPanel();
-        jPanel4 = new javax.swing.JPanel();
-        jPanel6 = new javax.swing.JPanel();
+        jLabel5 = new javax.swing.JLabel();
+        contadorComida = new javax.swing.JTextField();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        jPanel3 = new javax.swing.JPanel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jPanel5 = new javax.swing.JPanel();
+        jLabel12 = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
+        jLabel15 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Apocalipsis Zombie");
@@ -147,6 +158,7 @@ public class ApocalipsisGUI extends javax.swing.JFrame {
 
         textDescanso.setEditable(false);
         textDescanso.setColumns(20);
+        textDescanso.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         textDescanso.setLineWrap(true);
         textDescanso.setRows(5);
         textDescanso.setWrapStyleWord(true);
@@ -161,6 +173,7 @@ public class ApocalipsisGUI extends javax.swing.JFrame {
 
         textComedor.setEditable(false);
         textComedor.setColumns(20);
+        textComedor.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         textComedor.setLineWrap(true);
         textComedor.setRows(5);
         textComedor.setWrapStyleWord(true);
@@ -175,6 +188,7 @@ public class ApocalipsisGUI extends javax.swing.JFrame {
 
         textComun.setEditable(false);
         textComun.setColumns(20);
+        textComun.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         textComun.setLineWrap(true);
         textComun.setRows(5);
         textComun.setWrapStyleWord(true);
@@ -189,13 +203,14 @@ public class ApocalipsisGUI extends javax.swing.JFrame {
 
         textEsperaRefugio1.setEditable(false);
         textEsperaRefugio1.setColumns(20);
+        textEsperaRefugio1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         textEsperaRefugio1.setLineWrap(true);
         textEsperaRefugio1.setRows(5);
         textEsperaRefugio1.setWrapStyleWord(true);
         textEsperaRefugio1.setFocusable(false);
         refugioTunel1.setViewportView(textEsperaRefugio1);
 
-        jPanel1.add(refugioTunel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 140, 140, 100));
+        jPanel1.add(refugioTunel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 140, 140, 100));
 
         refugioTunel2.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         refugioTunel2.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
@@ -203,13 +218,14 @@ public class ApocalipsisGUI extends javax.swing.JFrame {
 
         textEsperaRefugio2.setEditable(false);
         textEsperaRefugio2.setColumns(20);
+        textEsperaRefugio2.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         textEsperaRefugio2.setLineWrap(true);
         textEsperaRefugio2.setRows(5);
         textEsperaRefugio2.setWrapStyleWord(true);
         textEsperaRefugio2.setFocusable(false);
         refugioTunel2.setViewportView(textEsperaRefugio2);
 
-        jPanel1.add(refugioTunel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 280, 140, 100));
+        jPanel1.add(refugioTunel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 280, 140, 100));
 
         refugioTunel3.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         refugioTunel3.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
@@ -217,13 +233,14 @@ public class ApocalipsisGUI extends javax.swing.JFrame {
 
         textEsperaRefugio3.setEditable(false);
         textEsperaRefugio3.setColumns(20);
+        textEsperaRefugio3.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         textEsperaRefugio3.setLineWrap(true);
         textEsperaRefugio3.setRows(5);
         textEsperaRefugio3.setWrapStyleWord(true);
         textEsperaRefugio3.setFocusable(false);
         refugioTunel3.setViewportView(textEsperaRefugio3);
 
-        jPanel1.add(refugioTunel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 420, 140, 100));
+        jPanel1.add(refugioTunel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 420, 140, 100));
 
         riesgoTunel1.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         riesgoTunel1.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
@@ -231,13 +248,14 @@ public class ApocalipsisGUI extends javax.swing.JFrame {
 
         textEsperaRiesgo1.setEditable(false);
         textEsperaRiesgo1.setColumns(20);
+        textEsperaRiesgo1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         textEsperaRiesgo1.setLineWrap(true);
         textEsperaRiesgo1.setRows(5);
         textEsperaRiesgo1.setWrapStyleWord(true);
         textEsperaRiesgo1.setFocusable(false);
         riesgoTunel1.setViewportView(textEsperaRiesgo1);
 
-        jPanel1.add(riesgoTunel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 140, 140, 100));
+        jPanel1.add(riesgoTunel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 140, 140, 100));
 
         riesgoHumanos1.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         riesgoHumanos1.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
@@ -245,6 +263,7 @@ public class ApocalipsisGUI extends javax.swing.JFrame {
 
         textRiesgoHumanos1.setEditable(false);
         textRiesgoHumanos1.setColumns(20);
+        textRiesgoHumanos1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         textRiesgoHumanos1.setLineWrap(true);
         textRiesgoHumanos1.setRows(5);
         textRiesgoHumanos1.setWrapStyleWord(true);
@@ -259,13 +278,14 @@ public class ApocalipsisGUI extends javax.swing.JFrame {
 
         textEsperaRiesgo2.setEditable(false);
         textEsperaRiesgo2.setColumns(20);
+        textEsperaRiesgo2.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         textEsperaRiesgo2.setLineWrap(true);
         textEsperaRiesgo2.setRows(5);
         textEsperaRiesgo2.setWrapStyleWord(true);
         textEsperaRiesgo2.setFocusable(false);
         riesgoTunel2.setViewportView(textEsperaRiesgo2);
 
-        jPanel1.add(riesgoTunel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 280, 140, 100));
+        jPanel1.add(riesgoTunel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 280, 140, 100));
 
         riesgoTunel3.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         riesgoTunel3.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
@@ -273,13 +293,14 @@ public class ApocalipsisGUI extends javax.swing.JFrame {
 
         textEsperaRiesgo3.setEditable(false);
         textEsperaRiesgo3.setColumns(20);
+        textEsperaRiesgo3.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         textEsperaRiesgo3.setLineWrap(true);
         textEsperaRiesgo3.setRows(5);
         textEsperaRiesgo3.setWrapStyleWord(true);
         textEsperaRiesgo3.setFocusable(false);
         riesgoTunel3.setViewportView(textEsperaRiesgo3);
 
-        jPanel1.add(riesgoTunel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 420, 140, 100));
+        jPanel1.add(riesgoTunel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 420, 140, 100));
 
         riesgoHumanos2.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         riesgoHumanos2.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
@@ -287,6 +308,7 @@ public class ApocalipsisGUI extends javax.swing.JFrame {
 
         textRiesgoHumanos2.setEditable(false);
         textRiesgoHumanos2.setColumns(20);
+        textRiesgoHumanos2.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         textRiesgoHumanos2.setLineWrap(true);
         textRiesgoHumanos2.setRows(5);
         textRiesgoHumanos2.setWrapStyleWord(true);
@@ -301,6 +323,7 @@ public class ApocalipsisGUI extends javax.swing.JFrame {
 
         textRiesgoHumanos3.setEditable(false);
         textRiesgoHumanos3.setColumns(20);
+        textRiesgoHumanos3.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         textRiesgoHumanos3.setLineWrap(true);
         textRiesgoHumanos3.setRows(5);
         textRiesgoHumanos3.setWrapStyleWord(true);
@@ -315,6 +338,7 @@ public class ApocalipsisGUI extends javax.swing.JFrame {
 
         textRiesgoZombis3.setEditable(false);
         textRiesgoZombis3.setColumns(20);
+        textRiesgoZombis3.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         textRiesgoZombis3.setLineWrap(true);
         textRiesgoZombis3.setRows(5);
         textRiesgoZombis3.setWrapStyleWord(true);
@@ -329,6 +353,7 @@ public class ApocalipsisGUI extends javax.swing.JFrame {
 
         textRiesgoZombis2.setEditable(false);
         textRiesgoZombis2.setColumns(20);
+        textRiesgoZombis2.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         textRiesgoZombis2.setLineWrap(true);
         textRiesgoZombis2.setRows(5);
         textRiesgoZombis2.setWrapStyleWord(true);
@@ -343,6 +368,7 @@ public class ApocalipsisGUI extends javax.swing.JFrame {
 
         textRiesgoZombis1.setEditable(false);
         textRiesgoZombis1.setColumns(20);
+        textRiesgoZombis1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         textRiesgoZombis1.setLineWrap(true);
         textRiesgoZombis1.setRows(5);
         textRiesgoZombis1.setWrapStyleWord(true);
@@ -357,13 +383,14 @@ public class ApocalipsisGUI extends javax.swing.JFrame {
 
         textEsperaRefugio4.setEditable(false);
         textEsperaRefugio4.setColumns(20);
+        textEsperaRefugio4.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         textEsperaRefugio4.setLineWrap(true);
         textEsperaRefugio4.setRows(5);
         textEsperaRefugio4.setWrapStyleWord(true);
         textEsperaRefugio4.setFocusable(false);
         refugioTunel4.setViewportView(textEsperaRefugio4);
 
-        jPanel1.add(refugioTunel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 560, 140, 100));
+        jPanel1.add(refugioTunel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 560, 140, 100));
 
         riesgoTunel4.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         riesgoTunel4.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
@@ -371,13 +398,14 @@ public class ApocalipsisGUI extends javax.swing.JFrame {
 
         textEsperaRiesgo4.setEditable(false);
         textEsperaRiesgo4.setColumns(20);
+        textEsperaRiesgo4.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         textEsperaRiesgo4.setLineWrap(true);
         textEsperaRiesgo4.setRows(5);
         textEsperaRiesgo4.setWrapStyleWord(true);
         textEsperaRiesgo4.setFocusable(false);
         riesgoTunel4.setViewportView(textEsperaRiesgo4);
 
-        jPanel1.add(riesgoTunel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 560, 140, 100));
+        jPanel1.add(riesgoTunel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 560, 140, 100));
 
         riesgoHumanos4.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         riesgoHumanos4.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
@@ -385,6 +413,7 @@ public class ApocalipsisGUI extends javax.swing.JFrame {
 
         textRiesgoHumanos4.setEditable(false);
         textRiesgoHumanos4.setColumns(20);
+        textRiesgoHumanos4.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         textRiesgoHumanos4.setLineWrap(true);
         textRiesgoHumanos4.setRows(5);
         textRiesgoHumanos4.setWrapStyleWord(true);
@@ -399,6 +428,7 @@ public class ApocalipsisGUI extends javax.swing.JFrame {
 
         textRiesgoZombis4.setEditable(false);
         textRiesgoZombis4.setColumns(20);
+        textRiesgoZombis4.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         textRiesgoZombis4.setLineWrap(true);
         textRiesgoZombis4.setRows(5);
         textRiesgoZombis4.setWrapStyleWord(true);
@@ -408,31 +438,91 @@ public class ApocalipsisGUI extends javax.swing.JFrame {
         jPanel1.add(riesgoZombi4, new org.netbeans.lib.awtextra.AbsoluteConstraints(1130, 560, 110, 100));
 
         jLabel1.setFont(new java.awt.Font("Unispace", 0, 24)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(0, 0, 0));
         jLabel1.setText("Refugio");
         jLabel1.setFocusable(false);
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 70, -1, -1));
 
         jLabel2.setFont(new java.awt.Font("Unispace", 0, 24)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(0, 0, 0));
         jLabel2.setText("Túneles");
         jLabel2.setFocusable(false);
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 70, -1, -1));
 
         jLabel3.setFont(new java.awt.Font("Unispace", 0, 24)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(0, 0, 0));
         jLabel3.setText("Zona de riesgo");
         jLabel3.setFocusable(false);
         jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(1000, 70, -1, -1));
 
+        botonParar.setBackground(new java.awt.Color(204, 0, 0));
+        botonParar.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        botonParar.setForeground(new java.awt.Color(255, 255, 255));
         botonParar.setText("Parar");
         botonParar.setActionCommand("pararButton");
+        botonParar.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         botonParar.setFocusable(false);
+        botonParar.setPreferredSize(new java.awt.Dimension(47, 26));
         botonParar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 botonPararActionPerformed(evt);
             }
         });
-        jPanel1.add(botonParar, new org.netbeans.lib.awtextra.AbsoluteConstraints(1200, 710, -1, -1));
+        jPanel1.add(botonParar, new org.netbeans.lib.awtextra.AbsoluteConstraints(1170, 730, 90, 50));
+
+        tunel1.setEditable(false);
+        tunel1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        tunel1.setText("                  ");
+        tunel1.setToolTipText("");
+        tunel1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        tunel1.setFocusable(false);
+        tunel1.setMaximumSize(new java.awt.Dimension(71, 22));
+        tunel1.setMinimumSize(new java.awt.Dimension(71, 22));
+        tunel1.setPreferredSize(new java.awt.Dimension(71, 22));
+        jPanel1.add(tunel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 180, -1, -1));
+
+        tunel2.setEditable(false);
+        tunel2.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        tunel2.setText("                     ");
+        tunel2.setToolTipText("");
+        tunel2.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        tunel2.setFocusable(false);
+        tunel2.setMaximumSize(null);
+        tunel2.setPreferredSize(new java.awt.Dimension(71, 22));
+        jPanel1.add(tunel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 320, -1, -1));
+
+        tunel3.setEditable(false);
+        tunel3.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        tunel3.setText("                     ");
+        tunel3.setToolTipText("");
+        tunel3.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        tunel3.setFocusable(false);
+        tunel3.setMaximumSize(null);
+        tunel3.setPreferredSize(new java.awt.Dimension(71, 22));
+        jPanel1.add(tunel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 460, -1, -1));
+
+        tunel4.setEditable(false);
+        tunel4.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        tunel4.setText("                      ");
+        tunel4.setToolTipText("");
+        tunel4.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        tunel4.setFocusable(false);
+        tunel4.setMaximumSize(null);
+        tunel4.setPreferredSize(new java.awt.Dimension(71, 22));
+        jPanel1.add(tunel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 600, -1, -1));
+
+        jPanel2.setBackground(new java.awt.Color(153, 153, 153));
+        jPanel2.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
+        jPanel2.setForeground(new java.awt.Color(153, 153, 153));
+        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel5.setText("Zona descanso");
+        jPanel2.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, -1, -1));
 
         contadorComida.setEditable(false);
+        contadorComida.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         contadorComida.setText("0   ");
         contadorComida.setFocusable(false);
         contadorComida.setMaximumSize(null);
@@ -442,109 +532,89 @@ public class ApocalipsisGUI extends javax.swing.JFrame {
                 contadorComidaActionPerformed(evt);
             }
         });
-        jPanel1.add(contadorComida, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 340, -1, -1));
+        jPanel2.add(contadorComida, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 260, -1, -1));
 
+        jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("Comida");
         jLabel4.setFocusable(false);
-        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 310, -1, -1));
+        jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 240, -1, -1));
 
-        tunel1.setEditable(false);
-        tunel1.setText("                  ");
-        tunel1.setToolTipText("");
-        tunel1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        tunel1.setFocusable(false);
-        tunel1.setMaximumSize(new java.awt.Dimension(71, 22));
-        tunel1.setMinimumSize(new java.awt.Dimension(71, 22));
-        tunel1.setPreferredSize(new java.awt.Dimension(71, 22));
-        jPanel1.add(tunel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 180, -1, -1));
+        jLabel10.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel10.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel10.setText("Comedor");
+        jPanel2.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 170, -1, -1));
 
-        tunel2.setEditable(false);
-        tunel2.setText("                     ");
-        tunel2.setToolTipText("");
-        tunel2.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        tunel2.setFocusable(false);
-        tunel2.setMaximumSize(null);
-        tunel2.setPreferredSize(new java.awt.Dimension(71, 22));
-        jPanel1.add(tunel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 320, -1, -1));
-
-        tunel3.setEditable(false);
-        tunel3.setText("                     ");
-        tunel3.setToolTipText("");
-        tunel3.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        tunel3.setFocusable(false);
-        tunel3.setMaximumSize(null);
-        tunel3.setPreferredSize(new java.awt.Dimension(71, 22));
-        jPanel1.add(tunel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 460, -1, -1));
-
-        tunel4.setEditable(false);
-        tunel4.setText("                      ");
-        tunel4.setToolTipText("");
-        tunel4.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        tunel4.setFocusable(false);
-        tunel4.setMaximumSize(null);
-        tunel4.setPreferredSize(new java.awt.Dimension(71, 22));
-        jPanel1.add(tunel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 600, -1, -1));
-
-        jPanel2.setForeground(new java.awt.Color(153, 153, 153));
-
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-        );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-        );
+        jLabel11.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel11.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel11.setText("Zona común");
+        jPanel2.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 330, -1, -1));
 
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 110, 280, 600));
 
-        jPanel4.setForeground(new java.awt.Color(153, 153, 153));
+        jPanel3.setBackground(new java.awt.Color(153, 153, 153));
+        jPanel3.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
+        jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
-        jPanel4.setLayout(jPanel4Layout);
-        jPanel4Layout.setHorizontalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-        );
-        jPanel4Layout.setVerticalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-        );
+        jLabel6.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel6.setText("Túnel 1");
+        jPanel3.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, -1, -1));
 
-        jPanel1.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 110, 460, -1));
+        jLabel7.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel7.setText("Túnel 2");
+        jPanel3.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 150, -1, -1));
 
-        jPanel6.setForeground(new java.awt.Color(153, 153, 153));
+        jLabel8.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel8.setText("Túnel 3");
+        jPanel3.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 290, -1, -1));
 
-        javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
-        jPanel6.setLayout(jPanel6Layout);
-        jPanel6Layout.setHorizontalGroup(
-            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-        );
-        jPanel6Layout.setVerticalGroup(
-            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-        );
+        jLabel9.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel9.setText("Túnel 4");
+        jPanel3.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 430, -1, -1));
 
-        jPanel1.add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(950, 110, 310, -1));
+        jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 110, 460, 600));
+
+        jPanel5.setBackground(new java.awt.Color(153, 153, 153));
+        jPanel5.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
+        jPanel5.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel12.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel12.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel12.setText("Riesgo 1");
+        jPanel5.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, -1, -1));
+
+        jLabel13.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel13.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel13.setText("Riesgo 2");
+        jPanel5.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 150, -1, -1));
+
+        jLabel14.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel14.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel14.setText("Riesgo 3");
+        jPanel5.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 290, -1, -1));
+
+        jLabel15.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel15.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel15.setText("Riesgo 4");
+        jPanel5.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 430, -1, -1));
+
+        jPanel1.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(950, 110, 310, 600));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 1323, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 1329, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 751, Short.MAX_VALUE)
-                .addContainerGap())
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 795, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         pack();
@@ -581,13 +651,24 @@ public class ApocalipsisGUI extends javax.swing.JFrame {
     private javax.swing.JButton botonParar;
     private javax.swing.JTextField contadorComida;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel4;
-    private javax.swing.JPanel jPanel6;
+    private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel5;
     private javax.swing.JScrollPane refugioTunel1;
     private javax.swing.JScrollPane refugioTunel2;
     private javax.swing.JScrollPane refugioTunel3;

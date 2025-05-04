@@ -133,206 +133,157 @@ public class ClienteGUI extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        jPanel1.setBackground(java.awt.Color.white);
+        jPanel1.setForeground(new java.awt.Color(0, 0, 0));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(0, 0, 0));
         jLabel1.setText("Humanos en el refugio");
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(49, 32, -1, -1));
 
+        jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(0, 0, 0));
         jLabel2.setText("Humanos en los túneles");
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(49, 84, -1, -1));
 
+        jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(0, 0, 0));
         jLabel3.setText("Zombis en las zonas de riesgo");
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(49, 188, -1, -1));
 
+        jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(0, 0, 0));
         jLabel4.setText("Humanos en las zonas de riesgo");
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(49, 136, -1, -1));
 
+        jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(0, 0, 0));
         jLabel5.setText("Zombis mas letales");
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(49, 242, -1, -1));
 
         refugioTextField.setEditable(false);
-        refugioTextField.setForeground(new java.awt.Color(255, 255, 255));
+        refugioTextField.setForeground(new java.awt.Color(0, 0, 0));
         refugioTextField.setText("jTextField1");
         refugioTextField.setMaximumSize(new java.awt.Dimension(74, 26));
         refugioTextField.setMinimumSize(new java.awt.Dimension(74, 26));
+        jPanel1.add(refugioTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(297, 29, 75, -1));
 
         tunel1TextField.setEditable(false);
-        tunel1TextField.setForeground(new java.awt.Color(255, 255, 255));
+        tunel1TextField.setForeground(new java.awt.Color(0, 0, 0));
         tunel1TextField.setText("jTextField2");
         tunel1TextField.setMaximumSize(new java.awt.Dimension(74, 26));
         tunel1TextField.setMinimumSize(new java.awt.Dimension(74, 26));
+        jPanel1.add(tunel1TextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(297, 81, 75, -1));
 
         riesgo1HTextField.setEditable(false);
-        riesgo1HTextField.setForeground(new java.awt.Color(255, 255, 255));
+        riesgo1HTextField.setForeground(new java.awt.Color(0, 0, 0));
         riesgo1HTextField.setText("jTextField3");
         riesgo1HTextField.setMaximumSize(new java.awt.Dimension(74, 26));
         riesgo1HTextField.setMinimumSize(new java.awt.Dimension(74, 26));
+        jPanel1.add(riesgo1HTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(297, 133, 75, -1));
 
         riesgo1ZTextField.setEditable(false);
-        riesgo1ZTextField.setForeground(new java.awt.Color(255, 255, 255));
+        riesgo1ZTextField.setForeground(new java.awt.Color(0, 0, 0));
         riesgo1ZTextField.setText("jTextField4");
         riesgo1ZTextField.setMaximumSize(new java.awt.Dimension(74, 26));
         riesgo1ZTextField.setMinimumSize(new java.awt.Dimension(74, 26));
+        jPanel1.add(riesgo1ZTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(297, 185, 75, -1));
 
         riesgo2ZTextField.setEditable(false);
-        riesgo2ZTextField.setForeground(new java.awt.Color(255, 255, 255));
+        riesgo2ZTextField.setForeground(new java.awt.Color(0, 0, 0));
         riesgo2ZTextField.setText("jTextField5");
         riesgo2ZTextField.setMaximumSize(new java.awt.Dimension(74, 26));
         riesgo2ZTextField.setMinimumSize(new java.awt.Dimension(74, 26));
+        jPanel1.add(riesgo2ZTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 185, 75, -1));
 
         riesgo3ZTextField.setEditable(false);
-        riesgo3ZTextField.setForeground(new java.awt.Color(255, 255, 255));
+        riesgo3ZTextField.setForeground(new java.awt.Color(0, 0, 0));
         riesgo3ZTextField.setText("jTextField6");
         riesgo3ZTextField.setMaximumSize(new java.awt.Dimension(74, 26));
         riesgo3ZTextField.setMinimumSize(new java.awt.Dimension(74, 26));
+        jPanel1.add(riesgo3ZTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(483, 185, 75, -1));
 
         riesgo4ZTextField.setEditable(false);
-        riesgo4ZTextField.setForeground(new java.awt.Color(255, 255, 255));
+        riesgo4ZTextField.setForeground(new java.awt.Color(0, 0, 0));
         riesgo4ZTextField.setText("jTextField7");
         riesgo4ZTextField.setMaximumSize(new java.awt.Dimension(74, 26));
         riesgo4ZTextField.setMinimumSize(new java.awt.Dimension(74, 26));
+        jPanel1.add(riesgo4ZTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(576, 185, 75, -1));
 
         riesgo4HTextField.setEditable(false);
-        riesgo4HTextField.setForeground(new java.awt.Color(255, 255, 255));
+        riesgo4HTextField.setForeground(new java.awt.Color(0, 0, 0));
         riesgo4HTextField.setText("jTextField7");
         riesgo4HTextField.setMaximumSize(new java.awt.Dimension(74, 26));
         riesgo4HTextField.setMinimumSize(new java.awt.Dimension(74, 26));
+        jPanel1.add(riesgo4HTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(576, 133, 75, -1));
 
         riesgo3HTextField.setEditable(false);
-        riesgo3HTextField.setForeground(new java.awt.Color(255, 255, 255));
+        riesgo3HTextField.setForeground(new java.awt.Color(0, 0, 0));
         riesgo3HTextField.setText("jTextField6");
         riesgo3HTextField.setMaximumSize(new java.awt.Dimension(74, 26));
         riesgo3HTextField.setMinimumSize(new java.awt.Dimension(74, 26));
+        jPanel1.add(riesgo3HTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(483, 133, 75, -1));
 
         riesgo2HTextField.setEditable(false);
-        riesgo2HTextField.setForeground(new java.awt.Color(255, 255, 255));
+        riesgo2HTextField.setForeground(new java.awt.Color(0, 0, 0));
         riesgo2HTextField.setText("jTextField5");
         riesgo2HTextField.setMaximumSize(new java.awt.Dimension(74, 26));
         riesgo2HTextField.setMinimumSize(new java.awt.Dimension(74, 26));
+        jPanel1.add(riesgo2HTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 133, 75, -1));
 
         tunel4TextField.setEditable(false);
-        tunel4TextField.setForeground(new java.awt.Color(255, 255, 255));
+        tunel4TextField.setForeground(new java.awt.Color(0, 0, 0));
         tunel4TextField.setText("jTextField7");
         tunel4TextField.setMaximumSize(new java.awt.Dimension(74, 26));
         tunel4TextField.setMinimumSize(new java.awt.Dimension(74, 26));
+        jPanel1.add(tunel4TextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(576, 81, 75, -1));
 
         tunel3TextField.setEditable(false);
-        tunel3TextField.setForeground(new java.awt.Color(255, 255, 255));
+        tunel3TextField.setForeground(new java.awt.Color(0, 0, 0));
         tunel3TextField.setText("jTextField6");
         tunel3TextField.setMaximumSize(new java.awt.Dimension(74, 26));
         tunel3TextField.setMinimumSize(new java.awt.Dimension(74, 26));
+        jPanel1.add(tunel3TextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(483, 81, 75, -1));
 
         tunel2TextField.setEditable(false);
-        tunel2TextField.setForeground(new java.awt.Color(255, 255, 255));
+        tunel2TextField.setForeground(new java.awt.Color(0, 0, 0));
         tunel2TextField.setText("jTextField5");
         tunel2TextField.setMaximumSize(new java.awt.Dimension(74, 26));
         tunel2TextField.setMinimumSize(new java.awt.Dimension(74, 26));
+        jPanel1.add(tunel2TextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 81, 75, -1));
 
+        pauseResumeButton.setBackground(new java.awt.Color(204, 0, 0));
+        pauseResumeButton.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         pauseResumeButton.setForeground(new java.awt.Color(255, 255, 255));
         pauseResumeButton.setText("Pausar");
+        pauseResumeButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         pauseResumeButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 pauseResumeButtonActionPerformed(evt);
             }
         });
+        jPanel1.add(pauseResumeButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 320, 112, 44));
 
+        jScrollPane1.setBackground(new java.awt.Color(255, 255, 255));
+
+        topZombisTextArea.setBackground(java.awt.Color.white);
         topZombisTextArea.setColumns(20);
-        topZombisTextArea.setForeground(new java.awt.Color(255, 255, 255));
+        topZombisTextArea.setForeground(new java.awt.Color(0, 0, 0));
         topZombisTextArea.setRows(5);
         jScrollPane1.setViewportView(topZombisTextArea);
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(49, 49, 49)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel5)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel1)
-                            .addComponent(jLabel2)
-                            .addComponent(jLabel4)
-                            .addComponent(jLabel3)
-                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(14, 14, 14)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(riesgo1HTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(riesgo2HTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(riesgo3HTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(riesgo4HTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(tunel1TextField, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(tunel2TextField, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(tunel3TextField, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(tunel4TextField, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(refugioTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addComponent(riesgo1ZTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(riesgo2ZTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(riesgo3ZTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addGap(139, 139, 139)
-                                        .addComponent(pauseResumeButton, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                .addGap(18, 18, 18)
-                                .addComponent(riesgo4ZTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                .addContainerGap(45, Short.MAX_VALUE))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(29, 29, 29)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1)
-                    .addComponent(refugioTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(30, 30, 30)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel2)
-                    .addComponent(tunel1TextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(tunel2TextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(tunel3TextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(tunel4TextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(30, 30, 30)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel4)
-                    .addComponent(riesgo1HTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(riesgo2HTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(riesgo3HTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(riesgo4HTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(30, 30, 30)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel3)
-                    .addComponent(riesgo1ZTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(riesgo2ZTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(riesgo3ZTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(riesgo4ZTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(35, 35, 35)
-                .addComponent(jLabel5)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(pauseResumeButton, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(62, 62, 62))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(18, 18, 18)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(38, Short.MAX_VALUE))))
-        );
+        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(49, 276, -1, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 716, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 434, Short.MAX_VALUE)
         );
 
         pack();
