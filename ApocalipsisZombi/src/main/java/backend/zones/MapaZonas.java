@@ -2,7 +2,7 @@ package backend.zones;
 
 import backend.entities.Zombi;
 import backend.entities.Humano;
-import frontend.server.ActualizadorGUI;
+import frontend.server.ActualizadorServerGUI;
 
 import java.util.List;
 import java.util.Map;
@@ -16,7 +16,7 @@ import java.util.concurrent.CopyOnWriteArrayList;
 public class MapaZonas {
     private final Map<Zona, List<Humano>> humanosPorZona = new ConcurrentHashMap<>();
     private final Map<Zona, List<Zombi>> zombisPorZona = new ConcurrentHashMap<>();
-    private ActualizadorGUI act;
+    private ActualizadorServerGUI act;
 
     /**
      * Constructor que inicializa todas las zonas con listas vacías de humanos y zombis.
@@ -31,9 +31,9 @@ public class MapaZonas {
     /**
      * Establece el componente encargado de actualizar la interfaz gráfica al modificar zonas.
      *
-     * @param act instancia de {@link ActualizadorGUI}
+     * @param act instancia de {@link ActualizadorServerGUI}
      */
-    public void setActualizador(ActualizadorGUI act) {
+    public void setActualizador(ActualizadorServerGUI act) {
         this.act = act;
     }
 

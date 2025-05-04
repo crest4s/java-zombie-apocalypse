@@ -3,7 +3,7 @@ package backend.zones;
 import java.io.IOException;
 import java.util.concurrent.Semaphore;
 import backend.utils.ApocalipsisLogger;
-import frontend.server.ActualizadorGUI;
+import frontend.server.ActualizadorServerGUI;
 
 /**
  * Representa el refugio donde los humanos pueden dejar y recoger comida.
@@ -13,7 +13,7 @@ public class Refugio {
 
     private int cantidadComida;
     private final Semaphore semaforoComida;
-    private ActualizadorGUI act;
+    private ActualizadorServerGUI act;
 
     /**
      * Crea un refugio vacío, sin comida inicialmente.
@@ -27,9 +27,9 @@ public class Refugio {
     /**
      * Establece el actualizador de la interfaz gráfica que será notificado cuando cambie el estado del refugio.
      *
-     * @param act instancia de {@link ActualizadorGUI}
+     * @param act instancia de {@link ActualizadorServerGUI}
      */
-    public void setActualizador(ActualizadorGUI act) {
+    public void setActualizador(ActualizadorServerGUI act) {
         this.act = act;
     }
 

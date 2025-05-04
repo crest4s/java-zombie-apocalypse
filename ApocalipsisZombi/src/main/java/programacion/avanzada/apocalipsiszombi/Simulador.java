@@ -8,7 +8,7 @@ import backend.zones.Refugio;
 import backend.entities.Zombi;
 import backend.entities.Humano;
 import backend.utils.PausaGlobal;
-import frontend.server.ActualizadorGUI;
+import frontend.server.ActualizadorServerGUI;
 import frontend.server.ApocalipsisGUI;
 import java.net.MalformedURLException;
 import java.rmi.Naming;
@@ -45,13 +45,12 @@ public class Simulador {
             System.err.println("Error en el servidor RMI: " + e.getMessage());            
         }
         
-        
         // GUI
         ApocalipsisGUI gui = new ApocalipsisGUI();
         gui.setVisible(true);
         
         //Actualizador 
-        ActualizadorGUI act = new ActualizadorGUI(gui, objRemoto, mapa, tuneles, refugio);
+        ActualizadorServerGUI act = new ActualizadorServerGUI(gui, objRemoto, mapa, tuneles, refugio);
         mapa.setActualizador(act);
         refugio.setActualizador(act);
         for(Tunel tunel : tuneles){

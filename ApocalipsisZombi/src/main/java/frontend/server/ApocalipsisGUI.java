@@ -2,26 +2,47 @@ package frontend.server;
 
 import backend.utils.PausaGlobal;
 
-public class ApocalipsisGUI extends javax.swing.JFrame{
+/**
+ * Ventana principal de la interfaz gráfica del servidor de simulación apocalíptica.
+ * Muestra el estado de las zonas, túneles, colas y comida del refugio en tiempo real.
+ */
+public class ApocalipsisGUI extends javax.swing.JFrame {
     private boolean running = true;
 
+    /**
+     * Constructor que inicializa todos los componentes de la GUI.
+     */
     public ApocalipsisGUI() {
         initComponents();
     }
 
+    /**
+     * Indica si la simulación está corriendo (no pausada).
+     *
+     * @return true si está en ejecución, false si está pausada
+     */
     public synchronized boolean isRunning() {
         return running;
     }
 
+    /**
+     * Alterna entre los estados de pausa y ejecución.
+     * Si se cambia a ejecución, notifica a todos los hilos que estaban esperando.
+     */
     public synchronized void pausarOSeguir() {
         running = !running;
         if (running) {
             notifyAll();
         }
     }
+
+    // --- Getters de componentes de zona refugio ---
+
     public javax.swing.JTextArea getTextDescanso() { return textDescanso; }
     public javax.swing.JTextArea getTextComedor() { return textComedor; }
     public javax.swing.JTextArea getTextComun() { return textComun; }
+
+    // --- Getters de componentes de zonas de riesgo ---
 
     public javax.swing.JTextArea getTextRiesgoHumanos1() { return textRiesgoHumanos1; }
     public javax.swing.JTextArea getTextRiesgoZombis1() { return textRiesgoZombis1; }
@@ -32,20 +53,28 @@ public class ApocalipsisGUI extends javax.swing.JFrame{
     public javax.swing.JTextArea getTextRiesgoHumanos4() { return textRiesgoHumanos4; }
     public javax.swing.JTextArea getTextRiesgoZombis4() { return textRiesgoZombis4; }
 
+    // --- Getters de túneles ---
+
     public javax.swing.JTextField getTunel1() { return tunel1; }
     public javax.swing.JTextField getTunel2() { return tunel2; }
     public javax.swing.JTextField getTunel3() { return tunel3; }
     public javax.swing.JTextField getTunel4() { return tunel4; }
+
+    // --- Getters de colas del refugio ---
 
     public javax.swing.JTextArea getTextEsperaRefugio1() { return textEsperaRefugio1; }
     public javax.swing.JTextArea getTextEsperaRefugio2() { return textEsperaRefugio2; }
     public javax.swing.JTextArea getTextEsperaRefugio3() { return textEsperaRefugio3; }
     public javax.swing.JTextArea getTextEsperaRefugio4() { return textEsperaRefugio4; }
 
+    // --- Getters de colas del exterior (zonas de riesgo) ---
+
     public javax.swing.JTextArea getTextEsperaRiesgo1() { return textEsperaRiesgo1; }
     public javax.swing.JTextArea getTextEsperaRiesgo2() { return textEsperaRiesgo2; }
     public javax.swing.JTextArea getTextEsperaRiesgo3() { return textEsperaRiesgo3; }
     public javax.swing.JTextArea getTextEsperaRiesgo4() { return textEsperaRiesgo4; }
+
+    // --- Getter del contador de comida en el refugio ---
 
     public javax.swing.JTextField getContadorComida() { return contadorComida; }
     
@@ -102,6 +131,9 @@ public class ApocalipsisGUI extends javax.swing.JFrame{
         tunel2 = new javax.swing.JTextField();
         tunel3 = new javax.swing.JTextField();
         tunel4 = new javax.swing.JTextField();
+        jPanel2 = new javax.swing.JPanel();
+        jPanel4 = new javax.swing.JPanel();
+        jPanel6 = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Apocalipsis Zombie");
@@ -375,20 +407,20 @@ public class ApocalipsisGUI extends javax.swing.JFrame{
 
         jPanel1.add(riesgoZombi4, new org.netbeans.lib.awtextra.AbsoluteConstraints(1130, 560, 110, 100));
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Unispace", 0, 24)); // NOI18N
         jLabel1.setText("Refugio");
         jLabel1.setFocusable(false);
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 30, -1, -1));
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 70, -1, -1));
 
-        jLabel2.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Unispace", 0, 24)); // NOI18N
         jLabel2.setText("Túneles");
         jLabel2.setFocusable(false);
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 40, -1, -1));
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 70, -1, -1));
 
-        jLabel3.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Unispace", 0, 24)); // NOI18N
         jLabel3.setText("Zona de riesgo");
         jLabel3.setFocusable(false);
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(1030, 40, -1, -1));
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(1000, 70, -1, -1));
 
         botonParar.setText("Parar");
         botonParar.setActionCommand("pararButton");
@@ -453,6 +485,51 @@ public class ApocalipsisGUI extends javax.swing.JFrame{
         tunel4.setPreferredSize(new java.awt.Dimension(71, 22));
         jPanel1.add(tunel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 600, -1, -1));
 
+        jPanel2.setForeground(new java.awt.Color(153, 153, 153));
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+        );
+
+        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 110, 280, 600));
+
+        jPanel4.setForeground(new java.awt.Color(153, 153, 153));
+
+        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
+        jPanel4.setLayout(jPanel4Layout);
+        jPanel4Layout.setHorizontalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+        );
+        jPanel4Layout.setVerticalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+        );
+
+        jPanel1.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 110, 460, -1));
+
+        jPanel6.setForeground(new java.awt.Color(153, 153, 153));
+
+        javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
+        jPanel6.setLayout(jPanel6Layout);
+        jPanel6Layout.setHorizontalGroup(
+            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+        );
+        jPanel6Layout.setVerticalGroup(
+            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+        );
+
+        jPanel1.add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(950, 110, 310, -1));
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -508,6 +585,9 @@ public class ApocalipsisGUI extends javax.swing.JFrame{
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel4;
+    private javax.swing.JPanel jPanel6;
     private javax.swing.JScrollPane refugioTunel1;
     private javax.swing.JScrollPane refugioTunel2;
     private javax.swing.JScrollPane refugioTunel3;

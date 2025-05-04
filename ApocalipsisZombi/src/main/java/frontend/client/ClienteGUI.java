@@ -1,92 +1,95 @@
 package frontend.client;
 
+import backend.server.ServidorRemoto;
+
+import javax.swing.*;
+import java.net.MalformedURLException;
 import java.rmi.Naming;
+import java.rmi.NotBoundException;
 import java.rmi.RemoteException;
 import java.util.Map;
-import javax.swing.JOptionPane;
-import backend.server.ServidorRemoto;
-import java.net.MalformedURLException;
-import java.rmi.NotBoundException;
 
+/**
+ * Interfaz gráfica del cliente que se conecta al servidor RMI para visualizar
+ * el estado de la simulación (refugio, túneles, zonas de riesgo y top de zombis).
+ */
 public class ClienteGUI extends javax.swing.JFrame {
 
     private ServidorRemoto servidor;
-    
+
+    /**
+     * Constructor que inicializa la interfaz gráfica y conecta con el servidor.
+     */
     public ClienteGUI() {
         initComponents();
         conectarServidor();
-        //iniciarActualizacionesPeriodicas();
     }
-    
-    public javax.swing.JTextField getTextRefugio() { return refugioTextField; }
-    
-    public javax.swing.JTextField getTextRiesgo1H() { return riesgo1HTextField; }
-    public javax.swing.JTextField getTextRiesgo2H() { return riesgo2HTextField; }
-    public javax.swing.JTextField getTextRiesgo3H() { return riesgo3HTextField; }
-    public javax.swing.JTextField getTextRiesgo4H() { return riesgo4HTextField; }
-    
-    public javax.swing.JTextField getTextRiesgo1Z() { return riesgo1ZTextField; }
-    public javax.swing.JTextField getTextRiesgo2Z() { return riesgo2ZTextField; }
-    public javax.swing.JTextField getTextRiesgo3Z() { return riesgo3ZTextField; }
-    public javax.swing.JTextField getTextRiesgo4Z() { return riesgo4ZTextField; }
-    
-    public javax.swing.JTextField getTextTunel1() { return tunel1TextField; }
-    public javax.swing.JTextField getTextTunel2() { return tunel2TextField; }
-    public javax.swing.JTextField getTextTunel3() { return tunel3TextField; }
-    public javax.swing.JTextField getTextTunel4() { return tunel4TextField; }
 
-    public javax.swing.JTextArea getTopZombisTextArea() { return topZombisTextArea;}
-    
-    private void conectarServidor(){
-        try{
+    // --- Getters de los componentes de la GUI ---
+
+    public JTextField getTextRefugio() { return refugioTextField; }
+
+    public JTextField getTextRiesgo1H() { return riesgo1HTextField; }
+    public JTextField getTextRiesgo2H() { return riesgo2HTextField; }
+    public JTextField getTextRiesgo3H() { return riesgo3HTextField; }
+    public JTextField getTextRiesgo4H() { return riesgo4HTextField; }
+
+    public JTextField getTextRiesgo1Z() { return riesgo1ZTextField; }
+    public JTextField getTextRiesgo2Z() { return riesgo2ZTextField; }
+    public JTextField getTextRiesgo3Z() { return riesgo3ZTextField; }
+    public JTextField getTextRiesgo4Z() { return riesgo4ZTextField; }
+
+    public JTextField getTextTunel1() { return tunel1TextField; }
+    public JTextField getTextTunel2() { return tunel2TextField; }
+    public JTextField getTextTunel3() { return tunel3TextField; }
+    public JTextField getTextTunel4() { return tunel4TextField; }
+
+    public JTextArea getTopZombisTextArea() { return topZombisTextArea; }
+
+    /**
+     * Intenta establecer conexión con el servidor RMI y lanza el hilo de actualización si es exitosa.
+     */
+    private void conectarServidor() {
+        try {
             servidor = (ServidorRemoto) Naming.lookup("//localhost/objeto");
             System.out.println("Cliente conectando al servidor");
             new Thread(new ActualizadorClienteGUI(this, servidor)).start();
-        } catch (MalformedURLException | NotBoundException | RemoteException e){
+        } catch (MalformedURLException | NotBoundException | RemoteException e) {
             JOptionPane.showMessageDialog(this, "Error al conectar al servidor", "Error", JOptionPane.ERROR_MESSAGE);
         }
     }
-    
-    /*private void iniciarActualizacionesPeriodicas() {
-        new Thread(() -> {
-            while (true) {
-                try {
-                    if (servidor != null && servidor.necesitaActualizar()) {
-                        actualizarDatos();
-                    }
-                    Thread.sleep(100); 
-                } catch (InterruptedException | RemoteException e) {
-                }
-            }
-        }).start();
-    }*/
 
+    /**
+     * Actualiza manualmente todos los datos en la interfaz gráfica desde el servidor.
+     *
+     * @throws RemoteException si hay un fallo al recuperar datos del servidor RMI
+     */
     private void actualizarDatos() throws RemoteException {
-        // Actualizar humanos en refugio
+        // Humanos en refugio
         refugioTextField.setText(String.valueOf(servidor.getHumanosRefugio()));
-        
-        // Actualizar humanos en túneles
+
+        // Humanos en túneles
         int[] humanosTuneles = servidor.getHumanosTuneles();
         tunel1TextField.setText(String.valueOf(humanosTuneles[0]));
         tunel2TextField.setText(String.valueOf(humanosTuneles[1]));
         tunel3TextField.setText(String.valueOf(humanosTuneles[2]));
         tunel4TextField.setText(String.valueOf(humanosTuneles[3]));
-        
-        // Actualizar humanos en zonas de riesgo
+
+        // Humanos en zonas de riesgo
         int[] humanosRiesgo = servidor.getHumanosZonasRiesgo();
         riesgo1HTextField.setText(String.valueOf(humanosRiesgo[0]));
         riesgo2HTextField.setText(String.valueOf(humanosRiesgo[1]));
         riesgo3HTextField.setText(String.valueOf(humanosRiesgo[2]));
         riesgo4HTextField.setText(String.valueOf(humanosRiesgo[3]));
-        
-        // Actualizar zombis en zonas de riesgo
+
+        // Zombis en zonas de riesgo
         int[] zombisRiesgo = servidor.getZombisZonasRiesgo();
         riesgo1ZTextField.setText(String.valueOf(zombisRiesgo[0]));
         riesgo2ZTextField.setText(String.valueOf(zombisRiesgo[1]));
         riesgo3ZTextField.setText(String.valueOf(zombisRiesgo[2]));
         riesgo4ZTextField.setText(String.valueOf(zombisRiesgo[3]));
-        
-        // Actualizar top zombis letales
+
+        // Top 3 zombis letales
         Map<String, Integer> topZombis = servidor.getTopZombisLetales();
         StringBuilder sb = new StringBuilder();
         for (Map.Entry<String, Integer> entry : topZombis.entrySet()) {
@@ -94,7 +97,7 @@ public class ClienteGUI extends javax.swing.JFrame {
         }
         topZombisTextArea.setText(sb.toString());
     }
-    
+
     public static void main (String[] args) throws RemoteException{
         java.awt.EventQueue.invokeLater(() -> {
             new ClienteGUI().setVisible(true);
@@ -141,70 +144,84 @@ public class ClienteGUI extends javax.swing.JFrame {
         jLabel5.setText("Zombis mas letales");
 
         refugioTextField.setEditable(false);
+        refugioTextField.setForeground(new java.awt.Color(255, 255, 255));
         refugioTextField.setText("jTextField1");
         refugioTextField.setMaximumSize(new java.awt.Dimension(74, 26));
         refugioTextField.setMinimumSize(new java.awt.Dimension(74, 26));
 
         tunel1TextField.setEditable(false);
+        tunel1TextField.setForeground(new java.awt.Color(255, 255, 255));
         tunel1TextField.setText("jTextField2");
         tunel1TextField.setMaximumSize(new java.awt.Dimension(74, 26));
         tunel1TextField.setMinimumSize(new java.awt.Dimension(74, 26));
 
         riesgo1HTextField.setEditable(false);
+        riesgo1HTextField.setForeground(new java.awt.Color(255, 255, 255));
         riesgo1HTextField.setText("jTextField3");
         riesgo1HTextField.setMaximumSize(new java.awt.Dimension(74, 26));
         riesgo1HTextField.setMinimumSize(new java.awt.Dimension(74, 26));
 
         riesgo1ZTextField.setEditable(false);
+        riesgo1ZTextField.setForeground(new java.awt.Color(255, 255, 255));
         riesgo1ZTextField.setText("jTextField4");
         riesgo1ZTextField.setMaximumSize(new java.awt.Dimension(74, 26));
         riesgo1ZTextField.setMinimumSize(new java.awt.Dimension(74, 26));
 
         riesgo2ZTextField.setEditable(false);
+        riesgo2ZTextField.setForeground(new java.awt.Color(255, 255, 255));
         riesgo2ZTextField.setText("jTextField5");
         riesgo2ZTextField.setMaximumSize(new java.awt.Dimension(74, 26));
         riesgo2ZTextField.setMinimumSize(new java.awt.Dimension(74, 26));
 
         riesgo3ZTextField.setEditable(false);
+        riesgo3ZTextField.setForeground(new java.awt.Color(255, 255, 255));
         riesgo3ZTextField.setText("jTextField6");
         riesgo3ZTextField.setMaximumSize(new java.awt.Dimension(74, 26));
         riesgo3ZTextField.setMinimumSize(new java.awt.Dimension(74, 26));
 
         riesgo4ZTextField.setEditable(false);
+        riesgo4ZTextField.setForeground(new java.awt.Color(255, 255, 255));
         riesgo4ZTextField.setText("jTextField7");
         riesgo4ZTextField.setMaximumSize(new java.awt.Dimension(74, 26));
         riesgo4ZTextField.setMinimumSize(new java.awt.Dimension(74, 26));
 
         riesgo4HTextField.setEditable(false);
+        riesgo4HTextField.setForeground(new java.awt.Color(255, 255, 255));
         riesgo4HTextField.setText("jTextField7");
         riesgo4HTextField.setMaximumSize(new java.awt.Dimension(74, 26));
         riesgo4HTextField.setMinimumSize(new java.awt.Dimension(74, 26));
 
         riesgo3HTextField.setEditable(false);
+        riesgo3HTextField.setForeground(new java.awt.Color(255, 255, 255));
         riesgo3HTextField.setText("jTextField6");
         riesgo3HTextField.setMaximumSize(new java.awt.Dimension(74, 26));
         riesgo3HTextField.setMinimumSize(new java.awt.Dimension(74, 26));
 
         riesgo2HTextField.setEditable(false);
+        riesgo2HTextField.setForeground(new java.awt.Color(255, 255, 255));
         riesgo2HTextField.setText("jTextField5");
         riesgo2HTextField.setMaximumSize(new java.awt.Dimension(74, 26));
         riesgo2HTextField.setMinimumSize(new java.awt.Dimension(74, 26));
 
         tunel4TextField.setEditable(false);
+        tunel4TextField.setForeground(new java.awt.Color(255, 255, 255));
         tunel4TextField.setText("jTextField7");
         tunel4TextField.setMaximumSize(new java.awt.Dimension(74, 26));
         tunel4TextField.setMinimumSize(new java.awt.Dimension(74, 26));
 
         tunel3TextField.setEditable(false);
+        tunel3TextField.setForeground(new java.awt.Color(255, 255, 255));
         tunel3TextField.setText("jTextField6");
         tunel3TextField.setMaximumSize(new java.awt.Dimension(74, 26));
         tunel3TextField.setMinimumSize(new java.awt.Dimension(74, 26));
 
         tunel2TextField.setEditable(false);
+        tunel2TextField.setForeground(new java.awt.Color(255, 255, 255));
         tunel2TextField.setText("jTextField5");
         tunel2TextField.setMaximumSize(new java.awt.Dimension(74, 26));
         tunel2TextField.setMinimumSize(new java.awt.Dimension(74, 26));
 
+        pauseResumeButton.setForeground(new java.awt.Color(255, 255, 255));
         pauseResumeButton.setText("Pausar");
         pauseResumeButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -213,6 +230,7 @@ public class ClienteGUI extends javax.swing.JFrame {
         });
 
         topZombisTextArea.setColumns(20);
+        topZombisTextArea.setForeground(new java.awt.Color(255, 255, 255));
         topZombisTextArea.setRows(5);
         jScrollPane1.setViewportView(topZombisTextArea);
 

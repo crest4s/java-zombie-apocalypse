@@ -2,7 +2,7 @@ package backend.zones;
 
 import backend.entities.Humano;
 import backend.utils.ApocalipsisLogger;
-import frontend.server.ActualizadorGUI;
+import frontend.server.ActualizadorServerGUI;
 
 import java.io.IOException;
 import java.util.LinkedList;
@@ -28,7 +28,7 @@ public class Tunel {
     private final Queue<Humano> grupoFormado = new LinkedList<>();
     private Humano humanoEnTunel = null;
 
-    private ActualizadorGUI act;
+    private ActualizadorServerGUI act;
     private final MapaZonas mapa;
 
     /**
@@ -52,9 +52,9 @@ public class Tunel {
     /**
      * Establece el actualizador de GUI que notifica cambios de estado.
      *
-     * @param act instancia de {@link ActualizadorGUI}
+     * @param act instancia de {@link ActualizadorServerGUI}
      */
-    public void setActualizador(ActualizadorGUI act) {
+    public void setActualizador(ActualizadorServerGUI act) {
         this.act = act;
     }
 
