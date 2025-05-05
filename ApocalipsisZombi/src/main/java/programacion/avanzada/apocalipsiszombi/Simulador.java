@@ -66,8 +66,12 @@ public class Simulador {
 
         // Crear humanos progresivamente
         for (int i = 1; i <= 10000; i++) {
-            if (PausaGlobal.getInstance().estaPausado()) {
-                PausaGlobal.getInstance().esperarSiPausado(); // Espera si está pausado para evitar la creación de nuevos humanos
+            while(PausaGlobal.getInstance().estaPausado()){
+                try {
+                    Thread.sleep(100);
+                } catch (InterruptedException e) {
+                    Thread.currentThread().interrupt();
+                }
             }
             Humano h = new Humano(idgen, refugio, tuneles, mapa);
             h.start();
