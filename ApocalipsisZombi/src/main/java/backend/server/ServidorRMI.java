@@ -154,7 +154,8 @@ public class ServidorRMI extends UnicastRemoteObject implements ServidorRemoto{
             pausa.pausar();
         }
         if (gui != null) {
-            gui.actualizarBotonPausa(pausa.estaPausado());
+            boolean estado = pausa.estaPausado();
+            SwingUtilities.invokeLater(() -> gui.actualizarBotonPausa(estado));
         }
     }
     
