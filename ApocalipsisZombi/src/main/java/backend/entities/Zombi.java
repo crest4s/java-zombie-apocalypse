@@ -111,23 +111,21 @@ public class Zombi extends Thread {
      * @throws InterruptedException si el hilo es interrumpido
      */
     public void sleepConPausa(long duracionTotal) throws InterruptedException {
-        long fragmentoSleep = 100;
-        long tiempoDormido = 0;
+        final long intervalo = 100;
+        long tiempoTranscurrido = 0;
 
-        while (tiempoDormido < duracionTotal) {
-            PausaGlobal.getInstance().esperarSiPausado();
-
-            long tiempoRestante = duracionTotal - tiempoDormido;
-            long tiempoDormir = Math.min(fragmentoSleep, tiempoRestante);
-
-            if (tiempoDormir > 0) {
-                Thread.sleep(tiempoDormir);
-                tiempoDormido += tiempoDormir;
-            } else {
-                break;
+        while (tiempoTranscurrido < duracionTotal) {
+            if (PausaGlobal.getInstance().estaPausado()) {
+                PausaGlobal.getInstance().esperarSiPausado();
+                continue;
             }
+
+            long esperar = Math.min(intervalo, duracionTotal - tiempoTranscurrido);
+            Thread.sleep(esperar);
+            tiempoTranscurrido += esperar;
         }
     }
+
 
 
     /**
