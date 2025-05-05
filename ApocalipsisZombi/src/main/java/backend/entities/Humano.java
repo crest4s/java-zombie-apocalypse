@@ -220,7 +220,7 @@ public class Humano extends Thread {
      * Realiza una pausa con control de pausa global.
      * 
      * @param duracionTotal duración total de la pausa en milisegundos
-     * @throws InterruptedException si el hilo es interrumpido
+     * @    throws InterruptedException si el hilo es interrumpido
      */
     public void sleepConPausa(long duracionTotal) throws InterruptedException {
         final long intervalo = 100;

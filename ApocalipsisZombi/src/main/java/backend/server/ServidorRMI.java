@@ -264,5 +264,4 @@ public class ServidorRMI extends UnicastRemoteObject implements ServidorRemoto{
     public boolean estaPausado() throws RemoteException {
         return PausaGlobal.getInstance().estaPausado();
     }
-
 }
