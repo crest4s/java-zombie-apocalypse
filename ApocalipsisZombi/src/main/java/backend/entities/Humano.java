@@ -223,19 +223,22 @@ public class Humano extends Thread {
      * @throws InterruptedException si el hilo es interrumpido
      */
     public void sleepConPausa(long duracionTotal) throws InterruptedException {
-        final long pausaIntervalo = 100; // duración máxima de cada fragmento
-        long inicio = System.currentTimeMillis();
+        long fragmentoSleep = 100;
+        long tiempoDormido = 0;
 
-        while (true) {
+        while (tiempoDormido < duracionTotal) {
             PausaGlobal.getInstance().esperarSiPausado();
 
-            long transcurrido = System.currentTimeMillis() - inicio;
-            if (transcurrido >= duracionTotal) {
+            long tiempoRestante = duracionTotal - tiempoDormido;
+            long tiempoDormir = Math.min(fragmentoSleep, tiempoRestante);
+
+            if (tiempoDormir > 0) {
+                Thread.sleep(tiempoDormir);
+                tiempoDormido += tiempoDormir;
+            } else {
                 break;
             }
-
-            long tiempoEspera = Math.min(pausaIntervalo, duracionTotal - transcurrido);
-            Thread.sleep(tiempoEspera);
         }
     }
+
 }
