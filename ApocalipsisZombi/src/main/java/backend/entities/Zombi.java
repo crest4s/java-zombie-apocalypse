@@ -111,25 +111,19 @@ public class Zombi extends Thread {
      * @throws InterruptedException si el hilo es interrumpido
      */
     public void sleepConPausa(long duracionTotal) throws InterruptedException {
-        long tiempoRestante = duracionTotal;
+        final long pausaIntervalo = 100; // duración máxima de cada fragmento
         long inicio = System.currentTimeMillis();
 
-        while (tiempoRestante > 0) {
+        while (true) {
             PausaGlobal.getInstance().esperarSiPausado();
 
-            try {
-                Thread.sleep(tiempoRestante);
-                break; // finalizó correctamente
-            } catch (InterruptedException e) {
-                if (PausaGlobal.getInstance().estaPausado()) {
-                    PausaGlobal.getInstance().esperarSiPausado(); // espera a ser reanudado
-                } else {
-                    throw e; // interrupción real, no por pausa
-                }
+            long transcurrido = System.currentTimeMillis() - inicio;
+            if (transcurrido >= duracionTotal) {
+                break;
             }
 
-            long ahora = System.currentTimeMillis();
-            tiempoRestante = duracionTotal - (ahora - inicio);
+            long tiempoEspera = Math.min(pausaIntervalo, duracionTotal - transcurrido);
+            Thread.sleep(tiempoEspera);
         }
     }
 
