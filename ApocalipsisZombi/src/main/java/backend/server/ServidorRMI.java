@@ -237,4 +237,16 @@ public class ServidorRMI extends UnicastRemoteObject implements ServidorRemoto{
         }
         return act;
     }
+
+    /**
+     * Devuelve el estado de pausa global de la simulación.
+     *
+     * @return true si la simulación está pausada, false si está en ejecución
+     * @throws RemoteException
+     */
+    @Override
+    public boolean estaPausado() throws RemoteException {
+        return PausaGlobal.getInstance().estaPausado();
+    }
+
 }

@@ -38,6 +38,15 @@ public class ActualizadorClienteGUI implements Runnable {
                 if (servidor.necesitaActualizar()) {
                     actualizarDatos();
                 }
+                // Actualiza el botón de pausa/reanudación según el estado del servidor
+                boolean pausado = servidor.estaPausado();
+                SwingUtilities.invokeLater(() -> {
+                    if (pausado && !gui.getPauseResumeButton().getText().equals("Reanudar")) {
+                        gui.getPauseResumeButton().setText("Reanudar");
+                    } else if (!pausado && !gui.getPauseResumeButton().getText().equals("Pausar")) {
+                        gui.getPauseResumeButton().setText("Pausar");
+                    }
+                });
                 Thread.sleep(200); // Evita uso excesivo de CPU
             } catch (RemoteException | InterruptedException e) {
                 e.printStackTrace();

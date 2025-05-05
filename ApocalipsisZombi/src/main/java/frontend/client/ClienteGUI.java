@@ -53,7 +53,9 @@ public class ClienteGUI extends javax.swing.JFrame {
         try {
             servidor = (ServidorRemoto) Naming.lookup("//localhost/objeto");
             System.out.println("Cliente conectando al servidor");
-            new Thread(new ActualizadorClienteGUI(this, servidor)).start();
+            boolean pausado = servidor.estaPausado();
+            pauseResumeButton.setText(pausado ? "Reanudar" : "Pausar");
+            new Thread(new ActualizadorClienteGUI(this, servidor)).start();// Inicia el hilo de actualización
         } catch (MalformedURLException | NotBoundException | RemoteException e) {
             JOptionPane.showMessageDialog(this, "Error al conectar al servidor", "Error", JOptionPane.ERROR_MESSAGE);
         }
@@ -98,6 +100,21 @@ public class ClienteGUI extends javax.swing.JFrame {
         topZombisTextArea.setText(sb.toString());
     }
 
+    /**
+     * Devuelve el botón de pausa/reanudación.
+     *
+     * @return
+     */
+    public JButton getPauseResumeButton() {
+        return pauseResumeButton;
+    }
+
+    /**
+     * Método principal que inicia la aplicación cliente.
+     * 
+     * @param args
+     * @throws RemoteException
+     */
     public static void main (String[] args) throws RemoteException{
         java.awt.EventQueue.invokeLater(() -> {
             new ClienteGUI().setVisible(true);

@@ -114,4 +114,13 @@ public interface ServidorRemoto extends Remote {
      * @throws RemoteException si ocurre un error de comunicación remota
      */
     boolean necesitaActualizar() throws RemoteException;
+
+    /**
+     * Indica si la simulación está actualmente en pausa.
+     *
+     * @return true si la simulación está pausada, false si no
+     * @throws RemoteException si ocurre un error de comunicación remota
+     */
+    boolean estaPausado() throws RemoteException;
+
 }

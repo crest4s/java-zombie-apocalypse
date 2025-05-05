@@ -126,8 +126,6 @@ public class Zombi extends Thread {
         }
     }
 
-
-
     /**
      * Cambia la zona actual del zombi y actualiza su posición en el mapa.
      *
