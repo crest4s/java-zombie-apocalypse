@@ -36,6 +36,16 @@ public class ApocalipsisGUI extends javax.swing.JFrame {
         }
     }
 
+    /**
+     * Actualiza el texto del botón de pausa/reanudación según el estado actual.
+     *
+     * @param pausado
+     */
+    public void actualizarBotonPausa(boolean pausado) {
+        botonParar.setText(pausado ? "Reanudar" : "Parar");
+    }
+
+
     // --- Getters de componentes de zona refugio ---
 
     public javax.swing.JTextArea getTextDescanso() { return textDescanso; }

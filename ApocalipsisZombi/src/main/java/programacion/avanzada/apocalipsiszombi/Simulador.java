@@ -48,6 +48,9 @@ public class Simulador {
         // GUI
         ApocalipsisGUI gui = new ApocalipsisGUI();
         gui.setVisible(true);
+
+        // Establecer la GUI en el servidor remoto
+        objRemoto.setGUI(gui);
         
         //Actualizador 
         ActualizadorServerGUI act = new ActualizadorServerGUI(gui, objRemoto, mapa, tuneles, refugio);

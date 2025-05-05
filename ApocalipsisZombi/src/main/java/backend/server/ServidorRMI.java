@@ -20,6 +20,7 @@ public class ServidorRMI extends UnicastRemoteObject implements ServidorRemoto{
     private final MapaZonas mapa;
     private boolean actualizacion;
     private final int[] extremoTuneles;
+    private ApocalipsisGUI gui;
 
     /**
      * Constructor del servidor RMI.
@@ -32,7 +33,16 @@ public class ServidorRMI extends UnicastRemoteObject implements ServidorRemoto{
         actualizacion = false;
         extremoTuneles = new int[4];
     }
-    
+
+    /**
+     * Establece la GUI del servidor para actualizarla con datos del sistema.
+     *
+     * @param gui instancia de la interfaz gráfica del servidor
+     */
+    public void setGUI(ApocalipsisGUI gui) {
+        this.gui = gui;
+    }
+
     /**
      * Devuelve el total de humanos que están dentro del refugio (zonas internas).
      *
@@ -142,6 +152,9 @@ public class ServidorRMI extends UnicastRemoteObject implements ServidorRemoto{
             pausa.reanudar();
         } else {
             pausa.pausar();
+        }
+        if (gui != null) {
+            gui.actualizarBotonPausa(pausa.estaPausado());
         }
     }
     

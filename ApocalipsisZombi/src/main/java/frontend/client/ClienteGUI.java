@@ -111,7 +111,7 @@ public class ClienteGUI extends javax.swing.JFrame {
 
     /**
      * Método principal que inicia la aplicación cliente.
-     * 
+     *
      * @param args
      * @throws RemoteException
      */
