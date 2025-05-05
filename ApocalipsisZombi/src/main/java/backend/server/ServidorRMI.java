@@ -11,6 +11,8 @@ import backend.utils.PausaGlobal;
 import backend.zones.Zona;
 import java.util.LinkedHashMap;
 import java.util.List;
+import frontend.server.ApocalipsisGUI;
+import javax.swing.SwingUtilities;
 
 /**
  * Implementación del servidor remoto usando RMI para la simulación apocalíptica.
