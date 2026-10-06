@@ -71,3 +71,7 @@ The project can also be opened directly in NetBeans or IntelliJ IDEA and run fro
 
 - Adrián Morales Rodríguez ([@crest4s](https://github.com/crest4s))
 - [@Hugoserrano2005](https://github.com/Hugoserrano2005)
+
+## License
+
+[MIT](LICENSE)
