@@ -1,1 +1,13 @@
+# Maven build output
 /ApocalipsisZombi/target/
+target/
+
+# Runtime log written by the simulator
+apocalipsis.txt
+
+# IDE / OS
+.idea/
+*.iml
+.vscode/
+nbproject/private/
+.DS_Store
